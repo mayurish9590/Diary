@@ -161,6 +161,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     @IBAction func onClickAddPhoto(_ sender: Any) {
         ImageAttachmentPopup.instance.delegate = self
         ImageAttachmentPopup.instance.showAlert(topSpacingForContainer: self.topbarHeight)
+        self.deleteImageButton.isHidden = false
         /*
         if self.addImagePopup == nil {
             self.addImagePopup = ImageAttachmentPopup.getView()
@@ -351,6 +352,7 @@ extension NewNoteViewController : DeleteImagePopUp
     func deleteImage() {
         self.attachedImage.image = nil
         self.decriptionViewTrailing.constant = 0
+        self.deleteImageButton.isHidden = true
     }
     
     
