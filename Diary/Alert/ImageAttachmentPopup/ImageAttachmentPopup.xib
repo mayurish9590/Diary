@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageAttachmentPopup" customModule="Dairy" customModuleProvider="target">
+            <connections>
+                <outlet property="containerTopSpacingCnstraint" destination="xay-qZ-nPT" id="e9g-ea-7EK"/>
+                <outlet property="containerVIew" destination="AZe-he-8yf" id="GMt-lp-ehe"/>
+                <outlet property="parentView" destination="iN0-l3-epB" id="pdk-bj-Kff"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ImageAttachmentPopup" customModule="Dairy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZe-he-8yf">
+                    <rect key="frame" x="235" y="0.0" width="130" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vl-cV-OhW" userLabel="Photos">
+                            <rect key="frame" x="10" y="5" width="110" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="8Th-ne-5e8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Photos" image="gallery">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickPhoto:" destination="-1" eventType="touchUpInside" id="Hdv-xF-obo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USP-2O-Rcy" userLabel="Camera">
+                            <rect key="frame" x="10" y="60" width="110" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="rHo-lb-MtG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Camera" image="dslr-camera">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickCamera:" destination="-1" eventType="touchUpInside" id="9b6-4j-C7E"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8vl-cV-OhW" firstAttribute="top" secondItem="AZe-he-8yf" secondAttribute="top" constant="5" id="4ay-VO-UzO"/>
+                        <constraint firstAttribute="height" constant="120" id="SOW-dl-cKd"/>
+                        <constraint firstItem="USP-2O-Rcy" firstAttribute="top" secondItem="8vl-cV-OhW" secondAttribute="bottom" constant="5" id="Zjc-vB-7do"/>
+                        <constraint firstItem="USP-2O-Rcy" firstAttribute="trailing" secondItem="8vl-cV-OhW" secondAttribute="trailing" id="eW9-Ze-xhi"/>
+                        <constraint firstAttribute="trailing" secondItem="8vl-cV-OhW" secondAttribute="trailing" constant="10" id="eup-JW-WeF"/>
+                        <constraint firstItem="USP-2O-Rcy" firstAttribute="leading" secondItem="8vl-cV-OhW" secondAttribute="leading" id="iuO-a6-K1m"/>
+                        <constraint firstItem="8vl-cV-OhW" firstAttribute="leading" secondItem="AZe-he-8yf" secondAttribute="leading" constant="10" id="mUV-pe-Ni3"/>
+                        <constraint firstAttribute="width" constant="130" id="uaY-Os-Ko1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AZe-he-8yf" secondAttribute="trailing" constant="10" id="rdZ-8e-Qcj"/>
+                <constraint firstItem="AZe-he-8yf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xay-qZ-nPT"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="194.20289855072465" y="-276.22767857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dslr-camera" width="20" height="20"/>
+        <image name="gallery" width="20" height="20"/>
+    </resources>
+</document>

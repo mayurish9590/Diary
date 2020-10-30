@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmojiPopup" customModule="Dairy" customModuleProvider="target">
+            <connections>
+                <outlet property="emojiCollectionCOntainer" destination="WFE-sj-dU3" id="pys-6t-2hO"/>
+                <outlet property="emojiCollectionView" destination="GQ5-q7-0nZ" id="Wc0-0G-EVC"/>
+                <outlet property="parentView" destination="nfp-pV-koQ" id="JWR-EP-juE"/>
+                <outlet property="shadowView" destination="pJ5-Lj-kLz" id="jgh-az-e6O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="nfp-pV-koQ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJ5-Lj-kLz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFE-sj-dU3" userLabel="ViewEmojiCollection">
+                    <rect key="frame" x="37.5" y="150" width="300" height="400"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GQ5-q7-0nZ">
+                            <rect key="frame" x="10" y="15" width="280" height="375"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5BF-ms-Yde">
+                                <size key="itemSize" width="60" height="60"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="GQ5-q7-0nZ" firstAttribute="leading" secondItem="WFE-sj-dU3" secondAttribute="leading" constant="10" id="KCe-qi-OuX"/>
+                        <constraint firstItem="GQ5-q7-0nZ" firstAttribute="top" secondItem="WFE-sj-dU3" secondAttribute="top" constant="15" id="fsy-Rf-Nbp"/>
+                        <constraint firstAttribute="height" constant="400" id="gF6-0C-XbJ"/>
+                        <constraint firstAttribute="bottom" secondItem="GQ5-q7-0nZ" secondAttribute="bottom" constant="10" id="hcv-8p-ata"/>
+                        <constraint firstAttribute="width" constant="300" id="w6m-Js-Bcg"/>
+                        <constraint firstAttribute="trailing" secondItem="GQ5-q7-0nZ" secondAttribute="trailing" constant="10" id="yyP-UN-kuC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="xC4-cc-tFE"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pJ5-Lj-kLz" firstAttribute="leading" secondItem="xC4-cc-tFE" secondAttribute="leading" id="2oU-rB-4vs"/>
+                <constraint firstItem="WFE-sj-dU3" firstAttribute="centerY" secondItem="nfp-pV-koQ" secondAttribute="centerY" id="CQ5-Ul-bb8"/>
+                <constraint firstItem="xC4-cc-tFE" firstAttribute="bottom" secondItem="pJ5-Lj-kLz" secondAttribute="bottom" id="bfd-Kb-tKw"/>
+                <constraint firstItem="pJ5-Lj-kLz" firstAttribute="top" secondItem="nfp-pV-koQ" secondAttribute="top" id="fAR-5f-bTP"/>
+                <constraint firstItem="xC4-cc-tFE" firstAttribute="trailing" secondItem="pJ5-Lj-kLz" secondAttribute="trailing" id="nno-nb-RjY"/>
+                <constraint firstItem="WFE-sj-dU3" firstAttribute="centerX" secondItem="nfp-pV-koQ" secondAttribute="centerX" id="qYt-ez-DdQ"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1286.231884057971" y="-626.78571428571422"/>
+        </view>
+    </objects>
+</document>
