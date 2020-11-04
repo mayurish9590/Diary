@@ -14,18 +14,25 @@ class homeViewController: UIViewController {
     
     var notes : [Note]?
     let cellSpacingHeight: CGFloat = 50
-    
+    private var currentTheme = Themes.currentTheme()
     override func viewDidLoad() {
         super.viewDidLoad()
         noteTableView.register(UINib(nibName: NoteViewCell.nibName, bundle: nil), forCellReuseIdentifier: NoteViewCell.CellReuseIdentifier)
        // self.view.backgroundColor = Current.backgroundColor
         noteTableView.dataSource = self
         noteTableView.delegate = self
-        
         //noteTableView.backgroundColor = Current.backgroundColor
-        
+        updateTheme()
+
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateTheme), name: Notification.Name("Theme"), object: nil)
+
     }
     
+    @objc func updateTheme() {
+        currentTheme = Themes.currentTheme()
+        self.view.backgroundColor = self.currentTheme.background
+
+    }
     
     override func viewWillAppear(_ animated: Bool) {
        
@@ -36,6 +43,7 @@ class homeViewController: UIViewController {
         print(notes!)
         
     }
+    
     @IBAction func onClickMenu(_ sender: Any) {
         if let menuVc = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
             let menu = SideMenuNavigationController(rootViewController:menuVc )

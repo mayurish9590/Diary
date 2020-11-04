@@ -68,5 +68,8 @@ struct Nib {
     static let emojiPopup = "EmojiPopup"
     static let moreMenuPopup = "MoreMenuPopup"
    
-    
+}
+
+struct  KEYS {
+    static let keyCurrentTheme = "keyCurrentTheme"
 }

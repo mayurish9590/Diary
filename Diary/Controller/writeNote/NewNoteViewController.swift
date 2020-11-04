@@ -39,16 +39,23 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     var emojiPopupview : UIView!
     var ContentViewTapGesture : UITapGestureRecognizer!
     @IBOutlet weak var deleteImageButton: UIButton!
-    
+    private var currentTheme = Themes.currentTheme()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         titleText.attributedPlaceholder =
         NSAttributedString(string: "Title", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         initialSetup()
-        
+        updateTheme()
+
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateTheme), name: Notification.Name("Theme"), object: nil)
+
     }
-    
-    
+    @objc func updateTheme() {
+         currentTheme = Themes.currentTheme()
+
+        self.view.backgroundColor = currentTheme.background
+    }
     func initialSetup()
     {
         if ( self.noteobj == nil)

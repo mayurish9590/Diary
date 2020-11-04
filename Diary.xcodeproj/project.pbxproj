@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1C67F60C254AFB6100069503 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C67F60B254AFB6100069503 /* MenuViewController.swift */; };
 		1C67F610254AFDB400069503 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C67F60F254AFDB400069503 /* ThemesViewController.swift */; };
+		1C880A9825504FBA00E53B6F /* ThemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C880A9725504FBA00E53B6F /* ThemeTableViewCell.swift */; };
+		1CCEC7F5254C3D480058D769 /* AppThemeSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEC7F4254C3D480058D769 /* AppThemeSections.swift */; };
+		1CCEC7F8254C3D600058D769 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEC7F7254C3D600058D769 /* Themes.swift */; };
 		1CF96215254A97AA002F41BA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF96214254A97AA002F41BA /* GradientView.swift */; };
 		1CF96219254AD746002F41BA /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF96218254AD746002F41BA /* ViewControllerExtension.swift */; };
 		931644F6253EA65900D38A44 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931644F5253EA65900D38A44 /* DBManager.swift */; };
@@ -49,6 +52,9 @@
 		0577FD8AB961EC77D5AF4CA6 /* Pods_Dairy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dairy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C67F60B254AFB6100069503 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1C67F60F254AFDB400069503 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
+		1C880A9725504FBA00E53B6F /* ThemeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTableViewCell.swift; sourceTree = "<group>"; };
+		1CCEC7F4254C3D480058D769 /* AppThemeSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeSections.swift; sourceTree = "<group>"; };
+		1CCEC7F7254C3D600058D769 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		1CF96214254A97AA002F41BA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1CF96218254AD746002F41BA /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		7194FA975BC4FF0FB51FCCC3 /* Pods-Dairy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dairy.debug.xcconfig"; path = "Target Support Files/Pods-Dairy/Pods-Dairy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +118,16 @@
 			isa = PBXGroup;
 			children = (
 				1C67F60F254AFDB400069503 /* ThemesViewController.swift */,
+				1C880A9725504FBA00E53B6F /* ThemeTableViewCell.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		1CCEC7F0254C37C60058D769 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				1CCEC7F4254C3D480058D769 /* AppThemeSections.swift */,
+				1CCEC7F7254C3D600058D769 /* Themes.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -136,6 +152,7 @@
 		9312772925370C4A001520AC /* Utilties */ = {
 			isa = PBXGroup;
 			children = (
+				1CCEC7F0254C37C60058D769 /* Theme */,
 				9334EA2D254984620087F107 /* Note+CoreDataProperties.swift */,
 				9334EA2C254984620087F107 /* Note+CoreDataClass.swift */,
 				9339CD162525C5D000C53931 /* Constants.swift */,
@@ -311,6 +328,7 @@
 				93F5173A251DBF9B009FE8C2 /* Resources */,
 				936AA9D7253EE10900182BB4 /* Run Script - Swiftlint */,
 				06A3FABC11434E24E358C208 /* [CP] Embed Pods Frameworks */,
+				1CCEC7F1254C3A6E0058D769 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -392,6 +410,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dairy/Pods-Dairy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1CCEC7F1254C3A6E0058D769 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
 		4B4B19DDC6D7ED920200E244 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F51740251DBF9B009FE8C2 /* AppDelegate.swift in Sources */,
+				1C880A9825504FBA00E53B6F /* ThemeTableViewCell.swift in Sources */,
 				933B7C342535671900ACC4A7 /* homeViewController.swift in Sources */,
 				9358FA0A254BE2AE008C430E /* DeleteimageAttachmentPr.swift in Sources */,
 				1CF96219254AD746002F41BA /* ViewControllerExtension.swift in Sources */,
@@ -448,6 +485,7 @@
 				931644F6253EA65900D38A44 /* DBManager.swift in Sources */,
 				93FB987D2546B90E00126B37 /* MoreMenuPopupProtocol.swift in Sources */,
 				93FB987B2546B8DA00126B37 /* MoreMenuPopup.swift in Sources */,
+				1CCEC7F5254C3D480058D769 /* AppThemeSections.swift in Sources */,
 				93620D032543016300B5CE89 /* ImageAttachmentProtocol.swift in Sources */,
 				93F92CB02541761C00582357 /* SaveNote.swift in Sources */,
 				933B7C372535B92200ACC4A7 /* NewNoteViewController.swift in Sources */,
@@ -464,6 +502,7 @@
 				9334EA2E254984620087F107 /* Note+CoreDataClass.swift in Sources */,
 				93DC6D132547E1F30092853F /* EmojiCollectionViewCell.swift in Sources */,
 				93E506A925219F7100517120 /* NoteTableViewCell.swift in Sources */,
+				1CCEC7F8254C3D600058D769 /* Themes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
