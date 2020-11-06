@@ -266,7 +266,7 @@ extension NewNoteViewController : SaveNotePopUp {
             if let _noteDescription = self.descriptionTextView.text{ currentNote.noteDescription = _noteDescription }else{
                 currentNote.noteDescription = DB.notAvailable
             }
-            if let _title = self.title{ currentNote.title = _title }else{
+            if let _title = self.titleText.text{ currentNote.title = _title }else{
                 currentNote.title = DB.notAvailable
             }
             if self.attachimageData != nil{                currentNote.imageAttachment = self.attachimageData

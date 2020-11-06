@@ -38,7 +38,7 @@ extension Themes {
       case .Theme1:
         return UIColor(named: "theme1Text") ?? UIColor.black
       case .Theme2:
-        return UIColor(named: "theme2Text") ?? UIColor.white
+        return UIColor(named: "theme2Text") ?? UIColor.black
       case .Theme3:
         return UIColor(named: "theme3Text") ?? UIColor.black
       }

@@ -33,8 +33,7 @@ class DMBManger {
             NSEntityDescription.entity(forEntityName: "Note",
                                        in: managedContext)!
           
-          let noteObj = NSManagedObject(entity: entity,
-                                       insertInto: managedContext)
+          let noteObj = note
           
           
          
