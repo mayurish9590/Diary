@@ -25,7 +25,12 @@ class NoteTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        
+            
+        self.contentView.backgroundColor = Themes.currentTheme().alert
+        self.dateLabel.textColor = Themes.currentTheme().Text
+         self.titleLabel.textColor = Themes.currentTheme().Text
+         self.desciptionLabel.textColor = Themes.currentTheme().Text
+               
     }
 
     

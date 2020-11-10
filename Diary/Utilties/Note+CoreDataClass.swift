@@ -1,9 +1,8 @@
 //
 //  Note+CoreDataClass.swift
-//  Dairy
+//  
 //
-//  Created by Mayuri Shekhar on 28/10/20.
-//  Copyright © 2020 Mayuri Shekhar. All rights reserved.
+//  Created by Mayuri Shekhar on 06/11/20.
 //
 //
 

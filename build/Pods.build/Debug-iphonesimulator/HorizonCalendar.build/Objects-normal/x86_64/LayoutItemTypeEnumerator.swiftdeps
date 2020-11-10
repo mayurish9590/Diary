@@ -1,0 +1,261 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LayoutItemTypeEnumerator"
+provides-nominal:
+- "15HorizonCalendar24LayoutItemTypeEnumeratorC"
+provides-member:
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", ""]
+provides-dynamic-lookup:
+- "calendar"
+- "dayRange"
+- "enumerateItemTypes"
+- "firstDayInRange"
+- "isItemTypeInRange"
+- "monthRange"
+- "monthsLayout"
+- "nextItemType"
+- "previousItemType"
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "+"
+- !private "-"
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "Calendar"
+- "Day"
+- !private "DayOfWeekPosition"
+- "DayRange"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "LayoutItem"
+- "LayoutItemTypeEnumerator"
+- "Month"
+- "MonthRange"
+- "MonthsLayout"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+- "Void"
+- !private "max"
+- !private "preconditionFailure"
+- !private "||"
+depends-member:
+- !private ["SK", "contains"]
+- !private ["SK", "lowerBound"]
+- !private ["SK", "upperBound"]
+- !private ["10Foundation8CalendarV", "day"]
+- !private ["10Foundation8CalendarV", "firstDate"]
+- !private ["10Foundation8CalendarV", "lastDate"]
+- !private ["10Foundation8CalendarV", "month"]
+- !private ["s12CaseIterableP", "first"]
+- !private ["s12CaseIterableP", "init"]
+- !private ["s12CaseIterableP", "last"]
+- !private ["s12CaseIterableP", "rawValue"]
+- !private ["SN", "contains"]
+- !private ["SN", "lowerBound"]
+- !private ["SN", "upperBound"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "lowerBound"]
+- !private ["Sl", "upperBound"]
+- ["SL", "day"]
+- ["SL", "dayOfWeekInMonth"]
+- !private ["SL", "first"]
+- !private ["SL", "init"]
+- !private ["SL", "last"]
+- !private ["SL", "month"]
+- ["SL", "monthHeader"]
+- !private ["SL", "rawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "day"]
+- !private ["s28CustomDebugStringConvertibleP", "firstDate"]
+- !private ["s28CustomDebugStringConvertibleP", "lastDate"]
+- !private ["s28CustomDebugStringConvertibleP", "lowerBound"]
+- !private ["s28CustomDebugStringConvertibleP", "month"]
+- !private ["s28CustomDebugStringConvertibleP", "upperBound"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "day"]
+- !private ["s17CustomReflectableP", "firstDate"]
+- !private ["s17CustomReflectableP", "lastDate"]
+- !private ["s17CustomReflectableP", "lowerBound"]
+- !private ["s17CustomReflectableP", "month"]
+- !private ["s17CustomReflectableP", "upperBound"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "day"]
+- !private ["s23CustomStringConvertibleP", "firstDate"]
+- !private ["s23CustomStringConvertibleP", "lastDate"]
+- !private ["s23CustomStringConvertibleP", "lowerBound"]
+- !private ["s23CustomStringConvertibleP", "month"]
+- !private ["s23CustomStringConvertibleP", "upperBound"]
+- !private ["15HorizonCalendar3DayV", "day"]
+- !private ["15HorizonCalendar3DayV", "deinit"]
+- !private ["15HorizonCalendar3DayV", "month"]
+- !private ["15HorizonCalendar17DayOfWeekPositionO", "deinit"]
+- !private ["15HorizonCalendar17DayOfWeekPositionO", "first"]
+- !private ["15HorizonCalendar17DayOfWeekPositionO", "init"]
+- !private ["15HorizonCalendar17DayOfWeekPositionO", "last"]
+- !private ["15HorizonCalendar17DayOfWeekPositionO", "rawValue"]
+- !private ["Se", "contains"]
+- !private ["Se", "day"]
+- !private ["Se", "firstDate"]
+- !private ["Se", "lastDate"]
+- !private ["Se", "lowerBound"]
+- !private ["Se", "month"]
+- !private ["Se", "upperBound"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "contains"]
+- !private ["SE", "day"]
+- !private ["SE", "firstDate"]
+- !private ["SE", "lastDate"]
+- !private ["SE", "lowerBound"]
+- !private ["SE", "month"]
+- !private ["SE", "upperBound"]
+- !private ["SQ", "contains"]
+- ["SQ", "day"]
+- ["SQ", "dayOfWeekInMonth"]
+- !private ["SQ", "first"]
+- !private ["SQ", "firstDate"]
+- !private ["SQ", "init"]
+- !private ["SQ", "last"]
+- !private ["SQ", "lastDate"]
+- !private ["SQ", "lowerBound"]
+- !private ["SQ", "month"]
+- ["SQ", "monthHeader"]
+- !private ["SQ", "pinDaysOfWeekToTop"]
+- !private ["SQ", "rawValue"]
+- !private ["SQ", "upperBound"]
+- ["SQ", "vertical"]
+- !private ["SH", "contains"]
+- ["SH", "day"]
+- ["SH", "dayOfWeekInMonth"]
+- !private ["SH", "first"]
+- !private ["SH", "firstDate"]
+- !private ["SH", "init"]
+- !private ["SH", "last"]
+- !private ["SH", "lastDate"]
+- !private ["SH", "lowerBound"]
+- !private ["SH", "month"]
+- ["SH", "monthHeader"]
+- !private ["SH", "rawValue"]
+- !private ["SH", "upperBound"]
+- ["15HorizonCalendar10LayoutItemV0D4TypeO", "day"]
+- ["15HorizonCalendar10LayoutItemV0D4TypeO", "dayOfWeekInMonth"]
+- ["15HorizonCalendar10LayoutItemV0D4TypeO", "monthHeader"]
+- ["15HorizonCalendar10LayoutItemV", "ItemType"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "Bool"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "Calendar"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "Day"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "DayOfWeekPosition"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "DayRange"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "LayoutItem"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "Month"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "MonthRange"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "MonthsLayout"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "Void"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "calendar"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "dayRange"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "deinit"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "enumerateItemTypes"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "firstDayInRange"]
+- ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "init"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "isItemTypeInRange"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "max"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "monthRange"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "monthsLayout"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "nextItemType"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "preconditionFailure"]
+- !private ["15HorizonCalendar24LayoutItemTypeEnumeratorC", "previousItemType"]
+- !private ["15HorizonCalendar5MonthV", "deinit"]
+- ["15HorizonCalendar12MonthsLayoutO", "vertical"]
+- !private ["Sk", "contains"]
+- !private ["Sk", "lowerBound"]
+- !private ["Sk", "upperBound"]
+- !private ["SX", "contains"]
+- !private ["SX", "lowerBound"]
+- !private ["SX", "upperBound"]
+- !private ["SY", "first"]
+- !private ["SY", "init"]
+- !private ["SY", "last"]
+- !private ["SY", "rawValue"]
+- !private ["10Foundation20ReferenceConvertibleP", "day"]
+- !private ["10Foundation20ReferenceConvertibleP", "firstDate"]
+- !private ["10Foundation20ReferenceConvertibleP", "lastDate"]
+- !private ["10Foundation20ReferenceConvertibleP", "month"]
+- !private ["ST", "contains"]
+- !private ["ST", "lowerBound"]
+- !private ["ST", "upperBound"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["15HorizonCalendar27VerticalMonthsLayoutOptionsV", "pinDaysOfWeekToTop"]
+- !private ["s21_ObjectiveCBridgeableP", "day"]
+- !private ["s21_ObjectiveCBridgeableP", "firstDate"]
+- !private ["s21_ObjectiveCBridgeableP", "lastDate"]
+- !private ["s21_ObjectiveCBridgeableP", "month"]
+depends-nominal:
+- !private "SK"
+- !private "10Foundation8CalendarV"
+- !private "s12CaseIterableP"
+- !private "SN"
+- !private "Sl"
+- "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "15HorizonCalendar3DayV"
+- !private "15HorizonCalendar17DayOfWeekPositionO"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- "SQ"
+- "SH"
+- "15HorizonCalendar10LayoutItemV0D4TypeO"
+- "15HorizonCalendar10LayoutItemV"
+- "15HorizonCalendar24LayoutItemTypeEnumeratorC"
+- !private "15HorizonCalendar5MonthV"
+- "15HorizonCalendar12MonthsLayoutO"
+- !private "Sk"
+- !private "SX"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "15HorizonCalendar27VerticalMonthsLayoutOptionsV"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/Pods/Target Support Files/HorizonCalendar/HorizonCalendar-umbrella.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Pods.build/Debug-iphonesimulator/HorizonCalendar.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "fad4ffc0f34939cda3523c1fb4142701"

@@ -2,10 +2,10 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Note" representedClassName="Note" syncable="YES">
         <attribute name="emoji" optional="YES" attributeType="String"/>
-        <attribute name="imageAttachment" optional="YES" attributeType="Binary"/>
+        <attribute name="imageAttachment" optional="YES" attributeType="String"/>
         <attribute name="noteDescription" optional="YES" attributeType="String"/>
         <attribute name="noteID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="savingDate" optional="YES" attributeType="String"/>
+        <attribute name="savingDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="savingTime" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>

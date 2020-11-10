@@ -1,0 +1,559 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DMBManger"
+provides-nominal:
+- "5Dairy9DMBMangerC"
+provides-member:
+- ["5Dairy9DMBMangerC", ""]
+provides-dynamic-lookup:
+- "delete"
+- "fetchAllNote"
+- "nsobjContext"
+- "saveToDB"
+- "update"
+depends-top-level:
+- !private "!="
+- !private "AppDelegate"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "DB"
+- "DMBManger"
+- !private "FloatLiteralType"
+- !private "Int"
+- !private "IntegerLiteralType"
+- !private "NSEntityDescription"
+- !private "NSError"
+- !private "NSFetchRequest"
+- !private "NSManagedObject"
+- "NSManagedObjectContext"
+- !private "NSPredicate"
+- "Note"
+- "NoteModel"
+- !private "StringLiteralType"
+- !private "UIApplication"
+- !private "print"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["5Dairy11AppDelegateC", "persistentContainer"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "first"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "first"]
+- !private ["Sz", "init"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "delete"]
+- !private ["s7CVarArgP", "emoji"]
+- !private ["s7CVarArgP", "entity"]
+- !private ["s7CVarArgP", "fetch"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "imageAttachment"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "noteDescription"]
+- !private ["s7CVarArgP", "noteID"]
+- !private ["s7CVarArgP", "persistentContainer"]
+- !private ["s7CVarArgP", "predicate"]
+- !private ["s7CVarArgP", "save"]
+- !private ["s7CVarArgP", "savingDate"]
+- !private ["s7CVarArgP", "savingTime"]
+- !private ["s7CVarArgP", "setValue"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "userInfo"]
+- !private ["s7CVarArgP", "viewContext"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "first"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "delete"]
+- !private ["s28CustomDebugStringConvertibleP", "emoji"]
+- !private ["s28CustomDebugStringConvertibleP", "entity"]
+- !private ["s28CustomDebugStringConvertibleP", "fetch"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "imageAttachment"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "noteDescription"]
+- !private ["s28CustomDebugStringConvertibleP", "noteID"]
+- !private ["s28CustomDebugStringConvertibleP", "persistentContainer"]
+- !private ["s28CustomDebugStringConvertibleP", "predicate"]
+- !private ["s28CustomDebugStringConvertibleP", "save"]
+- !private ["s28CustomDebugStringConvertibleP", "savingDate"]
+- !private ["s28CustomDebugStringConvertibleP", "savingTime"]
+- !private ["s28CustomDebugStringConvertibleP", "setValue"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "userInfo"]
+- !private ["s28CustomDebugStringConvertibleP", "viewContext"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "delete"]
+- !private ["s23CustomStringConvertibleP", "emoji"]
+- !private ["s23CustomStringConvertibleP", "entity"]
+- !private ["s23CustomStringConvertibleP", "fetch"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "imageAttachment"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "noteDescription"]
+- !private ["s23CustomStringConvertibleP", "noteID"]
+- !private ["s23CustomStringConvertibleP", "persistentContainer"]
+- !private ["s23CustomStringConvertibleP", "predicate"]
+- !private ["s23CustomStringConvertibleP", "save"]
+- !private ["s23CustomStringConvertibleP", "savingDate"]
+- !private ["s23CustomStringConvertibleP", "savingTime"]
+- !private ["s23CustomStringConvertibleP", "setValue"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "userInfo"]
+- !private ["s23CustomStringConvertibleP", "viewContext"]
+- !private ["5Dairy2DBV", "emoji"]
+- !private ["5Dairy2DBV", "imageAttachment"]
+- !private ["5Dairy2DBV", "noteDescription"]
+- !private ["5Dairy2DBV", "noteID"]
+- !private ["5Dairy2DBV", "savingDate"]
+- !private ["5Dairy2DBV", "savingTime"]
+- !private ["5Dairy2DBV", "title"]
+- !private ["5Dairy9DMBMangerC", "AppDelegate"]
+- !private ["5Dairy9DMBMangerC", "DB"]
+- !private ["5Dairy9DMBMangerC", "Int"]
+- !private ["5Dairy9DMBMangerC", "NSEntityDescription"]
+- !private ["5Dairy9DMBMangerC", "NSError"]
+- !private ["5Dairy9DMBMangerC", "NSFetchRequest"]
+- !private ["5Dairy9DMBMangerC", "NSManagedObject"]
+- ["5Dairy9DMBMangerC", "NSManagedObjectContext"]
+- !private ["5Dairy9DMBMangerC", "NSPredicate"]
+- ["5Dairy9DMBMangerC", "Note"]
+- ["5Dairy9DMBMangerC", "NoteModel"]
+- !private ["5Dairy9DMBMangerC", "UIApplication"]
+- ["5Dairy9DMBMangerC", "deinit"]
+- ["5Dairy9DMBMangerC", "delete"]
+- ["5Dairy9DMBMangerC", "fetchAllNote"]
+- ["5Dairy9DMBMangerC", "init"]
+- ["5Dairy9DMBMangerC", "nsobjContext"]
+- !private ["5Dairy9DMBMangerC", "print"]
+- ["5Dairy9DMBMangerC", "saveToDB"]
+- ["5Dairy9DMBMangerC", "update"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
+- !private ["Se", "first"]
+- !private ["Se", "init"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
+- !private ["SE", "first"]
+- !private ["SE", "init"]
+- !private ["SQ", "append"]
+- !private ["SQ", "count"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "delete"]
+- !private ["SQ", "emoji"]
+- !private ["SQ", "entity"]
+- !private ["SQ", "fetch"]
+- !private ["SQ", "first"]
+- !private ["SQ", "imageAttachment"]
+- !private ["SQ", "init"]
+- !private ["SQ", "noteDescription"]
+- !private ["SQ", "noteID"]
+- !private ["SQ", "persistentContainer"]
+- !private ["SQ", "predicate"]
+- !private ["SQ", "save"]
+- !private ["SQ", "savingDate"]
+- !private ["SQ", "savingTime"]
+- !private ["SQ", "setValue"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "title"]
+- !private ["SQ", "userInfo"]
+- !private ["SQ", "viewContext"]
+- !private ["s5ErrorP", "userInfo"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "append"]
+- !private ["SH", "count"]
+- !private ["SH", "delegate"]
+- !private ["SH", "delete"]
+- !private ["SH", "emoji"]
+- !private ["SH", "entity"]
+- !private ["SH", "fetch"]
+- !private ["SH", "first"]
+- !private ["SH", "imageAttachment"]
+- !private ["SH", "init"]
+- !private ["SH", "noteDescription"]
+- !private ["SH", "noteID"]
+- !private ["SH", "persistentContainer"]
+- !private ["SH", "predicate"]
+- !private ["SH", "save"]
+- !private ["SH", "savingDate"]
+- !private ["SH", "savingTime"]
+- !private ["SH", "setValue"]
+- !private ["SH", "shared"]
+- !private ["SH", "title"]
+- !private ["SH", "userInfo"]
+- !private ["SH", "viewContext"]
+- !private ["8SideMenu18InitializableClassP", "delegate"]
+- !private ["8SideMenu18InitializableClassP", "delete"]
+- !private ["8SideMenu18InitializableClassP", "emoji"]
+- !private ["8SideMenu18InitializableClassP", "entity"]
+- !private ["8SideMenu18InitializableClassP", "fetch"]
+- !private ["8SideMenu18InitializableClassP", "imageAttachment"]
+- !private ["8SideMenu18InitializableClassP", "init"]
+- !private ["8SideMenu18InitializableClassP", "noteDescription"]
+- !private ["8SideMenu18InitializableClassP", "noteID"]
+- !private ["8SideMenu18InitializableClassP", "persistentContainer"]
+- !private ["8SideMenu18InitializableClassP", "predicate"]
+- !private ["8SideMenu18InitializableClassP", "save"]
+- !private ["8SideMenu18InitializableClassP", "savingDate"]
+- !private ["8SideMenu18InitializableClassP", "savingTime"]
+- !private ["8SideMenu18InitializableClassP", "setValue"]
+- !private ["8SideMenu18InitializableClassP", "shared"]
+- !private ["8SideMenu18InitializableClassP", "title"]
+- !private ["8SideMenu18InitializableClassP", "userInfo"]
+- !private ["8SideMenu18InitializableClassP", "viewContext"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["So8NSCodingP", "delete"]
+- !private ["So8NSCodingP", "entity"]
+- !private ["So8NSCodingP", "fetch"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "predicate"]
+- !private ["So8NSCodingP", "save"]
+- !private ["So8NSCodingP", "userInfo"]
+- !private ["So9NSCopyingP", "entity"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "predicate"]
+- !private ["So9NSCopyingP", "userInfo"]
+- !private ["So19NSEntityDescriptionC", "entity"]
+- !private ["So7NSErrorC", "userInfo"]
+- !private ["So17NSFastEnumerationP", "entity"]
+- !private ["So14NSFetchRequestC", "init"]
+- !private ["So14NSFetchRequestC", "predicate"]
+- !private ["So20NSFetchRequestResultP", "emoji"]
+- !private ["So20NSFetchRequestResultP", "imageAttachment"]
+- !private ["So20NSFetchRequestResultP", "init"]
+- !private ["So20NSFetchRequestResultP", "noteDescription"]
+- !private ["So20NSFetchRequestResultP", "noteID"]
+- !private ["So20NSFetchRequestResultP", "savingDate"]
+- !private ["So20NSFetchRequestResultP", "savingTime"]
+- !private ["So20NSFetchRequestResultP", "setValue"]
+- !private ["So20NSFetchRequestResultP", "title"]
+- !private ["So9NSLockingP", "delete"]
+- !private ["So9NSLockingP", "fetch"]
+- !private ["So9NSLockingP", "save"]
+- !private ["So15NSManagedObjectC", "emoji"]
+- !private ["So15NSManagedObjectC", "imageAttachment"]
+- !private ["So15NSManagedObjectC", "init"]
+- !private ["So15NSManagedObjectC", "noteDescription"]
+- !private ["So15NSManagedObjectC", "noteID"]
+- !private ["So15NSManagedObjectC", "savingDate"]
+- !private ["So15NSManagedObjectC", "savingTime"]
+- !private ["So15NSManagedObjectC", "setValue"]
+- !private ["So15NSManagedObjectC", "title"]
+- !private ["So22NSManagedObjectContextC", "delete"]
+- !private ["So22NSManagedObjectContextC", "fetch"]
+- !private ["So22NSManagedObjectContextC", "save"]
+- !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "delete"]
+- !private ["So8NSObjectC", "emoji"]
+- !private ["So8NSObjectC", "entity"]
+- !private ["So8NSObjectC", "fetch"]
+- !private ["So8NSObjectC", "imageAttachment"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "noteDescription"]
+- !private ["So8NSObjectC", "noteID"]
+- !private ["So8NSObjectC", "persistentContainer"]
+- !private ["So8NSObjectC", "predicate"]
+- !private ["So8NSObjectC", "save"]
+- !private ["So8NSObjectC", "savingDate"]
+- !private ["So8NSObjectC", "savingTime"]
+- !private ["So8NSObjectC", "setValue"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "title"]
+- !private ["So8NSObjectC", "userInfo"]
+- !private ["So8NSObjectC", "viewContext"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "delete"]
+- !private ["So8NSObjectP", "emoji"]
+- !private ["So8NSObjectP", "entity"]
+- !private ["So8NSObjectP", "fetch"]
+- !private ["So8NSObjectP", "imageAttachment"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "noteDescription"]
+- !private ["So8NSObjectP", "noteID"]
+- !private ["So8NSObjectP", "persistentContainer"]
+- !private ["So8NSObjectP", "predicate"]
+- !private ["So8NSObjectP", "save"]
+- !private ["So8NSObjectP", "savingDate"]
+- !private ["So8NSObjectP", "savingTime"]
+- !private ["So8NSObjectP", "setValue"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "title"]
+- !private ["So8NSObjectP", "userInfo"]
+- !private ["So8NSObjectP", "viewContext"]
+- !private ["So21NSPersistentContainerC", "viewContext"]
+- !private ["So24NSPersistentStoreRequestC", "init"]
+- !private ["So24NSPersistentStoreRequestC", "predicate"]
+- !private ["So11NSPredicateC", "init"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "userInfo"]
+- ["5Dairy4NoteC", "deinit"]
+- !private ["5Dairy4NoteC", "emoji"]
+- !private ["5Dairy4NoteC", "imageAttachment"]
+- !private ["5Dairy4NoteC", "noteDescription"]
+- !private ["5Dairy4NoteC", "noteID"]
+- !private ["5Dairy4NoteC", "savingDate"]
+- !private ["5Dairy4NoteC", "savingTime"]
+- !private ["5Dairy4NoteC", "title"]
+- !private ["5Dairy9NoteModelV", "emoji"]
+- !private ["5Dairy9NoteModelV", "imageAttachment"]
+- !private ["5Dairy9NoteModelV", "init"]
+- !private ["5Dairy9NoteModelV", "noteDescription"]
+- !private ["5Dairy9NoteModelV", "noteID"]
+- !private ["5Dairy9NoteModelV", "savingDate"]
+- !private ["5Dairy9NoteModelV", "savingTime"]
+- !private ["5Dairy9NoteModelV", "title"]
+- !private ["Sj", "init"]
+- !private ["7Combine16ObservableObjectP", "emoji"]
+- !private ["7Combine16ObservableObjectP", "imageAttachment"]
+- !private ["7Combine16ObservableObjectP", "init"]
+- !private ["7Combine16ObservableObjectP", "noteDescription"]
+- !private ["7Combine16ObservableObjectP", "noteID"]
+- !private ["7Combine16ObservableObjectP", "savingDate"]
+- !private ["7Combine16ObservableObjectP", "savingTime"]
+- !private ["7Combine16ObservableObjectP", "setValue"]
+- !private ["7Combine16ObservableObjectP", "title"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "first"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "first"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- !private ["ST", "first"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So13UIApplicationC", "delegate"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So21UIApplicationDelegateP", "persistentContainer"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "persistentContainer"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So11UIResponderC", "delegate"]
+- !private ["So11UIResponderC", "persistentContainer"]
+- !private ["So11UIResponderC", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "persistentContainer"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "persistentContainer"]
+- !private ["So23UIUserActivityRestoringP", "shared"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delete"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "emoji"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "entity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fetch"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageAttachment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "noteDescription"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "noteID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "persistentContainer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "predicate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "savingDate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "savingTime"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewContext"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delete"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "emoji"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "entity"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fetch"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "imageAttachment"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "noteDescription"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "noteID"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "persistentContainer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "predicate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "save"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "savingDate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "savingTime"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setValue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "title"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "userInfo"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewContext"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "5Dairy11AppDelegateC"
+- !private "Sa"
+- !private "SK"
+- !private "Sz"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "5Dairy2DBV"
+- "5Dairy9DMBMangerC"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- !private "SQ"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SH"
+- !private "8SideMenu18InitializableClassP"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So19NSEntityDescriptionC"
+- !private "So7NSErrorC"
+- !private "So17NSFastEnumerationP"
+- !private "So14NSFetchRequestC"
+- !private "So20NSFetchRequestResultP"
+- !private "So9NSLockingP"
+- !private "So15NSManagedObjectC"
+- !private "So22NSManagedObjectContextC"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So21NSPersistentContainerC"
+- !private "So24NSPersistentStoreRequestC"
+- !private "So11NSPredicateC"
+- !private "So14NSSecureCodingP"
+- "5Dairy4NoteC"
+- !private "5Dairy9NoteModelV"
+- !private "Sj"
+- !private "7Combine16ObservableObjectP"
+- !private "Sk"
+- !private "Sm"
+- !private "s10SIMDScalarP"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So13UIApplicationC"
+- !private "So21UIApplicationDelegateP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "7SwiftUI18_FormatSpecifiableP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Modules/HorizonCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Headers/HorizonCalendar-umbrella.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Headers/HorizonCalendar-Swift.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Modules/module.modulemap"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "3493e5d7f3c3a9c6970e9ac8c7f33c8a"

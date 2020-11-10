@@ -1,0 +1,424 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CalendarViewContent"
+provides-nominal:
+- "15HorizonCalendar0B11ViewContentC"
+- "15HorizonCalendar0B11ViewContentC21DayRangeLayoutContextV"
+- "15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO"
+- "15HorizonCalendar0B11ViewContentC20OverlayLayoutContextV"
+- "15HorizonCalendar0B11ViewContentC32DaysOfTheWeekRowSeparatorOptionsV"
+provides-member:
+- ["15HorizonCalendar0B11ViewContentC", ""]
+- ["15HorizonCalendar0B11ViewContentC21DayRangeLayoutContextV", ""]
+- ["15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO", ""]
+- ["15HorizonCalendar0B11ViewContentC20OverlayLayoutContextV", ""]
+- ["15HorizonCalendar0B11ViewContentC32DaysOfTheWeekRowSeparatorOptionsV", ""]
+- ["15HorizonCalendar0B11ViewContentC", "DayRangeLayoutContext"]
+- ["15HorizonCalendar0B11ViewContentC", "OverlaidItemLocation"]
+- ["15HorizonCalendar0B11ViewContentC", "OverlayLayoutContext"]
+- ["15HorizonCalendar0B11ViewContentC", "DaysOfTheWeekRowSeparatorOptions"]
+provides-dynamic-lookup:
+- "backgroundColor"
+- "calendar"
+- "dayItemModelProvider"
+- "dayOfWeekItemModelProvider"
+- "dayRange"
+- "dayRangesAndItemModelProvider"
+- "daysOfTheWeekRowSeparatorOptions"
+- "horizontalDayMargin"
+- "interMonthSpacing"
+- "monthDayInsets"
+- "monthHeaderItemModelProvider"
+- "monthRange"
+- "monthsLayout"
+- "overlaidItemLocationsAndItemModelProvider"
+- "verticalDayMargin"
+- "withBackgroundColor"
+- "withDayItemModelProvider"
+- "withDayOfWeekItemModelProvider"
+- "withDayRangeItemModelProvider"
+- "withDaysOfTheWeekRowSeparator"
+- "withHorizontalDayMargin"
+- "withInterMonthSpacing"
+- "withMonthDayInsets"
+- "withMonthHeaderItemModelProvider"
+- "withOverlayItemModelProvider"
+- "withVerticalDayMargin"
+depends-top-level:
+- !private "..."
+- "=="
+- !private "??"
+- "AnyCalendarItemModel"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- "CGRect"
+- "Calendar"
+- "CalendarViewContent"
+- "ClosedRange"
+- "Date"
+- !private "DateFormatter"
+- "Day"
+- "DayRange"
+- "FloatLiteralType"
+- "Hashable"
+- "Int"
+- "IntegerLiteralType"
+- "InternalAnyCalendarItemModel"
+- !private "Locale"
+- "Month"
+- "MonthRange"
+- "MonthsLayout"
+- "Set"
+- !private "StringLiteralType"
+- "UIColor"
+- "UIEdgeInsets"
+depends-member:
+- !private ["SK", "init"]
+- !private ["SK", "lowerBound"]
+- !private ["SK", "upperBound"]
+- !private ["s7CVarArgP", "calendar"]
+- !private ["s7CVarArgP", "dateFormat"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "lightGray"]
+- !private ["s7CVarArgP", "map"]
+- ["s7CVarArgP", "separator"]
+- !private ["10Foundation8CalendarV", "current"]
+- !private ["10Foundation8CalendarV", "firstDate"]
+- !private ["10Foundation8CalendarV", "lastDate"]
+- !private ["10Foundation8CalendarV", "locale"]
+- ["15HorizonCalendar0B11ViewContentC", "AnyCalendarItemModel"]
+- ["15HorizonCalendar0B11ViewContentC", "CGFloat"]
+- ["15HorizonCalendar0B11ViewContentC", "CGRect"]
+- ["15HorizonCalendar0B11ViewContentC", "Calendar"]
+- ["15HorizonCalendar0B11ViewContentC", "CalendarViewContent"]
+- ["15HorizonCalendar0B11ViewContentC", "ClosedRange"]
+- ["15HorizonCalendar0B11ViewContentC", "Date"]
+- !private ["15HorizonCalendar0B11ViewContentC", "DateFormatter"]
+- ["15HorizonCalendar0B11ViewContentC", "Day"]
+- ["15HorizonCalendar0B11ViewContentC", "DayRange"]
+- ["15HorizonCalendar0B11ViewContentC", "DayRangeLayoutContext"]
+- ["15HorizonCalendar0B11ViewContentC", "DaysOfTheWeekRowSeparatorOptions"]
+- ["15HorizonCalendar0B11ViewContentC", "Hashable"]
+- ["15HorizonCalendar0B11ViewContentC", "Int"]
+- ["15HorizonCalendar0B11ViewContentC", "InternalAnyCalendarItemModel"]
+- !private ["15HorizonCalendar0B11ViewContentC", "Locale"]
+- ["15HorizonCalendar0B11ViewContentC", "Month"]
+- ["15HorizonCalendar0B11ViewContentC", "MonthRange"]
+- ["15HorizonCalendar0B11ViewContentC", "MonthsLayout"]
+- ["15HorizonCalendar0B11ViewContentC", "OverlaidItemLocation"]
+- ["15HorizonCalendar0B11ViewContentC", "OverlayLayoutContext"]
+- ["15HorizonCalendar0B11ViewContentC", "Set"]
+- ["15HorizonCalendar0B11ViewContentC", "UIColor"]
+- ["15HorizonCalendar0B11ViewContentC", "UIEdgeInsets"]
+- ["15HorizonCalendar0B11ViewContentC", "backgroundColor"]
+- ["15HorizonCalendar0B11ViewContentC", "calendar"]
+- ["15HorizonCalendar0B11ViewContentC", "dayItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "dayOfWeekItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "dayRange"]
+- ["15HorizonCalendar0B11ViewContentC", "dayRangesAndItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "daysOfTheWeekRowSeparatorOptions"]
+- !private ["15HorizonCalendar0B11ViewContentC", "defaultDayItemModelProvider"]
+- !private ["15HorizonCalendar0B11ViewContentC", "defaultDayOfWeekItemModelProvider"]
+- !private ["15HorizonCalendar0B11ViewContentC", "defaultMonthHeaderItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "deinit"]
+- ["15HorizonCalendar0B11ViewContentC", "horizontalDayMargin"]
+- ["15HorizonCalendar0B11ViewContentC", "init"]
+- ["15HorizonCalendar0B11ViewContentC", "interMonthSpacing"]
+- ["15HorizonCalendar0B11ViewContentC", "monthDayInsets"]
+- ["15HorizonCalendar0B11ViewContentC", "monthHeaderItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "monthRange"]
+- ["15HorizonCalendar0B11ViewContentC", "monthsLayout"]
+- ["15HorizonCalendar0B11ViewContentC", "overlaidItemLocationsAndItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "verticalDayMargin"]
+- ["15HorizonCalendar0B11ViewContentC", "withBackgroundColor"]
+- ["15HorizonCalendar0B11ViewContentC", "withDayItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "withDayOfWeekItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "withDayRangeItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "withDaysOfTheWeekRowSeparator"]
+- ["15HorizonCalendar0B11ViewContentC", "withHorizontalDayMargin"]
+- ["15HorizonCalendar0B11ViewContentC", "withInterMonthSpacing"]
+- ["15HorizonCalendar0B11ViewContentC", "withMonthDayInsets"]
+- ["15HorizonCalendar0B11ViewContentC", "withMonthHeaderItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "withOverlayItemModelProvider"]
+- ["15HorizonCalendar0B11ViewContentC", "withVerticalDayMargin"]
+- !private ["SN", "init"]
+- !private ["SN", "lowerBound"]
+- !private ["SN", "upperBound"]
+- !private ["Sl", "init"]
+- !private ["Sl", "lowerBound"]
+- !private ["Sl", "map"]
+- !private ["Sl", "upperBound"]
+- !private ["s28CustomDebugStringConvertibleP", "calendar"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
+- !private ["s28CustomDebugStringConvertibleP", "firstDate"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "lastDate"]
+- !private ["s28CustomDebugStringConvertibleP", "lightGray"]
+- !private ["s28CustomDebugStringConvertibleP", "locale"]
+- !private ["s28CustomDebugStringConvertibleP", "lowerBound"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- ["s28CustomDebugStringConvertibleP", "separator"]
+- !private ["s28CustomDebugStringConvertibleP", "upperBound"]
+- !private ["s17CustomReflectableP", "current"]
+- !private ["s17CustomReflectableP", "firstDate"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "lastDate"]
+- !private ["s17CustomReflectableP", "locale"]
+- !private ["s17CustomReflectableP", "lowerBound"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "upperBound"]
+- !private ["s23CustomStringConvertibleP", "calendar"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "dateFormat"]
+- !private ["s23CustomStringConvertibleP", "firstDate"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "lastDate"]
+- !private ["s23CustomStringConvertibleP", "lightGray"]
+- !private ["s23CustomStringConvertibleP", "locale"]
+- !private ["s23CustomStringConvertibleP", "lowerBound"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- ["s23CustomStringConvertibleP", "separator"]
+- !private ["s23CustomStringConvertibleP", "upperBound"]
+- !private ["So15NSDateFormatterC", "calendar"]
+- !private ["So15NSDateFormatterC", "dateFormat"]
+- !private ["So15NSDateFormatterC", "init"]
+- ["15HorizonCalendar3DayV", "deinit"]
+- ["15HorizonCalendar0B11ViewContentC21DayRangeLayoutContextV", "CGRect"]
+- ["15HorizonCalendar0B11ViewContentC21DayRangeLayoutContextV", "Day"]
+- ["15HorizonCalendar0B11ViewContentC21DayRangeLayoutContextV", "boundingUnionRectOfDayFrames"]
+- ["15HorizonCalendar0B11ViewContentC21DayRangeLayoutContextV", "daysAndFrames"]
+- ["15HorizonCalendar0B11ViewContentC21DayRangeLayoutContextV", "init"]
+- ["15HorizonCalendar0B11ViewContentC32DaysOfTheWeekRowSeparatorOptionsV", "CGFloat"]
+- ["15HorizonCalendar0B11ViewContentC32DaysOfTheWeekRowSeparatorOptionsV", "DaysOfTheWeekRowSeparatorOptions"]
+- ["15HorizonCalendar0B11ViewContentC32DaysOfTheWeekRowSeparatorOptionsV", "UIColor"]
+- ["15HorizonCalendar0B11ViewContentC32DaysOfTheWeekRowSeparatorOptionsV", "color"]
+- ["15HorizonCalendar0B11ViewContentC32DaysOfTheWeekRowSeparatorOptionsV", "height"]
+- ["15HorizonCalendar0B11ViewContentC32DaysOfTheWeekRowSeparatorOptionsV", "init"]
+- ["15HorizonCalendar0B11ViewContentC32DaysOfTheWeekRowSeparatorOptionsV", "systemStyleSeparator"]
+- !private ["Se", "current"]
+- !private ["Se", "firstDate"]
+- !private ["Se", "init"]
+- !private ["Se", "lastDate"]
+- !private ["Se", "locale"]
+- !private ["Se", "lowerBound"]
+- !private ["Se", "map"]
+- !private ["Se", "upperBound"]
+- ["Se", "zero"]
+- !private ["SE", "current"]
+- !private ["SE", "firstDate"]
+- !private ["SE", "init"]
+- !private ["SE", "lastDate"]
+- !private ["SE", "locale"]
+- !private ["SE", "lowerBound"]
+- !private ["SE", "map"]
+- !private ["SE", "upperBound"]
+- ["SE", "zero"]
+- ["SQ", "=="]
+- ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "alwaysShowCompleteBoundaryMonths"]
+- !private ["SQ", "calendar"]
+- !private ["SQ", "current"]
+- !private ["SQ", "dateFormat"]
+- !private ["SQ", "firstDate"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "init"]
+- !private ["SQ", "lastDate"]
+- !private ["SQ", "lightGray"]
+- !private ["SQ", "locale"]
+- !private ["SQ", "lowerBound"]
+- !private ["SQ", "map"]
+- ["SQ", "separator"]
+- !private ["SQ", "upperBound"]
+- ["SQ", "zero"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["So11NSFormatterC", "calendar"]
+- !private ["So11NSFormatterC", "dateFormat"]
+- !private ["So11NSFormatterC", "init"]
+- ["SH", "=="]
+- ["SH", ""]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "calendar"]
+- !private ["SH", "current"]
+- !private ["SH", "dateFormat"]
+- !private ["SH", "firstDate"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "init"]
+- !private ["SH", "lastDate"]
+- !private ["SH", "lightGray"]
+- !private ["SH", "locale"]
+- !private ["SH", "lowerBound"]
+- !private ["SH", "map"]
+- ["SH", "separator"]
+- !private ["SH", "upperBound"]
+- !private ["s6HasherV", "combine"]
+- !private ["15HorizonCalendar011InternalAnyB9ItemModelO", "itemModel"]
+- !private ["10Foundation6LocaleV", "current"]
+- !private ["15HorizonCalendar5MonthV", "deinit"]
+- !private ["15HorizonCalendar12MonthsLayoutO", "alwaysShowCompleteBoundaryMonths"]
+- !private ["So8NSCodingP", "calendar"]
+- !private ["So8NSCodingP", "dateFormat"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "lightGray"]
+- ["So8NSCodingP", "separator"]
+- !private ["So9NSCopyingP", "calendar"]
+- !private ["So9NSCopyingP", "dateFormat"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "lightGray"]
+- ["So9NSCopyingP", "separator"]
+- !private ["So21NSItemProviderReadingP", "lightGray"]
+- ["So21NSItemProviderReadingP", "separator"]
+- !private ["So21NSItemProviderWritingP", "lightGray"]
+- ["So21NSItemProviderWritingP", "separator"]
+- !private ["So8NSObjectC", "calendar"]
+- !private ["So8NSObjectC", "dateFormat"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "lightGray"]
+- ["So8NSObjectC", "separator"]
+- !private ["So8NSObjectP", "calendar"]
+- !private ["So8NSObjectP", "dateFormat"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "lightGray"]
+- ["So8NSObjectP", "separator"]
+- !private ["So14NSSecureCodingP", "lightGray"]
+- ["So14NSSecureCodingP", "separator"]
+- ["15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO", "=="]
+- ["15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO", "Date"]
+- ["15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO", "__derived_enum_equals"]
+- ["15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO", "_rawHashValue"]
+- ["15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO", "day"]
+- ["15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO", "deinit"]
+- ["15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO", "hash"]
+- ["15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO", "hashValue"]
+- ["15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO", "monthHeader"]
+- ["15HorizonCalendar0B11ViewContentC20OverlayLayoutContextV", "CGRect"]
+- ["15HorizonCalendar0B11ViewContentC20OverlayLayoutContextV", "OverlaidItemLocation"]
+- ["15HorizonCalendar0B11ViewContentC20OverlayLayoutContextV", "availableBounds"]
+- ["15HorizonCalendar0B11ViewContentC20OverlayLayoutContextV", "init"]
+- ["15HorizonCalendar0B11ViewContentC20OverlayLayoutContextV", "overlaidItemFrame"]
+- ["15HorizonCalendar0B11ViewContentC20OverlayLayoutContextV", "overlaidItemLocation"]
+- !private ["Sk", "init"]
+- !private ["Sk", "lowerBound"]
+- !private ["Sk", "upperBound"]
+- !private ["SX", "init"]
+- !private ["SX", "lowerBound"]
+- !private ["SX", "upperBound"]
+- !private ["10Foundation20ReferenceConvertibleP", "current"]
+- !private ["10Foundation20ReferenceConvertibleP", "firstDate"]
+- !private ["10Foundation20ReferenceConvertibleP", "lastDate"]
+- !private ["10Foundation20ReferenceConvertibleP", "locale"]
+- !private ["ST", "init"]
+- !private ["ST", "lowerBound"]
+- !private ["ST", "map"]
+- !private ["ST", "upperBound"]
+- !private ["Sh", "init"]
+- !private ["Sh", "map"]
+- !private ["s10SetAlgebraP", "init"]
+- !private ["s10SetAlgebraP", "map"]
+- !private ["So7UIColorC", "lightGray"]
+- ["So7UIColorC", "separator"]
+- ["So12UIEdgeInsetsV", "zero"]
+- !private ["s26_ExpressibleByColorLiteralP", "lightGray"]
+- ["s26_ExpressibleByColorLiteralP", "separator"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "calendar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lightGray"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "separator"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "calendar"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dateFormat"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "lightGray"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "separator"]
+- !private ["s21_ObjectiveCBridgeableP", "current"]
+- !private ["s21_ObjectiveCBridgeableP", "firstDate"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "lastDate"]
+- !private ["s21_ObjectiveCBridgeableP", "locale"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- ["s21_ObjectiveCBridgeableP", "zero"]
+depends-nominal:
+- !private "SK"
+- "s7CVarArgP"
+- !private "10Foundation8CalendarV"
+- "15HorizonCalendar0B11ViewContentC"
+- !private "SN"
+- !private "Sl"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "So15NSDateFormatterC"
+- "15HorizonCalendar3DayV"
+- "15HorizonCalendar0B11ViewContentC21DayRangeLayoutContextV"
+- "15HorizonCalendar0B11ViewContentC32DaysOfTheWeekRowSeparatorOptionsV"
+- "Se"
+- "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "So11NSFormatterC"
+- "SH"
+- !private "s6HasherV"
+- !private "15HorizonCalendar011InternalAnyB9ItemModelO"
+- !private "10Foundation6LocaleV"
+- !private "15HorizonCalendar5MonthV"
+- !private "15HorizonCalendar12MonthsLayoutO"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "So14NSSecureCodingP"
+- "15HorizonCalendar0B11ViewContentC20OverlaidItemLocationO"
+- "15HorizonCalendar0B11ViewContentC20OverlayLayoutContextV"
+- !private "Sk"
+- !private "SX"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "Sh"
+- !private "s10SetAlgebraP"
+- "So7UIColorC"
+- "So12UIEdgeInsetsV"
+- "s26_ExpressibleByColorLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/Pods/Target Support Files/HorizonCalendar/HorizonCalendar-umbrella.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Pods.build/Debug-iphonesimulator/HorizonCalendar.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "6a2befb8309a23aba8283ccd2fee032e"

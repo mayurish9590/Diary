@@ -1,0 +1,176 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NoteViewCell"
+- "Theme"
+- "Current"
+- "VC"
+- "DB"
+- "Nib"
+- "KEYS"
+provides-nominal:
+- "5Dairy12NoteViewCellV"
+- "5Dairy5ThemeV"
+- "5Dairy5ThemeV10BackgroundV"
+- "5Dairy5ThemeV5AlertV"
+- "5Dairy7CurrentV"
+- "5Dairy2VCV"
+- "5Dairy2DBV"
+- "5Dairy3NibV"
+- "5Dairy4KEYSV"
+provides-member:
+- ["5Dairy12NoteViewCellV", ""]
+- ["5Dairy5ThemeV", ""]
+- ["5Dairy5ThemeV10BackgroundV", ""]
+- ["5Dairy5ThemeV5AlertV", ""]
+- ["5Dairy7CurrentV", ""]
+- ["5Dairy2VCV", ""]
+- ["5Dairy2DBV", ""]
+- ["5Dairy3NibV", ""]
+- ["5Dairy4KEYSV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "/"
+- "Current"
+- "DB"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "KEYS"
+- "Nib"
+- "NoteViewCell"
+- "StringLiteralType"
+- "Theme"
+- "UIColor"
+- "VC"
+depends-member:
+- ["5Dairy5ThemeV5AlertV", "UIColor"]
+- ["5Dairy5ThemeV5AlertV", "darkTheme"]
+- ["5Dairy5ThemeV5AlertV", "init"]
+- ["5Dairy5ThemeV5AlertV", "lightTheme"]
+- ["5Dairy5ThemeV5AlertV", "noteBookTheme"]
+- ["5Dairy5ThemeV10BackgroundV", "UIColor"]
+- ["5Dairy5ThemeV10BackgroundV", "darkTheme"]
+- ["5Dairy5ThemeV10BackgroundV", "init"]
+- ["5Dairy5ThemeV10BackgroundV", "lightTheme"]
+- ["5Dairy5ThemeV10BackgroundV", "noteBookTheme"]
+- ["s7CVarArgP", "init"]
+- ["5Dairy7CurrentV", "Int"]
+- ["5Dairy7CurrentV", "Theme"]
+- ["5Dairy7CurrentV", "UIColor"]
+- ["5Dairy7CurrentV", "alertBackgroundColor"]
+- ["5Dairy7CurrentV", "backgroundColor"]
+- ["5Dairy7CurrentV", "init"]
+- ["5Dairy7CurrentV", "lastNoteID"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["5Dairy2DBV", "emoji"]
+- ["5Dairy2DBV", "imageAttachment"]
+- ["5Dairy2DBV", "init"]
+- ["5Dairy2DBV", "notAvailable"]
+- ["5Dairy2DBV", "noteDescription"]
+- ["5Dairy2DBV", "noteID"]
+- ["5Dairy2DBV", "savingDate"]
+- ["5Dairy2DBV", "savingTime"]
+- ["5Dairy2DBV", "title"]
+- ["SQ", "init"]
+- ["SH", "init"]
+- ["8SideMenu18InitializableClassP", "init"]
+- ["5Dairy4KEYSV", "init"]
+- ["5Dairy4KEYSV", "keyCurrentTheme"]
+- ["So8NSCodingP", "init"]
+- ["So9NSCopyingP", "init"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectP", "init"]
+- ["So14NSSecureCodingP", "init"]
+- ["5Dairy3NibV", "deleteImagePopup"]
+- ["5Dairy3NibV", "emojiPopup"]
+- ["5Dairy3NibV", "imageAttachmentPopup"]
+- ["5Dairy3NibV", "init"]
+- ["5Dairy3NibV", "moreMenuPopup"]
+- ["5Dairy3NibV", "saveNoteAlert"]
+- ["5Dairy12NoteViewCellV", "CellReuseIdentifier"]
+- ["5Dairy12NoteViewCellV", "init"]
+- ["5Dairy12NoteViewCellV", "nibName"]
+- ["5Dairy5ThemeV", "Alert"]
+- ["5Dairy5ThemeV", "Background"]
+- ["5Dairy5ThemeV", "UIColor"]
+- ["5Dairy5ThemeV", "init"]
+- ["So7UIColorC", "init"]
+- ["5Dairy2VCV", "home"]
+- ["5Dairy2VCV", "init"]
+- ["5Dairy2VCV", "noteDetailVC"]
+- ["5Dairy2VCV", "saveNote"]
+- ["s26_ExpressibleByColorLiteralP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+depends-nominal:
+- "5Dairy5ThemeV5AlertV"
+- "5Dairy5ThemeV10BackgroundV"
+- "s7CVarArgP"
+- "5Dairy7CurrentV"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "5Dairy2DBV"
+- "SQ"
+- "SH"
+- "8SideMenu18InitializableClassP"
+- "5Dairy4KEYSV"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "So14NSSecureCodingP"
+- "5Dairy3NibV"
+- "5Dairy12NoteViewCellV"
+- "5Dairy5ThemeV"
+- "So7UIColorC"
+- "5Dairy2VCV"
+- "s26_ExpressibleByColorLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Modules/HorizonCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Headers/HorizonCalendar-umbrella.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Headers/HorizonCalendar-Swift.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Modules/module.modulemap"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1b7da13af6b75ed6b6aa7f47e04d0a17"

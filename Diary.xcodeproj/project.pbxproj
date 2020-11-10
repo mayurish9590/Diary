@@ -14,12 +14,15 @@
 		1CCEC7F8254C3D600058D769 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEC7F7254C3D600058D769 /* Themes.swift */; };
 		1CF96215254A97AA002F41BA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF96214254A97AA002F41BA /* GradientView.swift */; };
 		1CF96219254AD746002F41BA /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF96218254AD746002F41BA /* ViewControllerExtension.swift */; };
+		93143B7F255A5EB800C8BE5A /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93143B7E255A5EB800C8BE5A /* CalenderViewController.swift */; };
 		931644F6253EA65900D38A44 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931644F5253EA65900D38A44 /* DBManager.swift */; };
-		9334EA2E254984620087F107 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9334EA2C254984620087F107 /* Note+CoreDataClass.swift */; };
-		9334EA2F254984620087F107 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9334EA2D254984620087F107 /* Note+CoreDataProperties.swift */; };
+		9321E0DF2552EBF100DB4B0F /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321E0DE2552EBF100DB4B0F /* NoteModel.swift */; };
+		9321E0E22553B77100DB4B0F /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321E0E12553B77100DB4B0F /* ImageStorage.swift */; };
 		9339CD172525C5D000C53931 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339CD162525C5D000C53931 /* Constants.swift */; };
 		933B7C342535671900ACC4A7 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B7C332535671900ACC4A7 /* homeViewController.swift */; };
 		933B7C372535B92200ACC4A7 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B7C362535B92200ACC4A7 /* NewNoteViewController.swift */; };
+		933EC75025554277003785B7 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EC74F25554277003785B7 /* Note+CoreDataClass.swift */; };
+		933EC75125554277003785B7 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EC74E25554277003785B7 /* Note+CoreDataProperties.swift */; };
 		9358FA06254BE172008C430E /* DeleteImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9358FA05254BE172008C430E /* DeleteImage.xib */; };
 		9358FA08254BE244008C430E /* DeleteImageAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358FA07254BE244008C430E /* DeleteImageAttachment.swift */; };
 		9358FA0A254BE2AE008C430E /* DeleteimageAttachmentPr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358FA09254BE2AE008C430E /* DeleteimageAttachmentPr.swift */; };
@@ -58,12 +61,15 @@
 		1CF96214254A97AA002F41BA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1CF96218254AD746002F41BA /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		7194FA975BC4FF0FB51FCCC3 /* Pods-Dairy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dairy.debug.xcconfig"; path = "Target Support Files/Pods-Dairy/Pods-Dairy.debug.xcconfig"; sourceTree = "<group>"; };
+		93143B7E255A5EB800C8BE5A /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalenderViewController.swift; path = Diary/Alert/Calender/CalenderViewController.swift; sourceTree = SOURCE_ROOT; };
 		931644F5253EA65900D38A44 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
-		9334EA2C254984620087F107 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9334EA2D254984620087F107 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9321E0DE2552EBF100DB4B0F /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		9321E0E12553B77100DB4B0F /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
 		9339CD162525C5D000C53931 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		933B7C332535671900ACC4A7 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		933B7C362535B92200ACC4A7 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		933EC74E25554277003785B7 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "/Users/mayurishekhar/Documents/Diary  2 3/Diary/Utilties/Note+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		933EC74F25554277003785B7 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "/Users/mayurishekhar/Documents/Diary  2 3/Diary/Utilties/Note+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		9358FA05254BE172008C430E /* DeleteImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteImage.xib; sourceTree = "<group>"; };
 		9358FA07254BE244008C430E /* DeleteImageAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteImageAttachment.swift; sourceTree = "<group>"; };
 		9358FA09254BE2AE008C430E /* DeleteimageAttachmentPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteimageAttachmentPr.swift; sourceTree = "<group>"; };
@@ -111,13 +117,15 @@
 			children = (
 				1C67F60B254AFB6100069503 /* MenuViewController.swift */,
 			);
-			path = Menu;
+			name = Menu;
+			path = ../../Menu;
 			sourceTree = "<group>";
 		};
 		1C67F60E254AFD9E00069503 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
 				1C67F60F254AFDB400069503 /* ThemesViewController.swift */,
+				1CF96218254AD746002F41BA /* ViewControllerExtension.swift */,
 				1C880A9725504FBA00E53B6F /* ThemeTableViewCell.swift */,
 			);
 			path = Theme;
@@ -152,17 +160,34 @@
 		9312772925370C4A001520AC /* Utilties */ = {
 			isa = PBXGroup;
 			children = (
+				9321E0E02553B6E800DB4B0F /* FileManager */,
 				1CCEC7F0254C37C60058D769 /* Theme */,
-				9334EA2D254984620087F107 /* Note+CoreDataProperties.swift */,
-				9334EA2C254984620087F107 /* Note+CoreDataClass.swift */,
 				9339CD162525C5D000C53931 /* Constants.swift */,
+				933EC74F25554277003785B7 /* Note+CoreDataClass.swift */,
+				933EC74E25554277003785B7 /* Note+CoreDataProperties.swift */,
 				93F51741251DBF9B009FE8C2 /* SceneDelegate.swift */,
 				93F5173F251DBF9B009FE8C2 /* AppDelegate.swift */,
 				93E506A725219F7100517120 /* NoteTableViewCell.swift */,
 				1CF96214254A97AA002F41BA /* GradientView.swift */,
-				1CF96218254AD746002F41BA /* ViewControllerExtension.swift */,
 			);
 			path = Utilties;
+			sourceTree = "<group>";
+		};
+		93143B7C255A5C4100C8BE5A /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				93143B7E255A5EB800C8BE5A /* CalenderViewController.swift */,
+			);
+			name = Calender;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9321E0E02553B6E800DB4B0F /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				9321E0E12553B77100DB4B0F /* ImageStorage.swift */,
+			);
+			path = FileManager;
 			sourceTree = "<group>";
 		};
 		9329D91A251E00ED0004DB70 /* View */ = {
@@ -188,6 +213,7 @@
 		9329D91E251E07790004DB70 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9321E0DE2552EBF100DB4B0F /* NoteModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +239,7 @@
 		9390E3E72542F28600660C0E /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				93143B7C255A5C4100C8BE5A /* Calender */,
 				9358FA04254BE110008C430E /* DeleteImageAttachment */,
 				93DC6D0A25470B6D0092853F /* EmojiPopup */,
 				93FB98772546B79300126B37 /* MoreMenuPopup */,
@@ -466,7 +493,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -479,9 +507,11 @@
 				1C880A9825504FBA00E53B6F /* ThemeTableViewCell.swift in Sources */,
 				933B7C342535671900ACC4A7 /* homeViewController.swift in Sources */,
 				9358FA0A254BE2AE008C430E /* DeleteimageAttachmentPr.swift in Sources */,
+				93143B7F255A5EB800C8BE5A /* CalenderViewController.swift in Sources */,
 				1CF96219254AD746002F41BA /* ViewControllerExtension.swift in Sources */,
 				1CF96215254A97AA002F41BA /* GradientView.swift in Sources */,
 				93DC6D0C25470BAF0092853F /* EmojiPopup.swift in Sources */,
+				9321E0E22553B77100DB4B0F /* ImageStorage.swift in Sources */,
 				931644F6253EA65900D38A44 /* DBManager.swift in Sources */,
 				93FB987D2546B90E00126B37 /* MoreMenuPopupProtocol.swift in Sources */,
 				93FB987B2546B8DA00126B37 /* MoreMenuPopup.swift in Sources */,
@@ -494,15 +524,16 @@
 				9358FA08254BE244008C430E /* DeleteImageAttachment.swift in Sources */,
 				93F51742251DBF9B009FE8C2 /* SceneDelegate.swift in Sources */,
 				937E486C25384A4000D0E1F3 /* SaveNoteProtocol.swift in Sources */,
-				9334EA2F254984620087F107 /* Note+CoreDataProperties.swift in Sources */,
 				1C67F60C254AFB6100069503 /* MenuViewController.swift in Sources */,
+				933EC75025554277003785B7 /* Note+CoreDataClass.swift in Sources */,
 				9339CD172525C5D000C53931 /* Constants.swift in Sources */,
 				93B80EAA253D79320032DAC7 /* NoteModel.xcdatamodeld in Sources */,
 				93DC6D0E25470BCC0092853F /* EmoiPopupPr.swift in Sources */,
-				9334EA2E254984620087F107 /* Note+CoreDataClass.swift in Sources */,
+				9321E0DF2552EBF100DB4B0F /* NoteModel.swift in Sources */,
 				93DC6D132547E1F30092853F /* EmojiCollectionViewCell.swift in Sources */,
 				93E506A925219F7100517120 /* NoteTableViewCell.swift in Sources */,
 				1CCEC7F8254C3D600058D769 /* Themes.swift in Sources */,
+				933EC75125554277003785B7 /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

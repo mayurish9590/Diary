@@ -33,6 +33,24 @@ extension Themes {
       }
     }
     
+    
+    var alert: UIColor {
+         switch self {
+         case .Theme1:
+           return UIColor(named: "theme1alert") ?? UIColor.white
+         case .Theme2:
+           return  UIColor(named: "theme2alert") ?? UIColor.blue
+         case .Theme3:
+           return UIColor(named: "theme3alert") ??  UIColor.white
+         }
+       }
+    
+    
+    
+    
+    
+    
+    
     var Text: UIColor {
       switch self {
       case .Theme1:

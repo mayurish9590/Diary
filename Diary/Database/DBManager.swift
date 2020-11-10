@@ -16,7 +16,7 @@ class DMBManger {
     
    static var nsobjContext : NSManagedObjectContext?
  
-    static func saveToDB(note : Note)
+    static func saveToDB(note: NoteModel)
     {
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
@@ -33,7 +33,7 @@ class DMBManger {
             NSEntityDescription.entity(forEntityName: "Note",
                                        in: managedContext)!
           
-          let noteObj = note
+        let noteObj = NSManagedObject(entity: entity, insertInto: managedContext)
           
           
          
@@ -41,8 +41,7 @@ class DMBManger {
         noteObj.setValue(note.title, forKeyPath: DB.title)
         noteObj.setValue(note.emoji, forKeyPath: DB.emoji)
         noteObj.setValue(note.noteDescription, forKeyPath: DB.noteDescription)
-        if note.imageAttachment != nil{
-            noteObj.setValue(note.imageAttachment, forKey: DB.imageAttachment)}
+      noteObj.setValue(note.imageAttachment, forKey: DB.imageAttachment)
         noteObj.setValue(note.savingDate, forKey: DB.savingDate)
         noteObj.setValue(note.savingTime, forKey: DB.savingTime)
         
@@ -58,11 +57,11 @@ class DMBManger {
        
         
     }
-    static func fetchAllNote() -> [Note]
+    static func fetchAllNote() -> [NoteModel]?
     {
      
         var notes : [Note] = []
-    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return notes}
+    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil}
       
     let managedContext = appDelegate.persistentContainer.viewContext
                 
@@ -74,12 +73,18 @@ class DMBManger {
               } catch let error as NSError {
                 print("Could not fetch. \(error), \(error.userInfo)")
          }
+        var noteModel: [NoteModel] = []
+        for note in notes {
+            noteModel.append(NoteModel(emoji: note.emoji
+                , imageAttachment: note.imageAttachment, noteDescription: note.noteDescription, noteID: Int(note.noteID), savingDate: note.savingDate!, savingTime: note.savingTime, title: note.title
+            ))
+        }
         
-        return notes
-
+        
+        return noteModel
     }
     
-    static func delete(note : Note)
+    static func delete(note : NoteModel)
     {
        guard let appDelegate =
               UIApplication.shared.delegate as? AppDelegate else {
@@ -88,17 +93,31 @@ class DMBManger {
    
     let managedContext =
               appDelegate.persistentContainer.viewContext
-      managedContext.delete(note)
-    print("deleted from DB suceefully")
-   
+     
+       
         
+        var noteObj  : [Note] = []
+       let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
+        fetchRequest.predicate = NSPredicate(format: "%K == %@ AND %K == %@ AND %K == %@", argumentArray: [DB.title, note.title!, DB.savingDate, note.savingDate, DB.noteDescription, note.noteDescription!])
+        
+  do {
+                 noteObj = try managedContext.fetch(fetchRequest)
+                     } catch let error as NSError {
+                       print("Could not fetch. \(error), \(error.userInfo)")
+                }
+    
+        if (noteObj.count != 0){
+        
+            try managedContext.delete(noteObj.first! )
+          
+        }
     }
    
     
     
     static func update(note : Note)
     {
-       guard let appDelegate =
+      /* guard let appDelegate =
                     UIApplication.shared.delegate as? AppDelegate else {
                     return
                   }
@@ -108,7 +127,7 @@ class DMBManger {
         
      let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
        
-        
+      */
         
     }
     

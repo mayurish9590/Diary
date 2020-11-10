@@ -1,0 +1,185 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CalendarItemViewModelEquatable"
+- "AnyCalendarItem"
+- "CalendarItem"
+provides-nominal:
+- "15HorizonCalendar0B22ItemViewModelEquatableP"
+- "15HorizonCalendar03AnyB4ItemP"
+- "15HorizonCalendar0B4ItemV"
+provides-member:
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", ""]
+- ["15HorizonCalendar03AnyB4ItemP", ""]
+- ["15HorizonCalendar0B4ItemV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- "AnyCalendarItem"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CalendarItem"
+- "CalendarItemViewModelEquatable"
+- "CastingPrecedence"
+- "Equatable"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "Self"
+- "String"
+- !private "StringLiteralType"
+- "UIView"
+- "Void"
+- !private "preconditionFailure"
+depends-member:
+- ["15HorizonCalendar03AnyB4ItemP", "Bool"]
+- !private ["15HorizonCalendar03AnyB4ItemP", "Self"]
+- ["15HorizonCalendar03AnyB4ItemP", "String"]
+- ["15HorizonCalendar03AnyB4ItemP", "UIView"]
+- ["15HorizonCalendar03AnyB4ItemP", ""]
+- !private ["15HorizonCalendar03AnyB4ItemP", "_buildView"]
+- !private ["15HorizonCalendar03AnyB4ItemP", "_updateHighlightState"]
+- !private ["15HorizonCalendar03AnyB4ItemP", "_updateViewModel"]
+- ["15HorizonCalendar03AnyB4ItemP", "buildView"]
+- ["15HorizonCalendar03AnyB4ItemP", "isViewModel"]
+- !private ["15HorizonCalendar03AnyB4ItemP", "preconditionFailure"]
+- ["15HorizonCalendar03AnyB4ItemP", "reuseIdentifier"]
+- ["15HorizonCalendar03AnyB4ItemP", "updateHighlightState"]
+- ["15HorizonCalendar03AnyB4ItemP", "updateViewModel"]
+- !private ["15HorizonCalendar03AnyB4ItemP", "viewModel"]
+- !private ["SK", "init"]
+- !private ["s7CVarArgP", "init"]
+- ["15HorizonCalendar0B4ItemV", "Bool"]
+- ["15HorizonCalendar0B4ItemV", "CalendarItemViewModelEquatable"]
+- !private ["15HorizonCalendar0B4ItemV", "Self"]
+- ["15HorizonCalendar0B4ItemV", "String"]
+- ["15HorizonCalendar0B4ItemV", "UIView"]
+- ["15HorizonCalendar0B4ItemV", "Void"]
+- !private ["15HorizonCalendar0B4ItemV", "_buildView"]
+- !private ["15HorizonCalendar0B4ItemV", "_updateHighlightState"]
+- !private ["15HorizonCalendar0B4ItemV", "_updateViewModel"]
+- ["15HorizonCalendar0B4ItemV", "buildView"]
+- ["15HorizonCalendar0B4ItemV", "deinit"]
+- ["15HorizonCalendar0B4ItemV", "init"]
+- ["15HorizonCalendar0B4ItemV", "isViewModel"]
+- !private ["15HorizonCalendar0B4ItemV", "preconditionFailure"]
+- ["15HorizonCalendar0B4ItemV", "reuseIdentifier"]
+- ["15HorizonCalendar0B4ItemV", "updateHighlightState"]
+- ["15HorizonCalendar0B4ItemV", "updateViewModel"]
+- ["15HorizonCalendar0B4ItemV", "viewModel"]
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", "Bool"]
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", "CalendarItemViewModelEquatable"]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "Self"]
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", "String"]
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", "UIView"]
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", ""]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "_buildView"]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "_updateHighlightState"]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "_updateViewModel"]
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", "buildView"]
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", "isViewModel"]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "preconditionFailure"]
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", "reuseIdentifier"]
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", "updateHighlightState"]
+- ["15HorizonCalendar0B22ItemViewModelEquatableP", "updateViewModel"]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "viewModel"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["Se", "init"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "init"]
+- !private ["SQ", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["Sm", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- "15HorizonCalendar03AnyB4ItemP"
+- !private "SK"
+- !private "s7CVarArgP"
+- "15HorizonCalendar0B4ItemV"
+- "15HorizonCalendar0B22ItemViewModelEquatableP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- !private "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/Pods/Target Support Files/HorizonCalendar/HorizonCalendar-umbrella.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Pods.build/Debug-iphonesimulator/HorizonCalendar.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "54274963b91a8884921690414e8489b1"

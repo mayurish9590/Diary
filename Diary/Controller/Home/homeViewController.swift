@@ -9,21 +9,21 @@
 import UIKit
 import Foundation
 import SideMenu
+import HorizonCalendar
+
 class homeViewController: UIViewController {
     @IBOutlet weak var noteTableView: UITableView!
     
-    var notes : [Note]?
+    var notes : [NoteModel]?
     let cellSpacingHeight: CGFloat = 50
     private var currentTheme = Themes.currentTheme()
     override func viewDidLoad() {
         super.viewDidLoad()
         noteTableView.register(UINib(nibName: NoteViewCell.nibName, bundle: nil), forCellReuseIdentifier: NoteViewCell.CellReuseIdentifier)
-       // self.view.backgroundColor = Current.backgroundColor
+      
         noteTableView.dataSource = self
         noteTableView.delegate = self
-        //noteTableView.backgroundColor = Current.backgroundColor
         updateTheme()
-
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateTheme), name: Notification.Name("Theme"), object: nil)
 
     }
@@ -31,12 +31,12 @@ class homeViewController: UIViewController {
     @objc func updateTheme() {
         currentTheme = Themes.currentTheme()
         self.view.backgroundColor = self.currentTheme.background
+        
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
-       
-            self.notes = DMBManger.fetchAllNote()
+        self.notes = DMBManger.fetchAllNote()
         DispatchQueue.main.async {
             self.noteTableView.reloadData()
         }
@@ -45,12 +45,11 @@ class homeViewController: UIViewController {
     }
     
     @IBAction func onClickMenu(_ sender: Any) {
-        if let menuVc = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
+     if let menuVc = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
             let menu = SideMenuNavigationController(rootViewController:menuVc )
             menu.leftSide = true
             menu.navigationBar.isHidden = true
             present(menu, animated: true, completion: nil)
-
         }
     }
     
@@ -74,9 +73,10 @@ extension homeViewController : UITableViewDataSource {
         cell.bacgroundImageView.isHidden = false
         cell.desciptionLabel.isHidden = false
 
-        cell.emojiImageView.image = UIImage(named: notes![indexPath.section].emoji!)
+        if let note = notes{
+        cell.emojiImageView.image = UIImage(named: note[indexPath.section].emoji!)
   
-        if let cellTitle = notes![indexPath.section].title{
+        if let cellTitle = note[indexPath.section].title{
             if (cellTitle != DB.notAvailable){
                 cell.titleLabel.text = cellTitle } else{
                 cell.titleLabel.isHidden = true            }
@@ -85,7 +85,7 @@ extension homeViewController : UITableViewDataSource {
             cell.titleLabel.isHidden = true
         }
         
-        if let cellDesc = notes![indexPath.section].noteDescription {
+        if let cellDesc = note[indexPath.section].noteDescription {
             if (cellDesc != DB.notAvailable){
                 cell.desciptionLabel.text = cellDesc }
             else{
@@ -95,24 +95,30 @@ extension homeViewController : UITableViewDataSource {
             {
                 cell.desciptionLabel.isHidden = true
             }
-        if let cellDate = notes![indexPath.section].savingDate
-        {
-            cell.dateLabel.text = cellDate
-        }
         
-        if let cellEmoji = notes![indexPath.section].emoji{
+            let  formatter = DateFormatter()
+            formatter.setLocalizedDateFormatFromTemplate("dd-MM-yyyy")
+         
+            cell.dateLabel.text = formatter.string(from: note[indexPath.section].savingDate)
+            //note[indexPath.section].savingDate.description
+      
+        
+        if let cellEmoji = note[indexPath.section].emoji{
             if (cellEmoji != DB.notAvailable)
             {
                 cell.emojiImageView.image = UIImage(named: cellEmoji)
             }
         }
-        if let cellImage = notes![indexPath.section].imageAttachment{
+        if let cellImage = note[indexPath.section].imageAttachment{
                   
-            cell.bacgroundImageView.image = UIImage(data: cellImage)
+            cell.bacgroundImageView.image = UIImage(contentsOfFile: cellImage)
         } else {
             cell.descriptionViewConstaints.constant = 0
             cell.bacgroundImageView.isHidden = true
         }
+        
+        }
+    
         
         return cell
 

@@ -1,0 +1,89 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "InternalAnyCalendarItemModel"
+provides-nominal:
+- "15HorizonCalendar011InternalAnyB9ItemModelO"
+provides-member:
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyCalendarItem"
+- "AnyCalendarItemModel"
+- "Bool"
+- !private "BooleanLiteralType"
+- "InternalAnyCalendarItemModel"
+- "Self"
+- "UIView"
+- "Void"
+- "_CalendarItemViewDifferentiator"
+depends-member:
+- !private ["15HorizonCalendar03AnyB4ItemP", "buildView"]
+- !private ["15HorizonCalendar03AnyB4ItemP", "isViewModel"]
+- !private ["15HorizonCalendar03AnyB4ItemP", "reuseIdentifier"]
+- !private ["15HorizonCalendar03AnyB4ItemP", "updateHighlightState"]
+- !private ["15HorizonCalendar03AnyB4ItemP", "updateViewModel"]
+- !private ["15HorizonCalendar03AnyB9ItemModelP", "_isViewModel"]
+- !private ["15HorizonCalendar03AnyB9ItemModelP", "_itemViewDifferentiator"]
+- !private ["15HorizonCalendar03AnyB9ItemModelP", "_makeView"]
+- !private ["15HorizonCalendar03AnyB9ItemModelP", "_setViewModel"]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "buildView"]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "isViewModel"]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "reuseIdentifier"]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "updateHighlightState"]
+- !private ["15HorizonCalendar0B22ItemViewModelEquatableP", "updateViewModel"]
+- !private ["SQ", "legacyReuseIdentifier"]
+- !private ["SH", "legacyReuseIdentifier"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "AnyCalendarItem"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "AnyCalendarItemModel"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "Bool"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "Self"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "UIView"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "Void"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "_CalendarItemViewDifferentiator"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "isViewModelEqualToViewModelOfOther"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "itemModel"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "itemViewDifferentiator"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "legacy"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "makeView"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "setViewModelOnViewOfSameType"]
+- ["15HorizonCalendar011InternalAnyB9ItemModelO", "updateHighlightState"]
+- !private ["15HorizonCalendar01_B22ItemViewDifferentiatorO", "legacyReuseIdentifier"]
+depends-nominal:
+- !private "15HorizonCalendar03AnyB4ItemP"
+- !private "15HorizonCalendar03AnyB9ItemModelP"
+- !private "15HorizonCalendar0B22ItemViewModelEquatableP"
+- !private "SQ"
+- !private "SH"
+- "15HorizonCalendar011InternalAnyB9ItemModelO"
+- !private "15HorizonCalendar01_B22ItemViewDifferentiatorO"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/Pods/Target Support Files/HorizonCalendar/HorizonCalendar-umbrella.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Pods.build/Debug-iphonesimulator/HorizonCalendar.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d148345d7a9107c2d4cdfa52b3bfb9fd"

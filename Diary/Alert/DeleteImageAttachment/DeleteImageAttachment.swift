@@ -33,6 +33,7 @@ class DeleteImageAttachment: UIView {
           containerView.layer.borderColor = UIColor.white.cgColor
           containerView.layer.borderWidth = 2
           
+        containerView.backgroundColor = Themes.currentTheme().alert
           parentView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
           parentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
           

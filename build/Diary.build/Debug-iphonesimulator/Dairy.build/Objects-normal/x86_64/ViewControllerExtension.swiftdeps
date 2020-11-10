@@ -1,0 +1,312 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "topbarHeight"]
+provides-dynamic-lookup:
+- "topbarHeight"
+depends-top-level:
+- !private "+"
+- !private "??"
+- "CGFloat"
+- !private "FloatLiteralType"
+- "UIViewController"
+depends-member:
+- !private ["7SwiftUI10AnimatableP", "height"]
+- !private ["So15CALayerDelegateP", "frame"]
+- !private ["So15CALayerDelegateP", "window"]
+- !private ["So15CALayerDelegateP", "windowScene"]
+- !private ["So6CGRectV", "height"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "navigationBar"]
+- !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "statusBarFrame"]
+- !private ["s7CVarArgP", "statusBarManager"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "window"]
+- !private ["s7CVarArgP", "windowScene"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "statusBarFrame"]
+- !private ["s28CustomDebugStringConvertibleP", "statusBarManager"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "windowScene"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "window"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "navigationBar"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "statusBarFrame"]
+- !private ["s23CustomStringConvertibleP", "statusBarManager"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "window"]
+- !private ["s23CustomStringConvertibleP", "windowScene"]
+- !private ["Se", "height"]
+- !private ["Se", "window"]
+- !private ["SE", "height"]
+- !private ["SE", "window"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "height"]
+- !private ["SQ", "navigationBar"]
+- !private ["SQ", "navigationController"]
+- !private ["SQ", "statusBarFrame"]
+- !private ["SQ", "statusBarManager"]
+- !private ["SQ", "view"]
+- !private ["SQ", "window"]
+- !private ["SQ", "windowScene"]
+- !private ["s23ExpressibleByNilLiteralP", "window"]
+- !private ["7SwiftUI7GestureP", "window"]
+- !private ["SH", "frame"]
+- !private ["SH", "navigationBar"]
+- !private ["SH", "navigationController"]
+- !private ["SH", "statusBarFrame"]
+- !private ["SH", "statusBarManager"]
+- !private ["SH", "view"]
+- !private ["SH", "window"]
+- !private ["SH", "windowScene"]
+- !private ["8SideMenu18InitializableClassP", "frame"]
+- !private ["8SideMenu18InitializableClassP", "navigationBar"]
+- !private ["8SideMenu18InitializableClassP", "navigationController"]
+- !private ["8SideMenu18InitializableClassP", "statusBarFrame"]
+- !private ["8SideMenu18InitializableClassP", "statusBarManager"]
+- !private ["8SideMenu18InitializableClassP", "view"]
+- !private ["8SideMenu18InitializableClassP", "window"]
+- !private ["8SideMenu18InitializableClassP", "windowScene"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "navigationBar"]
+- !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "window"]
+- !private ["So8NSCodingP", "windowScene"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- ["So8NSObjectC", "CGFloat"]
+- !private ["So8NSObjectC", "frame"]
+- !private ["So8NSObjectC", "navigationBar"]
+- !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "statusBarFrame"]
+- !private ["So8NSObjectC", "statusBarManager"]
+- ["So8NSObjectC", "topbarHeight"]
+- !private ["So8NSObjectC", "view"]
+- !private ["So8NSObjectC", "window"]
+- !private ["So8NSObjectC", "windowScene"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "navigationBar"]
+- !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "statusBarFrame"]
+- !private ["So8NSObjectP", "statusBarManager"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "window"]
+- !private ["So8NSObjectP", "windowScene"]
+- !private ["Sq", "window"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So29UIAccessibilityIdentificationP", "window"]
+- !private ["So29UIAccessibilityIdentificationP", "windowScene"]
+- !private ["So12UIAppearanceP", "frame"]
+- !private ["So12UIAppearanceP", "window"]
+- !private ["So12UIAppearanceP", "windowScene"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "navigationBar"]
+- !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "window"]
+- !private ["So21UIAppearanceContainerP", "windowScene"]
+- !private ["So16UIBarPositioningP", "frame"]
+- !private ["So18UIContentContainerP", "navigationBar"]
+- !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- !private ["So17UICoordinateSpaceP", "window"]
+- !private ["So17UICoordinateSpaceP", "windowScene"]
+- !private ["So13UIDynamicItemP", "frame"]
+- !private ["So13UIDynamicItemP", "window"]
+- !private ["So13UIDynamicItemP", "windowScene"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "navigationBar"]
+- !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "window"]
+- !private ["So18UIFocusEnvironmentP", "windowScene"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So11UIFocusItemP", "window"]
+- !private ["So11UIFocusItemP", "windowScene"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "window"]
+- !private ["So20UIFocusItemContainerP", "windowScene"]
+- !private ["So24UILargeContentViewerItemP", "frame"]
+- !private ["So24UILargeContentViewerItemP", "window"]
+- !private ["So24UILargeContentViewerItemP", "windowScene"]
+- !private ["So15UINavigationBarC", "frame"]
+- !private ["So22UINavigationControllerC", "navigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "statusBarManager"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "window"]
+- !private ["So30UIPasteConfigurationSupportingP", "windowScene"]
+- ["So11UIResponderC", "CGFloat"]
+- !private ["So11UIResponderC", "frame"]
+- !private ["So11UIResponderC", "navigationBar"]
+- !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "statusBarManager"]
+- ["So11UIResponderC", "topbarHeight"]
+- !private ["So11UIResponderC", "view"]
+- !private ["So11UIResponderC", "window"]
+- !private ["So11UIResponderC", "windowScene"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "statusBarManager"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "windowScene"]
+- !private ["So7UISceneC", "statusBarManager"]
+- !private ["So16UIStateRestoringP", "navigationBar"]
+- !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So18UIStatusBarManagerC", "statusBarFrame"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "navigationBar"]
+- !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "window"]
+- !private ["So18UITraitEnvironmentP", "windowScene"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "navigationBar"]
+- !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "statusBarManager"]
+- !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So23UIUserActivityRestoringP", "window"]
+- !private ["So23UIUserActivityRestoringP", "windowScene"]
+- !private ["So6UIViewC", "frame"]
+- !private ["So6UIViewC", "window"]
+- !private ["So6UIViewC", "windowScene"]
+- ["So16UIViewControllerC", "CGFloat"]
+- !private ["So16UIViewControllerC", "navigationBar"]
+- !private ["So16UIViewControllerC", "navigationController"]
+- ["So16UIViewControllerC", "topbarHeight"]
+- !private ["So16UIViewControllerC", "view"]
+- !private ["So8UIWindowC", "windowScene"]
+- !private ["So13UIWindowSceneC", "statusBarManager"]
+- !private ["7SwiftUI4ViewP", "window"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarFrame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "windowScene"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "frame"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationBar"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "statusBarFrame"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "statusBarManager"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "windowScene"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "window"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "frame"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "window"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "windowScene"]
+depends-nominal:
+- !private "7SwiftUI10AnimatableP"
+- !private "So15CALayerDelegateP"
+- !private "So6CGRectV"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "7SwiftUI7GestureP"
+- !private "SH"
+- !private "8SideMenu18InitializableClassP"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "Sq"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So16UIBarPositioningP"
+- !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So24UILargeContentViewerItemP"
+- !private "So15UINavigationBarC"
+- !private "So22UINavigationControllerC"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So7UISceneC"
+- !private "So16UIStateRestoringP"
+- !private "So18UIStatusBarManagerC"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So8UIWindowC"
+- !private "So13UIWindowSceneC"
+- !private "7SwiftUI4ViewP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Modules/HorizonCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Headers/HorizonCalendar-umbrella.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Headers/HorizonCalendar-Swift.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Modules/module.modulemap"
+- "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1e7392e61375d10e6fb81e2fff6446de"

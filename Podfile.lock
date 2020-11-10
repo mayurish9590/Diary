@@ -1,20 +1,24 @@
 PODS:
+  - HorizonCalendar (1.6.0)
   - SideMenu (6.5.0)
   - SwiftLint (0.40.3)
 
 DEPENDENCIES:
+  - HorizonCalendar
   - SideMenu
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - HorizonCalendar
     - SideMenu
     - SwiftLint
 
 SPEC CHECKSUMS:
+  HorizonCalendar: 4353580edcd953506166d5f6b0f1c995baa75029
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
 
-PODFILE CHECKSUM: 81976eacac12e880bb226c7b8f75c5489ec0d736
+PODFILE CHECKSUM: 67b1ccfad056619106c64128673dd9a2e071b0f8
 
 COCOAPODS: 1.9.3
