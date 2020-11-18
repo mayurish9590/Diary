@@ -21,8 +21,6 @@
 		9339CD172525C5D000C53931 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339CD162525C5D000C53931 /* Constants.swift */; };
 		933B7C342535671900ACC4A7 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B7C332535671900ACC4A7 /* homeViewController.swift */; };
 		933B7C372535B92200ACC4A7 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B7C362535B92200ACC4A7 /* NewNoteViewController.swift */; };
-		933EC75025554277003785B7 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EC74F25554277003785B7 /* Note+CoreDataClass.swift */; };
-		933EC75125554277003785B7 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EC74E25554277003785B7 /* Note+CoreDataProperties.swift */; };
 		9358FA06254BE172008C430E /* DeleteImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9358FA05254BE172008C430E /* DeleteImage.xib */; };
 		9358FA08254BE244008C430E /* DeleteImageAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358FA07254BE244008C430E /* DeleteImageAttachment.swift */; };
 		9358FA0A254BE2AE008C430E /* DeleteimageAttachmentPr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358FA09254BE2AE008C430E /* DeleteimageAttachmentPr.swift */; };
@@ -31,6 +29,11 @@
 		9390E3EB2542F52600660C0E /* ImageAttachmentPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9390E3EA2542F52600660C0E /* ImageAttachmentPopup.swift */; };
 		9390E3EF2542F57D00660C0E /* ImageAttachmentPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9390E3EE2542F57D00660C0E /* ImageAttachmentPopup.xib */; };
 		93B80EAA253D79320032DAC7 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93B80EA8253D79320032DAC7 /* NoteModel.xcdatamodeld */; };
+		93DC22AB255CEDC6003E7C3C /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC22A9255CEDC6003E7C3C /* Note+CoreDataClass.swift */; };
+		93DC22AC255CEDC6003E7C3C /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC22AA255CEDC6003E7C3C /* Note+CoreDataProperties.swift */; };
+		93DC22B3255D0906003E7C3C /* SortPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DC22B2255D0906003E7C3C /* SortPopupView.xib */; };
+		93DC22B5255D0969003E7C3C /* SortPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC22B4255D0969003E7C3C /* SortPopup.swift */; };
+		93DC22B7255D099A003E7C3C /* SortPopupPr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC22B6255D099A003E7C3C /* SortPopupPr.swift */; };
 		93DC6D0C25470BAF0092853F /* EmojiPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC6D0B25470BAF0092853F /* EmojiPopup.swift */; };
 		93DC6D0E25470BCC0092853F /* EmoiPopupPr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC6D0D25470BCC0092853F /* EmoiPopupPr.swift */; };
 		93DC6D1025470BED0092853F /* EmojiPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DC6D0F25470BED0092853F /* EmojiPopup.xib */; };
@@ -48,11 +51,10 @@
 		93FB98792546B88900126B37 /* MoreMenuPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FB98782546B88900126B37 /* MoreMenuPopup.xib */; };
 		93FB987B2546B8DA00126B37 /* MoreMenuPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FB987A2546B8DA00126B37 /* MoreMenuPopup.swift */; };
 		93FB987D2546B90E00126B37 /* MoreMenuPopupProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FB987C2546B90E00126B37 /* MoreMenuPopupProtocol.swift */; };
-		F389B66CD60AAC877E5FFAD8 /* Pods_Dairy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0577FD8AB961EC77D5AF4CA6 /* Pods_Dairy.framework */; };
+		EDE6BDCBD9918D498BB6138E /* Pods_Dairy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D381E452500B6A201A83FB01 /* Pods_Dairy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0577FD8AB961EC77D5AF4CA6 /* Pods_Dairy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dairy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C67F60B254AFB6100069503 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1C67F60F254AFDB400069503 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		1C880A9725504FBA00E53B6F /* ThemeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTableViewCell.swift; sourceTree = "<group>"; };
@@ -60,7 +62,6 @@
 		1CCEC7F7254C3D600058D769 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		1CF96214254A97AA002F41BA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1CF96218254AD746002F41BA /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
-		7194FA975BC4FF0FB51FCCC3 /* Pods-Dairy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dairy.debug.xcconfig"; path = "Target Support Files/Pods-Dairy/Pods-Dairy.debug.xcconfig"; sourceTree = "<group>"; };
 		93143B7E255A5EB800C8BE5A /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalenderViewController.swift; path = Diary/Alert/Calender/CalenderViewController.swift; sourceTree = SOURCE_ROOT; };
 		931644F5253EA65900D38A44 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		9321E0DE2552EBF100DB4B0F /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
@@ -68,8 +69,6 @@
 		9339CD162525C5D000C53931 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		933B7C332535671900ACC4A7 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		933B7C362535B92200ACC4A7 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
-		933EC74E25554277003785B7 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "/Users/mayurishekhar/Documents/Diary  2 3/Diary/Utilties/Note+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		933EC74F25554277003785B7 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "/Users/mayurishekhar/Documents/Diary  2 3/Diary/Utilties/Note+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		9358FA05254BE172008C430E /* DeleteImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteImage.xib; sourceTree = "<group>"; };
 		9358FA07254BE244008C430E /* DeleteImageAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteImageAttachment.swift; sourceTree = "<group>"; };
 		9358FA09254BE2AE008C430E /* DeleteimageAttachmentPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteimageAttachmentPr.swift; sourceTree = "<group>"; };
@@ -78,6 +77,11 @@
 		9390E3EA2542F52600660C0E /* ImageAttachmentPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAttachmentPopup.swift; sourceTree = "<group>"; };
 		9390E3EE2542F57D00660C0E /* ImageAttachmentPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAttachmentPopup.xib; sourceTree = "<group>"; };
 		93B80EA9253D79320032DAC7 /* NoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteModel.xcdatamodel; sourceTree = "<group>"; };
+		93DC22A9255CEDC6003E7C3C /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "/Users/mayurishekhar/Diary/Diary/Utilties/FileManager/Note+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		93DC22AA255CEDC6003E7C3C /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "/Users/mayurishekhar/Diary/Diary/Utilties/FileManager/Note+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		93DC22B2255D0906003E7C3C /* SortPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SortPopupView.xib; path = Diary/Alert/Sort/SortPopupView.xib; sourceTree = SOURCE_ROOT; };
+		93DC22B4255D0969003E7C3C /* SortPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SortPopup.swift; path = Diary/Alert/Sort/SortPopup.swift; sourceTree = SOURCE_ROOT; };
+		93DC22B6255D099A003E7C3C /* SortPopupPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortPopupPr.swift; sourceTree = "<group>"; };
 		93DC6D0B25470BAF0092853F /* EmojiPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPopup.swift; sourceTree = "<group>"; };
 		93DC6D0D25470BCC0092853F /* EmoiPopupPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoiPopupPr.swift; sourceTree = "<group>"; };
 		93DC6D0F25470BED0092853F /* EmojiPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiPopup.xib; sourceTree = "<group>"; };
@@ -97,7 +101,9 @@
 		93FB98782546B88900126B37 /* MoreMenuPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreMenuPopup.xib; sourceTree = "<group>"; };
 		93FB987A2546B8DA00126B37 /* MoreMenuPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMenuPopup.swift; sourceTree = "<group>"; };
 		93FB987C2546B90E00126B37 /* MoreMenuPopupProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMenuPopupProtocol.swift; sourceTree = "<group>"; };
-		9E91787F419F3224FA7667C6 /* Pods-Dairy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dairy.release.xcconfig"; path = "Target Support Files/Pods-Dairy/Pods-Dairy.release.xcconfig"; sourceTree = "<group>"; };
+		BED389C24E40A71C0043ACDF /* Pods-Dairy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dairy.debug.xcconfig"; path = "Target Support Files/Pods-Dairy/Pods-Dairy.debug.xcconfig"; sourceTree = "<group>"; };
+		D381E452500B6A201A83FB01 /* Pods_Dairy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dairy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7BADDDAE88A0919FB4BEF14 /* Pods-Dairy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dairy.release.xcconfig"; path = "Target Support Files/Pods-Dairy/Pods-Dairy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F389B66CD60AAC877E5FFAD8 /* Pods_Dairy.framework in Frameworks */,
+				EDE6BDCBD9918D498BB6138E /* Pods_Dairy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,16 +149,16 @@
 		1F277E84864ED3EF3BB0BB82 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7194FA975BC4FF0FB51FCCC3 /* Pods-Dairy.debug.xcconfig */,
-				9E91787F419F3224FA7667C6 /* Pods-Dairy.release.xcconfig */,
+				BED389C24E40A71C0043ACDF /* Pods-Dairy.debug.xcconfig */,
+				F7BADDDAE88A0919FB4BEF14 /* Pods-Dairy.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7FE34A4F453E7CC253420F9B /* Frameworks */ = {
+		86E6E2EA6A345B50318D09C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0577FD8AB961EC77D5AF4CA6 /* Pods_Dairy.framework */,
+				D381E452500B6A201A83FB01 /* Pods_Dairy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,8 +169,6 @@
 				9321E0E02553B6E800DB4B0F /* FileManager */,
 				1CCEC7F0254C37C60058D769 /* Theme */,
 				9339CD162525C5D000C53931 /* Constants.swift */,
-				933EC74F25554277003785B7 /* Note+CoreDataClass.swift */,
-				933EC74E25554277003785B7 /* Note+CoreDataProperties.swift */,
 				93F51741251DBF9B009FE8C2 /* SceneDelegate.swift */,
 				93F5173F251DBF9B009FE8C2 /* AppDelegate.swift */,
 				93E506A725219F7100517120 /* NoteTableViewCell.swift */,
@@ -185,6 +189,8 @@
 		9321E0E02553B6E800DB4B0F /* FileManager */ = {
 			isa = PBXGroup;
 			children = (
+				93DC22A9255CEDC6003E7C3C /* Note+CoreDataClass.swift */,
+				93DC22AA255CEDC6003E7C3C /* Note+CoreDataProperties.swift */,
 				9321E0E12553B77100DB4B0F /* ImageStorage.swift */,
 			);
 			path = FileManager;
@@ -193,8 +199,8 @@
 		9329D91A251E00ED0004DB70 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				93F51745251DBF9B009FE8C2 /* Main.storyboard */,
 				93E506A825219F7100517120 /* NoteTableViewCell.xib */,
+				93F51745251DBF9B009FE8C2 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 				93DC6D0A25470B6D0092853F /* EmojiPopup */,
 				93FB98772546B79300126B37 /* MoreMenuPopup */,
 				9390E3EC2542F53200660C0E /* ImageAttachmentPopup */,
+				93DC22B1255D050E003E7C3C /* Sort */,
 				9390E3E82542F2E400660C0E /* SaveNote */,
 			);
 			path = Alert;
@@ -286,6 +293,17 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		93DC22B1255D050E003E7C3C /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				93DC22B2255D0906003E7C3C /* SortPopupView.xib */,
+				93DC22B4255D0969003E7C3C /* SortPopup.swift */,
+				93DC22B6255D099A003E7C3C /* SortPopupPr.swift */,
+			);
+			name = Sort;
+			path = SaveNote;
+			sourceTree = "<group>";
+		};
 		93DC6D0A25470B6D0092853F /* EmojiPopup */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,7 +322,7 @@
 				93F5173E251DBF9B009FE8C2 /* Diary */,
 				93F5173D251DBF9B009FE8C2 /* Products */,
 				1F277E84864ED3EF3BB0BB82 /* Pods */,
-				7FE34A4F453E7CC253420F9B /* Frameworks */,
+				86E6E2EA6A345B50318D09C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -326,8 +344,8 @@
 				9329D91E251E07790004DB70 /* Model */,
 				93B80EAC253D79920032DAC7 /* Database */,
 				93F51748251DBF9E009FE8C2 /* Assets.xcassets */,
-				93F5174A251DBF9E009FE8C2 /* LaunchScreen.storyboard */,
 				93F5174D251DBF9E009FE8C2 /* Info.plist */,
+				93F5174A251DBF9E009FE8C2 /* LaunchScreen.storyboard */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -349,13 +367,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93F51750251DBF9E009FE8C2 /* Build configuration list for PBXNativeTarget "Dairy" */;
 			buildPhases = (
-				4B4B19DDC6D7ED920200E244 /* [CP] Check Pods Manifest.lock */,
+				B4934590811BE2FD6F736550 /* [CP] Check Pods Manifest.lock */,
 				93F51738251DBF9B009FE8C2 /* Sources */,
 				93F51739251DBF9B009FE8C2 /* Frameworks */,
 				93F5173A251DBF9B009FE8C2 /* Resources */,
 				936AA9D7253EE10900182BB4 /* Run Script - Swiftlint */,
-				06A3FABC11434E24E358C208 /* [CP] Embed Pods Frameworks */,
 				1CCEC7F1254C3A6E0058D769 /* ShellScript */,
+				CF629DD9FA033587F8267245 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -408,6 +426,7 @@
 				93F5174C251DBF9E009FE8C2 /* LaunchScreen.storyboard in Resources */,
 				93F51749251DBF9E009FE8C2 /* Assets.xcassets in Resources */,
 				9390E3EF2542F57D00660C0E /* ImageAttachmentPopup.xib in Resources */,
+				93DC22B3255D0906003E7C3C /* SortPopupView.xib in Resources */,
 				9358FA06254BE172008C430E /* DeleteImage.xib in Resources */,
 				93FB98792546B88900126B37 /* MoreMenuPopup.xib in Resources */,
 				93F92CAE254175D800582357 /* SaveNote.xib in Resources */,
@@ -420,23 +439,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06A3FABC11434E24E358C208 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dairy/Pods-Dairy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dairy/Pods-Dairy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dairy/Pods-Dairy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1CCEC7F1254C3A6E0058D769 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,7 +457,26 @@
 			shellScript = "
 ";
 		};
-		4B4B19DDC6D7ED920200E244 /* [CP] Check Pods Manifest.lock */ = {
+		936AA9D7253EE10900182BB4 /* Run Script - Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		B4934590811BE2FD6F736550 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -477,24 +498,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		936AA9D7253EE10900182BB4 /* Run Script - Swiftlint */ = {
+		CF629DD9FA033587F8267245 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dairy/Pods-Dairy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
-			name = "Run Script - Swiftlint";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dairy/Pods-Dairy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dairy/Pods-Dairy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -509,6 +528,8 @@
 				9358FA0A254BE2AE008C430E /* DeleteimageAttachmentPr.swift in Sources */,
 				93143B7F255A5EB800C8BE5A /* CalenderViewController.swift in Sources */,
 				1CF96219254AD746002F41BA /* ViewControllerExtension.swift in Sources */,
+				93DC22B5255D0969003E7C3C /* SortPopup.swift in Sources */,
+				93DC22B7255D099A003E7C3C /* SortPopupPr.swift in Sources */,
 				1CF96215254A97AA002F41BA /* GradientView.swift in Sources */,
 				93DC6D0C25470BAF0092853F /* EmojiPopup.swift in Sources */,
 				9321E0E22553B77100DB4B0F /* ImageStorage.swift in Sources */,
@@ -521,19 +542,19 @@
 				933B7C372535B92200ACC4A7 /* NewNoteViewController.swift in Sources */,
 				9390E3EB2542F52600660C0E /* ImageAttachmentPopup.swift in Sources */,
 				1C67F610254AFDB400069503 /* ThemesViewController.swift in Sources */,
+				93DC22AC255CEDC6003E7C3C /* Note+CoreDataProperties.swift in Sources */,
 				9358FA08254BE244008C430E /* DeleteImageAttachment.swift in Sources */,
 				93F51742251DBF9B009FE8C2 /* SceneDelegate.swift in Sources */,
 				937E486C25384A4000D0E1F3 /* SaveNoteProtocol.swift in Sources */,
 				1C67F60C254AFB6100069503 /* MenuViewController.swift in Sources */,
-				933EC75025554277003785B7 /* Note+CoreDataClass.swift in Sources */,
 				9339CD172525C5D000C53931 /* Constants.swift in Sources */,
 				93B80EAA253D79320032DAC7 /* NoteModel.xcdatamodeld in Sources */,
 				93DC6D0E25470BCC0092853F /* EmoiPopupPr.swift in Sources */,
 				9321E0DF2552EBF100DB4B0F /* NoteModel.swift in Sources */,
 				93DC6D132547E1F30092853F /* EmojiCollectionViewCell.swift in Sources */,
+				93DC22AB255CEDC6003E7C3C /* Note+CoreDataClass.swift in Sources */,
 				93E506A925219F7100517120 /* NoteTableViewCell.swift in Sources */,
 				1CCEC7F8254C3D600058D769 /* Themes.swift in Sources */,
-				933EC75125554277003785B7 /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,7 +696,7 @@
 		};
 		93F51751251DBF9E009FE8C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7194FA975BC4FF0FB51FCCC3 /* Pods-Dairy.debug.xcconfig */;
+			baseConfigurationReference = BED389C24E40A71C0043ACDF /* Pods-Dairy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -693,7 +714,7 @@
 		};
 		93F51752251DBF9E009FE8C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E91787F419F3224FA7667C6 /* Pods-Dairy.release.xcconfig */;
+			baseConfigurationReference = F7BADDDAE88A0919FB4BEF14 /* Pods-Dairy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

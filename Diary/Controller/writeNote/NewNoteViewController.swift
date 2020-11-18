@@ -15,6 +15,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var moreMenuButton: UIBarButtonItem!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var titleText: UITextField!
@@ -50,8 +51,9 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     }
     @objc func updateTheme() {
          currentTheme = Themes.currentTheme()
-
-        self.view.backgroundColor = currentTheme.background
+        self.backgroundImage.image = currentTheme.background
+        self.descriptionView.backgroundColor = currentTheme.alert
+    
         
     }
     func initialSetup()
@@ -83,6 +85,11 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
                 }
             }
         }
+        else
+       {
+         dateLabel.text = formatter.string(from: getCurrentDate())
+           timeLabel.text = getCurrentTime()
+                           }
         
         if(attachedImage.image == nil)
         {

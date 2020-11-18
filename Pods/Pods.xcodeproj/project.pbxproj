@@ -19,166 +19,90 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		05AB70B5EEF72BC66243B8A680F2E323 /* DayOfWeekPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A02D0E6CC48FC366CAA29EC023CA6 /* DayOfWeekPosition.swift */; };
-		08B5B89F28224381711F45A680C292D9 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0277B74A2B02922CFBC296C095ACBD48 /* SideMenu-dummy.m */; };
-		09A0A5D3733F69E93F553ABBCF02FB77 /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145B24C9AD8A501C2B032ADF597A6EE2 /* SideMenuTransitionController.swift */; };
-		11A9108801F73B8103A4377AEC23DC0F /* ScrollToItemContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3CA611A8B2CF84B2AE5EEB29678079 /* ScrollToItemContext.swift */; };
-		123CB8FEB7C4594E8A0879B83A70AF90 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160F401917E8635985AEE185728A2469 /* Day.swift */; };
-		231EF2E97AE442B4E850AD246E16E891 /* CalendarViewContent+CalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9ADF6A4D3C35F89914CB76D228FA37 /* CalendarViewContent+CalendarItem.swift */; };
-		238048FB3BFB20D022C26380D899F81E /* Dictionary+MutatingValueForKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A676A975293448A5D68BA58F0321A2E9 /* Dictionary+MutatingValueForKey.swift */; };
-		27D830F1CAC60B99CC0A135F583BFFF2 /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580415779DA943AF6B5B0917DAFC1B8 /* SideMenuPresentationController.swift */; };
-		2ABE74825AF91F90778CD4EB1D6DEB98 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E6D303D15A218CEECD1F27B239F8F6 /* CalendarView.swift */; };
-		2E5695A8CF9FF07CC6104A563E922E55 /* FrameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69796726CD867D65A8751682B7C561F0 /* FrameProvider.swift */; };
-		2ED518A3FA8DCBE08E621AC5C32844A9 /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FDC6A9C82DDC458F5647FAA9AA2A7 /* SideMenuPushCoordinator.swift */; };
-		3004D702B24146B790898CADD4B50871 /* CalendarViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D2A82C15002929B893E582E4CC6F3 /* CalendarViewContent.swift */; };
-		3846AFE38D1B63A9F0D9073C4ABC6DAA /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48CE1887F652F27DB40156D800C389D /* SideMenuNavigationController.swift */; };
-		3DD0D97BC64DA617501BF23D5A88FF11 /* HorizonCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25174A8274185B63CD462365BF50A21B /* HorizonCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E18B004D34ED5441A193684EEB25BD3 /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83734E95DAB484AE62ED6ECC6511ACF /* SideMenuPresentationStyle.swift */; };
-		4610732F1BDA9CD72F9B1A68B0CA6434 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4D6957734C44C12F874FD086D0961070 /* InternalAnyCalendarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49A9C3490AF5FAE0863DD5D9E46DD56 /* InternalAnyCalendarItemModel.swift */; };
-		4E88B70410F6837FBD463EA4B6C33155 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717F20FEB4546573377536E7E5680D1 /* Extensions.swift */; };
-		50B5E90CFCCA7E42F85F9226627E4C19 /* CalendarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B93B51D2ABA7CFB14D14244828D0E9 /* CalendarItemModel.swift */; };
-		63191C02FBDDCCC064BA97CED079D461 /* ItemViewReuseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF601E97FA7DDCDB731498A1CEF24D0D /* ItemViewReuseManager.swift */; };
-		637CA3BE85F987C1839B2C861B8B7E7C /* ScrollMetricsMutator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E55B02383F6477702698C5943053E1 /* ScrollMetricsMutator.swift */; };
-		6997F811A0988EB9F03809AE01E9040B /* AnyCalendarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532815A549421B3AB02A59B64AF7A3D2 /* AnyCalendarItemModel.swift */; };
-		72211D99A2B2B2647E38952D726047D7 /* LayoutItemTypeEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB893FD89AAF3AB5089F70A40BA19 /* LayoutItemTypeEnumerator.swift */; };
-		73FE11B7D944D8CE2CEE4FD5634D1D6D /* Calendar+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921ECA78E2CB3380A1A8D0C9B9283018 /* Calendar+Helpers.swift */; };
-		77AF2098DDCCAAE0CE4A20725C466905 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561BF0ACFFE7D6D094F81C7A5B7A3B2A /* SideMenuManager.swift */; };
-		83445C2D36796B994359FF0682FE75A6 /* OffScreenCalendarItemAccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE9D0871CE1A52C02A0AEA6885301 /* OffScreenCalendarItemAccessibilityElement.swift */; };
-		890FF25D0CCFF9BADECBA64DCCEFF4FF /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80057356EC415D7D3E16C203700E3EC3 /* SideMenuAnimationController.swift */; };
-		8C06632AA14D12278B1277AC0CC6A0B2 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E80154CE57F58337CEAE45663D7107 /* SideMenuInteractionController.swift */; };
-		905A503F069C27E841BAD9F4EFD4F1AF /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08E6276A4FD3BF04DF24E37A157C83 /* Protected.swift */; };
-		98FB6C44D280D1396BFF8B62431D6766 /* MonthRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F29CA054232BBEF58AC3951BF7B18 /* MonthRange.swift */; };
-		9A3700FFFA75441CF3918B9D0D9E599C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CB2985D84F0A392628835EFA777221 /* ItemView.swift */; };
-		9A9F560B5E9C8CBD887D7D872C57CEC8 /* VisibleCalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CCD120B86C00156907567BEE1F2AE7 /* VisibleCalendarItem.swift */; };
-		AEA8E06BFF29EDF6629FA3B278539B69 /* HorizonCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2909E802AA69D839207D5430BE84F8 /* HorizonCalendar-dummy.m */; };
+		08B5B89F28224381711F45A680C292D9 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF34A335CAF3631AF30E3F3746F0B4D /* SideMenu-dummy.m */; };
+		09A0A5D3733F69E93F553ABBCF02FB77 /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B18C73593ECAB9470114B5B9A28F17 /* SideMenuTransitionController.swift */; };
+		27D830F1CAC60B99CC0A135F583BFFF2 /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC267F460C804F9CBDABF99A807F21FE /* SideMenuPresentationController.swift */; };
+		2ED518A3FA8DCBE08E621AC5C32844A9 /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7422E2A827230D557D75F64934A44 /* SideMenuPushCoordinator.swift */; };
+		3846AFE38D1B63A9F0D9073C4ABC6DAA /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B961C8C84B2B8F100761429DFBE6EFF /* SideMenuNavigationController.swift */; };
+		3E18B004D34ED5441A193684EEB25BD3 /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0D8F84B5FFA6F36FB2E5EE965CCF7 /* SideMenuPresentationStyle.swift */; };
+		4E88B70410F6837FBD463EA4B6C33155 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E278B1D8982F3B034C56F3099049CC /* Extensions.swift */; };
+		77AF2098DDCCAAE0CE4A20725C466905 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5287068C6587E8FA6BCD874C33F52A60 /* SideMenuManager.swift */; };
+		802950110A2371D7CE33622C783BBB53 /* Pods-Dairy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F78B01A17B2EA67D008299B1B4B19167 /* Pods-Dairy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		890FF25D0CCFF9BADECBA64DCCEFF4FF /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA7213874F939774B6AC73A82FF7C1 /* SideMenuAnimationController.swift */; };
+		8C06632AA14D12278B1277AC0CC6A0B2 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33014E814AB7AB8B79D3804D943A8DD /* SideMenuInteractionController.swift */; };
+		905A503F069C27E841BAD9F4EFD4F1AF /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EF63CF9E6ADE624FB32BA71BA9EAED /* Protected.swift */; };
+		A7BA7509E1B5D8DB95FE9E5827C93FEB /* Pods-Dairy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F72730315C282A0CF56E1B1A8A470F /* Pods-Dairy-dummy.m */; };
 		B27B12C5D2EF1BE7B3CBBBC8FA98110E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		BB6E1B8B9940D64F86B98FDE113A8D81 /* Pods-Dairy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F72730315C282A0CF56E1B1A8A470F /* Pods-Dairy-dummy.m */; };
-		C02B7300D93B843521D50F9175DC4739 /* LayoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D129F034749A02C3C59C3B5EA470E /* LayoutItem.swift */; };
-		C1EABFF4654EB7ED7D99AF9E2CD5FB97 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E6DCB0D884FA60EA7922AA59BBC02 /* Month.swift */; };
-		C798DA148F7F666F393F2009DDF73E35 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB9784D2A9AC212ED8E4688EE07CC2 /* Initializable.swift */; };
-		C96A55C2A869A97AC4CA628A7F2A2A21 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4FD65A71A1AF2802757B96394E8F5 /* UITableViewVibrantCell.swift */; };
-		D1BD7393C7934049B3E51D9C5A5CD8A0 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756E4302966FBD5B2C498F469C51F033 /* Print.swift */; };
-		D3D22BB8C279DC03EA91BFE3F5412477 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7FA53F8F491E3AA7DCD05170CBDA2 /* Deprecations.swift */; };
-		D573F5BD214B6DA89B2D4B46335FC8C0 /* MonthsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA885FA891C10A3B79468074EC8698 /* MonthsLayout.swift */; };
-		D777716F0B6C0754B7B0230531743BC4 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 343F5CA72651ED9451670208DA490856 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB07D8B1F541E15517E0D47079AFF9A9 /* CalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843D51AC6F44F17CD3965A3EAA499F6 /* CalendarItem.swift */; };
-		E0F1F1CEB0C46C17A41465456C9609A4 /* ScreenPixelAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E620C68C4BDCC9FB8573B2127C38C45 /* ScreenPixelAlignment.swift */; };
-		F18653296803D6617971268D7EDAC71A /* DefaultItemProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081E4959EA48FFE7FD06CEE7443180D /* DefaultItemProviders.swift */; };
-		F33C5B7C812BE7723EBB5CA2031EF06A /* DayRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB715DEC04FFBE3F501B40604A8FA7 /* DayRange.swift */; };
-		F4414FDED01F77D7AAE04E1D98405959 /* CalendarItemViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44379DEC663BFD9433DEC8DC7A73F066 /* CalendarItemViewRepresentable.swift */; };
-		F6C1BCD0A4E18F53A49C5522A1F0AB55 /* Pods-Dairy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F78B01A17B2EA67D008299B1B4B19167 /* Pods-Dairy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F82634B094E283E22B044A6686812078 /* VisibleItemsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4DD0D8F14905D27654B19A97394EE6 /* VisibleItemsProvider.swift */; };
-		F8BF69C5614ABC795C9F91E53210971E /* CalendarViewScrollPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B592D4CD561EF0F4845C24E314148761 /* CalendarViewScrollPosition.swift */; };
-		FB55CBE0E04CFF370BA9F115CF7238E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C25DECA62AA7A353BF464C79F564227E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C798DA148F7F666F393F2009DDF73E35 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA1BBE418CBD2A45AF5BA275710425B /* Initializable.swift */; };
+		C96A55C2A869A97AC4CA628A7F2A2A21 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62834881604A7D7945CFB6E4F33DC1 /* UITableViewVibrantCell.swift */; };
+		D1BD7393C7934049B3E51D9C5A5CD8A0 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAD627B47625787F9C5A8CC72D7B7CC /* Print.swift */; };
+		D3D22BB8C279DC03EA91BFE3F5412477 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B91B9E2158B3360553C2729F80AB7B /* Deprecations.swift */; };
+		D777716F0B6C0754B7B0230531743BC4 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57ED7D79A5A1761CBCF6727010EB8E78 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7462D7A0C538855972A2702C4199C973 /* PBXContainerItemProxy */ = {
+		644E0B93D45F687A122F0FE9B5A84D7B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
-		CA004695C3369D86E25F94D3F3F4C71F /* PBXContainerItemProxy */ = {
+		CEDA689ED3E00474A49610A66C01B86C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C4A0A7D8591B67FB75E2E8D215E3735B;
 			remoteInfo = SideMenu;
 		};
-		F305D0C7CF47A2513C49C23F14CADFC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 06F2B2E25E8D0A392F1AF3F09E30184A;
-			remoteInfo = HorizonCalendar;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0277B74A2B02922CFBC296C095ACBD48 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		02C0D8F84B5FFA6F36FB2E5EE965CCF7 /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
 		03F72730315C282A0CF56E1B1A8A470F /* Pods-Dairy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dairy-dummy.m"; sourceTree = "<group>"; };
-		0C9ADF6A4D3C35F89914CB76D228FA37 /* CalendarViewContent+CalendarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CalendarViewContent+CalendarItem.swift"; path = "Sources/Public/Legacy CalendarItem Support/CalendarViewContent+CalendarItem.swift"; sourceTree = "<group>"; };
-		104F29CA054232BBEF58AC3951BF7B18 /* MonthRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonthRange.swift; path = Sources/Public/MonthRange.swift; sourceTree = "<group>"; };
-		145B24C9AD8A501C2B032ADF597A6EE2 /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
-		160F401917E8635985AEE185728A2469 /* Day.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Day.swift; path = Sources/Public/Day.swift; sourceTree = "<group>"; };
-		203CC0B47A2C6BCF7A1A584F80216656 /* HorizonCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HorizonCalendar.debug.xcconfig; sourceTree = "<group>"; };
-		25174A8274185B63CD462365BF50A21B /* HorizonCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HorizonCalendar-umbrella.h"; sourceTree = "<group>"; };
+		0B961C8C84B2B8F100761429DFBE6EFF /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
+		1AF34A335CAF3631AF30E3F3746F0B4D /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		25B18C73593ECAB9470114B5B9A28F17 /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
 		2927BB537E0759D4194A3782AF3CB6D3 /* Pods-Dairy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dairy.debug.xcconfig"; sourceTree = "<group>"; };
-		2E620C68C4BDCC9FB8573B2127C38C45 /* ScreenPixelAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenPixelAlignment.swift; path = Sources/Internal/ScreenPixelAlignment.swift; sourceTree = "<group>"; };
-		2F0DCF9B44E6E02B3BE5A412165A7088 /* HorizonCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HorizonCalendar-prefix.pch"; sourceTree = "<group>"; };
+		2CFBBCA60E677489E21D54356C7E8412 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		2FB5843FD0BC87C36CA7870EB591BA75 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		322D129F034749A02C3C59C3B5EA470E /* LayoutItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutItem.swift; path = Sources/Internal/LayoutItem.swift; sourceTree = "<group>"; };
-		343F5CA72651ED9451670208DA490856 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
-		3F4E6DCB0D884FA60EA7922AA59BBC02 /* Month.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Month.swift; path = Sources/Public/Month.swift; sourceTree = "<group>"; };
-		40CCD120B86C00156907567BEE1F2AE7 /* VisibleCalendarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisibleCalendarItem.swift; path = Sources/Internal/VisibleCalendarItem.swift; sourceTree = "<group>"; };
-		44379DEC663BFD9433DEC8DC7A73F066 /* CalendarItemViewRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarItemViewRepresentable.swift; path = Sources/Public/CalendarItemViewRepresentable.swift; sourceTree = "<group>"; };
-		44D0681EA2AC57DD6F3403B4C2B7679B /* SideMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.debug.xcconfig; sourceTree = "<group>"; };
-		532815A549421B3AB02A59B64AF7A3D2 /* AnyCalendarItemModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyCalendarItemModel.swift; path = Sources/Public/AnyCalendarItemModel.swift; sourceTree = "<group>"; };
-		561BF0ACFFE7D6D094F81C7A5B7A3B2A /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
-		56B93B51D2ABA7CFB14D14244828D0E9 /* CalendarItemModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarItemModel.swift; path = Sources/Public/CalendarItemModel.swift; sourceTree = "<group>"; };
+		46BA06CD42A01C9E98BF6CF0FB52FCF8 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		5287068C6587E8FA6BCD874C33F52A60 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		54CA7213874F939774B6AC73A82FF7C1 /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
+		57ED7D79A5A1761CBCF6727010EB8E78 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
 		59FE4B58D3FF4A011054A4F0450DD35E /* Pods-Dairy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dairy-Info.plist"; sourceTree = "<group>"; };
-		5AD4FD65A71A1AF2802757B96394E8F5 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
-		5E4EBCBD654FE60166FA263254302E78 /* SideMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.release.xcconfig; sourceTree = "<group>"; };
-		60E80154CE57F58337CEAE45663D7107 /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuInteractionController.swift; path = Pod/Classes/SideMenuInteractionController.swift; sourceTree = "<group>"; };
-		69796726CD867D65A8751682B7C561F0 /* FrameProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameProvider.swift; path = Sources/Internal/FrameProvider.swift; sourceTree = "<group>"; };
-		6F2D001989C80B990FF3273D2C39B7AB /* HorizonCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HorizonCalendar.release.xcconfig; sourceTree = "<group>"; };
-		72C7FA53F8F491E3AA7DCD05170CBDA2 /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Pod/Classes/Deprecations.swift; sourceTree = "<group>"; };
-		744B6BCA26B30AABCA9B62D5908479E4 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
-		74FB715DEC04FFBE3F501B40604A8FA7 /* DayRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayRange.swift; path = Sources/Public/DayRange.swift; sourceTree = "<group>"; };
-		74FB9784D2A9AC212ED8E4688EE07CC2 /* Initializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = Pod/Classes/Initializable.swift; sourceTree = "<group>"; };
-		756E4302966FBD5B2C498F469C51F033 /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Pod/Classes/Print.swift; sourceTree = "<group>"; };
-		761FDC6A9C82DDC458F5647FAA9AA2A7 /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPushCoordinator.swift; path = Pod/Classes/SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
-		7C8D2A82C15002929B893E582E4CC6F3 /* CalendarViewContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarViewContent.swift; path = Sources/Public/CalendarViewContent.swift; sourceTree = "<group>"; };
-		7DCA885FA891C10A3B79468074EC8698 /* MonthsLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonthsLayout.swift; path = Sources/Public/MonthsLayout.swift; sourceTree = "<group>"; };
-		80057356EC415D7D3E16C203700E3EC3 /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
-		81CB2985D84F0A392628835EFA777221 /* ItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemView.swift; path = Sources/Internal/ItemView.swift; sourceTree = "<group>"; };
+		60E278B1D8982F3B034C56F3099049CC /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
+		6CC4C9274760B2F99F87237267AF76A8 /* SideMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.debug.xcconfig; sourceTree = "<group>"; };
+		7C62834881604A7D7945CFB6E4F33DC1 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		7FA1BBE418CBD2A45AF5BA275710425B /* Initializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = Pod/Classes/Initializable.swift; sourceTree = "<group>"; };
 		8526D3B65CDBD1C0CEF5556BCF043970 /* Pods-Dairy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dairy.modulemap"; sourceTree = "<group>"; };
+		89B91B9E2158B3360553C2729F80AB7B /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Pod/Classes/Deprecations.swift; sourceTree = "<group>"; };
 		8C137FE0B1AECE6AF2D6B4C28CA79D60 /* Pods-Dairy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dairy-frameworks.sh"; sourceTree = "<group>"; };
-		921ECA78E2CB3380A1A8D0C9B9283018 /* Calendar+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Calendar+Helpers.swift"; path = "Sources/Internal/Calendar+Helpers.swift"; sourceTree = "<group>"; };
+		9AAD627B47625787F9C5A8CC72D7B7CC /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Pod/Classes/Print.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A580415779DA943AF6B5B0917DAFC1B8 /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationController.swift; path = Pod/Classes/SideMenuPresentationController.swift; sourceTree = "<group>"; };
-		A676A975293448A5D68BA58F0321A2E9 /* Dictionary+MutatingValueForKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+MutatingValueForKey.swift"; path = "Sources/Internal/Dictionary+MutatingValueForKey.swift"; sourceTree = "<group>"; };
-		A843D51AC6F44F17CD3965A3EAA499F6 /* CalendarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarItem.swift; path = "Sources/Public/Legacy CalendarItem Support/CalendarItem.swift"; sourceTree = "<group>"; };
-		AA2909E802AA69D839207D5430BE84F8 /* HorizonCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HorizonCalendar-dummy.m"; sourceTree = "<group>"; };
-		AA45039091E59E623DF2C3C818BC1BC4 /* HorizonCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HorizonCalendar.modulemap; sourceTree = "<group>"; };
-		AC78F72FD86120710214579101E7EBFC /* HorizonCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HorizonCalendar-Info.plist"; sourceTree = "<group>"; };
-		B187B1B41EE1FCF705EDFB59527DE1D4 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		B592D4CD561EF0F4845C24E314148761 /* CalendarViewScrollPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarViewScrollPosition.swift; path = Sources/Public/CalendarViewScrollPosition.swift; sourceTree = "<group>"; };
+		AE5717F204099D9286654971D7168F9B /* SideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenu-Info.plist"; sourceTree = "<group>"; };
+		B33014E814AB7AB8B79D3804D943A8DD /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuInteractionController.swift; path = Pod/Classes/SideMenuInteractionController.swift; sourceTree = "<group>"; };
 		B69C411958AD9E748DE47578D7588020 /* Pods-Dairy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dairy.release.xcconfig"; sourceTree = "<group>"; };
-		B717F20FEB4546573377536E7E5680D1 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
-		B97A4FC837CE6E81F693F6753F9532F8 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
 		BBCE75D56C27AFF6531878A2456CE1C1 /* Pods_Dairy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Dairy.framework; path = "Pods-Dairy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C83734E95DAB484AE62ED6ECC6511ACF /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
-		C9BEB893FD89AAF3AB5089F70A40BA19 /* LayoutItemTypeEnumerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutItemTypeEnumerator.swift; path = Sources/Internal/LayoutItemTypeEnumerator.swift; sourceTree = "<group>"; };
-		C9E55B02383F6477702698C5943053E1 /* ScrollMetricsMutator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollMetricsMutator.swift; path = Sources/Internal/ScrollMetricsMutator.swift; sourceTree = "<group>"; };
-		D081E4959EA48FFE7FD06CEE7443180D /* DefaultItemProviders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultItemProviders.swift; path = Sources/Internal/DefaultItemProviders.swift; sourceTree = "<group>"; };
-		D48CE1887F652F27DB40156D800C389D /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
-		D49A9C3490AF5FAE0863DD5D9E46DD56 /* InternalAnyCalendarItemModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalAnyCalendarItemModel.swift; path = Sources/Internal/InternalAnyCalendarItemModel.swift; sourceTree = "<group>"; };
-		D54A02D0E6CC48FC366CAA29EC023CA6 /* DayOfWeekPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayOfWeekPosition.swift; path = Sources/Public/DayOfWeekPosition.swift; sourceTree = "<group>"; };
-		DD4DD0D8F14905D27654B19A97394EE6 /* VisibleItemsProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisibleItemsProvider.swift; path = Sources/Internal/VisibleItemsProvider.swift; sourceTree = "<group>"; };
+		CC267F460C804F9CBDABF99A807F21FE /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationController.swift; path = Pod/Classes/SideMenuPresentationController.swift; sourceTree = "<group>"; };
+		DA91EBA6CB5477C83762DDFF2113F880 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		E5529F137E94B250F71D361F2426880A /* Pods-Dairy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dairy-acknowledgements.plist"; sourceTree = "<group>"; };
-		E7E6D303D15A218CEECD1F27B239F8F6 /* CalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = Sources/Public/CalendarView.swift; sourceTree = "<group>"; };
-		EC08E6276A4FD3BF04DF24E37A157C83 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Pod/Classes/Protected.swift; sourceTree = "<group>"; };
-		EF3CA611A8B2CF84B2AE5EEB29678079 /* ScrollToItemContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollToItemContext.swift; path = Sources/Internal/ScrollToItemContext.swift; sourceTree = "<group>"; };
+		E5D7422E2A827230D557D75F64934A44 /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPushCoordinator.swift; path = Pod/Classes/SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
 		F2406699BB323AE607F0AB939888E7BE /* Pods-Dairy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dairy-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F36F045F22D0E0B28351CDFAB9BE1147 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
-		F45579511528B62D4DDD4ED7123E55D2 /* HorizonCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HorizonCalendar.framework; path = HorizonCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F527316CBB1D37794497886C16821C0B /* SideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenu-Info.plist"; sourceTree = "<group>"; };
+		F5A5C147EC05BF284FCB92E7E3849183 /* SideMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.release.xcconfig; sourceTree = "<group>"; };
 		F78B01A17B2EA67D008299B1B4B19167 /* Pods-Dairy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dairy-umbrella.h"; sourceTree = "<group>"; };
-		FADDE9D0871CE1A52C02A0AEA6885301 /* OffScreenCalendarItemAccessibilityElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OffScreenCalendarItemAccessibilityElement.swift; path = Sources/Internal/OffScreenCalendarItemAccessibilityElement.swift; sourceTree = "<group>"; };
-		FF601E97FA7DDCDB731498A1CEF24D0D /* ItemViewReuseManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemViewReuseManager.swift; path = Sources/Internal/ItemViewReuseManager.swift; sourceTree = "<group>"; };
+		F7EF63CF9E6ADE624FB32BA71BA9EAED /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Pod/Classes/Protected.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A072B2FBC83468A646F77CFB1F6BAF47 /* Frameworks */ = {
+		744EF04AF4D143382252154794533AC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB55CBE0E04CFF370BA9F115CF7238E0 /* Foundation.framework in Frameworks */,
+				C25DECA62AA7A353BF464C79F564227E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,62 +114,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5631DE0ECFC1E7C5CBC680CC180EBC3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4610732F1BDA9CD72F9B1A68B0CA6434 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1CBEF988655CF2C20E6B2CA6CBA0B3F1 /* SwiftLint */ = {
+		0B92F26B329750CB1CB55DA67CA8607C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A8EC8D77A6D1F2A4E7ADE977632FCCC8 /* Support Files */,
+				2CFBBCA60E677489E21D54356C7E8412 /* SideMenu.modulemap */,
+				1AF34A335CAF3631AF30E3F3746F0B4D /* SideMenu-dummy.m */,
+				AE5717F204099D9286654971D7168F9B /* SideMenu-Info.plist */,
+				46BA06CD42A01C9E98BF6CF0FB52FCF8 /* SideMenu-prefix.pch */,
+				57ED7D79A5A1761CBCF6727010EB8E78 /* SideMenu-umbrella.h */,
+				6CC4C9274760B2F99F87237267AF76A8 /* SideMenu.debug.xcconfig */,
+				F5A5C147EC05BF284FCB92E7E3849183 /* SideMenu.release.xcconfig */,
 			);
-			name = SwiftLint;
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		31CEB56B2F7C0200C8B7D1E2ACA3EC5B /* HorizonCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				532815A549421B3AB02A59B64AF7A3D2 /* AnyCalendarItemModel.swift */,
-				921ECA78E2CB3380A1A8D0C9B9283018 /* Calendar+Helpers.swift */,
-				A843D51AC6F44F17CD3965A3EAA499F6 /* CalendarItem.swift */,
-				56B93B51D2ABA7CFB14D14244828D0E9 /* CalendarItemModel.swift */,
-				44379DEC663BFD9433DEC8DC7A73F066 /* CalendarItemViewRepresentable.swift */,
-				E7E6D303D15A218CEECD1F27B239F8F6 /* CalendarView.swift */,
-				7C8D2A82C15002929B893E582E4CC6F3 /* CalendarViewContent.swift */,
-				0C9ADF6A4D3C35F89914CB76D228FA37 /* CalendarViewContent+CalendarItem.swift */,
-				B592D4CD561EF0F4845C24E314148761 /* CalendarViewScrollPosition.swift */,
-				160F401917E8635985AEE185728A2469 /* Day.swift */,
-				D54A02D0E6CC48FC366CAA29EC023CA6 /* DayOfWeekPosition.swift */,
-				74FB715DEC04FFBE3F501B40604A8FA7 /* DayRange.swift */,
-				D081E4959EA48FFE7FD06CEE7443180D /* DefaultItemProviders.swift */,
-				A676A975293448A5D68BA58F0321A2E9 /* Dictionary+MutatingValueForKey.swift */,
-				69796726CD867D65A8751682B7C561F0 /* FrameProvider.swift */,
-				D49A9C3490AF5FAE0863DD5D9E46DD56 /* InternalAnyCalendarItemModel.swift */,
-				81CB2985D84F0A392628835EFA777221 /* ItemView.swift */,
-				FF601E97FA7DDCDB731498A1CEF24D0D /* ItemViewReuseManager.swift */,
-				322D129F034749A02C3C59C3B5EA470E /* LayoutItem.swift */,
-				C9BEB893FD89AAF3AB5089F70A40BA19 /* LayoutItemTypeEnumerator.swift */,
-				3F4E6DCB0D884FA60EA7922AA59BBC02 /* Month.swift */,
-				104F29CA054232BBEF58AC3951BF7B18 /* MonthRange.swift */,
-				7DCA885FA891C10A3B79468074EC8698 /* MonthsLayout.swift */,
-				FADDE9D0871CE1A52C02A0AEA6885301 /* OffScreenCalendarItemAccessibilityElement.swift */,
-				2E620C68C4BDCC9FB8573B2127C38C45 /* ScreenPixelAlignment.swift */,
-				C9E55B02383F6477702698C5943053E1 /* ScrollMetricsMutator.swift */,
-				EF3CA611A8B2CF84B2AE5EEB29678079 /* ScrollToItemContext.swift */,
-				40CCD120B86C00156907567BEE1F2AE7 /* VisibleCalendarItem.swift */,
-				DD4DD0D8F14905D27654B19A97394EE6 /* VisibleItemsProvider.swift */,
-				CC4ABB325352F2F29A4D9DACB45281F4 /* Support Files */,
-			);
-			name = HorizonCalendar;
-			path = HorizonCalendar;
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
 			sourceTree = "<group>";
 		};
 		435D8CD04678F9356F8C16A0B430E256 /* Pods-Dairy */ = {
@@ -273,52 +157,55 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9548E6C379DD028203DB27A3CEAC26A5 /* SideMenu */ = {
+		772B1C8A6F1555022CF5177C1B9D661B /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				72C7FA53F8F491E3AA7DCD05170CBDA2 /* Deprecations.swift */,
-				B717F20FEB4546573377536E7E5680D1 /* Extensions.swift */,
-				74FB9784D2A9AC212ED8E4688EE07CC2 /* Initializable.swift */,
-				756E4302966FBD5B2C498F469C51F033 /* Print.swift */,
-				EC08E6276A4FD3BF04DF24E37A157C83 /* Protected.swift */,
-				80057356EC415D7D3E16C203700E3EC3 /* SideMenuAnimationController.swift */,
-				60E80154CE57F58337CEAE45663D7107 /* SideMenuInteractionController.swift */,
-				561BF0ACFFE7D6D094F81C7A5B7A3B2A /* SideMenuManager.swift */,
-				D48CE1887F652F27DB40156D800C389D /* SideMenuNavigationController.swift */,
-				A580415779DA943AF6B5B0917DAFC1B8 /* SideMenuPresentationController.swift */,
-				C83734E95DAB484AE62ED6ECC6511ACF /* SideMenuPresentationStyle.swift */,
-				761FDC6A9C82DDC458F5647FAA9AA2A7 /* SideMenuPushCoordinator.swift */,
-				145B24C9AD8A501C2B032ADF597A6EE2 /* SideMenuTransitionController.swift */,
-				5AD4FD65A71A1AF2802757B96394E8F5 /* UITableViewVibrantCell.swift */,
-				A6DF1B9DA7797B9ECE8A6CBE427E90FB /* Support Files */,
+				9A4D1C880154E53A8E059BCEA5F4D06D /* Support Files */,
 			);
-			name = SideMenu;
-			path = SideMenu;
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		A6DF1B9DA7797B9ECE8A6CBE427E90FB /* Support Files */ = {
+		800725228E857200ED537F4ADF4ACAC8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				744B6BCA26B30AABCA9B62D5908479E4 /* SideMenu.modulemap */,
-				0277B74A2B02922CFBC296C095ACBD48 /* SideMenu-dummy.m */,
-				F527316CBB1D37794497886C16821C0B /* SideMenu-Info.plist */,
-				B97A4FC837CE6E81F693F6753F9532F8 /* SideMenu-prefix.pch */,
-				343F5CA72651ED9451670208DA490856 /* SideMenu-umbrella.h */,
-				44D0681EA2AC57DD6F3403B4C2B7679B /* SideMenu.debug.xcconfig */,
-				5E4EBCBD654FE60166FA263254302E78 /* SideMenu.release.xcconfig */,
+				A53486EAEB7A90558A59A470391C2EFB /* SideMenu */,
+				772B1C8A6F1555022CF5177C1B9D661B /* SwiftLint */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SideMenu";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		A8EC8D77A6D1F2A4E7ADE977632FCCC8 /* Support Files */ = {
+		9A4D1C880154E53A8E059BCEA5F4D06D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F36F045F22D0E0B28351CDFAB9BE1147 /* SwiftLint.debug.xcconfig */,
-				B187B1B41EE1FCF705EDFB59527DE1D4 /* SwiftLint.release.xcconfig */,
+				DA91EBA6CB5477C83762DDFF2113F880 /* SwiftLint.debug.xcconfig */,
+				2FB5843FD0BC87C36CA7870EB591BA75 /* SwiftLint.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		A53486EAEB7A90558A59A470391C2EFB /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				89B91B9E2158B3360553C2729F80AB7B /* Deprecations.swift */,
+				60E278B1D8982F3B034C56F3099049CC /* Extensions.swift */,
+				7FA1BBE418CBD2A45AF5BA275710425B /* Initializable.swift */,
+				9AAD627B47625787F9C5A8CC72D7B7CC /* Print.swift */,
+				F7EF63CF9E6ADE624FB32BA71BA9EAED /* Protected.swift */,
+				54CA7213874F939774B6AC73A82FF7C1 /* SideMenuAnimationController.swift */,
+				B33014E814AB7AB8B79D3804D943A8DD /* SideMenuInteractionController.swift */,
+				5287068C6587E8FA6BCD874C33F52A60 /* SideMenuManager.swift */,
+				0B961C8C84B2B8F100761429DFBE6EFF /* SideMenuNavigationController.swift */,
+				CC267F460C804F9CBDABF99A807F21FE /* SideMenuPresentationController.swift */,
+				02C0D8F84B5FFA6F36FB2E5EE965CCF7 /* SideMenuPresentationStyle.swift */,
+				E5D7422E2A827230D557D75F64934A44 /* SideMenuPushCoordinator.swift */,
+				25B18C73593ECAB9470114B5B9A28F17 /* SideMenuTransitionController.swift */,
+				7C62834881604A7D7945CFB6E4F33DC1 /* UITableViewVibrantCell.swift */,
+				0B92F26B329750CB1CB55DA67CA8607C /* Support Files */,
+			);
+			name = SideMenu;
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -329,38 +216,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C990080C9F1F23849580E4FADBFB3A92 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				31CEB56B2F7C0200C8B7D1E2ACA3EC5B /* HorizonCalendar */,
-				9548E6C379DD028203DB27A3CEAC26A5 /* SideMenu */,
-				1CBEF988655CF2C20E6B2CA6CBA0B3F1 /* SwiftLint */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		CC4ABB325352F2F29A4D9DACB45281F4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AA45039091E59E623DF2C3C818BC1BC4 /* HorizonCalendar.modulemap */,
-				AA2909E802AA69D839207D5430BE84F8 /* HorizonCalendar-dummy.m */,
-				AC78F72FD86120710214579101E7EBFC /* HorizonCalendar-Info.plist */,
-				2F0DCF9B44E6E02B3BE5A412165A7088 /* HorizonCalendar-prefix.pch */,
-				25174A8274185B63CD462365BF50A21B /* HorizonCalendar-umbrella.h */,
-				203CC0B47A2C6BCF7A1A584F80216656 /* HorizonCalendar.debug.xcconfig */,
-				6F2D001989C80B990FF3273D2C39B7AB /* HorizonCalendar.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HorizonCalendar";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				C990080C9F1F23849580E4FADBFB3A92 /* Pods */,
-				FA20D2EF9C7554289DF785E58F88B144 /* Products */,
+				800725228E857200ED537F4ADF4ACAC8 /* Pods */,
+				DF962458D06A0B8183BC200F662300DE /* Products */,
 				638C9627959F6E21726291A1F1985444 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -373,10 +235,9 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FA20D2EF9C7554289DF785E58F88B144 /* Products */ = {
+		DF962458D06A0B8183BC200F662300DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F45579511528B62D4DDD4ED7123E55D2 /* HorizonCalendar.framework */,
 				BBCE75D56C27AFF6531878A2456CE1C1 /* Pods_Dairy.framework */,
 				319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */,
 			);
@@ -386,6 +247,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1C97AFA02C4BC3EBF04840B54D0485B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802950110A2371D7CE33622C783BBB53 /* Pods-Dairy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28761BD3C505CCB36997450A19676357 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,58 +263,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2CE1D6579EC797A3358580F523DE1914 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3DD0D97BC64DA617501BF23D5A88FF11 /* HorizonCalendar-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6EC67751A4B2100660B54C01C4020E1B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F6C1BCD0A4E18F53A49C5522A1F0AB55 /* Pods-Dairy-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		06F2B2E25E8D0A392F1AF3F09E30184A /* HorizonCalendar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BD0CEF2061E73348B33B14ECA68D632E /* Build configuration list for PBXNativeTarget "HorizonCalendar" */;
-			buildPhases = (
-				2CE1D6579EC797A3358580F523DE1914 /* Headers */,
-				B424A2F4E0E4C7A4B702998FBBFB13DB /* Sources */,
-				F5631DE0ECFC1E7C5CBC680CC180EBC3 /* Frameworks */,
-				A5AEB18A6163AB09FBA6EAA2E256BA14 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HorizonCalendar;
-			productName = HorizonCalendar;
-			productReference = F45579511528B62D4DDD4ED7123E55D2 /* HorizonCalendar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		9FE81B6DBFD7AC4712EC06116A6697B5 /* Pods-Dairy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BAE8FCA094322E720C77CD403BBACDF /* Build configuration list for PBXNativeTarget "Pods-Dairy" */;
+			buildConfigurationList = 856A02BC9DA48277FD8438A2FAE1FD5B /* Build configuration list for PBXNativeTarget "Pods-Dairy" */;
 			buildPhases = (
-				6EC67751A4B2100660B54C01C4020E1B /* Headers */,
-				C4516EEC9E0A42193C84915BE7109741 /* Sources */,
-				A072B2FBC83468A646F77CFB1F6BAF47 /* Frameworks */,
-				C45BCD45966243B6303B8BB9DD01B7A6 /* Resources */,
+				1C97AFA02C4BC3EBF04840B54D0485B3 /* Headers */,
+				C560F9AD57C3C00A8E94B538B92770D8 /* Sources */,
+				744EF04AF4D143382252154794533AC3 /* Frameworks */,
+				F7BB298933EAA60CFF1E3061AF281FD4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				18200BBF9ACF82C7DD5D184277295F15 /* PBXTargetDependency */,
-				5A2CDA2323AE8C635DCF9896061970A5 /* PBXTargetDependency */,
-				3DFF9B628B8406209175265142DD0A57 /* PBXTargetDependency */,
+				5BEED60B86B6FCE3752F5379DACF449C /* PBXTargetDependency */,
+				E56DC7D302EE1FE943DA378221DAA349 /* PBXTargetDependency */,
 			);
 			name = "Pods-Dairy";
 			productName = "Pods-Dairy";
@@ -488,11 +322,10 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = FA20D2EF9C7554289DF785E58F88B144 /* Products */;
+			productRefGroup = DF962458D06A0B8183BC200F662300DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06F2B2E25E8D0A392F1AF3F09E30184A /* HorizonCalendar */,
 				9FE81B6DBFD7AC4712EC06116A6697B5 /* Pods-Dairy */,
 				C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
@@ -501,21 +334,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A5AEB18A6163AB09FBA6EAA2E256BA14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C45BCD45966243B6303B8BB9DD01B7A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E880A6A8817A45BC1BDE085DEC3399E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7BB298933EAA60CFF1E3061AF281FD4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -547,78 +373,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B424A2F4E0E4C7A4B702998FBBFB13DB /* Sources */ = {
+		C560F9AD57C3C00A8E94B538B92770D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6997F811A0988EB9F03809AE01E9040B /* AnyCalendarItemModel.swift in Sources */,
-				73FE11B7D944D8CE2CEE4FD5634D1D6D /* Calendar+Helpers.swift in Sources */,
-				DB07D8B1F541E15517E0D47079AFF9A9 /* CalendarItem.swift in Sources */,
-				50B5E90CFCCA7E42F85F9226627E4C19 /* CalendarItemModel.swift in Sources */,
-				F4414FDED01F77D7AAE04E1D98405959 /* CalendarItemViewRepresentable.swift in Sources */,
-				2ABE74825AF91F90778CD4EB1D6DEB98 /* CalendarView.swift in Sources */,
-				231EF2E97AE442B4E850AD246E16E891 /* CalendarViewContent+CalendarItem.swift in Sources */,
-				3004D702B24146B790898CADD4B50871 /* CalendarViewContent.swift in Sources */,
-				F8BF69C5614ABC795C9F91E53210971E /* CalendarViewScrollPosition.swift in Sources */,
-				123CB8FEB7C4594E8A0879B83A70AF90 /* Day.swift in Sources */,
-				05AB70B5EEF72BC66243B8A680F2E323 /* DayOfWeekPosition.swift in Sources */,
-				F33C5B7C812BE7723EBB5CA2031EF06A /* DayRange.swift in Sources */,
-				F18653296803D6617971268D7EDAC71A /* DefaultItemProviders.swift in Sources */,
-				238048FB3BFB20D022C26380D899F81E /* Dictionary+MutatingValueForKey.swift in Sources */,
-				2E5695A8CF9FF07CC6104A563E922E55 /* FrameProvider.swift in Sources */,
-				AEA8E06BFF29EDF6629FA3B278539B69 /* HorizonCalendar-dummy.m in Sources */,
-				4D6957734C44C12F874FD086D0961070 /* InternalAnyCalendarItemModel.swift in Sources */,
-				9A3700FFFA75441CF3918B9D0D9E599C /* ItemView.swift in Sources */,
-				63191C02FBDDCCC064BA97CED079D461 /* ItemViewReuseManager.swift in Sources */,
-				C02B7300D93B843521D50F9175DC4739 /* LayoutItem.swift in Sources */,
-				72211D99A2B2B2647E38952D726047D7 /* LayoutItemTypeEnumerator.swift in Sources */,
-				C1EABFF4654EB7ED7D99AF9E2CD5FB97 /* Month.swift in Sources */,
-				98FB6C44D280D1396BFF8B62431D6766 /* MonthRange.swift in Sources */,
-				D573F5BD214B6DA89B2D4B46335FC8C0 /* MonthsLayout.swift in Sources */,
-				83445C2D36796B994359FF0682FE75A6 /* OffScreenCalendarItemAccessibilityElement.swift in Sources */,
-				E0F1F1CEB0C46C17A41465456C9609A4 /* ScreenPixelAlignment.swift in Sources */,
-				637CA3BE85F987C1839B2C861B8B7E7C /* ScrollMetricsMutator.swift in Sources */,
-				11A9108801F73B8103A4377AEC23DC0F /* ScrollToItemContext.swift in Sources */,
-				9A9F560B5E9C8CBD887D7D872C57CEC8 /* VisibleCalendarItem.swift in Sources */,
-				F82634B094E283E22B044A6686812078 /* VisibleItemsProvider.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4516EEC9E0A42193C84915BE7109741 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BB6E1B8B9940D64F86B98FDE113A8D81 /* Pods-Dairy-dummy.m in Sources */,
+				A7BA7509E1B5D8DB95FE9E5827C93FEB /* Pods-Dairy-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18200BBF9ACF82C7DD5D184277295F15 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HorizonCalendar;
-			target = 06F2B2E25E8D0A392F1AF3F09E30184A /* HorizonCalendar */;
-			targetProxy = F305D0C7CF47A2513C49C23F14CADFC4 /* PBXContainerItemProxy */;
-		};
-		3DFF9B628B8406209175265142DD0A57 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftLint;
-			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 7462D7A0C538855972A2702C4199C973 /* PBXContainerItemProxy */;
-		};
-		5A2CDA2323AE8C635DCF9896061970A5 /* PBXTargetDependency */ = {
+		5BEED60B86B6FCE3752F5379DACF449C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SideMenu;
 			target = C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */;
-			targetProxy = CA004695C3369D86E25F94D3F3F4C71F /* PBXContainerItemProxy */;
+			targetProxy = CEDA689ED3E00474A49610A66C01B86C /* PBXContainerItemProxy */;
+		};
+		E56DC7D302EE1FE943DA378221DAA349 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 644E0B93D45F687A122F0FE9B5A84D7B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1C8A687A8AC1620ECDFCDED2FAC17C9E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E4EBCBD654FE60166FA263254302E78 /* SideMenu.release.xcconfig */;
+			baseConfigurationReference = F5A5C147EC05BF284FCB92E7E3849183 /* SideMenu.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -653,46 +436,9 @@
 			};
 			name = Release;
 		};
-		44655DA3F680CC7B4DC25FC1343439B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F2D001989C80B990FF3273D2C39B7AB /* HorizonCalendar.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HorizonCalendar/HorizonCalendar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HorizonCalendar/HorizonCalendar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/HorizonCalendar/HorizonCalendar.modulemap";
-				PRODUCT_MODULE_NAME = HorizonCalendar;
-				PRODUCT_NAME = HorizonCalendar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		45B6D36435972CBBC59A481A20E44C4A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44D0681EA2AC57DD6F3403B4C2B7679B /* SideMenu.debug.xcconfig */;
+			baseConfigurationReference = 6CC4C9274760B2F99F87237267AF76A8 /* SideMenu.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -728,7 +474,7 @@
 		};
 		46EECD2DED30D7C5FE141C0B267C2D3F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F36F045F22D0E0B28351CDFAB9BE1147 /* SwiftLint.debug.xcconfig */;
+			baseConfigurationReference = DA91EBA6CB5477C83762DDFF2113F880 /* SwiftLint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -742,9 +488,9 @@
 			};
 			name = Debug;
 		};
-		4C08CA39E7A24B3D5654AD7DD6222728 /* Debug */ = {
+		4C15E6ECD9C1C4EA75DACC928A118ACD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2927BB537E0759D4194A3782AF3CB6D3 /* Pods-Dairy.debug.xcconfig */;
+			baseConfigurationReference = B69C411958AD9E748DE47578D7588020 /* Pods-Dairy.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -775,14 +521,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		55DD740115BE746C8DBB7753806D85D5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B187B1B41EE1FCF705EDFB59527DE1D4 /* SwiftLint.release.xcconfig */;
+			baseConfigurationReference = 2FB5843FD0BC87C36CA7870EB591BA75 /* SwiftLint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -921,45 +668,9 @@
 			};
 			name = Release;
 		};
-		9D6CA831B55E4A4FDA50E31811501671 /* Debug */ = {
+		A8867FF119E4DD345F81D6AC7FE00F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 203CC0B47A2C6BCF7A1A584F80216656 /* HorizonCalendar.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HorizonCalendar/HorizonCalendar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HorizonCalendar/HorizonCalendar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/HorizonCalendar/HorizonCalendar.modulemap";
-				PRODUCT_MODULE_NAME = HorizonCalendar;
-				PRODUCT_NAME = HorizonCalendar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E322AEFE2A4AA8301B11CC12AA415B85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B69C411958AD9E748DE47578D7588020 /* Pods-Dairy.release.xcconfig */;
+			baseConfigurationReference = 2927BB537E0759D4194A3782AF3CB6D3 /* Pods-Dairy.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -990,11 +701,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1008,11 +718,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BAE8FCA094322E720C77CD403BBACDF /* Build configuration list for PBXNativeTarget "Pods-Dairy" */ = {
+		856A02BC9DA48277FD8438A2FAE1FD5B /* Build configuration list for PBXNativeTarget "Pods-Dairy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C08CA39E7A24B3D5654AD7DD6222728 /* Debug */,
-				E322AEFE2A4AA8301B11CC12AA415B85 /* Release */,
+				A8867FF119E4DD345F81D6AC7FE00F8C /* Debug */,
+				4C15E6ECD9C1C4EA75DACC928A118ACD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1031,15 +741,6 @@
 			buildConfigurations = (
 				46EECD2DED30D7C5FE141C0B267C2D3F /* Debug */,
 				55DD740115BE746C8DBB7753806D85D5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BD0CEF2061E73348B33B14ECA68D632E /* Build configuration list for PBXNativeTarget "HorizonCalendar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9D6CA831B55E4A4FDA50E31811501671 /* Debug */,
-				44655DA3F680CC7B4DC25FC1343439B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

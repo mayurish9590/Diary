@@ -225,7 +225,6 @@ SWIFT_CLASS("_TtC5Dairy11AppDelegate")
 
 SWIFT_CLASS("_TtC5Dairy22CalenderViewController")
 @interface CalenderViewController : UIViewController
-- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -356,6 +355,7 @@ SWIFT_CLASS("_TtC5Dairy21NewNoteViewController")
 @interface NewNoteViewController : UIViewController <UINavigationControllerDelegate>
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified moreMenuButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backgroundImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleText;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addEmojiButton;
@@ -413,6 +413,7 @@ SWIFT_CLASS_NAMED("Note")
 SWIFT_CLASS("_TtC5Dairy17NoteTableViewCell")
 @interface NoteTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bacgroundImageView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified containerView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified desciptionLabel;
@@ -453,11 +454,35 @@ SWIFT_CLASS("_TtC5Dairy13SceneDelegate")
 @end
 
 
+SWIFT_CLASS("_TtC5Dairy9SortPopup")
+@interface SortPopup : UIView
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified containerTopSpacingCnstraint;
+@property (nonatomic, strong) IBOutlet SortPopup * _Null_unspecified parentView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified newerFirstslected;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified newerfirstUnselcted;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified containerVIew;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified olderFirstSelcted;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified olderFirstUnslected;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified atoZselected;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified atozUnslected;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified ztoAunselected;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified ztoaselected;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)dismissPopoup;
+- (IBAction)onClickNewerFirst:(id _Nonnull)sender;
+- (IBAction)onClickOlderFirst:(id _Nonnull)sender;
+- (IBAction)onClickAtoZ:(id _Nonnull)sender;
+- (IBAction)onclickZtoA:(id _Nonnull)sender;
+@end
+
+
 SWIFT_CLASS("_TtC5Dairy18ThemeTableViewCell")
 @interface ThemeTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified themeName;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified foregroundColorView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified viewContainer;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backgroundImage;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified loackImage;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -491,19 +516,25 @@ SWIFT_CLASS("_TtC5Dairy20ThemesViewController")
 
 SWIFT_CLASS("_TtC5Dairy18homeViewController")
 @interface homeViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backgroundImage;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified noteTableView;
 - (void)viewDidLoad;
 - (void)updateTheme;
 - (void)viewWillAppear:(BOOL)animated;
 - (IBAction)onClickMenu:(id _Nonnull)sender;
+- (IBAction)onClickSort:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIScrollView;
 
 @interface homeViewController (SWIFT_EXTENSION(Dairy)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
 @end
+
+
 
 
 @interface homeViewController (SWIFT_EXTENSION(Dairy)) <UITableViewDataSource>

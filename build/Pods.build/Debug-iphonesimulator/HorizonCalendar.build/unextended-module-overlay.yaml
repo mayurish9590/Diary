@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/mayurishekhar/Documents/Diary  2 3/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Modules"
+    'name': "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/HorizonCalendar/HorizonCalendar.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/mayurishekhar/Documents/Diary  2 3/build/Pods.build/Debug-iphonesimulator/HorizonCalendar.build/unextended-module.modulemap",
+      'external-contents': "/Users/mayurishekhar/Diary/build/Pods.build/Debug-iphonesimulator/HorizonCalendar.build/unextended-module.modulemap",
     }]
   }]
 }

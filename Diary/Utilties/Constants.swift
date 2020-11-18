@@ -67,6 +67,7 @@ struct Nib {
     static let imageAttachmentPopup = "ImageAttachmentPopup"
     static let emojiPopup = "EmojiPopup"
     static let moreMenuPopup = "MoreMenuPopup"
+    static let sortPopup = "SortPopupView"
    
 }
 

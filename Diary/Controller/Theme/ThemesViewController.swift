@@ -9,6 +9,8 @@
 import UIKit
 
 class ThemesViewController: UIViewController {
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Themes"
@@ -25,7 +27,7 @@ class ThemesViewController: UIViewController {
 
     @objc func updateTheme() {
         let currentTheme = Themes.currentTheme()
-        self.view.backgroundColor = currentTheme.background
+       
 
     }
     

@@ -2,17 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/mayurishekhar/Documents/Diary  2 3/Diary/Utilties/Note+CoreDataClass.swift">
+      location = "group:/Users/mayurishekhar/Diary/Diary/Utilties/FileManager/Note+CoreDataClass.swift">
    </FileRef>
-   <Group
-      location = "group:Diary/Controller/../../Menu"
-      name = "Menu">
-      <FileRef
-         location = "group:Menu/MenuViewController.swift">
-      </FileRef>
-   </Group>
    <FileRef
-      location = "group:/Users/mayurishekhar/Documents/Diary  2 3/Diary/Utilties/Note+CoreDataProperties.swift">
+      location = "group:/Users/mayurishekhar/Diary/Diary/Utilties/FileManager/Note+CoreDataProperties.swift">
    </FileRef>
    <FileRef
       location = "group:Diary.xcodeproj">

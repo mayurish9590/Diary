@@ -108,7 +108,7 @@ class DMBManger {
     
         if (noteObj.count != 0){
         
-            try managedContext.delete(noteObj.first! )
+           managedContext.delete(noteObj.first!)
           
         }
     }
@@ -131,5 +131,78 @@ class DMBManger {
         
     }
     
+   static func sortbyAToZ() -> [NoteModel]?
+    {
+        
+        var notes : [Note] = []
+        
+       guard let appDelegate =
+                  UIApplication.shared.delegate as? AppDelegate else {
+                  return nil
+                }
+       
+        let managedContext =
+                  appDelegate.persistentContainer.viewContext
+      
+        let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
+        fetchRequest.sortDescriptors = [ NSSortDescriptor(key: DB.title, ascending: true), NSSortDescriptor(key: DB.noteDescription, ascending: true)]
+          
+        
+        do {
+               notes = try managedContext.fetch(fetchRequest)
+            
+        } catch let error as NSError {
+                     print("Could not fetch. \(error), \(error.userInfo)")
+              }
+             var noteModel: [NoteModel] = []
+             for note in notes {
+                 noteModel.append(NoteModel(emoji: note.emoji
+                     , imageAttachment: note.imageAttachment, noteDescription: note.noteDescription, noteID: Int(note.noteID), savingDate: note.savingDate!, savingTime: note.savingTime, title: note.title
+                 ))
+             }
+        return noteModel
+    }
+        
     
-}
+    
+    
+ static   func sortByZtoA() -> [NoteModel]?
+    {
+        
+        var notes : [Note] = []
+        guard let appDelegate =
+                    UIApplication.shared.delegate as? AppDelegate else {
+                    return nil
+                  }
+         
+          let managedContext =
+                    appDelegate.persistentContainer.viewContext
+        
+          let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
+        fetchRequest.sortDescriptors = [ NSSortDescriptor(key: DB.title, ascending: false),NSSortDescriptor(key: DB.noteDescription, ascending: false)]
+            
+          
+          do {
+                 notes = try managedContext.fetch(fetchRequest)
+              
+          } catch let error as NSError {
+                       print("Could not fetch. \(error), \(error.userInfo)")
+                }
+               var noteModel: [NoteModel] = []
+               for note in notes {
+                   noteModel.append(NoteModel(emoji: note.emoji
+                       , imageAttachment: note.imageAttachment, noteDescription: note.noteDescription, noteID: Int(note.noteID), savingDate: note.savingDate!, savingTime: note.savingTime, title: note.title
+                   ))
+               }
+          return noteModel
+    }
+      
+    
+    
+    
+    
+    
+    
+    }
+    
+

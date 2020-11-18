@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/HorizonCalendar.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		xaQG+OL7xUGM6FU51SisYPl+jsA=
+		tX48sP5SO3LEHxcJAW4AHLqyq80=
 		</data>
 		<key>Modules/HorizonCalendar.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		xaQG+OL7xUGM6FU51SisYPl+jsA=
+		tX48sP5SO3LEHxcJAW4AHLqyq80=
 		</data>
 		<key>Modules/HorizonCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/HorizonCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SiFeXjgL4kbv5vB3fQSgAxTJ47c=
+		OHzx8NebBwNrFP3rXtzFxl0mk1c=
 		</data>
 		<key>Modules/HorizonCalendar.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/HorizonCalendar.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		SiFeXjgL4kbv5vB3fQSgAxTJ47c=
+		OHzx8NebBwNrFP3rXtzFxl0mk1c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VCPlX5pPonrg7aBA12O9XmC6CkNkJT8NPgRyiD/2V6s=
+			HDgyTWN9OcQc+93q+1hm7TdmvSa5LSD8AGRDaLjE/qY=
 			</data>
 		</dict>
 		<key>Modules/HorizonCalendar.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VCPlX5pPonrg7aBA12O9XmC6CkNkJT8NPgRyiD/2V6s=
+			HDgyTWN9OcQc+93q+1hm7TdmvSa5LSD8AGRDaLjE/qY=
 			</data>
 		</dict>
 		<key>Modules/HorizonCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0vVXycOQYgCHab3qInXbQ7lC7T/me6w7ehhriAs1e/k=
+			Zkc1DwDXrn8+cRRDW1CRD/ztx/g6NfMBBgGx/EZXC7U=
 			</data>
 		</dict>
 		<key>Modules/HorizonCalendar.swiftmodule/x86_64.swiftdoc</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0vVXycOQYgCHab3qInXbQ7lC7T/me6w7ehhriAs1e/k=
+			Zkc1DwDXrn8+cRRDW1CRD/ztx/g6NfMBBgGx/EZXC7U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

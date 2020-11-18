@@ -11,14 +11,14 @@ import SwiftUI
 
 extension Themes {
 
-    var background: UIColor {
+    var background: UIImage {
     switch self {
     case .Theme1:
-      return UIColor(named: "theme1Background") ?? UIColor.orange
+      return UIImage(named: "Basic")!
     case .Theme2:
-      return  UIColor(named: "theme2Background") ?? UIColor.black
+      return  UIImage(named: "night")!
     case .Theme3:
-        return UIColor(named: "theme3Background") ?? UIColor.yellow
+        return UIImage(named: "wooden")!
     }
   }
     

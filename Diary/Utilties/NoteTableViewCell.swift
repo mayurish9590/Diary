@@ -12,6 +12,7 @@ class NoteTableViewCell: UITableViewCell {
 
     @IBOutlet weak var bacgroundImageView: UIImageView!
     
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     
    
@@ -30,7 +31,10 @@ class NoteTableViewCell: UITableViewCell {
         self.dateLabel.textColor = Themes.currentTheme().Text
          self.titleLabel.textColor = Themes.currentTheme().Text
          self.desciptionLabel.textColor = Themes.currentTheme().Text
-               
+        
+        self.containerView.layer.cornerRadius = 10
+        self.containerView.layer.borderColor = UIColor.white.cgColor
+        self.containerView.layer.borderWidth = 2
     }
 
     

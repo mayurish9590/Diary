@@ -14,11 +14,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		FqmFpDe2246xOGAC098MtfOQdLI=
+		7NYl3xy88P3TpoG7QNMK89P5WZk=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		1P4jA/J7RI6/A1bK3wentcWYrlA=
+		OHvY765dcF4xWyk814NSG8l59Sg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -26,71 +26,67 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		uwIDSuxg4GrBERezgHqtgo5UK1E=
+		UnAeEbKE2UslFQCCcov8xzYmru0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		eTpz4WxZd1iBqc4p9/kmdjmn8Mg=
+		htmNjvQoxoh3SoF9y3zQGEa3YSc=
+		</data>
+		<key>Base.lproj/Main.storyboardc/CalenderViewController.nib</key>
+		<data>
+		9N4+zGh6OG0daK7lTOuG64Y7p7k=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Fna-b5-ofA-view-nyn-8b-AR0.nib</key>
 		<data>
-		NpJKUsKibT8EKZA+r1U80UD2+YE=
+		9yzP/oDIMm2HlqApFoViSX2QzrA=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		FB93s1TOe6reKAjAu24LlcLCig8=
+		v3gWJYOrA+Y6q3bwkYmr+YJ+xBw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/MenuViewController.nib</key>
 		<data>
-		+odSvgrqjZbXQgYoEqpboiP6tWA=
+		Wdr4fYGbGIs/9f++Ywwp6BLujvA=
 		</data>
 		<key>Base.lproj/Main.storyboardc/NewNoteViewController.nib</key>
 		<data>
-		Ofq4hi3O0XbUMSfedDyoBzW/K20=
+		5YBfNI3rCD0TtKwljEk5t5yQZF0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/SzZ-Ca-IFk-view-SeE-3p-6WX.nib</key>
 		<data>
-		sNogJVQkowXDnUiUxgTj+cuEGRs=
+		fq5zFkkYAceFVCETWRiirzW9X9o=
 		</data>
 		<key>Base.lproj/Main.storyboardc/ThemesViewController.nib</key>
 		<data>
-		mx57Y+0ipGYl+0Fob5BTd3O6BBI=
+		OZ2lbNtvlDG+/VEyayLM1w/fS9Q=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-vsS-o5-17D.nib</key>
 		<data>
-		m86JTfwRtbVy8DVptrXk2sfEVa4=
+		ReGT1JlCIDu4/5rUQDXPu4i0U7M=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Wez-QR-0ec-view-bGU-q0-rN3.nib</key>
 		<data>
-		W8i+aTcgTD+KMUrrI+/5Sxj/Up0=
+		NwFgBuuXrJj9n21rAi0aG/wU4g4=
+		</data>
+		<key>Base.lproj/Main.storyboardc/aYW-5U-Ycq-view-ZZ2-dr-Ipg.nib</key>
+		<data>
+		oGtbH5YGa+qrEvc136OJXm4j3/0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/homeViewController.nib</key>
 		<data>
-		A7D67O8KouBlc5TP8qR6S8yCJS8=
+		gOgNJiUOvICbzrGAveJgG09ECjI=
 		</data>
 		<key>DeleteImage.nib</key>
 		<data>
-		soSMIFNBnM/uzCacd26Kznnir7A=
+		r3FLlKbBxatyWZy3lOmM+PQoMl0=
 		</data>
 		<key>EmojiCollectionViewCell.nib</key>
 		<data>
-		L5I6xeYDZgwvXxjvGs3rzoEIhYQ=
+		stZ/p9zK3uOtJiABxdd+oiGy9V0=
 		</data>
 		<key>EmojiPopup.nib</key>
 		<data>
-		JTnjJxVLFQ1NS8ZJgTnBAZEAf8o=
-		</data>
-		<key>Frameworks/HorizonCalendar.framework/HorizonCalendar</key>
-		<data>
-		YG3C4SvPEXobkS8+A+U1m0XOBno=
-		</data>
-		<key>Frameworks/HorizonCalendar.framework/Info.plist</key>
-		<data>
-		IV+wA5RZjq7Z+HLjobM6ixb7UBk=
-		</data>
-		<key>Frameworks/HorizonCalendar.framework/_CodeSignature/CodeResources</key>
-		<data>
-		oFoZmLU94RlHu7WpEdTwnBrN25Q=
+		BnXSTCY+zPcKHZHV2WUKnnlF5bg=
 		</data>
 		<key>Frameworks/SideMenu.framework/Info.plist</key>
 		<data>
@@ -98,7 +94,7 @@
 		</data>
 		<key>Frameworks/SideMenu.framework/SideMenu</key>
 		<data>
-		4jyMCjnf9EHPeh0Ozk8o3sPEPWA=
+		hJ5a2WcQkJXbkDC7IKNVdNPpU9Q=
 		</data>
 		<key>Frameworks/SideMenu.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -106,7 +102,7 @@
 		</data>
 		<key>ImageAttachmentPopup.nib</key>
 		<data>
-		LeqQ56fvL5v09KeZy7x0zOXbpmw=
+		4c3mBG7QxX068jduI2U230hNKfs=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -114,7 +110,7 @@
 		</data>
 		<key>MoreMenuPopup.nib</key>
 		<data>
-		OZZY8s+g2sfx02p9Flb21eRjPuk=
+		F3JKE1ZtJdMMsppctY4pXx8CCLc=
 		</data>
 		<key>NoteModel.momd/NoteModel.mom</key>
 		<data>
@@ -126,7 +122,7 @@
 		</data>
 		<key>NoteTableViewCell.nib</key>
 		<data>
-		oOLx/EpW4474CXETHYDPFzd2dqQ=
+		LYJN/ag2GUsQaqBdNUVQZc5Hcf0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -134,7 +130,11 @@
 		</data>
 		<key>SaveNote.nib</key>
 		<data>
-		LNKJHqVF40K2ZFLgcEABHUxmovo=
+		dFfTHO7Re8rxPsKs+F2CFnJ63GQ=
+		</data>
+		<key>SortPopupView.nib</key>
+		<data>
+		ch81gVL1TNjr5i9JAJEL94vqEwc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -157,14 +157,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KiBAGju1le/VtgpKtHHG1cPwWZvmvdPAXjzqxdd/VWM=
+			sa3ZbxX/9ndnF6luUOvEqpp6mt6cjIOLKiUCLjnCkZM=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UiFui6MX8a6HBK+lu0TdOU5rJMT+TV3HlHu/K7CRcpo=
+			Yhra0QFJWhGul+g4Gmu3QvgafkpK4avlVcQgPCzkc6I=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -178,119 +178,112 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BNcghLl4IQ9VZSSOzzrTOFc7w0F7QGGTBxmOXfUDP5k=
+			y9BZaZQKRDzQ5TIYS9UyGpI/e36l6yxKSBgggoR07VE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7YzEC0a8a0GBWQzKB9uD9tK5LEjZHKaViwDqUWBl6CY=
+			8pcchk9P+H5IbunwfKc/5/8kUwi07wlVzNCczWONFVY=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/CalenderViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CdeMMAVBs7iaVYiPU1r3kuHj1sksoX+aeLZ6JjM1D9g=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Fna-b5-ofA-view-nyn-8b-AR0.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Rd14E/4kgfsNew2uV5MtAKTzGfI5tWgOFPWFFwO2Nw=
+			Dt/E2ozIGdlwdganYDShlrYr7HL2jr/z3/mL25qTO/8=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEs0TdqEHXTg2JhvHdmlCUOT4GrefHATf2YGyHHGrMc=
+			EBKjrH7zaMIGZySfObO4wqwFjMk68ir1w6U8DK84G0w=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/MenuViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/CjXGnuFrdnr2XiCrAI0lx/kCNQPGZoLywBwPfxonvE=
+			a1hKNvc66mcj7hGxcvCxk9eaFYEXAxQd9c/bCM1ToEY=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/NewNoteViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fnyoQ/8qxfup6U4Xbtm/gvnDZQjKL9ihBwwCP5E2FBk=
+			WBTmmZi633i4Az1MsRpYN6Aus8fWctwmOrtc9X5vofI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/SzZ-Ca-IFk-view-SeE-3p-6WX.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			09N0oJxMpSZpy8B/nIA6yjJ4CniAyh/mKwBRLe2xPOs=
+			YemGit+OhWzvYC2HsnwRdCwou+zNDZyUBLWcR4vl3+o=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/ThemesViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fc9eC/ipdFHkMe8zZlRsTvynxUAJX517tn6BEtiUiaE=
+			8lxGJFwY0LW/B/QxQPYV78vBjjmnpEutiSN4noDx7yw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-vsS-o5-17D.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NlBmAc2hjUc3NfsRrg9ExtVO87OV8nJFgl8KoRc7lNI=
+			mPmAIGUhfqrvGnnN+Tqe3vqeaBWxM/6RHjcrZIMjPk4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Wez-QR-0ec-view-bGU-q0-rN3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			unBr9TaW8WJaDa4mB1FpGNOVZD/khY+wvw9pmjaXE8g=
+			XuEWMju0CUSOupvXfLbHFR7PSrPoBQN8ZVzy7lubgXo=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/aYW-5U-Ycq-view-ZZ2-dr-Ipg.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QYzDWJG67BHlqrhmVkfhTd2+UT55CVS5iFWtbJPezhM=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/homeViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bitIXX4ctg9Pxn83obv0l5Eae5yAdVIBstaMOVgSmFU=
+			p5Yp3WPWWGXVip8PqoC5Po+ds/+nUz9D/mSkhJwNVPA=
 			</data>
 		</dict>
 		<key>DeleteImage.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VaiTsW732EjXK+MWpLlAJG9DC2li6J4sKFe37uUU9Oc=
+			qXyUpk9I9I0dkkDW/soixxqDVSgtxQegTzaKkBkQxZg=
 			</data>
 		</dict>
 		<key>EmojiCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/AcjqJCkYmqQw23WWmwpBk0IYZKCitm0re4At0jKwoo=
+			Rx9ERWxe9uspC+DzQOPmBANPjvh3rc0akPo8Ya3Vijs=
 			</data>
 		</dict>
 		<key>EmojiPopup.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Xbva4uK0MbtHXDXZTYU6Z5v5pgbWoX17qTds2rk3UY=
-			</data>
-		</dict>
-		<key>Frameworks/HorizonCalendar.framework/HorizonCalendar</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pLjLlBGfjJy7jhtbrJesd3zB8v6M6lYCgH9wA9K5rBo=
-			</data>
-		</dict>
-		<key>Frameworks/HorizonCalendar.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jUGnLvSN3U1tFlko73zRpRFiWZU3VgkDFGkS4nqWZ2w=
-			</data>
-		</dict>
-		<key>Frameworks/HorizonCalendar.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OlNVvapZlEwVUrcFYjEgisGpQPdW6Q2inB+3rBM/g28=
+			ihPHbu4V7NG5mTSTGVYqurjdm5+zxzRDlUpzBoG7t6k=
 			</data>
 		</dict>
 		<key>Frameworks/SideMenu.framework/Info.plist</key>
@@ -304,7 +297,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XtMqsleOksOgdwn5A8vJPqu7DQwBpN7cBAjzICHIisA=
+			PwkD6qCCqcA4FZOG4PKl6T93Ws2AZxaqUyp+o6WP7MU=
 			</data>
 		</dict>
 		<key>Frameworks/SideMenu.framework/_CodeSignature/CodeResources</key>
@@ -318,14 +311,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xvxjsqFFI1f/AM/1iDBHD6A+pQDrCI6akYxhUeoxql8=
+			Qv6DU0CDnR4mjNsPHXUOpdfagQZoWYiiXW9FZaQTnrE=
 			</data>
 		</dict>
 		<key>MoreMenuPopup.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KnEEvWmzutG4JRz4G30yLS/oyadKTwciIb9zBscxBo8=
+			N7DjnBX/JlaXHoGfdpBtsTUd5YmwsyBl6UtHv71YGN4=
 			</data>
 		</dict>
 		<key>NoteModel.momd/NoteModel.mom</key>
@@ -346,14 +339,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OQ27YbQ9PDnOBDfTv96ps2BDz8AREmDYusdS5LgLehg=
+			c1UUKPWPZGS/zHCa8EfZ7HBbKmUz57aDkeIE54RgDWY=
 			</data>
 		</dict>
 		<key>SaveNote.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5PK8ts62r2vPF0/j+hiG/NWIW9scB5hcYtoyFXxGuTg=
+			/x/ieNYlIUGriPsSRPgUoqznQ3UibQVHf9PzTNo5Gjo=
+			</data>
+		</dict>
+		<key>SortPopupView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NYFXvLWI/T6oKa3VAS9I+gSyltMsxpKfj5g1YOEErTY=
 			</data>
 		</dict>
 	</dict>

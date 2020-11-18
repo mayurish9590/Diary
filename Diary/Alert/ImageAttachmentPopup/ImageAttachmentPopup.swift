@@ -52,11 +52,11 @@ class ImageAttachmentPopup: UIView {
         }
     }
     
+
     @objc func dismissPopoup() {
         parentView.endEditing(true)
         parentView.removeFromSuperview()
     }
-    
     @IBAction func onClickPhoto(_ sender: Any) {
         dismissPopoup()
         if let _delegate = self.delegate

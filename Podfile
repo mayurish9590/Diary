@@ -9,5 +9,5 @@ target 'Dairy' do
 
 pod 'SwiftLint'
 pod 'SideMenu'
-pod 'HorizonCalendar'
+
 end
