@@ -15,6 +15,7 @@ provides-dynamic-lookup:
 - "onlickCancel"
 - "parentView"
 - "showAlert"
+- "updateTheme"
 depends-top-level:
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
@@ -251,6 +252,7 @@ depends-member:
 - ["5Dairy21DeleteImageAttachmentC", "parentView"]
 - !private ["5Dairy21DeleteImageAttachmentC", "removeFromSuperview"]
 - ["5Dairy21DeleteImageAttachmentC", "showAlert"]
+- ["5Dairy21DeleteImageAttachmentC", "updateTheme"]
 - !private ["5Dairy16DeleteImagePopUpP", "deleteImage"]
 - !private ["SE", "addGestureRecognizer"]
 - !private ["SE", "autoresizingMask"]
@@ -478,6 +480,7 @@ depends-member:
 - !private ["So8NSObjectC", "removeFromSuperview"]
 - !private ["So8NSObjectC", "shared"]
 - ["So8NSObjectC", "showAlert"]
+- ["So8NSObjectC", "updateTheme"]
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectC", "windows"]
 - !private ["So8NSObjectP", "Bundle"]
@@ -833,6 +836,7 @@ depends-member:
 - !private ["So11UIResponderC", "removeFromSuperview"]
 - !private ["So11UIResponderC", "shared"]
 - ["So11UIResponderC", "showAlert"]
+- ["So11UIResponderC", "updateTheme"]
 - !private ["So11UIResponderC", "windows"]
 - !private ["So30UIResponderStandardEditActionsP", "Bundle"]
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
@@ -950,6 +954,7 @@ depends-member:
 - ["So6UIViewC", "parentView"]
 - !private ["So6UIViewC", "removeFromSuperview"]
 - ["So6UIViewC", "showAlert"]
+- ["So6UIViewC", "updateTheme"]
 - !private ["So8UIWindowC", "addSubview"]
 - !private ["So8UIWindowC", "isKeyWindow"]
 - !private ["7SwiftUI4ViewP", "addGestureRecognizer"]
@@ -1194,4 +1199,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "dc8c3b2565fc942a1917f702901dda87"
+interface-hash: "b77e3059fadf1be780773bbf3f05d1a1"

@@ -34,7 +34,7 @@ class SaveNote: UIView {
         containerView.layer.cornerRadius = 10
         containerView.layer.borderColor = UIColor.white.cgColor
         containerView.layer.borderWidth = 2
-        
+      
         parentView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         parentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
@@ -43,10 +43,17 @@ class SaveNote: UIView {
         parentView.addGestureRecognizer(tapGesture)
 
     }
+    func updateTheme()
+    {
+           let currenttheme = Themes.currentTheme()
+                    containerView.backgroundColor = currenttheme.alert
+        
+    }
     
     func showAlert() {
         if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first {
             window.addSubview(parentView)
+            updateTheme()
         }
     }
     

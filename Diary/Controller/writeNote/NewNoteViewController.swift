@@ -29,13 +29,13 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
   
     @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var descriptionTextView: UITextView!
-
+    var btn: UIButton?
     var noteobj: NoteModel?
     let imagePicker = UIImagePickerController()
     var attachimageData : Data!
     var emojiName : String!
   let  formatter = DateFormatter()
-                        
+    var isNoteEdited : Bool = false
     @IBOutlet weak var deleteImageButton: UIButton!
     private var currentTheme = Themes.currentTheme()
 
@@ -45,14 +45,14 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
         NSAttributedString(string: "Title", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         initialSetup()
         updateTheme()
-
+        floatingButton()
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateTheme), name: Notification.Name("Theme"), object: nil)
 
     }
     @objc func updateTheme() {
          currentTheme = Themes.currentTheme()
         self.backgroundImage.image = currentTheme.background
-        self.descriptionView.backgroundColor = currentTheme.alert
+        self.descriptionView.backgroundColor = currentTheme.navBar
     
         
     }
@@ -97,6 +97,39 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
             self.deleteImageButton.isHidden = true
         }
  }
+    
+    func floatingButton(){
+       
+        let btn = UIButton(type: .custom)
+        let x = UIScreen.main.bounds.width - (UIScreen.main.bounds.width / 3.5)
+        let y = UIScreen.main.bounds.height -  300
+        
+        btn.frame = CGRect(x: x, y: y, width: 100, height: 100)
+        //btn.setTitle("New", for: .normal)
+        btn.setTitleColor(Themes.currentTheme().Text, for: .normal)
+        btn.backgroundColor = Themes.currentTheme().foreground
+        btn.clipsToBounds = true
+        btn.layer.cornerRadius = 50
+        btn.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        btn.layer.borderWidth = 2.0
+        btn.setImage(UIImage(named: "floppy-disk"), for: .normal)
+        btn.tintColor = .white
+        btn.imageView?.contentMode = .scaleAspectFill
+        btn.addTarget(self, action: #selector(self.onclickNew), for: .touchUpInside)
+        self.btn = btn
+        view.addSubview(btn)
+        }
+    
+    
+     @objc func onclickNew()
+       {
+        self.save()
+        if let newNoteVC = self.storyboard?.instantiateViewController(withIdentifier: VC.home) as? homeViewController {
+                  self.navigationController?.pushViewController(newNoteVC, animated: true)
+            }
+       }
+ 
+    
     @IBAction func onClickHomeButton(_ sender: Any) {
         SaveNote.instance.delegate = self
         SaveNote.instance.showAlert()
@@ -206,7 +239,7 @@ extension NewNoteViewController : ImageAttachemet , UIImagePickerControllerDeleg
     let _url = ImageStorage.saveImage(imageName: "2", image: info[.originalImage] as! UIImage)
     
     self.attachedImage.image = ImageStorage.loadImageFromDiskWith(fileName: URL(fileURLWithPath: _url!))
-
+    self.isNoteEdited = true
         decriptionViewTrailing.constant = 240.0
     
     
@@ -217,6 +250,7 @@ extension NewNoteViewController : ImageAttachemet , UIImagePickerControllerDeleg
 extension NewNoteViewController : MoreMenu{
     func shareNote() {
         let activityVC = UIActivityViewController(activityItems: [self.titleText.text ?? " ", self.descriptionTextView.text ?? " ", self.dateLabel.text ?? " "], applicationActivities: nil)
+        self.isNoteEdited = true
         self.present(activityVC, animated: true, completion: nil)
         
     }
@@ -256,3 +290,5 @@ extension NewNoteViewController : DeleteImagePopUp
     
     
 }
+
+

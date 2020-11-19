@@ -33,6 +33,19 @@ extension Themes {
       }
     }
     
+    var navBar: UIColor {
+         switch self {
+         case .Theme1:
+           return  UIColor.purple
+         case .Theme2:
+           return   UIColor.black
+         case .Theme3:
+            return  UIColor.brown
+         }
+       }
+    
+    
+    
     
     var alert: UIColor {
          switch self {

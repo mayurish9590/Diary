@@ -45,6 +45,12 @@ class MoreMenuPopup: UIView {
         parentView.endEditing(true)
         parentView.removeFromSuperview()
     }
+    func updateTheme()
+    {
+        let currenttheme = Themes.currentTheme()
+        containerViewForButtons.backgroundColor = currenttheme.alert
+        
+    }
     
     @IBAction func onClickDelete(_ sender: Any) {
         dismissPopoup()
@@ -63,6 +69,7 @@ class MoreMenuPopup: UIView {
     func showAlert(topSpacingForContainer: CGFloat) {
         if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first {
             topCOnstraintForContainer.constant = topSpacingForContainer
+            updateTheme()
             window.addSubview(parentView)
             
         }

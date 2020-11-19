@@ -367,6 +367,7 @@ SWIFT_CLASS("_TtC5Dairy21NewNoteViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified deleteImageButton;
 - (void)viewDidLoad;
 - (void)updateTheme;
+- (void)onclickNew;
 - (IBAction)onClickHomeButton:(id _Nonnull)sender;
 - (IBAction)onClickAddEmoji:(id _Nonnull)sender;
 - (IBAction)onClickAddPhoto:(id _Nonnull)sender;
@@ -492,6 +493,7 @@ SWIFT_CLASS("_TtC5Dairy18ThemeTableViewCell")
 
 SWIFT_CLASS("_TtC5Dairy20ThemesViewController")
 @interface ThemesViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backgroundImage;
 - (void)viewDidLoad;
 - (void)updateTheme;
 - (void)onClickBack;
@@ -521,6 +523,7 @@ SWIFT_CLASS("_TtC5Dairy18homeViewController")
 - (void)viewDidLoad;
 - (void)updateTheme;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)onclickNew;
 - (IBAction)onClickMenu:(id _Nonnull)sender;
 - (IBAction)onClickSort:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

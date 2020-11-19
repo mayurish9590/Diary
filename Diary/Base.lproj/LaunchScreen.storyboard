@@ -15,9 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Basic" translatesAutoresizingMaskIntoConstraints="NO" id="fQg-dD-222">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon3" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUw-Tt-v3K">
                                 <rect key="frame" x="132" y="348" width="150" height="200"/>
                                 <constraints>
@@ -26,13 +23,9 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="fQg-dD-222" secondAttribute="bottom" id="LPB-uA-jJj"/>
-                            <constraint firstItem="fQg-dD-222" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Man-q2-XJm"/>
                             <constraint firstItem="iUw-Tt-v3K" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TiE-uw-R5i"/>
-                            <constraint firstItem="fQg-dD-222" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YLz-DE-Ajq"/>
-                            <constraint firstItem="fQg-dD-222" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bmx-4f-PlW"/>
                             <constraint firstItem="iUw-Tt-v3K" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dSa-oV-3KT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,7 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Basic" width="736" height="1308"/>
         <image name="icon3" width="695" height="772"/>
     </resources>
 </document>

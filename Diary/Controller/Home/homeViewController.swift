@@ -19,7 +19,7 @@ class homeViewController: UIViewController {
     var btn : UIButton!
     var notes : [NoteModel]?
     let cellSpacingHeight: CGFloat = 50
-    private var currentTheme = Themes.currentTheme()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         noteTableView.register(UINib(nibName: NoteViewCell.nibName, bundle: nil), forCellReuseIdentifier: NoteViewCell.CellReuseIdentifier)
@@ -28,24 +28,31 @@ class homeViewController: UIViewController {
         noteTableView.delegate = self
        updateTheme()
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateTheme), name: Notification.Name("Theme"), object: nil)
-      navigationController?.navigationBar.barTintColor = UIColor.purple
-        //floatingButton()
+      
+        floatingButton()
     }
     
     @objc func updateTheme() {
-        currentTheme = Themes.currentTheme()
-        self.backgroundImage.image = self.currentTheme.background
-  }
+        var currentTheme = Themes.currentTheme()
+        self.backgroundImage.image = currentTheme.background
+        navigationController?.navigationBar.barTintColor = currentTheme.navBar
+        
+    }
     
 func floatingButton(){
     let btn = UIButton(type: .custom)
-    btn.frame = CGRect(x: 285, y: 485, width: 100, height: 100)
-    btn.setTitle("All Defects", for: .normal)
-    btn.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+    let x = UIScreen.main.bounds.width - (UIScreen.main.bounds.width / 3.5)
+    let y = UIScreen.main.bounds.height -  300
+    
+    btn.frame = CGRect(x: x, y: y, width: 80, height: 80)
+    btn.setTitle("New", for: .normal)
+    btn.setTitleColor(Themes.currentTheme().Text, for: .normal)
+    btn.backgroundColor = Themes.currentTheme().alert
     btn.clipsToBounds = true
-    btn.layer.cornerRadius = 50
+    btn.layer.cornerRadius = 40
     btn.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     btn.layer.borderWidth = 3.0
+    btn.addTarget(self, action: #selector(self.onclickNew), for: .touchUpInside)
     self.btn = btn
     view.addSubview(btn)
 }
@@ -56,6 +63,12 @@ func floatingButton(){
         }
         print(notes!)
         
+    }
+    
+   @objc func onclickNew()
+    {  if let newNoteVC = self.storyboard?.instantiateViewController(withIdentifier: VC.noteDetailVC) as? NewNoteViewController {
+           self.navigationController?.pushViewController(newNoteVC, animated: true)
+             }
     }
     
     @IBAction func onClickMenu(_ sender: Any) {
@@ -99,7 +112,7 @@ extension homeViewController : UITableViewDataSource {
         cell.descriptionViewConstaints.constant = 99
         cell.bacgroundImageView.isHidden = false
         cell.desciptionLabel.isHidden = false
-
+        cell.containerView.backgroundColor = Themes.currentTheme().navBar
         if let note = notes{
         cell.emojiImageView.image = UIImage(named: note[indexPath.section].emoji!)
   
@@ -178,9 +191,10 @@ extension homeViewController : UITableViewDelegate
    
     }
 func scrollViewDidScroll(_ scrollView: UIScrollView) {
-let  off = scrollView.contentOffset.y
 
-    btn.frame = CGRect(x: 285, y:   off + 485, width: btn.frame.size.width, height: btn.frame.size.height)
+    let x = UIScreen.main.bounds.width - (UIScreen.main.bounds.width / 3.5)
+    let y = UIScreen.main.bounds.height - 300
+    btn.frame = CGRect(x: x, y: y, width: btn.frame.size.width, height: btn.frame.size.height)
     }
     
     
@@ -197,7 +211,7 @@ extension homeViewController: SortPopupView{
                     }
     
     func sortByNewerFirst() {
-        var notes = DMBManger.fetchAllNote()
+        let notes = DMBManger.fetchAllNote()
         self.notes = notes?.reversed()
         DispatchQueue.main.async {
                    self.noteTableView.reloadData()

@@ -171,7 +171,6 @@
 				9339CD162525C5D000C53931 /* Constants.swift */,
 				93F51741251DBF9B009FE8C2 /* SceneDelegate.swift */,
 				93F5173F251DBF9B009FE8C2 /* AppDelegate.swift */,
-				93E506A725219F7100517120 /* NoteTableViewCell.swift */,
 				1CF96214254A97AA002F41BA /* GradientView.swift */,
 			);
 			path = Utilties;
@@ -199,7 +198,6 @@
 		9329D91A251E00ED0004DB70 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				93E506A825219F7100517120 /* NoteTableViewCell.xib */,
 				93F51745251DBF9B009FE8C2 /* Main.storyboard */,
 			);
 			path = View;
@@ -237,7 +235,9 @@
 		9390E3E42542F1CA00660C0E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				93E506A825219F7100517120 /* NoteTableViewCell.xib */,
 				933B7C332535671900ACC4A7 /* homeViewController.swift */,
+				93E506A725219F7100517120 /* NoteTableViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";

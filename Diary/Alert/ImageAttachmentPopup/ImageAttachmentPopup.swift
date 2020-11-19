@@ -34,7 +34,8 @@ class ImageAttachmentPopup: UIView {
         containerVIew.layer.cornerRadius = 10
         containerVIew.layer.borderColor = UIColor.white.cgColor
         containerVIew.layer.borderWidth = 2
-        
+         let currenttheme = Themes.currentTheme()
+        containerVIew.backgroundColor = currenttheme.alert
         parentView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         parentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         

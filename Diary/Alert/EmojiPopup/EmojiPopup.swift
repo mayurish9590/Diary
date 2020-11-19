@@ -41,7 +41,7 @@ class EmojiPopup: UIView{
         emojiCollectionCOntainer.layer.cornerRadius = 10
         emojiCollectionCOntainer.layer.borderColor = UIColor.white.cgColor
         emojiCollectionCOntainer.layer.borderWidth = 2
-        
+      
         parentView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         parentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
@@ -61,10 +61,17 @@ class EmojiPopup: UIView{
         super.init(coder: coder)
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func upadteTheme()
+    {
+           let currenttheme = Themes.currentTheme()
+                    emojiCollectionCOntainer.backgroundColor = currenttheme.alert
+    }
     func showAlert() {
         if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first {
             window.addSubview(parentView)
         }
+        upadteTheme()
     }
     
 }

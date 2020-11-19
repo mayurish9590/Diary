@@ -53,8 +53,7 @@ class SortPopup: UIView {
            containerVIew.layer.cornerRadius = 10
            containerVIew.layer.borderColor = UIColor.white.cgColor
            containerVIew.layer.borderWidth = 2
-        let currentTheme = Themes.currentTheme()
-        containerVIew.backgroundColor = currentTheme.alert
+      
            parentView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
            parentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
            
@@ -70,11 +69,35 @@ class SortPopup: UIView {
         
     }
        
+    func updateTheme()
+    {
+        let currentTheme = Themes.currentTheme()
+        self.newerFirstslected.backgroundColor = currentTheme.foreground
+        self.newerfirstUnselcted.backgroundColor = currentTheme.foreground
+        self.olderFirstUnslected.backgroundColor = currentTheme.foreground
+        self.olderFirstSelcted.backgroundColor = currentTheme.foreground
+         self.ztoaselected.backgroundColor = currentTheme.foreground
+        self.ztoAunselected.backgroundColor = currentTheme.foreground
+        self.atoZselected.backgroundColor = currentTheme.foreground
+        self.atozUnslected.backgroundColor = currentTheme.foreground
+        
+        self.newerFirstslected.setTitleColor(currentTheme.Text, for: .normal)
+        self.newerfirstUnselcted.setTitleColor(currentTheme.Text, for: .normal)
+        self.olderFirstUnslected.setTitleColor(currentTheme.Text, for: .normal)
+        self.olderFirstSelcted.setTitleColor(currentTheme.Text, for: .normal)
+         self.ztoaselected.setTitleColor(currentTheme.Text, for: .normal)
+        self.ztoAunselected.setTitleColor(currentTheme.Text, for: .normal)
+        self.atoZselected.setTitleColor(currentTheme.Text, for: .normal)
+        self.atozUnslected.setTitleColor(currentTheme.Text, for: .normal)
+        
+        
+    }
+    
        func showAlert(topSpacingForContainer: CGFloat) {
            if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first {
                containerTopSpacingCnstraint.constant = topSpacingForContainer
                window.addSubview(parentView)
-               
+               updateTheme()
            }
        }
      
@@ -90,9 +113,14 @@ class SortPopup: UIView {
     
         self.newerFirstslected.isHidden = false
         self.newerfirstUnselcted.isHidden = true
+        self.olderFirstUnslected.isHidden = false
+        self.olderFirstSelcted.isHidden = true
+         self.ztoaselected.isHidden = true
+        self.ztoAunselected.isHidden = false
+        self.atoZselected.isHidden = true
+        self.atozUnslected.isHidden = false
         dismissPopoup()
-        self.newerFirstslected.isHidden = true
-        self.newerfirstUnselcted.isHidden = false
+       
         if let tampDelegate = self.delegate{
             tampDelegate.sortByNewerFirst()
             
@@ -100,12 +128,18 @@ class SortPopup: UIView {
     }
     
     @IBAction func onClickOlderFirst(_ sender: Any) {
-     self.olderFirstUnslected.isHidden = false
-    self.olderFirstSelcted.isHidden = true
+    self.olderFirstUnslected.isHidden = true
+    self.olderFirstSelcted.isHidden = false
+    self.newerFirstslected.isHidden = true
+    self.newerfirstUnselcted.isHidden = false
+    self.ztoaselected.isHidden = true
+    self.ztoAunselected.isHidden = false
+        self.atoZselected.isHidden = true
+        self.atozUnslected.isHidden = false
+        
            dismissPopoup()
     
-    self.olderFirstSelcted.isHidden = true
-    self.olderFirstUnslected.isHidden = false
+   
     if let tampDelegate = self.delegate{ tampDelegate.sortByOlderFirst()
                             
                         }
@@ -114,12 +148,16 @@ class SortPopup: UIView {
     }
     
     @IBAction func onClickAtoZ(_ sender: Any) {
-    
+    self.newerFirstslected.isHidden = true
+    self.newerfirstUnselcted.isHidden = false
         self.atoZselected.isHidden = false
         self.atozUnslected.isHidden = true
-               dismissPopoup()
-               self.atoZselected.isHidden = true
-               self.atozUnslected.isHidden = false
+         self.olderFirstSelcted.isHidden = true
+           self.olderFirstUnslected.isHidden = false
+         self.ztoaselected.isHidden = true
+               self.ztoAunselected.isHidden = false
+        dismissPopoup()
+               
              
         if let tampDelegate = self.delegate{
                    tampDelegate.sortByAToZ()
@@ -134,12 +172,18 @@ class SortPopup: UIView {
     }
     
     @IBAction func onclickZtoA(_ sender: Any) {
+        self.newerFirstslected.isHidden = true
+        self.newerfirstUnselcted.isHidden = false
     self.ztoaselected.isHidden = false
     self.ztoAunselected.isHidden = true
+    self.olderFirstSelcted.isHidden = true
+    self.olderFirstUnslected.isHidden = false
+    self.atoZselected.isHidden = true
+    self.atozUnslected.isHidden = false
+        
     dismissPopoup()
       
-        self.ztoaselected.isHidden = true
-        self.ztoAunselected.isHidden = false
+       
                    if let tampDelegate = self.delegate{
         tampDelegate.sortByZtoA()
         

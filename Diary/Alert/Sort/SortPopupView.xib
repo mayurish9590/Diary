@@ -36,6 +36,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="SsB-HK-1R1"/>
                             </constraints>
+                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title=" Newer first " image="circle" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -46,6 +47,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2x4-6n-boj" userLabel="Newer first">
                             <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title=" Newer first " image="circle.fill" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -57,6 +59,7 @@
                                 <constraint firstAttribute="height" constant="50" id="2qj-Fs-JIg"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="6lj-oz-GR2"/>
                             </constraints>
+                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title=" Older first " image="circle" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -70,6 +73,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="qwW-e8-Kdm"/>
                             </constraints>
+                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="  Older first " image="circle.fill" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -81,6 +85,7 @@
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="9Uh-as-hxH"/>
                                 <constraint firstAttribute="height" constant="50" id="hcW-ys-WPX"/>
                             </constraints>
+                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="    A   -&gt;   Z" image="circle" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -96,6 +101,7 @@
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="5kk-wo-s1A"/>
                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="LAv-Zi-p3T"/>
                             </constraints>
+                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="    A   -&gt;   Z" image="circle.fill" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -107,6 +113,7 @@
                                 <constraint firstAttribute="height" constant="50" id="Dzc-Zg-Pjs"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="IP9-Fn-gb0"/>
                             </constraints>
+                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="    Z   -&gt;   A" image="circle" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -117,6 +124,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVG-3Z-6LY" userLabel="AtoZ">
                             <rect key="frame" x="0.0" y="150" width="150" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="    Z   -&gt;   A" image="circle.fill" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>

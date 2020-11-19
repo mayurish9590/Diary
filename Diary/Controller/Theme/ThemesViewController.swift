@@ -11,6 +11,7 @@ import UIKit
 class ThemesViewController: UIViewController {
   
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Themes"
@@ -27,7 +28,7 @@ class ThemesViewController: UIViewController {
 
     @objc func updateTheme() {
         let currentTheme = Themes.currentTheme()
-       
+        self.backgroundImage.image = currentTheme.background
 
     }
     
