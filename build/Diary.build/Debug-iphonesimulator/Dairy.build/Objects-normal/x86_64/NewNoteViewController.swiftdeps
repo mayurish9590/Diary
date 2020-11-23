@@ -72,7 +72,6 @@ depends-top-level:
 - !private "FloatLiteralType"
 - "ImageAttachemet"
 - !private "ImageAttachmentPopup"
-- !private "ImageStorage"
 - !private "IntegerLiteralType"
 - "MoreMenu"
 - !private "MoreMenuPopup"
@@ -102,7 +101,6 @@ depends-top-level:
 - "UITextView"
 - "UIView"
 - "UIViewController"
-- !private "URL"
 - !private "UnicodeScalarType"
 - !private "VC"
 - !private "_ColorLiteralType"
@@ -150,7 +148,6 @@ depends-member:
 - !private ["s7CVarArgP", "DeleteImageAttachment"]
 - !private ["s7CVarArgP", "EmojiPopup"]
 - !private ["s7CVarArgP", "ImageAttachmentPopup"]
-- !private ["s7CVarArgP", "ImageStorage"]
 - ["s7CVarArgP", "InfoKey"]
 - !private ["s7CVarArgP", "Key"]
 - !private ["s7CVarArgP", "MoreMenuPopup"]
@@ -166,7 +163,6 @@ depends-member:
 - !private ["s7CVarArgP", "UIImage"]
 - ["s7CVarArgP", "UIImagePickerController"]
 - !private ["s7CVarArgP", "UIScreen"]
-- !private ["s7CVarArgP", "URL"]
 - !private ["s7CVarArgP", "VC"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addEmojiButton"]
@@ -267,7 +263,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "DeleteImageAttachment"]
 - !private ["s28CustomDebugStringConvertibleP", "EmojiPopup"]
 - !private ["s28CustomDebugStringConvertibleP", "ImageAttachmentPopup"]
-- !private ["s28CustomDebugStringConvertibleP", "ImageStorage"]
 - ["s28CustomDebugStringConvertibleP", "InfoKey"]
 - !private ["s28CustomDebugStringConvertibleP", "Key"]
 - !private ["s28CustomDebugStringConvertibleP", "MoreMenuPopup"]
@@ -284,7 +279,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - ["s28CustomDebugStringConvertibleP", "UIImagePickerController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIScreen"]
-- !private ["s28CustomDebugStringConvertibleP", "URL"]
 - !private ["s28CustomDebugStringConvertibleP", "VC"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addEmojiButton"]
@@ -393,7 +387,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "DeleteImageAttachment"]
 - !private ["s23CustomStringConvertibleP", "EmojiPopup"]
 - !private ["s23CustomStringConvertibleP", "ImageAttachmentPopup"]
-- !private ["s23CustomStringConvertibleP", "ImageStorage"]
 - ["s23CustomStringConvertibleP", "InfoKey"]
 - !private ["s23CustomStringConvertibleP", "Key"]
 - !private ["s23CustomStringConvertibleP", "MoreMenuPopup"]
@@ -410,7 +403,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIImage"]
 - ["s23CustomStringConvertibleP", "UIImagePickerController"]
 - !private ["s23CustomStringConvertibleP", "UIScreen"]
-- !private ["s23CustomStringConvertibleP", "URL"]
 - !private ["s23CustomStringConvertibleP", "VC"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addEmojiButton"]
@@ -527,7 +519,6 @@ depends-member:
 - !private ["5Dairy16DeleteImagePopUpP", "DeleteImageAttachment"]
 - !private ["5Dairy16DeleteImagePopUpP", "EmojiPopup"]
 - !private ["5Dairy16DeleteImagePopUpP", "ImageAttachmentPopup"]
-- !private ["5Dairy16DeleteImagePopUpP", "ImageStorage"]
 - !private ["5Dairy16DeleteImagePopUpP", "MoreMenuPopup"]
 - !private ["5Dairy16DeleteImagePopUpP", "NSAttributedString"]
 - !private ["5Dairy16DeleteImagePopUpP", "NoteModel"]
@@ -541,7 +532,6 @@ depends-member:
 - !private ["5Dairy16DeleteImagePopUpP", "UIImage"]
 - ["5Dairy16DeleteImagePopUpP", "UIImagePickerController"]
 - !private ["5Dairy16DeleteImagePopUpP", "UIScreen"]
-- !private ["5Dairy16DeleteImagePopUpP", "URL"]
 - !private ["5Dairy16DeleteImagePopUpP", "VC"]
 - ["5Dairy16DeleteImagePopUpP", ""]
 - !private ["5Dairy16DeleteImagePopUpP", "addEmojiButton"]
@@ -597,7 +587,6 @@ depends-member:
 - !private ["5Dairy12EmojiPopupPrP", "DeleteImageAttachment"]
 - !private ["5Dairy12EmojiPopupPrP", "EmojiPopup"]
 - !private ["5Dairy12EmojiPopupPrP", "ImageAttachmentPopup"]
-- !private ["5Dairy12EmojiPopupPrP", "ImageStorage"]
 - !private ["5Dairy12EmojiPopupPrP", "MoreMenuPopup"]
 - !private ["5Dairy12EmojiPopupPrP", "NSAttributedString"]
 - !private ["5Dairy12EmojiPopupPrP", "NoteModel"]
@@ -611,7 +600,6 @@ depends-member:
 - !private ["5Dairy12EmojiPopupPrP", "UIImage"]
 - ["5Dairy12EmojiPopupPrP", "UIImagePickerController"]
 - !private ["5Dairy12EmojiPopupPrP", "UIScreen"]
-- !private ["5Dairy12EmojiPopupPrP", "URL"]
 - !private ["5Dairy12EmojiPopupPrP", "VC"]
 - ["5Dairy12EmojiPopupPrP", ""]
 - !private ["5Dairy12EmojiPopupPrP", "addEmojiButton"]
@@ -678,7 +666,6 @@ depends-member:
 - !private ["SQ", "DeleteImageAttachment"]
 - !private ["SQ", "EmojiPopup"]
 - !private ["SQ", "ImageAttachmentPopup"]
-- !private ["SQ", "ImageStorage"]
 - ["SQ", "InfoKey"]
 - !private ["SQ", "Key"]
 - !private ["SQ", "MoreMenuPopup"]
@@ -696,7 +683,6 @@ depends-member:
 - !private ["SQ", "UIImage"]
 - ["SQ", "UIImagePickerController"]
 - !private ["SQ", "UIScreen"]
-- !private ["SQ", "URL"]
 - !private ["SQ", "VC"]
 - ["SQ", ""]
 - !private ["SQ", "addEmojiButton"]
@@ -826,7 +812,6 @@ depends-member:
 - !private ["SH", "DeleteImageAttachment"]
 - !private ["SH", "EmojiPopup"]
 - !private ["SH", "ImageAttachmentPopup"]
-- !private ["SH", "ImageStorage"]
 - ["SH", "InfoKey"]
 - !private ["SH", "Key"]
 - !private ["SH", "MoreMenuPopup"]
@@ -844,7 +829,6 @@ depends-member:
 - !private ["SH", "UIImage"]
 - ["SH", "UIImagePickerController"]
 - !private ["SH", "UIScreen"]
-- !private ["SH", "URL"]
 - !private ["SH", "VC"]
 - ["SH", ""]
 - !private ["SH", "addEmojiButton"]
@@ -942,7 +926,6 @@ depends-member:
 - !private ["5Dairy15ImageAttachemetP", "DeleteImageAttachment"]
 - !private ["5Dairy15ImageAttachemetP", "EmojiPopup"]
 - !private ["5Dairy15ImageAttachemetP", "ImageAttachmentPopup"]
-- !private ["5Dairy15ImageAttachemetP", "ImageStorage"]
 - !private ["5Dairy15ImageAttachemetP", "MoreMenuPopup"]
 - !private ["5Dairy15ImageAttachemetP", "NSAttributedString"]
 - !private ["5Dairy15ImageAttachemetP", "NoteModel"]
@@ -956,7 +939,6 @@ depends-member:
 - !private ["5Dairy15ImageAttachemetP", "UIImage"]
 - ["5Dairy15ImageAttachemetP", "UIImagePickerController"]
 - !private ["5Dairy15ImageAttachemetP", "UIScreen"]
-- !private ["5Dairy15ImageAttachemetP", "URL"]
 - !private ["5Dairy15ImageAttachemetP", "VC"]
 - ["5Dairy15ImageAttachemetP", ""]
 - !private ["5Dairy15ImageAttachemetP", "addEmojiButton"]
@@ -1002,8 +984,6 @@ depends-member:
 - !private ["5Dairy20ImageAttachmentPopupC", "delegate"]
 - !private ["5Dairy20ImageAttachmentPopupC", "instance"]
 - !private ["5Dairy20ImageAttachmentPopupC", "showAlert"]
-- !private ["5Dairy12ImageStorageV", "loadImageFromDiskWith"]
-- !private ["5Dairy12ImageStorageV", "saveImage"]
 - !private ["SD5IndexV", "originalImage"]
 - !private ["So30UIImagePickerControllerInfoKeya", "originalImage"]
 - !private ["8SideMenu18InitializableClassP", "CGRect"]
@@ -1015,7 +995,6 @@ depends-member:
 - !private ["8SideMenu18InitializableClassP", "DeleteImageAttachment"]
 - !private ["8SideMenu18InitializableClassP", "EmojiPopup"]
 - !private ["8SideMenu18InitializableClassP", "ImageAttachmentPopup"]
-- !private ["8SideMenu18InitializableClassP", "ImageStorage"]
 - ["8SideMenu18InitializableClassP", "InfoKey"]
 - !private ["8SideMenu18InitializableClassP", "Key"]
 - !private ["8SideMenu18InitializableClassP", "MoreMenuPopup"]
@@ -1031,7 +1010,6 @@ depends-member:
 - !private ["8SideMenu18InitializableClassP", "UIImage"]
 - ["8SideMenu18InitializableClassP", "UIImagePickerController"]
 - !private ["8SideMenu18InitializableClassP", "UIScreen"]
-- !private ["8SideMenu18InitializableClassP", "URL"]
 - !private ["8SideMenu18InitializableClassP", "VC"]
 - ["8SideMenu18InitializableClassP", ""]
 - !private ["8SideMenu18InitializableClassP", "addEmojiButton"]
@@ -1121,7 +1099,6 @@ depends-member:
 - !private ["5Dairy8MoreMenuP", "DeleteImageAttachment"]
 - !private ["5Dairy8MoreMenuP", "EmojiPopup"]
 - !private ["5Dairy8MoreMenuP", "ImageAttachmentPopup"]
-- !private ["5Dairy8MoreMenuP", "ImageStorage"]
 - !private ["5Dairy8MoreMenuP", "MoreMenuPopup"]
 - !private ["5Dairy8MoreMenuP", "NSAttributedString"]
 - !private ["5Dairy8MoreMenuP", "NoteModel"]
@@ -1135,7 +1112,6 @@ depends-member:
 - !private ["5Dairy8MoreMenuP", "UIImage"]
 - ["5Dairy8MoreMenuP", "UIImagePickerController"]
 - !private ["5Dairy8MoreMenuP", "UIScreen"]
-- !private ["5Dairy8MoreMenuP", "URL"]
 - !private ["5Dairy8MoreMenuP", "VC"]
 - ["5Dairy8MoreMenuP", ""]
 - !private ["5Dairy8MoreMenuP", "addEmojiButton"]
@@ -1192,7 +1168,6 @@ depends-member:
 - !private ["So8NSCodingP", "DeleteImageAttachment"]
 - !private ["So8NSCodingP", "EmojiPopup"]
 - !private ["So8NSCodingP", "ImageAttachmentPopup"]
-- !private ["So8NSCodingP", "ImageStorage"]
 - ["So8NSCodingP", "InfoKey"]
 - !private ["So8NSCodingP", "Key"]
 - !private ["So8NSCodingP", "MoreMenuPopup"]
@@ -1208,7 +1183,6 @@ depends-member:
 - !private ["So8NSCodingP", "UIImage"]
 - ["So8NSCodingP", "UIImagePickerController"]
 - !private ["So8NSCodingP", "UIScreen"]
-- !private ["So8NSCodingP", "URL"]
 - !private ["So8NSCodingP", "VC"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addEmojiButton"]
@@ -1297,7 +1271,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "DeleteImageAttachment"]
 - !private ["So26NSExtensionRequestHandlingP", "EmojiPopup"]
 - !private ["So26NSExtensionRequestHandlingP", "ImageAttachmentPopup"]
-- !private ["So26NSExtensionRequestHandlingP", "ImageStorage"]
 - ["So26NSExtensionRequestHandlingP", "InfoKey"]
 - !private ["So26NSExtensionRequestHandlingP", "MoreMenuPopup"]
 - !private ["So26NSExtensionRequestHandlingP", "NSAttributedString"]
@@ -1312,7 +1285,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - ["So26NSExtensionRequestHandlingP", "UIImagePickerController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIScreen"]
-- !private ["So26NSExtensionRequestHandlingP", "URL"]
 - !private ["So26NSExtensionRequestHandlingP", "VC"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "addEmojiButton"]
@@ -1382,7 +1354,6 @@ depends-member:
 - !private ["So8NSObjectC", "DeleteImageAttachment"]
 - !private ["So8NSObjectC", "EmojiPopup"]
 - !private ["So8NSObjectC", "ImageAttachmentPopup"]
-- !private ["So8NSObjectC", "ImageStorage"]
 - ["So8NSObjectC", "InfoKey"]
 - !private ["So8NSObjectC", "Key"]
 - !private ["So8NSObjectC", "MoreMenuPopup"]
@@ -1406,7 +1377,6 @@ depends-member:
 - ["So8NSObjectC", "UITextField"]
 - ["So8NSObjectC", "UITextView"]
 - ["So8NSObjectC", "UIView"]
-- !private ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "VC"]
 - ["So8NSObjectC", "addEmojiButton"]
 - ["So8NSObjectC", "addFromCamera"]
@@ -1503,7 +1473,6 @@ depends-member:
 - !private ["So8NSObjectP", "DeleteImageAttachment"]
 - !private ["So8NSObjectP", "EmojiPopup"]
 - !private ["So8NSObjectP", "ImageAttachmentPopup"]
-- !private ["So8NSObjectP", "ImageStorage"]
 - ["So8NSObjectP", "InfoKey"]
 - !private ["So8NSObjectP", "Key"]
 - !private ["So8NSObjectP", "MoreMenuPopup"]
@@ -1519,7 +1488,6 @@ depends-member:
 - !private ["So8NSObjectP", "UIImage"]
 - ["So8NSObjectP", "UIImagePickerController"]
 - !private ["So8NSObjectP", "UIScreen"]
-- !private ["So8NSObjectP", "URL"]
 - !private ["So8NSObjectP", "VC"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addEmojiButton"]
@@ -1617,7 +1585,6 @@ depends-member:
 - !private ["5Dairy21NewNoteViewControllerC", "DeleteImageAttachment"]
 - !private ["5Dairy21NewNoteViewControllerC", "EmojiPopup"]
 - !private ["5Dairy21NewNoteViewControllerC", "ImageAttachmentPopup"]
-- !private ["5Dairy21NewNoteViewControllerC", "ImageStorage"]
 - !private ["5Dairy21NewNoteViewControllerC", "MoreMenuPopup"]
 - !private ["5Dairy21NewNoteViewControllerC", "NSAttributedString"]
 - ["5Dairy21NewNoteViewControllerC", "NSLayoutConstraint"]
@@ -1639,7 +1606,6 @@ depends-member:
 - ["5Dairy21NewNoteViewControllerC", "UITextField"]
 - ["5Dairy21NewNoteViewControllerC", "UITextView"]
 - ["5Dairy21NewNoteViewControllerC", "UIView"]
-- !private ["5Dairy21NewNoteViewControllerC", "URL"]
 - !private ["5Dairy21NewNoteViewControllerC", "VC"]
 - ["5Dairy21NewNoteViewControllerC", "addEmojiButton"]
 - ["5Dairy21NewNoteViewControllerC", "addFromCamera"]
@@ -1745,7 +1711,6 @@ depends-member:
 - !private ["5Dairy13SaveNotePopUpP", "DeleteImageAttachment"]
 - !private ["5Dairy13SaveNotePopUpP", "EmojiPopup"]
 - !private ["5Dairy13SaveNotePopUpP", "ImageAttachmentPopup"]
-- !private ["5Dairy13SaveNotePopUpP", "ImageStorage"]
 - !private ["5Dairy13SaveNotePopUpP", "MoreMenuPopup"]
 - !private ["5Dairy13SaveNotePopUpP", "NSAttributedString"]
 - !private ["5Dairy13SaveNotePopUpP", "NoteModel"]
@@ -1759,7 +1724,6 @@ depends-member:
 - !private ["5Dairy13SaveNotePopUpP", "UIImage"]
 - ["5Dairy13SaveNotePopUpP", "UIImagePickerController"]
 - !private ["5Dairy13SaveNotePopUpP", "UIScreen"]
-- !private ["5Dairy13SaveNotePopUpP", "URL"]
 - !private ["5Dairy13SaveNotePopUpP", "VC"]
 - ["5Dairy13SaveNotePopUpP", ""]
 - !private ["5Dairy13SaveNotePopUpP", "addEmojiButton"]
@@ -1874,7 +1838,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "DeleteImageAttachment"]
 - !private ["So21UIAppearanceContainerP", "EmojiPopup"]
 - !private ["So21UIAppearanceContainerP", "ImageAttachmentPopup"]
-- !private ["So21UIAppearanceContainerP", "ImageStorage"]
 - ["So21UIAppearanceContainerP", "InfoKey"]
 - !private ["So21UIAppearanceContainerP", "MoreMenuPopup"]
 - !private ["So21UIAppearanceContainerP", "NSAttributedString"]
@@ -1889,7 +1852,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIImage"]
 - ["So21UIAppearanceContainerP", "UIImagePickerController"]
 - !private ["So21UIAppearanceContainerP", "UIScreen"]
-- !private ["So21UIAppearanceContainerP", "URL"]
 - !private ["So21UIAppearanceContainerP", "VC"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addEmojiButton"]
@@ -1983,7 +1945,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "DeleteImageAttachment"]
 - !private ["So18UIContentContainerP", "EmojiPopup"]
 - !private ["So18UIContentContainerP", "ImageAttachmentPopup"]
-- !private ["So18UIContentContainerP", "ImageStorage"]
 - ["So18UIContentContainerP", "InfoKey"]
 - !private ["So18UIContentContainerP", "MoreMenuPopup"]
 - !private ["So18UIContentContainerP", "NSAttributedString"]
@@ -1998,7 +1959,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIImage"]
 - ["So18UIContentContainerP", "UIImagePickerController"]
 - !private ["So18UIContentContainerP", "UIScreen"]
-- !private ["So18UIContentContainerP", "URL"]
 - !private ["So18UIContentContainerP", "VC"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "addEmojiButton"]
@@ -2110,7 +2070,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "DeleteImageAttachment"]
 - !private ["So18UIFocusEnvironmentP", "EmojiPopup"]
 - !private ["So18UIFocusEnvironmentP", "ImageAttachmentPopup"]
-- !private ["So18UIFocusEnvironmentP", "ImageStorage"]
 - ["So18UIFocusEnvironmentP", "InfoKey"]
 - !private ["So18UIFocusEnvironmentP", "MoreMenuPopup"]
 - !private ["So18UIFocusEnvironmentP", "NSAttributedString"]
@@ -2125,7 +2084,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
 - ["So18UIFocusEnvironmentP", "UIImagePickerController"]
 - !private ["So18UIFocusEnvironmentP", "UIScreen"]
-- !private ["So18UIFocusEnvironmentP", "URL"]
 - !private ["So18UIFocusEnvironmentP", "VC"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addEmojiButton"]
@@ -2246,7 +2204,6 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "DeleteImageAttachment"]
 - !private ["So31UIImagePickerControllerDelegateP", "EmojiPopup"]
 - !private ["So31UIImagePickerControllerDelegateP", "ImageAttachmentPopup"]
-- !private ["So31UIImagePickerControllerDelegateP", "ImageStorage"]
 - !private ["So31UIImagePickerControllerDelegateP", "MoreMenuPopup"]
 - !private ["So31UIImagePickerControllerDelegateP", "NSAttributedString"]
 - !private ["So31UIImagePickerControllerDelegateP", "NoteModel"]
@@ -2260,7 +2217,6 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "UIImage"]
 - ["So31UIImagePickerControllerDelegateP", "UIImagePickerController"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIScreen"]
-- !private ["So31UIImagePickerControllerDelegateP", "URL"]
 - !private ["So31UIImagePickerControllerDelegateP", "VC"]
 - ["So31UIImagePickerControllerDelegateP", ""]
 - !private ["So31UIImagePickerControllerDelegateP", "addEmojiButton"]
@@ -2344,7 +2300,6 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "DeleteImageAttachment"]
 - !private ["So30UINavigationControllerDelegateP", "EmojiPopup"]
 - !private ["So30UINavigationControllerDelegateP", "ImageAttachmentPopup"]
-- !private ["So30UINavigationControllerDelegateP", "ImageStorage"]
 - !private ["So30UINavigationControllerDelegateP", "MoreMenuPopup"]
 - !private ["So30UINavigationControllerDelegateP", "NSAttributedString"]
 - !private ["So30UINavigationControllerDelegateP", "NoteModel"]
@@ -2358,7 +2313,6 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "UIImage"]
 - ["So30UINavigationControllerDelegateP", "UIImagePickerController"]
 - !private ["So30UINavigationControllerDelegateP", "UIScreen"]
-- !private ["So30UINavigationControllerDelegateP", "URL"]
 - !private ["So30UINavigationControllerDelegateP", "VC"]
 - ["So30UINavigationControllerDelegateP", ""]
 - !private ["So30UINavigationControllerDelegateP", "addEmojiButton"]
@@ -2410,7 +2364,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "DeleteImageAttachment"]
 - !private ["So30UIPasteConfigurationSupportingP", "EmojiPopup"]
 - !private ["So30UIPasteConfigurationSupportingP", "ImageAttachmentPopup"]
-- !private ["So30UIPasteConfigurationSupportingP", "ImageStorage"]
 - ["So30UIPasteConfigurationSupportingP", "InfoKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "MoreMenuPopup"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSAttributedString"]
@@ -2425,7 +2378,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - ["So30UIPasteConfigurationSupportingP", "UIImagePickerController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIScreen"]
-- !private ["So30UIPasteConfigurationSupportingP", "URL"]
 - !private ["So30UIPasteConfigurationSupportingP", "VC"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addEmojiButton"]
@@ -2503,7 +2455,6 @@ depends-member:
 - !private ["So11UIResponderC", "DeleteImageAttachment"]
 - !private ["So11UIResponderC", "EmojiPopup"]
 - !private ["So11UIResponderC", "ImageAttachmentPopup"]
-- !private ["So11UIResponderC", "ImageStorage"]
 - ["So11UIResponderC", "InfoKey"]
 - !private ["So11UIResponderC", "MoreMenuPopup"]
 - !private ["So11UIResponderC", "NSAttributedString"]
@@ -2526,7 +2477,6 @@ depends-member:
 - ["So11UIResponderC", "UITextField"]
 - ["So11UIResponderC", "UITextView"]
 - ["So11UIResponderC", "UIView"]
-- !private ["So11UIResponderC", "URL"]
 - !private ["So11UIResponderC", "VC"]
 - ["So11UIResponderC", "addEmojiButton"]
 - ["So11UIResponderC", "addFromCamera"]
@@ -2610,7 +2560,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "DeleteImageAttachment"]
 - !private ["So30UIResponderStandardEditActionsP", "EmojiPopup"]
 - !private ["So30UIResponderStandardEditActionsP", "ImageAttachmentPopup"]
-- !private ["So30UIResponderStandardEditActionsP", "ImageStorage"]
 - ["So30UIResponderStandardEditActionsP", "InfoKey"]
 - !private ["So30UIResponderStandardEditActionsP", "MoreMenuPopup"]
 - !private ["So30UIResponderStandardEditActionsP", "NSAttributedString"]
@@ -2625,7 +2574,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - ["So30UIResponderStandardEditActionsP", "UIImagePickerController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIScreen"]
-- !private ["So30UIResponderStandardEditActionsP", "URL"]
 - !private ["So30UIResponderStandardEditActionsP", "VC"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addEmojiButton"]
@@ -2718,7 +2666,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "DeleteImageAttachment"]
 - !private ["So16UIStateRestoringP", "EmojiPopup"]
 - !private ["So16UIStateRestoringP", "ImageAttachmentPopup"]
-- !private ["So16UIStateRestoringP", "ImageStorage"]
 - ["So16UIStateRestoringP", "InfoKey"]
 - !private ["So16UIStateRestoringP", "MoreMenuPopup"]
 - !private ["So16UIStateRestoringP", "NSAttributedString"]
@@ -2733,7 +2680,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIImage"]
 - ["So16UIStateRestoringP", "UIImagePickerController"]
 - !private ["So16UIStateRestoringP", "UIScreen"]
-- !private ["So16UIStateRestoringP", "URL"]
 - !private ["So16UIStateRestoringP", "VC"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "addEmojiButton"]
@@ -2806,7 +2752,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "DeleteImageAttachment"]
 - !private ["So18UITraitEnvironmentP", "EmojiPopup"]
 - !private ["So18UITraitEnvironmentP", "ImageAttachmentPopup"]
-- !private ["So18UITraitEnvironmentP", "ImageStorage"]
 - ["So18UITraitEnvironmentP", "InfoKey"]
 - !private ["So18UITraitEnvironmentP", "MoreMenuPopup"]
 - !private ["So18UITraitEnvironmentP", "NSAttributedString"]
@@ -2821,7 +2766,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIImage"]
 - ["So18UITraitEnvironmentP", "UIImagePickerController"]
 - !private ["So18UITraitEnvironmentP", "UIScreen"]
-- !private ["So18UITraitEnvironmentP", "URL"]
 - !private ["So18UITraitEnvironmentP", "VC"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addEmojiButton"]
@@ -2899,7 +2843,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "DeleteImageAttachment"]
 - !private ["So23UIUserActivityRestoringP", "EmojiPopup"]
 - !private ["So23UIUserActivityRestoringP", "ImageAttachmentPopup"]
-- !private ["So23UIUserActivityRestoringP", "ImageStorage"]
 - ["So23UIUserActivityRestoringP", "InfoKey"]
 - !private ["So23UIUserActivityRestoringP", "MoreMenuPopup"]
 - !private ["So23UIUserActivityRestoringP", "NSAttributedString"]
@@ -2914,7 +2857,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
 - ["So23UIUserActivityRestoringP", "UIImagePickerController"]
 - !private ["So23UIUserActivityRestoringP", "UIScreen"]
-- !private ["So23UIUserActivityRestoringP", "URL"]
 - !private ["So23UIUserActivityRestoringP", "VC"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "addEmojiButton"]
@@ -3011,7 +2953,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "DeleteImageAttachment"]
 - !private ["So16UIViewControllerC", "EmojiPopup"]
 - !private ["So16UIViewControllerC", "ImageAttachmentPopup"]
-- !private ["So16UIViewControllerC", "ImageStorage"]
 - ["So16UIViewControllerC", "InfoKey"]
 - !private ["So16UIViewControllerC", "MoreMenuPopup"]
 - !private ["So16UIViewControllerC", "NSAttributedString"]
@@ -3034,7 +2975,6 @@ depends-member:
 - ["So16UIViewControllerC", "UITextField"]
 - ["So16UIViewControllerC", "UITextView"]
 - ["So16UIViewControllerC", "UIView"]
-- !private ["So16UIViewControllerC", "URL"]
 - !private ["So16UIViewControllerC", "VC"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "addEmojiButton"]
@@ -3093,7 +3033,6 @@ depends-member:
 - ["So16UIViewControllerC", "updateTheme"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
-- !private ["10Foundation3URLV", "init"]
 - !private ["5Dairy2VCV", "home"]
 - !private ["7SwiftUI4ViewP", "addSubview"]
 - !private ["7SwiftUI4ViewP", "attributedPlaceholder"]
@@ -3109,7 +3048,6 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
-- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
@@ -3124,7 +3062,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DeleteImageAttachment"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "EmojiPopup"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ImageAttachmentPopup"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "ImageStorage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "InfoKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Key"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "MoreMenuPopup"]
@@ -3140,7 +3077,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIScreen"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "VC"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addEmojiButton"]
@@ -3229,7 +3165,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DeleteImageAttachment"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "EmojiPopup"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ImageAttachmentPopup"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ImageStorage"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "InfoKey"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Key"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MoreMenuPopup"]
@@ -3245,7 +3180,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImagePickerController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIScreen"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URL"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "VC"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addEmojiButton"]
@@ -3402,7 +3336,6 @@ depends-nominal:
 - "SH"
 - "5Dairy15ImageAttachemetP"
 - !private "5Dairy20ImageAttachmentPopupC"
-- !private "5Dairy12ImageStorageV"
 - !private "SD5IndexV"
 - !private "So30UIImagePickerControllerInfoKeya"
 - "8SideMenu18InitializableClassP"
@@ -3487,12 +3420,10 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
-- !private "10Foundation3URLV"
 - !private "5Dairy2VCV"
 - !private "7SwiftUI4ViewP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s26_ExpressibleByColorLiteralP"
-- !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -3519,7 +3450,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Diary/Pods/VungleSDK.framework/Headers/VungleSDK.h"
 - "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
+- "/Users/mayurishekhar/Diary/Diary/Utilties/Dairy-Bridging-Header.h"
 - "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
 - "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"

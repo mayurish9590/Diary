@@ -1,20 +1,24 @@
 PODS:
   - SideMenu (6.5.0)
-  - SwiftLint (0.40.3)
+  - SwiftLint (0.41.0)
+  - VungleSDK-iOS (6.8.1)
 
 DEPENDENCIES:
   - SideMenu
   - SwiftLint
+  - VungleSDK-iOS (= 6.8.1)
 
 SPEC REPOS:
   trunk:
     - SideMenu
     - SwiftLint
+    - VungleSDK-iOS
 
 SPEC CHECKSUMS:
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
-  SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
+  SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
+  VungleSDK-iOS: 0405589c8626b2511dd57214a17e0d65e0d2f424
 
-PODFILE CHECKSUM: 81976eacac12e880bb226c7b8f75c5489ec0d736
+PODFILE CHECKSUM: 5ba6beb8ef7317c03b426f180fecf9e13fbff62f
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0

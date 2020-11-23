@@ -236,13 +236,12 @@ extension NewNoteViewController : ImageAttachemet , UIImagePickerControllerDeleg
  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
        imagePicker.dismiss(animated: true, completion: nil)
    
-    let _url = ImageStorage.saveImage(imageName: "2", image: info[.originalImage] as! UIImage)
+    //let _url = ImageStorage.saveImage(imageName: "2", image: info[.originalImage] as! UIImage)
     
-    self.attachedImage.image = ImageStorage.loadImageFromDiskWith(fileName: URL(fileURLWithPath: _url!))
+    self.attachedImage.image = info[.originalImage] as! UIImage
     self.isNoteEdited = true
         decriptionViewTrailing.constant = 240.0
-    
-    
+   
     }
 }
 
