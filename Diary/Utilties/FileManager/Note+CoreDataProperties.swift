@@ -17,9 +17,9 @@ extension Note {
     }
 
     @NSManaged public var emoji: String?
-    @NSManaged public var imageAttachment: String?
+    @NSManaged public var imageAttachment: Bool
     @NSManaged public var noteDescription: String?
-    @NSManaged public var noteID: Int64
+    @NSManaged public var noteID: String?
     @NSManaged public var savingDate: Date?
     @NSManaged public var savingTime: String?
     @NSManaged public var title: String?

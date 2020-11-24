@@ -45,13 +45,14 @@ class DeleteImageAttachment: UIView {
       func showAlert() {
           if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first {
               window.addSubview(parentView)
+            updateTheme()
           }
       }
     func updateTheme()
     {
          containerView.backgroundColor = Themes.currentTheme().alert
-        
     }
+    
       
       @objc func dismissPopoup() {
           parentView.endEditing(true)

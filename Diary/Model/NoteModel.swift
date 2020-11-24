@@ -8,11 +8,11 @@
 
 import Foundation
 struct NoteModel {
-    var emoji: String?
-    var imageAttachment: String?
-    var noteDescription: String?
-    var noteID: Int
+    var emoji: String
+    var imageAttachment: Bool = false
+    var noteDescription: String
+    var noteID: String
     var savingDate: Date
-    var savingTime: String?
-    var title: String?
+    var savingTime: String
+    var title: String
 }

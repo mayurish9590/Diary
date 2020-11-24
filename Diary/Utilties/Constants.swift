@@ -38,7 +38,7 @@ struct Theme
 struct Current {
     static var backgroundColor : UIColor = Theme.Background.noteBookTheme
     static var alertBackgroundColor : UIColor = Theme.Alert.lightTheme
-    static var lastNoteID : Int = 0
+  //  static var lastNoteID : Int = 0
 }
 
 struct VC {

@@ -47,7 +47,6 @@ class SaveNote: UIView {
     {
            let currenttheme = Themes.currentTheme()
                     containerView.backgroundColor = currenttheme.alert
-        
     }
     
     func showAlert() {

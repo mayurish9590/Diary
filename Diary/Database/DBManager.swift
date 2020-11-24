@@ -57,59 +57,67 @@ class DMBManger {
        
         
     }
-    static func fetchAllNote() -> [NoteModel]?
-    {
-     
+    static func fetchAllNote() -> [NoteModel]? {
+        
         var notes : [Note] = []
-    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil}
-      
-    let managedContext = appDelegate.persistentContainer.viewContext
-                
-    nsobjContext = managedContext
-    
-    let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil}
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        nsobjContext = managedContext
+        
+        let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
         do {
-          notes = try managedContext.fetch(fetchRequest)
-              } catch let error as NSError {
-                print("Could not fetch. \(error), \(error.userInfo)")
-         }
+            notes = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
         var noteModel: [NoteModel] = []
         for note in notes {
-            noteModel.append(NoteModel(emoji: note.emoji
-                , imageAttachment: note.imageAttachment, noteDescription: note.noteDescription, noteID: Int(note.noteID), savingDate: note.savingDate!, savingTime: note.savingTime, title: note.title
-            ))
+            if let emoji = note.emoji,
+               let noteDescription = note.noteDescription,
+               let noteId = note.noteID,
+               let savingDate = note.savingDate,
+               let savingTime = note.savingTime,
+               let title = note.title {
+                noteModel.append(NoteModel(emoji: emoji
+                                           , imageAttachment: note.imageAttachment, noteDescription: noteDescription,
+                                           noteID: noteId,
+                                           savingDate: savingDate,
+                                           savingTime: savingTime,
+                                           title: title
+                ))
+            }
         }
         
         
         return noteModel
     }
     
-    static func delete(note : NoteModel)
-    {
-       guard let appDelegate =
-              UIApplication.shared.delegate as? AppDelegate else {
-              return
-            }
-   
-    let managedContext =
-              appDelegate.persistentContainer.viewContext
-     
-       
+    static func delete(note : NoteModel) {
+        guard let appDelegate =
+                UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
         
         var noteObj  : [Note] = []
-       let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
-        fetchRequest.predicate = NSPredicate(format: "%K == %@ AND %K == %@ AND %K == %@", argumentArray: [DB.title, note.title!, DB.savingDate, note.savingDate, DB.noteDescription, note.noteDescription!])
         
-  do {
-                 noteObj = try managedContext.fetch(fetchRequest)
-                     } catch let error as NSError {
-                       print("Could not fetch. \(error), \(error.userInfo)")
-                }
-    
+        let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
+        fetchRequest.predicate = NSPredicate(format: "noteID == \(note.noteID)")
+        
+        do {
+            noteObj = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        
         if (noteObj.count != 0){
-        
-           managedContext.delete(noteObj.first!)
-          
+            
+            managedContext.delete(noteObj.first!)
+            
         }
     }
    
@@ -130,7 +138,7 @@ class DMBManger {
       */
         
     }
-    
+    /*
    static func sortbyAToZ() -> [NoteModel]?
     {
         
@@ -157,7 +165,7 @@ class DMBManger {
              var noteModel: [NoteModel] = []
              for note in notes {
                  noteModel.append(NoteModel(emoji: note.emoji
-                     , imageAttachment: note.imageAttachment, noteDescription: note.noteDescription, noteID: Int(note.noteID), savingDate: note.savingDate!, savingTime: note.savingTime, title: note.title
+                     , imageAttachment: note.imageAttachment, noteDescription: note.noteDescription, noteID: note.noteID!, savingDate: note.savingDate!, savingTime: note.savingTime, title: note.title
                  ))
              }
         return noteModel
@@ -191,14 +199,14 @@ class DMBManger {
                var noteModel: [NoteModel] = []
                for note in notes {
                    noteModel.append(NoteModel(emoji: note.emoji
-                       , imageAttachment: note.imageAttachment, noteDescription: note.noteDescription, noteID: Int(note.noteID), savingDate: note.savingDate!, savingTime: note.savingTime, title: note.title
+                       , imageAttachment: note.imageAttachment, noteDescription: note.noteDescription, noteID: note.noteID!, savingDate: note.savingDate!, savingTime: note.savingTime, title: note.title
                    ))
                }
           return noteModel
     }
       
     
-    
+    */
     
     
     
