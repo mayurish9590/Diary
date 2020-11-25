@@ -27,7 +27,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var addImageButton: UIBarButtonItem!
     
     private var noteId: String?
-    
+    private let textViewPlaceholderText = "Dear Diary"
     @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var descriptionTextView: UITextView!
     var noteobj: NoteModel?
@@ -35,7 +35,6 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     var attachimageData : Data!
     var emojiName : String!
     let  formatter = DateFormatter()
-    var isNoteEdited : Bool = false
     @IBOutlet weak var deleteImageButton: UIButton!
     private var currentTheme = Themes.currentTheme()
     
@@ -55,6 +54,14 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     }
     func initialSetup()
     {
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+
+        self.descriptionTextView.text = textViewPlaceholderText
+        self.descriptionTextView.textColor = UIColor.lightGray
+        
+        self.titleText.attributedPlaceholder = NSAttributedString(string: "Title",
+                                     attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         formatter.setLocalizedDateFormatFromTemplate("dd-MM-yyyy")
         if let note = self.noteobj {
             self.noteId = note.noteID
@@ -107,11 +114,14 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
         view.bringSubviewToFront(btn)
     }
     @IBAction func onClickHomeButton(_ sender: Any) {
-        if(isNoteEdited){
+        self.view.endEditing(true)
+        
+        if (!(self.titleText.text?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ?? false) || self.emojiName != nil || self.descriptionTextView.text != textViewPlaceholderText || self.attachedImage.image != nil){
             SaveNote.instance.delegate = self
             SaveNote.instance.showAlert()
         } else {
             self.navigationController?.popViewController(animated: true)
+
         }
     }
     
@@ -163,36 +173,38 @@ extension NewNoteViewController : SaveNotePopUp {
             DMBManger.saveToDB(note: self.noteobj!)
             
         } else{
-            // Current.lastNoteID = Current.lastNoteID + 1
-            let _noteDescription: String
-            let _title: String
-            var isImageAttached: Bool = false
-            let emojiName: String
-            if self.descriptionTextView.text != nil{
-                _noteDescription = self.descriptionTextView.text!
-            }else{
-                _noteDescription = DB.notAvailable
+            
+            if (self.titleText.text != "" || self.emojiName != nil || self.descriptionTextView.text != textViewPlaceholderText || self.attachedImage.image != nil){
+                
+                // Current.lastNoteID = Current.lastNoteID + 1
+                let _noteDescription: String
+                let _title: String
+                var isImageAttached: Bool = false
+                let emojiName: String
+                if self.descriptionTextView.text != nil{
+                    _noteDescription = self.descriptionTextView.text!
+                }else{
+                    _noteDescription = DB.notAvailable
+                }
+                
+                _title = self.titleText.text ?? DB.notAvailable
+                
+                if let attachImage = self.attachedImage.image, let imageName =  self.noteId {
+                    //print(attachImage.ur)
+                    isImageAttached = ImageStorage.saveImage(imageName: imageName, image: attachImage)
+                }
+                
+                if self.emojiName != nil{
+                    emojiName = self.emojiName
+                }else{
+                    emojiName = DB.notAvailable
+                }
+                
+                let currentNote = NoteModel(emoji: emojiName, imageAttachment: isImageAttached, noteDescription: _noteDescription, noteID:self.noteId!, savingDate: getCurrentDate(), savingTime: getCurrentTime(), title: _title)
+                DMBManger.saveToDB(note: currentNote)
+                self.navigationController?.popViewController(animated: true)
             }
-            
-            _title = self.titleText.text ?? DB.notAvailable
-            
-            if let attachImage = self.attachedImage.image, let imageName =  self.noteId {
-                //print(attachImage.ur)
-                isImageAttached = ImageStorage.saveImage(imageName: imageName, image: attachImage)
-            }
-            
-            if self.emojiName != nil{
-                emojiName = self.emojiName
-            }else{
-                emojiName = DB.notAvailable
-            }
-            
-            let currentNote = NoteModel(emoji: emojiName, imageAttachment: isImageAttached, noteDescription: _noteDescription, noteID:self.noteId!, savingDate: getCurrentDate(), savingTime: getCurrentTime(), title: _title)
-            DMBManger.saveToDB(note: currentNote)
         }
-        
-        
-        self.navigationController?.popViewController(animated: true)
     }
     
     func generateRandomString() -> String {
@@ -222,9 +234,7 @@ extension NewNoteViewController : ImageAttachemet , UIImagePickerControllerDeleg
         //let _url = ImageStorage.saveImage(imageName: "2", image: info[.originalImage] as! UIImage)
         
         self.attachedImage.image = info[.originalImage] as! UIImage
-        self.isNoteEdited = true
         self.imageContainerHeight.constant = 150.0
-        self.isNoteEdited = true
     }
 }
 
@@ -232,7 +242,7 @@ extension NewNoteViewController : ImageAttachemet , UIImagePickerControllerDeleg
 extension NewNoteViewController : MoreMenu{
     func shareNote() {
         let activityVC = UIActivityViewController(activityItems: [self.titleText.text ?? " ", self.descriptionTextView.text ?? " ", self.dateLabel.text ?? " "], applicationActivities: nil)
-        self.isNoteEdited = true
+//        self.isNoteEdited = true
         self.present(activityVC, animated: true, completion: nil)
         
     }
@@ -250,8 +260,9 @@ extension NewNoteViewController : MoreMenu{
 extension NewNoteViewController : EmojiPopupPr {
     func setEmoji(emojiName: String) {
         self.addEmojiButton.setImage(UIImage(named: emojiName), for: .normal)
-        self.emojiName = emojiName
-        self.isNoteEdited = true
+        if emojiName != "none" {
+            self.emojiName = emojiName
+        }
     }
     
 }
@@ -265,4 +276,27 @@ extension NewNoteViewController : DeleteImagePopUp
     
 }
 
+extension NewNoteViewController: UITextFieldDelegate {
+     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.titleText.resignFirstResponder()
+        self.descriptionTextView.becomeFirstResponder()
+        return true
+    }
+}
 
+extension NewNoteViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.white
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            textView.text = textViewPlaceholderText
+            textView.textColor = UIColor.lightGray
+        }
+    }
+}

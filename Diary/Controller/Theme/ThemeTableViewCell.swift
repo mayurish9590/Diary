@@ -35,7 +35,7 @@ class ThemeTableViewCell: UITableViewCell {
         self.foregroundColorView.backgroundColor = theme.foreground
         self.themeName.textColor = theme.Text
         self.themeName.text = theme.name
-        self.loackImage.isHidden = !theme.isLocked
+        //self.loackImage.isHidden = !theme.isLocked
     }
 
 }

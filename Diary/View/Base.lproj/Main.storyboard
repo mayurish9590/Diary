@@ -78,6 +78,9 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="SzZ-Ca-IFk" id="Abc-8O-roW"/>
+                                        </connections>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Dear Diary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pKP-qX-GDG">
                                         <rect key="frame" x="10" y="123" width="374" height="100"/>
@@ -88,6 +91,9 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="SzZ-Ca-IFk" id="5G5-65-rBt"/>
+                                        </connections>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiD-ao-HmN">
                                         <rect key="frame" x="344" y="58" width="40" height="40"/>
@@ -95,7 +101,10 @@
                                             <constraint firstAttribute="width" constant="40" id="JFB-BN-uxt"/>
                                             <constraint firstAttribute="height" constant="40" id="k9i-ZW-XEE"/>
                                         </constraints>
-                                        <state key="normal" image="003-happy-17"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="none">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="onClickAddEmoji:" destination="SzZ-Ca-IFk" eventType="touchUpInside" id="3iu-ZQ-PxI"/>
                                         </connections>
@@ -370,7 +379,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JV6-dg-ZMb" userLabel="ForegroundView">
                                                             <rect key="frame" x="0.0" y="0.0" width="98.5" height="100"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="azM-1G-xj8">
+                                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="azM-1G-xj8">
                                                                     <rect key="frame" x="34.5" y="35" width="30" height="30"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
@@ -449,7 +458,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="003-happy-17" width="512" height="512"/>
         <image name="arrow.up.arrow.down" catalog="system" width="128" height="98"/>
         <image name="cancel" width="512" height="512"/>
         <image name="dslr-camera" width="20" height="20"/>
@@ -457,6 +465,7 @@
         <image name="left-arrow" width="20" height="20"/>
         <image name="lock" width="15" height="15"/>
         <image name="more" width="20" height="20"/>
+        <image name="none" width="90" height="90"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="scribble.variable" catalog="system" width="128" height="118"/>
         <systemColor name="systemBackgroundColor">
