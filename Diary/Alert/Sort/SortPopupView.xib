@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SortPopup" customModule="Dairy" customModuleProvider="target">
             <connections>
-                <outlet property="atoZselected" destination="ETY-sL-v5y" id="P6B-fq-MzU"/>
-                <outlet property="atozUnslected" destination="tko-Cm-Ely" id="Khw-c9-eYj"/>
+                <outlet property="buttonAtoZ" destination="tko-Cm-Ely" id="F6G-7X-DtC"/>
+                <outlet property="buttonNewerFirst" destination="2Jj-G1-VLP" id="1F8-UU-F93"/>
+                <outlet property="buttonOlderFirst" destination="CN9-Uq-4fO" id="B5l-Zt-hmO"/>
+                <outlet property="buttonZtoA" destination="OIC-cM-gDJ" id="UVz-Mm-gyA"/>
                 <outlet property="containerTopSpacingCnstraint" destination="uN7-eM-F4C" id="eon-hY-gsj"/>
                 <outlet property="containerVIew" destination="kgQ-Sy-6Tt" id="lre-NG-m42"/>
-                <outlet property="newerFirstslected" destination="2x4-6n-boj" id="1Oy-QC-h8X"/>
-                <outlet property="newerfirstUnselcted" destination="2Jj-G1-VLP" id="PNT-MQ-lg3"/>
-                <outlet property="olderFirstSelcted" destination="1PJ-2V-yYC" id="2H7-Xc-MGn"/>
-                <outlet property="olderFirstUnslected" destination="CN9-Uq-4fO" id="F4T-ue-1fp"/>
                 <outlet property="parentView" destination="PTN-16-DsN" id="OfF-FN-t8N"/>
-                <outlet property="ztoAunselected" destination="OIC-cM-gDJ" id="ywJ-V8-0Qj"/>
-                <outlet property="ztoaselected" destination="HVG-3Z-6LY" id="A0o-z4-25x"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -30,141 +27,91 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgQ-Sy-6Tt">
                     <rect key="frame" x="220" y="0.0" width="150" height="200"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jj-G1-VLP" userLabel="Newer first">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jj-G1-VLP" userLabel="Newer first">
                             <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="SsB-HK-1R1"/>
                             </constraints>
                             <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title=" Newer first " image="circle" catalog="system">
+                            <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Newer first " image="circle" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
                                 <action selector="onClickNewerFirst:" destination="-1" eventType="touchUpInside" id="3VE-zm-yLR"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2x4-6n-boj" userLabel="Newer first">
-                            <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title=" Newer first " image="circle.fill" catalog="system">
-                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN9-Uq-4fO" userLabel="Olderfisrt unslected">
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN9-Uq-4fO" userLabel="Olderfisrt unslected">
                             <rect key="frame" x="0.0" y="50" width="150" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="2qj-Fs-JIg"/>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="6lj-oz-GR2"/>
                             </constraints>
                             <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title=" Older first " image="circle" catalog="system">
+                            <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Older first " image="circle" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
                                 <action selector="onClickOlderFirst:" destination="-1" eventType="touchUpInside" id="cvl-h3-pvS"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PJ-2V-yYC" userLabel="older first selected">
-                            <rect key="frame" x="0.0" y="50" width="150" height="50"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="qwW-e8-Kdm"/>
-                            </constraints>
-                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="  Older first " image="circle.fill" catalog="system">
-                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tko-Cm-Ely" userLabel="AtoZ">
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tko-Cm-Ely" userLabel="AtoZ">
                             <rect key="frame" x="0.0" y="100" width="150" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="9Uh-as-hxH"/>
                                 <constraint firstAttribute="height" constant="50" id="hcW-ys-WPX"/>
                             </constraints>
                             <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="    A   -&gt;   Z" image="circle" catalog="system">
+                            <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="A -&gt; Z" image="circle" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
                                 <action selector="onClickAtoZ:" destination="-1" eventType="touchUpInside" id="UoH-yv-ivz"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETY-sL-v5y" userLabel="AtoZselcted">
-                            <rect key="frame" x="0.0" y="100" width="150" height="50"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="1fo-uz-7wb"/>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="5kk-wo-s1A"/>
-                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="LAv-Zi-p3T"/>
-                            </constraints>
-                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="    A   -&gt;   Z" image="circle.fill" catalog="system">
-                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIC-cM-gDJ" userLabel="AtoZ">
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIC-cM-gDJ" userLabel="ZtoA">
                             <rect key="frame" x="0.0" y="150" width="150" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="Dzc-Zg-Pjs"/>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="IP9-Fn-gb0"/>
                             </constraints>
                             <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="    Z   -&gt;   A" image="circle" catalog="system">
+                            <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Z -&gt; A" image="circle" catalog="system">
                                 <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
                                 <action selector="onclickZtoA:" destination="-1" eventType="touchUpInside" id="vLT-fG-exq"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVG-3Z-6LY" userLabel="AtoZ">
-                            <rect key="frame" x="0.0" y="150" width="150" height="50"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="tintColor" red="1" green="0.97227032229999999" blue="0.9930675806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="    Z   -&gt;   A" image="circle.fill" catalog="system">
-                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="ETY-sL-v5y" firstAttribute="leading" secondItem="kgQ-Sy-6Tt" secondAttribute="leading" id="1hm-4m-SDs"/>
-                        <constraint firstItem="2x4-6n-boj" firstAttribute="top" secondItem="2Jj-G1-VLP" secondAttribute="top" id="2eD-QE-IVO"/>
-                        <constraint firstItem="ETY-sL-v5y" firstAttribute="top" secondItem="CN9-Uq-4fO" secondAttribute="bottom" id="3f0-ps-2dI"/>
-                        <constraint firstAttribute="trailing" secondItem="ETY-sL-v5y" secondAttribute="trailing" id="42R-iB-HNF"/>
-                        <constraint firstItem="1PJ-2V-yYC" firstAttribute="top" secondItem="2Jj-G1-VLP" secondAttribute="bottom" id="4cD-jF-SDI"/>
                         <constraint firstItem="tko-Cm-Ely" firstAttribute="top" secondItem="CN9-Uq-4fO" secondAttribute="bottom" id="6dh-nR-cLO"/>
-                        <constraint firstItem="HVG-3Z-6LY" firstAttribute="firstBaseline" secondItem="OIC-cM-gDJ" secondAttribute="firstBaseline" id="6l4-zH-OfE"/>
                         <constraint firstAttribute="height" constant="200" id="AYw-bJ-eD3"/>
                         <constraint firstAttribute="width" constant="150" id="BeX-p1-7PJ"/>
-                        <constraint firstItem="HVG-3Z-6LY" firstAttribute="leading" secondItem="OIC-cM-gDJ" secondAttribute="leading" id="KH3-GB-Nfz"/>
-                        <constraint firstItem="HVG-3Z-6LY" firstAttribute="baseline" secondItem="OIC-cM-gDJ" secondAttribute="baseline" id="KiC-F2-K6G"/>
                         <constraint firstItem="2Jj-G1-VLP" firstAttribute="leading" secondItem="kgQ-Sy-6Tt" secondAttribute="leading" id="Ooh-AH-ATY"/>
-                        <constraint firstItem="HVG-3Z-6LY" firstAttribute="top" secondItem="OIC-cM-gDJ" secondAttribute="top" id="P3X-ah-Upi"/>
-                        <constraint firstItem="HVG-3Z-6LY" firstAttribute="top" secondItem="tko-Cm-Ely" secondAttribute="bottom" id="QOZ-WG-zZc"/>
-                        <constraint firstItem="HVG-3Z-6LY" firstAttribute="trailing" secondItem="tko-Cm-Ely" secondAttribute="trailing" id="Qf7-1U-zCj"/>
+                        <constraint firstItem="OIC-cM-gDJ" firstAttribute="leading" secondItem="kgQ-Sy-6Tt" secondAttribute="leading" id="Pl2-GN-aQi"/>
                         <constraint firstItem="2Jj-G1-VLP" firstAttribute="top" secondItem="kgQ-Sy-6Tt" secondAttribute="top" id="SsL-Ky-asq"/>
-                        <constraint firstAttribute="trailing" secondItem="1PJ-2V-yYC" secondAttribute="trailing" id="T2k-2W-v1h"/>
-                        <constraint firstItem="HVG-3Z-6LY" firstAttribute="trailing" secondItem="OIC-cM-gDJ" secondAttribute="trailing" id="UZS-E7-5ne"/>
-                        <constraint firstItem="2x4-6n-boj" firstAttribute="firstBaseline" secondItem="2Jj-G1-VLP" secondAttribute="firstBaseline" id="WzP-Dj-3Iq"/>
                         <constraint firstItem="CN9-Uq-4fO" firstAttribute="top" secondItem="2Jj-G1-VLP" secondAttribute="bottom" id="XqZ-HQ-KcS"/>
-                        <constraint firstItem="HVG-3Z-6LY" firstAttribute="leading" secondItem="ETY-sL-v5y" secondAttribute="leading" id="XxN-P4-gsj"/>
-                        <constraint firstItem="2x4-6n-boj" firstAttribute="baseline" secondItem="2Jj-G1-VLP" secondAttribute="baseline" id="Z5f-c3-JhW"/>
                         <constraint firstAttribute="trailing" secondItem="CN9-Uq-4fO" secondAttribute="trailing" id="azW-Qh-HDP"/>
+                        <constraint firstItem="OIC-cM-gDJ" firstAttribute="top" secondItem="tko-Cm-Ely" secondAttribute="bottom" id="d2g-fN-TBv"/>
                         <constraint firstAttribute="trailing" secondItem="2Jj-G1-VLP" secondAttribute="trailing" id="dj0-To-YjR"/>
-                        <constraint firstItem="2x4-6n-boj" firstAttribute="leading" secondItem="2Jj-G1-VLP" secondAttribute="leading" id="fdG-fw-0TA"/>
-                        <constraint firstItem="1PJ-2V-yYC" firstAttribute="leading" secondItem="kgQ-Sy-6Tt" secondAttribute="leading" id="hOM-p6-N1H"/>
                         <constraint firstItem="CN9-Uq-4fO" firstAttribute="leading" secondItem="kgQ-Sy-6Tt" secondAttribute="leading" id="mat-tK-JhV"/>
                         <constraint firstItem="tko-Cm-Ely" firstAttribute="leading" secondItem="kgQ-Sy-6Tt" secondAttribute="leading" id="mjV-er-uul"/>
                         <constraint firstAttribute="trailing" secondItem="tko-Cm-Ely" secondAttribute="trailing" id="qcR-dX-cB0"/>
-                        <constraint firstItem="2x4-6n-boj" firstAttribute="trailing" secondItem="2Jj-G1-VLP" secondAttribute="trailing" id="txG-0I-af5"/>
+                        <constraint firstAttribute="trailing" secondItem="OIC-cM-gDJ" secondAttribute="trailing" id="s40-6R-Vxr"/>
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="0PK-YE-vJt"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="0PK-YE-vJt" firstAttribute="trailing" secondItem="kgQ-Sy-6Tt" secondAttribute="trailing" constant="5" id="3fR-g5-EcE"/>
@@ -173,12 +120,10 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="0PK-YE-vJt"/>
-            <point key="canvasLocation" x="194.20289855072465" y="-276.22767857142856"/>
+            <point key="canvasLocation" x="193.47826086956522" y="-276.5625"/>
         </view>
     </objects>
     <resources>
         <image name="circle" catalog="system" width="128" height="121"/>
-        <image name="circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

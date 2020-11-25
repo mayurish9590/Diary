@@ -62,19 +62,19 @@ class homeViewController: UIViewController {
         if let index = UserDefaults.standard.value(forKey: "sortselectionindex") as? Int {
             switch index {
             case 0:
-                self.notes = self.notes.sorted { $0.noteID > $1.noteID }
+                self.notes = self.notes.sorted { $0.noteID > $1.noteID }// newer
             case 1:
-                self.notes = self.notes.sorted { $0.noteID < $1.noteID }
+                self.notes = self.notes.sorted { $0.noteID < $1.noteID } //older
             case 2:
-                self.notes = self.notes.sorted { $0.title < $1.title }
+                self.notes = self.notes.sorted { $0.title < $1.title } // a-z
             case 3:
-                self.notes = self.notes.sorted { $0.title > $1.title }
+                self.notes = self.notes.sorted { $0.title > $1.title }// z-a
             default:
-                self.notes = self.notes.sorted { $0.noteID > $1.noteID }
+                self.notes = self.notes.sorted { $0.noteID > $1.noteID }// newer
                 
             }
         } else {
-            self.notes = self.notes.sorted { $0.noteID > $1.noteID }
+            self.notes = self.notes.sorted { $0.noteID > $1.noteID }// newer
         }
         DispatchQueue.main.async {
             self.noteTableView.reloadData()
