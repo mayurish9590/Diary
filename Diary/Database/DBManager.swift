@@ -123,19 +123,38 @@ class DMBManger {
    
     
     
-    static func update(note : Note)
+    static func update(note : NoteModel)
     {
-      /* guard let appDelegate =
-                    UIApplication.shared.delegate as? AppDelegate else {
-                    return
-                  }
-         
-          let managedContext =
-                    appDelegate.persistentContainer.viewContext
+        guard let appDelegate =
+                UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
         
-     let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
-       
-      */
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        
+        let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
+        fetchRequest.predicate = NSPredicate(format: "noteID == \(note.noteID)")
+        
+        do {
+            if let noteObj = try managedContext.fetch(fetchRequest).first {
+                noteObj.noteID = note.noteID
+                noteObj.emoji = note.emoji
+                noteObj.title = note.title
+                noteObj.noteDescription = note.noteDescription
+                noteObj.imageAttachment = note.imageAttachment
+                noteObj.savingTime = note.savingTime
+                noteObj.savingDate = note.savingDate
+                try  managedContext.save()
+
+            }
+           
+            
+            
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
         
     }
     /*

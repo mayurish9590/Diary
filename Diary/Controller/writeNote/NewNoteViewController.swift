@@ -206,7 +206,21 @@ extension NewNoteViewController : SaveNotePopUp {
         if(self.noteobj != nil )
         {
             //DMBManger.delete(note: self.noteobj!)
-            DMBManger.saveToDB(note: self.noteobj!)
+            self.noteobj?.title = self.titleText.text ?? ""
+            self.noteobj?.noteDescription = self.descriptionTextView.text
+            self.noteobj?.savingDate = self.getCurrentDate()
+            self.noteobj?.savingTime = self.getCurrentTime()
+            
+            if let attachImage = self.attachedImage.image, let imageName = self.noteobj?.noteID   {
+                //print(attachImage.ur)
+                noteobj?.imageAttachment =  ImageStorage.saveImage(imageName: "\(imageName)" , image: attachImage)
+            } else {
+                noteobj?.imageAttachment = false
+            }
+            if self.emojiName != nil{
+                noteobj?.emoji = self.emojiName
+            }
+            DMBManger.update(note: noteobj!)
             self.navigationController?.popViewController(animated: true)
 
             
@@ -224,24 +238,19 @@ extension NewNoteViewController : SaveNotePopUp {
                 }else{
                     _noteDescription = DB.notAvailable
                 }
-                
                 _title = self.titleText.text ?? DB.notAvailable
-                
                 if let attachImage = self.attachedImage.image   {
                     //print(attachImage.ur)
                     isImageAttached = ImageStorage.saveImage(imageName: "\(self.noteId)" , image: attachImage)
                 }
-                
                 if self.emojiName != nil{
                     emojiName = self.emojiName
                 }else{
                     emojiName = DB.notAvailable
                 }
-                
                 let currentNote = NoteModel(emoji: emojiName, imageAttachment: isImageAttached, noteDescription: _noteDescription, noteID:self.noteId, savingDate: getCurrentDate(), savingTime: getCurrentTime(), title: _title)
                 DMBManger.saveToDB(note: currentNote)
                 self.navigationController?.popViewController(animated: true)
-
             }
         }
     }
