@@ -16,7 +16,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var moreMenuButton: UIBarButtonItem!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var imageContainerHeight: NSLayoutConstraint!
-    private var isNoteChanged = false
+    private var isExistingNoteImageChanged = false
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var titleText: UITextField!
@@ -27,6 +27,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var addImageButton: UIBarButtonItem!
     
     private var noteId: Int64 = 0
+    private var isNoteImageUpdated = false
     private let textViewPlaceholderText = "Dear Diary"
     @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var descriptionTextView: UITextView!
@@ -37,6 +38,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     let  formatter = DateFormatter()
     @IBOutlet weak var deleteImageButton: UIButton!
     private var currentTheme = Themes.currentTheme()
+    @IBOutlet weak var heightConstraintOfNoteView: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +50,25 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateTheme), name: Notification.Name("Theme"), object: nil)
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    @objc func keyboardWillShow(notification: NSNotification) {
+        self.view.frame.origin.y -= 50
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+            self.view.frame.origin.y = 88
+    }
+    
+    
     @objc func updateTheme() {
         currentTheme = Themes.currentTheme()
         self.descriptionView.backgroundColor = currentTheme.navBar
@@ -63,6 +84,8 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
         self.titleText.attributedPlaceholder = NSAttributedString(string: "Title",
                                      attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         formatter.setLocalizedDateFormatFromTemplate("dd-MM-yyyy")
+        self.heightConstraintOfNoteView.constant = (0.6 * UIScreen.main.bounds.height) - 100
+        
         if let note = self.noteobj {
             self.noteId = note.noteID
             titleText.text = note.title
@@ -73,11 +96,11 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
             if (note.imageAttachment) {
                 self.attachedImage.image = ImageStorage.loadImageFromDiskWith(imageName: "\(note.noteID)")
                 self.imageContainerHeight.constant = 150
-                
+                self.heightConstraintOfNoteView.constant = self.heightConstraintOfNoteView.constant - self.imageContainerHeight.constant
+
             }
             self.emojiName = note.emoji
-            self.addEmojiButton.imageView?.image = UIImage(named: self.emojiName)
-            
+            self.addEmojiButton.setImage(UIImage(named: self.emojiName), for: .normal)
         }
         else
         {
@@ -115,14 +138,27 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     }
     @IBAction func onClickHomeButton(_ sender: Any) {
         self.view.endEditing(true)
-        
-        if (!(self.titleText.text?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ?? false) || self.emojiName != nil || self.descriptionTextView.text != textViewPlaceholderText || self.attachedImage.image != nil){
-            SaveNote.instance.delegate = self
-            SaveNote.instance.showAlert()
+        if(self.noteobj != nil){
+            if ((self.titleText.text?.trimmingCharacters(in: .whitespacesAndNewlines) != self.noteobj?.title) || self.emojiName != self.noteobj?.emoji || self.descriptionTextView.text != self.noteobj?.noteDescription || self.isExistingNoteImageChanged)  {
+                
+                SaveNote.instance.delegate = self
+                SaveNote.instance.showAlert()
+                
+            } else {
+                self.navigationController?.popViewController(animated: true)
+            }
+            
         } else {
-            self.navigationController?.popViewController(animated: true)
+            
+            if (!(self.titleText.text?.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ?? false) || self.emojiName != nil || self.descriptionTextView.text != textViewPlaceholderText || self.attachedImage.image != nil){
+                SaveNote.instance.delegate = self
+                SaveNote.instance.showAlert()
+            } else {
+                self.navigationController?.popViewController(animated: true)
 
+            }
         }
+        
     }
     
     @IBAction func onClickAddEmoji(_ sender: Any) {
@@ -171,6 +207,8 @@ extension NewNoteViewController : SaveNotePopUp {
         {
             //DMBManger.delete(note: self.noteobj!)
             DMBManger.saveToDB(note: self.noteobj!)
+            self.navigationController?.popViewController(animated: true)
+
             
         } else{
             
@@ -203,6 +241,7 @@ extension NewNoteViewController : SaveNotePopUp {
                 let currentNote = NoteModel(emoji: emojiName, imageAttachment: isImageAttached, noteDescription: _noteDescription, noteID:self.noteId, savingDate: getCurrentDate(), savingTime: getCurrentTime(), title: _title)
                 DMBManger.saveToDB(note: currentNote)
                 self.navigationController?.popViewController(animated: true)
+
             }
         }
     }
@@ -236,6 +275,12 @@ extension NewNoteViewController : ImageAttachemet , UIImagePickerControllerDeleg
         
         self.attachedImage.image = info[.originalImage] as! UIImage
         self.imageContainerHeight.constant = 150.0
+        self.heightConstraintOfNoteView.constant = self.heightConstraintOfNoteView.constant - self.imageContainerHeight.constant
+        if let existingNote = noteobj{
+            if existingNote.imageAttachment {
+                isExistingNoteImageChanged = true
+            }
+        }
     }
 }
 
@@ -273,6 +318,11 @@ extension NewNoteViewController : DeleteImagePopUp
     func deleteImage() {
         self.attachedImage.image = nil
         self.imageContainerHeight.constant = 0
+        if let existingNote = noteobj{
+            if existingNote.imageAttachment {
+                isExistingNoteImageChanged = true
+            }
+        }
     }
     
 }

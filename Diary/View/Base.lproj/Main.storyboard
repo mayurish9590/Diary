@@ -83,11 +83,8 @@
                                         </connections>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Dear Diary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pKP-qX-GDG">
-                                        <rect key="frame" x="10" y="123" width="374" height="100"/>
+                                        <rect key="frame" x="10" y="123" width="374" height="117"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="0yj-GL-0Rj"/>
-                                        </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -117,6 +114,7 @@
                                     <constraint firstItem="9hd-5a-KRE" firstAttribute="top" secondItem="fC6-Z9-yAA" secondAttribute="top" constant="20" id="5tP-kI-Vyp"/>
                                     <constraint firstItem="k1U-jy-mjl" firstAttribute="trailing" secondItem="pKP-qX-GDG" secondAttribute="trailing" id="Air-4o-Sax"/>
                                     <constraint firstAttribute="trailing" secondItem="ZiD-ao-HmN" secondAttribute="trailing" constant="10" id="DHB-3m-mSL"/>
+                                    <constraint firstAttribute="bottom" secondItem="pKP-qX-GDG" secondAttribute="bottom" constant="10" id="FxW-mm-8C6"/>
                                     <constraint firstItem="uk2-QZ-uRR" firstAttribute="top" secondItem="9hd-5a-KRE" secondAttribute="bottom" constant="10" id="Rha-Wm-kS4"/>
                                     <constraint firstItem="pKP-qX-GDG" firstAttribute="top" secondItem="uk2-QZ-uRR" secondAttribute="bottom" constant="20" id="VjI-bK-0r7"/>
                                     <constraint firstItem="9hd-5a-KRE" firstAttribute="leading" secondItem="fC6-Z9-yAA" secondAttribute="leading" constant="10" id="c8C-Rs-xBC"/>
@@ -169,6 +167,7 @@
                         <outlet property="deleteImageButton" destination="akL-5k-M8D" id="Wdd-lu-9wi"/>
                         <outlet property="descriptionTextView" destination="pKP-qX-GDG" id="z5p-QF-pFD"/>
                         <outlet property="descriptionView" destination="fC6-Z9-yAA" id="dgE-ad-01k"/>
+                        <outlet property="heightConstraintOfNoteView" destination="ral-hk-HRE" id="Ht8-CK-6oa"/>
                         <outlet property="imageContainerHeight" destination="Cq2-c2-6ua" id="e39-F2-tO0"/>
                         <outlet property="moreMenuButton" destination="6Kk-Hl-pcR" id="LMV-eP-yI4"/>
                         <outlet property="timeLabel" destination="k1U-jy-mjl" id="vy1-oQ-Gzb"/>
