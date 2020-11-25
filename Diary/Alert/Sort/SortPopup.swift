@@ -110,7 +110,7 @@ class SortPopup: UIView {
     
     
     @IBAction func onClickNewerFirst(_ sender: Any) {
-    
+
         self.newerFirstslected.isHidden = false
         self.newerfirstUnselcted.isHidden = true
         self.olderFirstUnslected.isHidden = false
@@ -120,7 +120,7 @@ class SortPopup: UIView {
         self.atoZselected.isHidden = true
         self.atozUnslected.isHidden = false
         dismissPopoup()
-       
+        UserDefaults.standard.setValue(0, forKey: "sortselectionindex")
         if let tampDelegate = self.delegate{
             tampDelegate.sortByNewerFirst()
             
@@ -138,7 +138,7 @@ class SortPopup: UIView {
         self.atozUnslected.isHidden = false
         
            dismissPopoup()
-    
+        UserDefaults.standard.setValue(1, forKey: "sortselectionindex")
    
     if let tampDelegate = self.delegate{ tampDelegate.sortByOlderFirst()
                             
@@ -157,7 +157,7 @@ class SortPopup: UIView {
          self.ztoaselected.isHidden = true
                self.ztoAunselected.isHidden = false
         dismissPopoup()
-               
+        UserDefaults.standard.setValue(2, forKey: "sortselectionindex")
              
         if let tampDelegate = self.delegate{
                    tampDelegate.sortByAToZ()
@@ -182,7 +182,7 @@ class SortPopup: UIView {
     self.atozUnslected.isHidden = false
         
     dismissPopoup()
-      
+        UserDefaults.standard.setValue(3, forKey: "sortselectionindex")
        
                    if let tampDelegate = self.delegate{
         tampDelegate.sortByZtoA()

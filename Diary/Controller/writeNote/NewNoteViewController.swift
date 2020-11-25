@@ -26,7 +26,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var addImageButton: UIBarButtonItem!
     
-    private var noteId: String?
+    private var noteId: Int64 = 0
     private let textViewPlaceholderText = "Dear Diary"
     @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var descriptionTextView: UITextView!
@@ -71,7 +71,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
             timeLabel.text = note.savingTime
             
             if (note.imageAttachment) {
-                self.attachedImage.image = ImageStorage.loadImageFromDiskWith(imageName: note.noteID)
+                self.attachedImage.image = ImageStorage.loadImageFromDiskWith(imageName: "\(note.noteID)")
                 self.imageContainerHeight.constant = 150
                 
             }
@@ -81,7 +81,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
         }
         else
         {
-            self.noteId = self.generateRandomString()
+            self.noteId =  Date().currentTimeMillis() //self.generateRandomString()
             dateLabel.text = formatter.string(from: getCurrentDate())
             timeLabel.text = getCurrentTime()
         }
@@ -189,9 +189,9 @@ extension NewNoteViewController : SaveNotePopUp {
                 
                 _title = self.titleText.text ?? DB.notAvailable
                 
-                if let attachImage = self.attachedImage.image, let imageName =  self.noteId {
+                if let attachImage = self.attachedImage.image   {
                     //print(attachImage.ur)
-                    isImageAttached = ImageStorage.saveImage(imageName: imageName, image: attachImage)
+                    isImageAttached = ImageStorage.saveImage(imageName: "\(self.noteId)" , image: attachImage)
                 }
                 
                 if self.emojiName != nil{
@@ -200,7 +200,7 @@ extension NewNoteViewController : SaveNotePopUp {
                     emojiName = DB.notAvailable
                 }
                 
-                let currentNote = NoteModel(emoji: emojiName, imageAttachment: isImageAttached, noteDescription: _noteDescription, noteID:self.noteId!, savingDate: getCurrentDate(), savingTime: getCurrentTime(), title: _title)
+                let currentNote = NoteModel(emoji: emojiName, imageAttachment: isImageAttached, noteDescription: _noteDescription, noteID:self.noteId, savingDate: getCurrentDate(), savingTime: getCurrentTime(), title: _title)
                 DMBManger.saveToDB(note: currentNote)
                 self.navigationController?.popViewController(animated: true)
             }
@@ -211,6 +211,7 @@ extension NewNoteViewController : SaveNotePopUp {
         let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         return String((0..<10).map{ _ in letters.randomElement()! })
     }
+ 
     
 }
 

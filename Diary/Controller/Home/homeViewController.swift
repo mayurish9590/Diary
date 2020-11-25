@@ -59,6 +59,23 @@ class homeViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         self.notes = DMBManger.fetchAllNote() ?? []
+        if let index = UserDefaults.standard.value(forKey: "sortselectionindex") as? Int {
+            switch index {
+            case 0:
+                self.notes = self.notes.sorted { $0.noteID > $1.noteID }
+            case 1:
+                self.notes = self.notes.sorted { $0.noteID < $1.noteID }
+            case 2:
+                self.notes = self.notes.sorted { $0.title < $1.title }
+            case 3:
+                self.notes = self.notes.sorted { $0.title > $1.title }
+            default:
+                self.notes = self.notes.sorted { $0.noteID > $1.noteID }
+                
+            }
+        } else {
+            self.notes = self.notes.sorted { $0.noteID > $1.noteID }
+        }
         DispatchQueue.main.async {
             self.noteTableView.reloadData()
         }
@@ -145,40 +162,30 @@ extension homeViewController : UITableViewDelegate
 }
 
 extension homeViewController: SortPopupView{
-    func sortByOlderFirst() {
-        self.notes = DMBManger.fetchAllNote() ?? []
-        
-        DispatchQueue.main.async {
-            self.noteTableView.reloadData()
-            
-        }
-    }
     
     func sortByNewerFirst() {
-        self.notes = self.notes.reversed()
-        DispatchQueue.main.async {
-            self.noteTableView.reloadData()
-            
-        }
-        
+        self.notes = self.notes.sorted { $0.noteID > $1.noteID }
+        self.noteTableView.reloadData()
+    }
+    
+    func sortByOlderFirst() {
+        self.notes = self.notes.sorted { $0.noteID < $1.noteID }
+        self.noteTableView.reloadData()
     }
     
     func sortByAToZ() {
-        /*
-         self.notes = DMBManger.sortbyAToZ() ?? []
-         DispatchQueue.main.async {
-         self.noteTableView.reloadData()
-         }
-         */
+        self.notes = self.notes.sorted { $0.title < $1.title }
+        self.noteTableView.reloadData()
     }
     
     func sortByZtoA() {
-        /*
-         self.notes = DMBManger.sortByZtoA() ?? []
-         DispatchQueue.main.async {
-         self.noteTableView.reloadData()
-         }
-         */
+        self.notes = self.notes.sorted { $0.title > $1.title }
+        self.noteTableView.reloadData()
     }
-    
+}
+
+extension Date {
+    func currentTimeMillis() -> Int64 {
+        return Int64(self.timeIntervalSince1970 * 1000)
+    }
 }

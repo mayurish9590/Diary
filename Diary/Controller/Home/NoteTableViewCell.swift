@@ -52,7 +52,7 @@ class NoteTableViewCell: UITableViewCell {
         self.dateLabel.text = formatter.string(from: note.savingDate)
         if note.imageAttachment {
             self.backgroundImageHeightConstraint.constant = 100
-            self.bacgroundImageView.image = ImageStorage.loadImageFromDiskWith(imageName: note.noteID)
+            self.bacgroundImageView.image = ImageStorage.loadImageFromDiskWith(imageName: "\(note.noteID)")
         } else {
             self.backgroundImageHeightConstraint.constant = 0
         }

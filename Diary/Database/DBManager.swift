@@ -76,13 +76,12 @@ class DMBManger {
         for note in notes {
             if let emoji = note.emoji,
                let noteDescription = note.noteDescription,
-               let noteId = note.noteID,
                let savingDate = note.savingDate,
                let savingTime = note.savingTime,
                let title = note.title {
                 noteModel.append(NoteModel(emoji: emoji
                                            , imageAttachment: note.imageAttachment, noteDescription: noteDescription,
-                                           noteID: noteId,
+                                           noteID: note.noteID,
                                            savingDate: savingDate,
                                            savingTime: savingTime,
                                            title: title
