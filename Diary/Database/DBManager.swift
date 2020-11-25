@@ -109,15 +109,16 @@ class DMBManger {
         
         do {
             noteObj = try managedContext.fetch(fetchRequest)
+            if (noteObj.count != 0){
+                managedContext.delete(noteObj.first!)
+            }
+          try  managedContext.save()
+            
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
         
-        if (noteObj.count != 0){
-            
-            managedContext.delete(noteObj.first!)
-            
-        }
+        
     }
    
     

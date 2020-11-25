@@ -90,14 +90,10 @@ class homeViewController: UIViewController {
     }
     
     @IBAction func onClickMenu(_ sender: Any) {
-        /*
-         if let menuVc = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
-         let menu = SideMenuNavigationController(rootViewController:menuVc )
-         menu.leftSide = true
-         menu.navigationBar.isHidden = true
-         present(menu, animated: true, completion: nil)
-         }
-         */
+        
+        if let vc = self.storyboard?.instantiateViewController(identifier: "ThemesViewController") as? ThemesViewController {
+            self.navigationController?.pushViewController(vc, animated: true);
+        }
     }
     
     
