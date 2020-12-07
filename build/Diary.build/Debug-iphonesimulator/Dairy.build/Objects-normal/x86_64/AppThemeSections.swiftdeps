@@ -28,7 +28,6 @@ depends-top-level:
 - !private "StringLiteralType"
 - "Themes"
 - "UIColor"
-- "UIImage"
 - !private "UserDefaults"
 depends-member:
 - !private ["Sa", "count"]
@@ -37,7 +36,6 @@ depends-member:
 - !private ["SK", "subscript"]
 - !private ["s7CVarArgP", "black"]
 - !private ["s7CVarArgP", "blue"]
-- !private ["s7CVarArgP", "brown"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "default"]
 - !private ["s7CVarArgP", "init"]
@@ -46,6 +44,8 @@ depends-member:
 - !private ["s7CVarArgP", "setValue"]
 - !private ["s7CVarArgP", "standard"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "systemBlue"]
+- !private ["s7CVarArgP", "systemPink"]
 - !private ["s7CVarArgP", "value"]
 - !private ["s7CVarArgP", "white"]
 - !private ["s12CaseIterableP", "KEYS"]
@@ -54,9 +54,9 @@ depends-member:
 - ["s12CaseIterableP", "Theme1"]
 - ["s12CaseIterableP", "Theme2"]
 - ["s12CaseIterableP", "Theme3"]
+- ["s12CaseIterableP", "Theme4"]
 - !private ["s12CaseIterableP", "Themes"]
 - !private ["s12CaseIterableP", "UIColor"]
-- !private ["s12CaseIterableP", "UIImage"]
 - !private ["s12CaseIterableP", "UserDefaults"]
 - !private ["s12CaseIterableP", "allCases"]
 - !private ["Sl", "count"]
@@ -66,7 +66,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Name"]
 - !private ["s28CustomDebugStringConvertibleP", "black"]
 - !private ["s28CustomDebugStringConvertibleP", "blue"]
-- !private ["s28CustomDebugStringConvertibleP", "brown"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "default"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -75,6 +74,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "standard"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "systemBlue"]
+- !private ["s28CustomDebugStringConvertibleP", "systemPink"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s17CustomReflectableP", "Name"]
@@ -83,7 +84,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Name"]
 - !private ["s23CustomStringConvertibleP", "black"]
 - !private ["s23CustomStringConvertibleP", "blue"]
-- !private ["s23CustomStringConvertibleP", "brown"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "default"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -92,6 +92,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "standard"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "systemBlue"]
+- !private ["s23CustomStringConvertibleP", "systemPink"]
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["10Foundation12DataProtocolP", "count"]
@@ -107,14 +109,13 @@ depends-member:
 - ["SQ", "Theme1"]
 - ["SQ", "Theme2"]
 - ["SQ", "Theme3"]
+- ["SQ", "Theme4"]
 - !private ["SQ", "Themes"]
 - !private ["SQ", "UIColor"]
-- !private ["SQ", "UIImage"]
 - !private ["SQ", "UserDefaults"]
 - !private ["SQ", "allCases"]
 - !private ["SQ", "black"]
 - !private ["SQ", "blue"]
-- !private ["SQ", "brown"]
 - !private ["SQ", "count"]
 - !private ["SQ", "default"]
 - !private ["SQ", "init"]
@@ -123,6 +124,8 @@ depends-member:
 - !private ["SQ", "setValue"]
 - !private ["SQ", "standard"]
 - !private ["SQ", "subscript"]
+- !private ["SQ", "systemBlue"]
+- !private ["SQ", "systemPink"]
 - !private ["SQ", "value"]
 - !private ["SQ", "white"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
@@ -134,14 +137,13 @@ depends-member:
 - ["SH", "Theme1"]
 - ["SH", "Theme2"]
 - ["SH", "Theme3"]
+- ["SH", "Theme4"]
 - !private ["SH", "Themes"]
 - !private ["SH", "UIColor"]
-- !private ["SH", "UIImage"]
 - !private ["SH", "UserDefaults"]
 - !private ["SH", "allCases"]
 - !private ["SH", "black"]
 - !private ["SH", "blue"]
-- !private ["SH", "brown"]
 - !private ["SH", "count"]
 - !private ["SH", "default"]
 - !private ["SH", "init"]
@@ -150,19 +152,10 @@ depends-member:
 - !private ["SH", "setValue"]
 - !private ["SH", "standard"]
 - !private ["SH", "subscript"]
+- !private ["SH", "systemBlue"]
+- !private ["SH", "systemPink"]
 - !private ["SH", "value"]
 - !private ["SH", "white"]
-- !private ["8SideMenu18InitializableClassP", "black"]
-- !private ["8SideMenu18InitializableClassP", "blue"]
-- !private ["8SideMenu18InitializableClassP", "brown"]
-- !private ["8SideMenu18InitializableClassP", "default"]
-- !private ["8SideMenu18InitializableClassP", "init"]
-- !private ["8SideMenu18InitializableClassP", "post"]
-- !private ["8SideMenu18InitializableClassP", "purple"]
-- !private ["8SideMenu18InitializableClassP", "setValue"]
-- !private ["8SideMenu18InitializableClassP", "standard"]
-- !private ["8SideMenu18InitializableClassP", "value"]
-- !private ["8SideMenu18InitializableClassP", "white"]
 - !private ["5Dairy4KEYSV", "keyCurrentTheme"]
 - !private ["SM", "count"]
 - !private ["SM", "subscript"]
@@ -170,55 +163,62 @@ depends-member:
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSCodingP", "black"]
 - !private ["So8NSCodingP", "blue"]
-- !private ["So8NSCodingP", "brown"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "purple"]
+- !private ["So8NSCodingP", "systemBlue"]
+- !private ["So8NSCodingP", "systemPink"]
 - !private ["So8NSCodingP", "white"]
 - !private ["So9NSCopyingP", "black"]
 - !private ["So9NSCopyingP", "blue"]
-- !private ["So9NSCopyingP", "brown"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "purple"]
+- !private ["So9NSCopyingP", "systemBlue"]
+- !private ["So9NSCopyingP", "systemPink"]
 - !private ["So9NSCopyingP", "white"]
 - !private ["So21NSItemProviderReadingP", "black"]
 - !private ["So21NSItemProviderReadingP", "blue"]
-- !private ["So21NSItemProviderReadingP", "brown"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "purple"]
+- !private ["So21NSItemProviderReadingP", "systemBlue"]
+- !private ["So21NSItemProviderReadingP", "systemPink"]
 - !private ["So21NSItemProviderReadingP", "white"]
 - !private ["So21NSItemProviderWritingP", "black"]
 - !private ["So21NSItemProviderWritingP", "blue"]
-- !private ["So21NSItemProviderWritingP", "brown"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "purple"]
+- !private ["So21NSItemProviderWritingP", "systemBlue"]
+- !private ["So21NSItemProviderWritingP", "systemPink"]
 - !private ["So21NSItemProviderWritingP", "white"]
 - !private ["So8NSObjectC", "black"]
 - !private ["So8NSObjectC", "blue"]
-- !private ["So8NSObjectC", "brown"]
 - !private ["So8NSObjectC", "default"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "post"]
 - !private ["So8NSObjectC", "purple"]
 - !private ["So8NSObjectC", "setValue"]
 - !private ["So8NSObjectC", "standard"]
+- !private ["So8NSObjectC", "systemBlue"]
+- !private ["So8NSObjectC", "systemPink"]
 - !private ["So8NSObjectC", "value"]
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "black"]
 - !private ["So8NSObjectP", "blue"]
-- !private ["So8NSObjectP", "brown"]
 - !private ["So8NSObjectP", "default"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "post"]
 - !private ["So8NSObjectP", "purple"]
 - !private ["So8NSObjectP", "setValue"]
 - !private ["So8NSObjectP", "standard"]
+- !private ["So8NSObjectP", "systemBlue"]
+- !private ["So8NSObjectP", "systemPink"]
 - !private ["So8NSObjectP", "value"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "blue"]
-- !private ["So14NSSecureCodingP", "brown"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "purple"]
+- !private ["So14NSSecureCodingP", "systemBlue"]
+- !private ["So14NSSecureCodingP", "systemPink"]
 - !private ["So14NSSecureCodingP", "white"]
 - !private ["So18NSNotificationNamea", "init"]
 - !private ["10Foundation12NotificationV", "Name"]
@@ -234,9 +234,9 @@ depends-member:
 - ["SY", "Theme1"]
 - ["SY", "Theme2"]
 - ["SY", "Theme3"]
+- ["SY", "Theme4"]
 - !private ["SY", "Themes"]
 - !private ["SY", "UIColor"]
-- !private ["SY", "UIImage"]
 - !private ["SY", "UserDefaults"]
 - !private ["SY", "allCases"]
 - !private ["SY", "init"]
@@ -254,9 +254,9 @@ depends-member:
 - ["5Dairy6ThemesO", "Theme1"]
 - ["5Dairy6ThemesO", "Theme2"]
 - ["5Dairy6ThemesO", "Theme3"]
+- ["5Dairy6ThemesO", "Theme4"]
 - ["5Dairy6ThemesO", "Themes"]
 - ["5Dairy6ThemesO", "UIColor"]
-- ["5Dairy6ThemesO", "UIImage"]
 - !private ["5Dairy6ThemesO", "UserDefaults"]
 - ["5Dairy6ThemesO", "alert"]
 - !private ["5Dairy6ThemesO", "allCases"]
@@ -269,15 +269,13 @@ depends-member:
 - ["5Dairy6ThemesO", "name"]
 - ["5Dairy6ThemesO", "navBar"]
 - ["5Dairy6ThemesO", "numberOfRows"]
-- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So7UIColorC", "black"]
 - !private ["So7UIColorC", "blue"]
-- !private ["So7UIColorC", "brown"]
 - !private ["So7UIColorC", "init"]
 - !private ["So7UIColorC", "purple"]
+- !private ["So7UIColorC", "systemBlue"]
+- !private ["So7UIColorC", "systemPink"]
 - !private ["So7UIColorC", "white"]
-- !private ["So7UIImageC", "init"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So14NSUserDefaultsC", "setValue"]
 - !private ["So14NSUserDefaultsC", "standard"]
 - !private ["So14NSUserDefaultsC", "value"]
@@ -287,11 +285,11 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "blue"]
-- !private ["s26_ExpressibleByColorLiteralP", "brown"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "purple"]
+- !private ["s26_ExpressibleByColorLiteralP", "systemBlue"]
+- !private ["s26_ExpressibleByColorLiteralP", "systemPink"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
-- !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "count"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
@@ -299,24 +297,26 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "blue"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "brown"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "post"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "purple"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemBlue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemPink"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "black"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "blue"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "brown"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "default"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "post"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "purple"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setValue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "standard"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemBlue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemPink"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "Name"]
@@ -340,7 +340,6 @@ depends-nominal:
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - "SH"
-- !private "8SideMenu18InitializableClassP"
 - !private "5Dairy4KEYSV"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
@@ -360,15 +359,11 @@ depends-nominal:
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
 - "5Dairy6ThemesO"
-- !private "So29UIAccessibilityIdentificationP"
 - !private "So7UIColorC"
-- !private "So7UIImageC"
-- !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So14NSUserDefaultsC"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s26_ExpressibleByColorLiteralP"
-- !private "s26_ExpressibleByImageLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
@@ -384,6 +379,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
@@ -393,12 +389,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/Pods/VungleSDK.framework/Headers/VungleSDK.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
-- "/Users/mayurishekhar/Diary/Diary/Utilties/Dairy-Bridging-Header.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/KDCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-umbrella.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-Swift.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
@@ -407,11 +401,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d41316e274409ca1094fe7d269339516"
+interface-hash: "94a4f8b8b71a9b823b752db1a3f17798"

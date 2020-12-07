@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+options: "8b00dc7e8d5265a63ccc38d5655b2bf5"
+build_time: [1607333889, 214311000]
+inputs:
+  "/Users/mayurishekhar/Diary/Pods/KDCalendar/KDCalendar/CalendarView/CalendarDayCell.swift": [1606471114, 762033084]
+  "/Users/mayurishekhar/Diary/Pods/KDCalendar/KDCalendar/CalendarView/CalendarFlowLayout.swift": [1606471114, 761470980]
+  "/Users/mayurishekhar/Diary/Pods/KDCalendar/KDCalendar/CalendarView/CalendarHeaderView.swift": [1606471114, 761666185]
+  "/Users/mayurishekhar/Diary/Pods/KDCalendar/KDCalendar/CalendarView/CalendarView+DataSource.swift": [1606471114, 763080327]
+  "/Users/mayurishekhar/Diary/Pods/KDCalendar/KDCalendar/CalendarView/CalendarView+Delegate.swift": [1606471114, 762506426]
+  "/Users/mayurishekhar/Diary/Pods/KDCalendar/KDCalendar/CalendarView/CalendarView+Extensions.swift": [1606471114, 761851455]
+  "/Users/mayurishekhar/Diary/Pods/KDCalendar/KDCalendar/CalendarView/CalendarView+Style.swift": [1606471114, 762266672]
+  "/Users/mayurishekhar/Diary/Pods/KDCalendar/KDCalendar/CalendarView/CalendarView.swift": [1607059917, 246691874]
+  "/Users/mayurishekhar/Diary/Pods/KDCalendar/KDCalendar/CalendarView/EventsManager.swift": [1607061667, 118598509]

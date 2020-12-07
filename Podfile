@@ -9,5 +9,5 @@ target 'Dairy' do
 
 pod 'SwiftLint'
 pod 'SideMenu'
-pod "VungleSDK-iOS", "6.8.1"
+pod 'KDCalendar', '~> 1.8.9'
 end

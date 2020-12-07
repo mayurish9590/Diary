@@ -355,54 +355,6 @@ depends-member:
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
 - !private ["10Foundation9IndexPathV", "row"]
-- !private ["8SideMenu18InitializableClassP", "Notification"]
-- !private ["8SideMenu18InitializableClassP", "NotificationCenter"]
-- ["8SideMenu18InitializableClassP", "Themes"]
-- !private ["8SideMenu18InitializableClassP", "UITableViewCell"]
-- ["8SideMenu18InitializableClassP", ""]
-- !private ["8SideMenu18InitializableClassP", "addObserver"]
-- !private ["8SideMenu18InitializableClassP", "arrayMenuItems"]
-- !private ["8SideMenu18InitializableClassP", "backgroundColor"]
-- !private ["8SideMenu18InitializableClassP", "currentTheme"]
-- !private ["8SideMenu18InitializableClassP", "dataSource"]
-- !private ["8SideMenu18InitializableClassP", "default"]
-- !private ["8SideMenu18InitializableClassP", "delegate"]
-- ["8SideMenu18InitializableClassP", "indexPathForPreferredFocusedView"]
-- ["8SideMenu18InitializableClassP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["8SideMenu18InitializableClassP", "init"]
-- !private ["8SideMenu18InitializableClassP", "instantiateViewController"]
-- !private ["8SideMenu18InitializableClassP", "navigationController"]
-- ["8SideMenu18InitializableClassP", "numberOfSections"]
-- ["8SideMenu18InitializableClassP", "numberOfSectionsInTableView"]
-- !private ["8SideMenu18InitializableClassP", "pushViewController"]
-- !private ["8SideMenu18InitializableClassP", "reloadData"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidChangeAdjustedContentInset"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidEndDecelerating"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidEndDragging"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidEndScrollingAnimation"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidEndZooming"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidScroll"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidScrollToTop"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidZoom"]
-- ["8SideMenu18InitializableClassP", "scrollViewShouldScrollToTop"]
-- ["8SideMenu18InitializableClassP", "scrollViewWillBeginDecelerating"]
-- ["8SideMenu18InitializableClassP", "scrollViewWillBeginDragging"]
-- ["8SideMenu18InitializableClassP", "scrollViewWillBeginZooming"]
-- ["8SideMenu18InitializableClassP", "scrollViewWillEndDragging"]
-- ["8SideMenu18InitializableClassP", "sectionIndexTitles"]
-- ["8SideMenu18InitializableClassP", "sectionIndexTitlesForTableView"]
-- !private ["8SideMenu18InitializableClassP", "storyboard"]
-- ["8SideMenu18InitializableClassP", "tableView"]
-- ["8SideMenu18InitializableClassP", "tableViewDidEndMultipleSelectionInteraction"]
-- !private ["8SideMenu18InitializableClassP", "tableViewMenuItems"]
-- !private ["8SideMenu18InitializableClassP", "text"]
-- !private ["8SideMenu18InitializableClassP", "textColor"]
-- !private ["8SideMenu18InitializableClassP", "textLabel"]
-- !private ["8SideMenu18InitializableClassP", "updateTheme"]
-- !private ["8SideMenu18InitializableClassP", "view"]
-- !private ["8SideMenu18InitializableClassP", "viewDidLoad"]
-- ["8SideMenu18InitializableClassP", "viewForZooming"]
-- ["8SideMenu18InitializableClassP", "viewForZoomingInScrollView"]
 - ["5Dairy18MenuViewControllerC", "CGFloat"]
 - ["5Dairy18MenuViewControllerC", "IndexPath"]
 - ["5Dairy18MenuViewControllerC", "Int"]
@@ -1439,7 +1391,6 @@ depends-nominal:
 - !private "7SwiftUI7GestureP"
 - "SH"
 - !private "10Foundation9IndexPathV"
-- "8SideMenu18InitializableClassP"
 - "5Dairy18MenuViewControllerC"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
@@ -1508,6 +1459,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
@@ -1517,12 +1469,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/Pods/VungleSDK.framework/Headers/VungleSDK.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
-- "/Users/mayurishekhar/Diary/Diary/Utilties/Dairy-Bridging-Header.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/KDCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-umbrella.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-Swift.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
@@ -1531,11 +1481,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "46104a489c5076d7a1a9d08b5db38243"

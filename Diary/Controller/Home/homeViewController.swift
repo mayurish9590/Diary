@@ -8,7 +8,7 @@
 
 import UIKit
 import Foundation
-import SideMenu
+//import SideMenu
 
 
 class homeViewController: UIViewController {
@@ -26,14 +26,22 @@ class homeViewController: UIViewController {
         noteTableView.delegate = self
         updateTheme()
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateTheme), name: Notification.Name("Theme"), object: nil)
-        
+        updateTheme()
         floatingButton()
     }
     
     @objc func updateTheme() {
         let currentTheme = Themes.currentTheme()
         navigationController?.navigationBar.barTintColor = currentTheme.navBar
+  
         
+        if self.btn != nil{
+            
+             btn.backgroundColor = Themes.currentTheme().alert
+            
+        }
+        self.noteTableView.backgroundColor = .clear
+        self.view.backgroundColor = currentTheme.background
     }
     
     func floatingButton(){
@@ -88,6 +96,21 @@ class homeViewController: UIViewController {
         self.navigationController?.pushViewController(newNoteVC, animated: true)
     }
     }
+ 
+    
+    @IBAction func onClickTheme(_ sender: Any) {
+     if let vc = self.storyboard?.instantiateViewController(identifier: "ThemesViewController") as? ThemesViewController {
+                  self.navigationController?.pushViewController(vc, animated: true);
+              }
+    }
+    
+    @IBAction func onclickCalender(_ sender: Any) {
+     if let vc = self.storyboard?.instantiateViewController(identifier: "CalenderViewController") as? CalenderViewController {
+                     self.navigationController?.pushViewController(vc, animated: true);
+                 }
+    }
+    
+    
     
     @IBAction func onClickMenu(_ sender: Any) {
         

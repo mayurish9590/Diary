@@ -7,19 +7,24 @@ provides-member:
 - ["5Dairy12ImageStorageV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Bool"
+- !private "BooleanLiteralType"
 - !private "FileManager"
 - !private "FloatLiteralType"
 - "ImageStorage"
 - !private "IntegerLiteralType"
+- !private "NSSearchPathForDirectoriesInDomains"
 - "String"
 - !private "StringLiteralType"
 - "UIImage"
-- "URL"
+- !private "URL"
 - !private "print"
 depends-member:
 - !private ["Sa", "first"]
 - !private ["SK", "first"]
 - !private ["SK", "write"]
+- !private ["s7CVarArgP", "SearchPathDirectory"]
+- !private ["s7CVarArgP", "SearchPathDomainMask"]
 - !private ["s7CVarArgP", "default"]
 - !private ["s7CVarArgP", "fileExists"]
 - !private ["s7CVarArgP", "first"]
@@ -31,7 +36,8 @@ depends-member:
 - !private ["Sl", "write"]
 - !private ["10Foundation15ContiguousBytesP", "first"]
 - !private ["10Foundation15ContiguousBytesP", "write"]
-- !private ["s28CustomDebugStringConvertibleP", "absoluteString"]
+- !private ["s28CustomDebugStringConvertibleP", "SearchPathDirectory"]
+- !private ["s28CustomDebugStringConvertibleP", "SearchPathDomainMask"]
 - !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
 - !private ["s28CustomDebugStringConvertibleP", "default"]
 - !private ["s28CustomDebugStringConvertibleP", "fileExists"]
@@ -44,7 +50,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "write"]
 - !private ["s17CustomReflectableP", "first"]
 - !private ["s17CustomReflectableP", "write"]
-- !private ["s23CustomStringConvertibleP", "absoluteString"]
+- !private ["s23CustomStringConvertibleP", "SearchPathDirectory"]
+- !private ["s23CustomStringConvertibleP", "SearchPathDomainMask"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "appendingPathComponent"]
 - !private ["s23CustomStringConvertibleP", "default"]
 - !private ["s23CustomStringConvertibleP", "fileExists"]
@@ -58,17 +67,20 @@ depends-member:
 - !private ["10Foundation4DataV", "write"]
 - !private ["10Foundation12DataProtocolP", "first"]
 - !private ["10Foundation12DataProtocolP", "write"]
-- !private ["Se", "absoluteString"]
 - !private ["Se", "appendingPathComponent"]
 - !private ["Se", "first"]
+- !private ["Se", "init"]
 - !private ["Se", "path"]
 - !private ["Se", "write"]
-- !private ["SE", "absoluteString"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "appendingPathComponent"]
 - !private ["SE", "first"]
+- !private ["SE", "init"]
 - !private ["SE", "path"]
 - !private ["SE", "write"]
-- !private ["SQ", "absoluteString"]
+- !private ["SQ", "SearchPathDirectory"]
+- !private ["SQ", "SearchPathDomainMask"]
 - !private ["SQ", "appendingPathComponent"]
 - !private ["SQ", "default"]
 - !private ["SQ", "documentDirectory"]
@@ -83,11 +95,14 @@ depends-member:
 - !private ["SQ", "write"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
 - !private ["s25ExpressibleByArrayLiteralP", "userDomainMask"]
+- !private ["So13NSFileManagerC", "SearchPathDirectory"]
+- !private ["So13NSFileManagerC", "SearchPathDomainMask"]
 - !private ["So13NSFileManagerC", "default"]
 - !private ["So13NSFileManagerC", "fileExists"]
 - !private ["So13NSFileManagerC", "removeItem"]
 - !private ["So13NSFileManagerC", "urls"]
-- !private ["SH", "absoluteString"]
+- !private ["SH", "SearchPathDirectory"]
+- !private ["SH", "SearchPathDomainMask"]
 - !private ["SH", "appendingPathComponent"]
 - !private ["SH", "default"]
 - !private ["SH", "documentDirectory"]
@@ -99,21 +114,17 @@ depends-member:
 - !private ["SH", "removeItem"]
 - !private ["SH", "urls"]
 - !private ["SH", "write"]
+- ["5Dairy12ImageStorageV", "Bool"]
 - !private ["5Dairy12ImageStorageV", "FileManager"]
+- !private ["5Dairy12ImageStorageV", "NSSearchPathForDirectoriesInDomains"]
 - ["5Dairy12ImageStorageV", "String"]
 - ["5Dairy12ImageStorageV", "UIImage"]
-- ["5Dairy12ImageStorageV", "URL"]
+- !private ["5Dairy12ImageStorageV", "URL"]
 - ["5Dairy12ImageStorageV", "deleteImageFromDisk"]
 - ["5Dairy12ImageStorageV", "init"]
 - ["5Dairy12ImageStorageV", "loadImageFromDiskWith"]
 - !private ["5Dairy12ImageStorageV", "print"]
 - ["5Dairy12ImageStorageV", "saveImage"]
-- !private ["8SideMenu18InitializableClassP", "default"]
-- !private ["8SideMenu18InitializableClassP", "fileExists"]
-- !private ["8SideMenu18InitializableClassP", "init"]
-- !private ["8SideMenu18InitializableClassP", "jpegData"]
-- !private ["8SideMenu18InitializableClassP", "removeItem"]
-- !private ["8SideMenu18InitializableClassP", "urls"]
 - !private ["SM", "first"]
 - !private ["SM", "write"]
 - !private ["10Foundation19MutableDataProtocolP", "first"]
@@ -124,12 +135,16 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "jpegData"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "jpegData"]
+- !private ["So8NSObjectC", "SearchPathDirectory"]
+- !private ["So8NSObjectC", "SearchPathDomainMask"]
 - !private ["So8NSObjectC", "default"]
 - !private ["So8NSObjectC", "fileExists"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "jpegData"]
 - !private ["So8NSObjectC", "removeItem"]
 - !private ["So8NSObjectC", "urls"]
+- !private ["So8NSObjectP", "SearchPathDirectory"]
+- !private ["So8NSObjectP", "SearchPathDomainMask"]
 - !private ["So8NSObjectP", "default"]
 - !private ["So8NSObjectP", "fileExists"]
 - !private ["So8NSObjectP", "init"]
@@ -145,8 +160,8 @@ depends-member:
 - !private ["Sm", "write"]
 - !private ["SY", "documentDirectory"]
 - !private ["SY", "userDomainMask"]
-- !private ["10Foundation20ReferenceConvertibleP", "absoluteString"]
 - !private ["10Foundation20ReferenceConvertibleP", "appendingPathComponent"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "path"]
 - !private ["10Foundation20ReferenceConvertibleP", "write"]
 - !private ["So21NSSearchPathDirectoryV", "documentDirectory"]
@@ -154,42 +169,50 @@ depends-member:
 - !private ["ST", "first"]
 - !private ["ST", "write"]
 - !private ["s10SetAlgebraP", "userDomainMask"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "jpegData"]
 - !private ["So7UIImageC", "init"]
 - !private ["So7UIImageC", "jpegData"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "jpegData"]
-- !private ["10Foundation3URLV", "absoluteString"]
 - !private ["10Foundation3URLV", "appendingPathComponent"]
+- !private ["10Foundation3URLV", "init"]
 - !private ["10Foundation3URLV", "path"]
 - !private ["s14_ArrayProtocolP", "first"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "absoluteString"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "appendingPathComponent"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "path"]
 - !private ["s24_DestructorSafeContainerP", "first"]
-- !private ["s34_ExpressibleByFileReferenceLiteralP", "absoluteString"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "path"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "jpegData"]
 - !private ["s19_HasContiguousBytesP", "first"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SearchPathDirectory"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SearchPathDomainMask"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fileExists"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "jpegData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "urls"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SearchPathDirectory"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SearchPathDomainMask"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "default"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fileExists"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "jpegData"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "removeItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "urls"]
-- !private ["s21_ObjectiveCBridgeableP", "absoluteString"]
 - !private ["s21_ObjectiveCBridgeableP", "appendingPathComponent"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "path"]
 - !private ["s21_ObjectiveCBridgeableP", "write"]
 depends-nominal:
@@ -204,13 +227,13 @@ depends-nominal:
 - !private "10Foundation4DataV"
 - !private "10Foundation12DataProtocolP"
 - !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - !private "SE"
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "So13NSFileManagerC"
 - !private "SH"
 - "5Dairy12ImageStorageV"
-- !private "8SideMenu18InitializableClassP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
@@ -228,6 +251,8 @@ depends-nominal:
 - !private "So22NSSearchPathDomainMaskV"
 - !private "ST"
 - !private "s10SetAlgebraP"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
@@ -251,6 +276,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
@@ -260,12 +286,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/Pods/VungleSDK.framework/Headers/VungleSDK.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
-- "/Users/mayurishekhar/Diary/Diary/Utilties/Dairy-Bridging-Header.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/KDCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-umbrella.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-Swift.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
@@ -274,11 +298,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3bb4f620804f1d31735cf3d26ddbc539"
+interface-hash: "8900305289d7e0b7ceb60a01a2a50e28"

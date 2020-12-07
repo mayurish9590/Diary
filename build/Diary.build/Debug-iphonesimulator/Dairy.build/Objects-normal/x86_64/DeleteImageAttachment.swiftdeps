@@ -73,6 +73,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "parentView"]
 - !private ["So15CALayerDelegateP", "removeFromSuperview"]
+- !private ["So15CALayerDelegateP", "updateTheme"]
 - !private ["So13CAMediaTimingP", "borderColor"]
 - !private ["So13CAMediaTimingP", "borderWidth"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
@@ -114,6 +115,7 @@ depends-member:
 - !private ["s7CVarArgP", "parentView"]
 - !private ["s7CVarArgP", "removeFromSuperview"]
 - !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "updateTheme"]
 - !private ["s7CVarArgP", "white"]
 - !private ["s7CVarArgP", "windows"]
 - !private ["s12CaseIterableP", "alert"]
@@ -158,6 +160,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "parentView"]
 - !private ["s28CustomDebugStringConvertibleP", "removeFromSuperview"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "updateTheme"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s28CustomDebugStringConvertibleP", "windows"]
@@ -208,6 +211,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "parentView"]
 - !private ["s23CustomStringConvertibleP", "removeFromSuperview"]
 - !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "updateTheme"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["s23CustomStringConvertibleP", "windows"]
 - !private ["10Foundation12DataProtocolP", "filter"]
@@ -306,6 +310,7 @@ depends-member:
 - !private ["SQ", "parentView"]
 - !private ["SQ", "removeFromSuperview"]
 - !private ["SQ", "shared"]
+- !private ["SQ", "updateTheme"]
 - !private ["SQ", "white"]
 - !private ["SQ", "width"]
 - !private ["SQ", "windows"]
@@ -364,43 +369,9 @@ depends-member:
 - !private ["SH", "parentView"]
 - !private ["SH", "removeFromSuperview"]
 - !private ["SH", "shared"]
+- !private ["SH", "updateTheme"]
 - !private ["SH", "white"]
 - !private ["SH", "windows"]
-- !private ["8SideMenu18InitializableClassP", "Bundle"]
-- !private ["8SideMenu18InitializableClassP", "CGRect"]
-- ["8SideMenu18InitializableClassP", "DeleteImageAttachment"]
-- !private ["8SideMenu18InitializableClassP", "Nib"]
-- !private ["8SideMenu18InitializableClassP", "Themes"]
-- !private ["8SideMenu18InitializableClassP", "UIApplication"]
-- !private ["8SideMenu18InitializableClassP", "UIColor"]
-- !private ["8SideMenu18InitializableClassP", "UIScreen"]
-- !private ["8SideMenu18InitializableClassP", "UITapGestureRecognizer"]
-- ["8SideMenu18InitializableClassP", ""]
-- !private ["8SideMenu18InitializableClassP", "addGestureRecognizer"]
-- !private ["8SideMenu18InitializableClassP", "addSubview"]
-- !private ["8SideMenu18InitializableClassP", "autoresizingMask"]
-- !private ["8SideMenu18InitializableClassP", "backgroundColor"]
-- !private ["8SideMenu18InitializableClassP", "borderColor"]
-- !private ["8SideMenu18InitializableClassP", "borderWidth"]
-- !private ["8SideMenu18InitializableClassP", "bounds"]
-- !private ["8SideMenu18InitializableClassP", "cgColor"]
-- !private ["8SideMenu18InitializableClassP", "commonInit"]
-- !private ["8SideMenu18InitializableClassP", "containerView"]
-- !private ["8SideMenu18InitializableClassP", "cornerRadius"]
-- !private ["8SideMenu18InitializableClassP", "delegate"]
-- !private ["8SideMenu18InitializableClassP", "dismissPopoup"]
-- !private ["8SideMenu18InitializableClassP", "endEditing"]
-- !private ["8SideMenu18InitializableClassP", "frame"]
-- ["8SideMenu18InitializableClassP", "init"]
-- !private ["8SideMenu18InitializableClassP", "isKeyWindow"]
-- !private ["8SideMenu18InitializableClassP", "layer"]
-- !private ["8SideMenu18InitializableClassP", "loadNibNamed"]
-- !private ["8SideMenu18InitializableClassP", "main"]
-- !private ["8SideMenu18InitializableClassP", "parentView"]
-- !private ["8SideMenu18InitializableClassP", "removeFromSuperview"]
-- !private ["8SideMenu18InitializableClassP", "shared"]
-- !private ["8SideMenu18InitializableClassP", "white"]
-- !private ["8SideMenu18InitializableClassP", "windows"]
 - !private ["SM", "filter"]
 - !private ["SM", "first"]
 - !private ["10Foundation19MutableDataProtocolP", "filter"]
@@ -434,6 +405,7 @@ depends-member:
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "parentView"]
 - !private ["So8NSCodingP", "removeFromSuperview"]
+- !private ["So8NSCodingP", "updateTheme"]
 - !private ["So8NSCodingP", "white"]
 - !private ["So9NSCopyingP", "cgColor"]
 - !private ["So9NSCopyingP", "white"]
@@ -516,6 +488,7 @@ depends-member:
 - !private ["So8NSObjectP", "parentView"]
 - !private ["So8NSObjectP", "removeFromSuperview"]
 - !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "updateTheme"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So8NSObjectP", "windows"]
 - !private ["So14NSSecureCodingP", "borderColor"]
@@ -572,6 +545,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "parentView"]
 - !private ["So29UIAccessibilityIdentificationP", "removeFromSuperview"]
+- !private ["So29UIAccessibilityIdentificationP", "updateTheme"]
 - !private ["So12UIAppearanceP", "Bundle"]
 - !private ["So12UIAppearanceP", "CGRect"]
 - ["So12UIAppearanceP", "DeleteImageAttachment"]
@@ -597,6 +571,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "parentView"]
 - !private ["So12UIAppearanceP", "removeFromSuperview"]
+- !private ["So12UIAppearanceP", "updateTheme"]
 - !private ["So21UIAppearanceContainerP", "Bundle"]
 - !private ["So21UIAppearanceContainerP", "CGRect"]
 - ["So21UIAppearanceContainerP", "DeleteImageAttachment"]
@@ -622,6 +597,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "parentView"]
 - !private ["So21UIAppearanceContainerP", "removeFromSuperview"]
+- !private ["So21UIAppearanceContainerP", "updateTheme"]
 - !private ["So13UIApplicationC", "shared"]
 - !private ["So13UIApplicationC", "windows"]
 - !private ["So7UIColorC", "cgColor"]
@@ -651,6 +627,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "parentView"]
 - !private ["So17UICoordinateSpaceP", "removeFromSuperview"]
+- !private ["So17UICoordinateSpaceP", "updateTheme"]
 - !private ["So13UIDynamicItemP", "Bundle"]
 - !private ["So13UIDynamicItemP", "CGRect"]
 - ["So13UIDynamicItemP", "DeleteImageAttachment"]
@@ -676,6 +653,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "parentView"]
 - !private ["So13UIDynamicItemP", "removeFromSuperview"]
+- !private ["So13UIDynamicItemP", "updateTheme"]
 - !private ["So18UIFocusEnvironmentP", "Bundle"]
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
 - ["So18UIFocusEnvironmentP", "DeleteImageAttachment"]
@@ -701,6 +679,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "parentView"]
 - !private ["So18UIFocusEnvironmentP", "removeFromSuperview"]
+- !private ["So18UIFocusEnvironmentP", "updateTheme"]
 - !private ["So11UIFocusItemP", "Bundle"]
 - !private ["So11UIFocusItemP", "CGRect"]
 - ["So11UIFocusItemP", "DeleteImageAttachment"]
@@ -726,6 +705,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "parentView"]
 - !private ["So11UIFocusItemP", "removeFromSuperview"]
+- !private ["So11UIFocusItemP", "updateTheme"]
 - !private ["So20UIFocusItemContainerP", "Bundle"]
 - !private ["So20UIFocusItemContainerP", "CGRect"]
 - ["So20UIFocusItemContainerP", "DeleteImageAttachment"]
@@ -751,6 +731,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "layer"]
 - !private ["So20UIFocusItemContainerP", "parentView"]
 - !private ["So20UIFocusItemContainerP", "removeFromSuperview"]
+- !private ["So20UIFocusItemContainerP", "updateTheme"]
 - !private ["So19UIGestureRecognizerC", "init"]
 - !private ["So24UILargeContentViewerItemP", "Bundle"]
 - !private ["So24UILargeContentViewerItemP", "CGRect"]
@@ -777,6 +758,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "layer"]
 - !private ["So24UILargeContentViewerItemP", "parentView"]
 - !private ["So24UILargeContentViewerItemP", "removeFromSuperview"]
+- !private ["So24UILargeContentViewerItemP", "updateTheme"]
 - !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - ["So30UIPasteConfigurationSupportingP", "DeleteImageAttachment"]
@@ -803,6 +785,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "parentView"]
 - !private ["So30UIPasteConfigurationSupportingP", "removeFromSuperview"]
 - !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So30UIPasteConfigurationSupportingP", "updateTheme"]
 - !private ["So30UIPasteConfigurationSupportingP", "windows"]
 - !private ["So11UIResponderC", "Bundle"]
 - ["So11UIResponderC", "CGRect"]
@@ -864,6 +847,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "parentView"]
 - !private ["So30UIResponderStandardEditActionsP", "removeFromSuperview"]
 - !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "updateTheme"]
 - !private ["So30UIResponderStandardEditActionsP", "windows"]
 - !private ["So8UIScreenC", "bounds"]
 - !private ["So8UIScreenC", "main"]
@@ -895,6 +879,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "main"]
 - !private ["So18UITraitEnvironmentP", "parentView"]
 - !private ["So18UITraitEnvironmentP", "removeFromSuperview"]
+- !private ["So18UITraitEnvironmentP", "updateTheme"]
 - !private ["So23UIUserActivityRestoringP", "Bundle"]
 - !private ["So23UIUserActivityRestoringP", "CGRect"]
 - ["So23UIUserActivityRestoringP", "DeleteImageAttachment"]
@@ -921,6 +906,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "parentView"]
 - !private ["So23UIUserActivityRestoringP", "removeFromSuperview"]
 - !private ["So23UIUserActivityRestoringP", "shared"]
+- !private ["So23UIUserActivityRestoringP", "updateTheme"]
 - !private ["So23UIUserActivityRestoringP", "windows"]
 - !private ["So6UIViewC", "Bundle"]
 - ["So6UIViewC", "CGRect"]
@@ -1010,6 +996,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "parentView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeFromSuperview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateTheme"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "windows"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Bundle"]
@@ -1045,6 +1032,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "parentView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "removeFromSuperview"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "updateTheme"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "windows"]
 - !private ["s21_ObjectiveCBridgeableP", "addGestureRecognizer"]
@@ -1084,6 +1072,7 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "parentView"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "removeFromSuperview"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "updateTheme"]
 depends-nominal:
 - !private "7SwiftUI10AnimatableP"
 - !private "Sa"
@@ -1111,7 +1100,6 @@ depends-nominal:
 - !private "s23ExpressibleByNilLiteralP"
 - !private "7SwiftUI7GestureP"
 - "SH"
-- "8SideMenu18InitializableClassP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
@@ -1171,6 +1159,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
@@ -1180,12 +1169,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/Pods/VungleSDK.framework/Headers/VungleSDK.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
-- "/Users/mayurishekhar/Diary/Diary/Utilties/Dairy-Bridging-Header.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/KDCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-umbrella.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-Swift.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
@@ -1194,11 +1181,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "b77e3059fadf1be780773bbf3f05d1a1"

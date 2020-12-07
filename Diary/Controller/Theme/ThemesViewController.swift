@@ -27,6 +27,7 @@ class ThemesViewController: UIViewController {
 
     @objc func updateTheme() {
         let currentTheme = Themes.currentTheme()
+        self.view.backgroundColor = currentTheme.background
     }
     
     
@@ -60,8 +61,8 @@ extension ThemesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         let theme = Themes.getTheme(indexPath.row)
-        if !theme.isLocked {
+     
             Themes.SetTheme(index: indexPath.row)
-        }
+        
     }
 }

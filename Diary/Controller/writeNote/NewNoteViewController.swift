@@ -25,7 +25,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var attachedImage: UIImageView!
     
     @IBOutlet weak var addImageButton: UIBarButtonItem!
-    
+    static var dateFromCalender: Date!
     private var noteId: Int64 = 0
     private var isNoteImageUpdated = false
     private let textViewPlaceholderText = "Dear Diary"
@@ -72,6 +72,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     @objc func updateTheme() {
         currentTheme = Themes.currentTheme()
         self.descriptionView.backgroundColor = currentTheme.navBar
+        self.view.backgroundColor = currentTheme.background
     }
     func initialSetup()
     {
@@ -175,6 +176,10 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
         MoreMenuPopup.instance.showAlert(topSpacingForContainer: self.topbarHeight)
     }
     
+    
+    
+    
+    
     @IBAction func onClickDeleteImage(_ sender: Any) {
         DeleteImageAttachment.instance.delegate = self
         DeleteImageAttachment.instance.showAlert()
@@ -208,7 +213,9 @@ extension NewNoteViewController : SaveNotePopUp {
             //DMBManger.delete(note: self.noteobj!)
             self.noteobj?.title = self.titleText.text ?? ""
             self.noteobj?.noteDescription = self.descriptionTextView.text
-            self.noteobj?.savingDate = self.getCurrentDate()
+           
+                 self.noteobj?.savingDate = self.getCurrentDate()
+           
             self.noteobj?.savingTime = self.getCurrentTime()
             
             if let attachImage = self.attachedImage.image, let imageName = self.noteobj?.noteID   {
@@ -243,12 +250,18 @@ extension NewNoteViewController : SaveNotePopUp {
                     //print(attachImage.ur)
                     isImageAttached = ImageStorage.saveImage(imageName: "\(self.noteId)" , image: attachImage)
                 }
+                let currnetDate : Date!
+                 if  NewNoteViewController.dateFromCalender != nil{
+                    currnetDate = NewNoteViewController.dateFromCalender
+                    }else {
+                                currnetDate = getCurrentDate()  }
+               
                 if self.emojiName != nil{
                     emojiName = self.emojiName
                 }else{
                     emojiName = DB.notAvailable
                 }
-                let currentNote = NoteModel(emoji: emojiName, imageAttachment: isImageAttached, noteDescription: _noteDescription, noteID:self.noteId, savingDate: getCurrentDate(), savingTime: getCurrentTime(), title: _title)
+                let currentNote = NoteModel(emoji: emojiName, imageAttachment: isImageAttached, noteDescription: _noteDescription, noteID:self.noteId, savingDate: currnetDate, savingTime: getCurrentTime(), title: _title)
                 DMBManger.saveToDB(note: currentNote)
                 self.navigationController?.popViewController(animated: true)
             }

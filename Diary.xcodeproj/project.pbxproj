@@ -14,7 +14,6 @@
 		1CCEC7F8254C3D600058D769 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEC7F7254C3D600058D769 /* Themes.swift */; };
 		1CEF7442256B882800C6D2E3 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF7440256B882800C6D2E3 /* Note+CoreDataClass.swift */; };
 		1CEF7443256B882800C6D2E3 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF7441256B882800C6D2E3 /* Note+CoreDataProperties.swift */; };
-		1CEF7450256B896000C6D2E3 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF744E256B895F00C6D2E3 /* CalenderView.swift */; };
 		1CEF7451256B896000C6D2E3 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF744F256B896000C6D2E3 /* CalenderViewController.swift */; };
 		1CF96215254A97AA002F41BA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF96214254A97AA002F41BA /* GradientView.swift */; };
 		1CF96219254AD746002F41BA /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF96218254AD746002F41BA /* ViewControllerExtension.swift */; };
@@ -24,10 +23,16 @@
 		9339CD172525C5D000C53931 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339CD162525C5D000C53931 /* Constants.swift */; };
 		933B7C342535671900ACC4A7 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B7C332535671900ACC4A7 /* homeViewController.swift */; };
 		933B7C372535B92200ACC4A7 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B7C362535B92200ACC4A7 /* NewNoteViewController.swift */; };
+		934CBAFA256F7F8A005992F7 /* ThemeSelctionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934CBAF9256F7F8A005992F7 /* ThemeSelctionView.xib */; };
+		934CBB07256F94A6005992F7 /* ThemeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934CBB05256F94A6005992F7 /* ThemeTableCell.swift */; };
+		934CBB08256F94A6005992F7 /* ThemeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934CBB06256F94A6005992F7 /* ThemeTableViewCell.xib */; };
+		9350CBAB25701E9200AFBE40 /* ThemeSelctionpopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350CBAA25701E9200AFBE40 /* ThemeSelctionpopup.swift */; };
 		9358FA06254BE172008C430E /* DeleteImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9358FA05254BE172008C430E /* DeleteImage.xib */; };
 		9358FA08254BE244008C430E /* DeleteImageAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358FA07254BE244008C430E /* DeleteImageAttachment.swift */; };
 		9358FA0A254BE2AE008C430E /* DeleteimageAttachmentPr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358FA09254BE2AE008C430E /* DeleteimageAttachmentPr.swift */; };
 		93620D032543016300B5CE89 /* ImageAttachmentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93620D022543016300B5CE89 /* ImageAttachmentProtocol.swift */; };
+		9363E622257E1C2100F02631 /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363E621257E1C2100F02631 /* AddNote.swift */; };
+		9363E624257E1C5200F02631 /* AddNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9363E623257E1C5200F02631 /* AddNote.xib */; };
 		937E486C25384A4000D0E1F3 /* SaveNoteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937E486B25384A4000D0E1F3 /* SaveNoteProtocol.swift */; };
 		9390E3EB2542F52600660C0E /* ImageAttachmentPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9390E3EA2542F52600660C0E /* ImageAttachmentPopup.swift */; };
 		9390E3EF2542F57D00660C0E /* ImageAttachmentPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9390E3EE2542F57D00660C0E /* ImageAttachmentPopup.xib */; };
@@ -66,7 +71,6 @@
 		1CCEC7F7254C3D600058D769 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		1CEF7440256B882800C6D2E3 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1CEF7441256B882800C6D2E3 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1CEF744E256B895F00C6D2E3 /* CalenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		1CEF744F256B896000C6D2E3 /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 		1CF96214254A97AA002F41BA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1CF96218254AD746002F41BA /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -76,10 +80,16 @@
 		9339CD162525C5D000C53931 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		933B7C332535671900ACC4A7 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		933B7C362535B92200ACC4A7 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		934CBAF9256F7F8A005992F7 /* ThemeSelctionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeSelctionView.xib; sourceTree = "<group>"; };
+		934CBB05256F94A6005992F7 /* ThemeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTableCell.swift; sourceTree = "<group>"; };
+		934CBB06256F94A6005992F7 /* ThemeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThemeTableViewCell.xib; sourceTree = "<group>"; };
+		9350CBAA25701E9200AFBE40 /* ThemeSelctionpopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSelctionpopup.swift; sourceTree = "<group>"; };
 		9358FA05254BE172008C430E /* DeleteImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteImage.xib; sourceTree = "<group>"; };
 		9358FA07254BE244008C430E /* DeleteImageAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteImageAttachment.swift; sourceTree = "<group>"; };
 		9358FA09254BE2AE008C430E /* DeleteimageAttachmentPr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteimageAttachmentPr.swift; sourceTree = "<group>"; };
 		93620D022543016300B5CE89 /* ImageAttachmentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAttachmentProtocol.swift; sourceTree = "<group>"; };
+		9363E621257E1C2100F02631 /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNote.swift; path = AddNote/AddNote.swift; sourceTree = "<group>"; };
+		9363E623257E1C5200F02631 /* AddNote.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNote.xib; sourceTree = "<group>"; };
 		937E486B25384A4000D0E1F3 /* SaveNoteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNoteProtocol.swift; sourceTree = "<group>"; };
 		9390E3EA2542F52600660C0E /* ImageAttachmentPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAttachmentPopup.swift; sourceTree = "<group>"; };
 		9390E3EE2542F57D00660C0E /* ImageAttachmentPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAttachmentPopup.xib; sourceTree = "<group>"; };
@@ -94,7 +104,6 @@
 		93DC6D122547E1F30092853F /* EmojiCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiCollectionViewCell.xib; sourceTree = "<group>"; };
 		93E506A725219F7100517120 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		93E506A825219F7100517120 /* NoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
-		93E713A02567E9BF00F7CC6D /* Dairy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dairy-Bridging-Header.h"; sourceTree = "<group>"; };
 		93E713A22567ED1900F7CC6D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		93E713A42567ED3300F7CC6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		93F5173C251DBF9B009FE8C2 /* Dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dairy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,8 +169,9 @@
 		1CEF744D256B893200C6D2E3 /* Calender */ = {
 			isa = PBXGroup;
 			children = (
-				1CEF744E256B895F00C6D2E3 /* CalenderView.swift */,
 				1CEF744F256B896000C6D2E3 /* CalenderViewController.swift */,
+				9363E621257E1C2100F02631 /* AddNote.swift */,
+				9363E623257E1C5200F02631 /* AddNote.xib */,
 			);
 			path = Calender;
 			sourceTree = "<group>";
@@ -194,7 +204,6 @@
 				93F51741251DBF9B009FE8C2 /* SceneDelegate.swift */,
 				93F5173F251DBF9B009FE8C2 /* AppDelegate.swift */,
 				1CF96214254A97AA002F41BA /* GradientView.swift */,
-				93E713A02567E9BF00F7CC6D /* Dairy-Bridging-Header.h */,
 			);
 			path = Utilties;
 			sourceTree = "<group>";
@@ -236,6 +245,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		934CBAFC256F81B8005992F7 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				934CBB05256F94A6005992F7 /* ThemeTableCell.swift */,
+				934CBB06256F94A6005992F7 /* ThemeTableViewCell.xib */,
+				9350CBAA25701E9200AFBE40 /* ThemeSelctionpopup.swift */,
+				934CBAF9256F7F8A005992F7 /* ThemeSelctionView.xib */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
 		9358FA04254BE110008C430E /* DeleteImageAttachment */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +284,7 @@
 				93DC6D0A25470B6D0092853F /* EmojiPopup */,
 				93FB98772546B79300126B37 /* MoreMenuPopup */,
 				9390E3EC2542F53200660C0E /* ImageAttachmentPopup */,
+				934CBAFC256F81B8005992F7 /* Themes */,
 				93DC22B1255D050E003E7C3C /* Sort */,
 				9390E3E82542F2E400660C0E /* SaveNote */,
 			);
@@ -444,8 +465,11 @@
 				93DC22B3255D0906003E7C3C /* SortPopupView.xib in Resources */,
 				9358FA06254BE172008C430E /* DeleteImage.xib in Resources */,
 				93FB98792546B88900126B37 /* MoreMenuPopup.xib in Resources */,
+				934CBB08256F94A6005992F7 /* ThemeTableViewCell.xib in Resources */,
 				93F92CAE254175D800582357 /* SaveNote.xib in Resources */,
+				9363E624257E1C5200F02631 /* AddNote.xib in Resources */,
 				93F51747251DBF9B009FE8C2 /* Main.storyboard in Resources */,
+				934CBAFA256F7F8A005992F7 /* ThemeSelctionView.xib in Resources */,
 				93E506AA25219F7100517120 /* NoteTableViewCell.xib in Resources */,
 				93DC6D1025470BED0092853F /* EmojiPopup.xib in Resources */,
 			);
@@ -544,17 +568,19 @@
 				1CF96219254AD746002F41BA /* ViewControllerExtension.swift in Sources */,
 				93DC22B5255D0969003E7C3C /* SortPopup.swift in Sources */,
 				93DC22B7255D099A003E7C3C /* SortPopupPr.swift in Sources */,
+				9363E622257E1C2100F02631 /* AddNote.swift in Sources */,
 				1CF96215254A97AA002F41BA /* GradientView.swift in Sources */,
+				934CBB07256F94A6005992F7 /* ThemeTableCell.swift in Sources */,
 				93DC6D0C25470BAF0092853F /* EmojiPopup.swift in Sources */,
 				9321E0E22553B77100DB4B0F /* ImageStorage.swift in Sources */,
 				1CEF7443256B882800C6D2E3 /* Note+CoreDataProperties.swift in Sources */,
 				931644F6253EA65900D38A44 /* DBManager.swift in Sources */,
 				93FB987D2546B90E00126B37 /* MoreMenuPopupProtocol.swift in Sources */,
 				1CEF7442256B882800C6D2E3 /* Note+CoreDataClass.swift in Sources */,
+				9350CBAB25701E9200AFBE40 /* ThemeSelctionpopup.swift in Sources */,
 				93FB987B2546B8DA00126B37 /* MoreMenuPopup.swift in Sources */,
 				1CCEC7F5254C3D480058D769 /* AppThemeSections.swift in Sources */,
 				93620D032543016300B5CE89 /* ImageAttachmentProtocol.swift in Sources */,
-				1CEF7450256B896000C6D2E3 /* CalenderView.swift in Sources */,
 				93F92CB02541761C00582357 /* SaveNote.swift in Sources */,
 				933B7C372535B92200ACC4A7 /* NewNoteViewController.swift in Sources */,
 				1CEF7451256B896000C6D2E3 /* CalenderViewController.swift in Sources */,
@@ -652,7 +678,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG KDCALENDAR_EVENT_MANAGER_ENABLED";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -706,6 +732,8 @@
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = KDCALENDAR_EVENT_MANAGER_ENABLED;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -739,7 +767,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vungle.basketball;
 				PRODUCT_NAME = Dairy;
 				PROVISIONING_PROFILE_SPECIFIER = "AlphaBasketBall Game In House Provisioning Profile";
-				SWIFT_OBJC_BRIDGING_HEADER = "Diary/Utilties/Dairy-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -772,7 +800,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vungle.basketball;
 				PRODUCT_NAME = Dairy;
 				PROVISIONING_PROFILE_SPECIFIER = "AlphaBasketBall Game In House Provisioning Profile";
-				SWIFT_OBJC_BRIDGING_HEADER = "Diary/Utilties/Dairy-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

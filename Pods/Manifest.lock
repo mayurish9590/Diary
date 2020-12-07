@@ -1,24 +1,26 @@
 PODS:
+  - KDCalendar (1.8.9):
+    - KDCalendar/EventManager (= 1.8.9)
+  - KDCalendar/EventManager (1.8.9)
   - SideMenu (6.5.0)
   - SwiftLint (0.41.0)
-  - VungleSDK-iOS (6.8.1)
 
 DEPENDENCIES:
+  - KDCalendar (~> 1.8.9)
   - SideMenu
   - SwiftLint
-  - VungleSDK-iOS (= 6.8.1)
 
 SPEC REPOS:
   trunk:
+    - KDCalendar
     - SideMenu
     - SwiftLint
-    - VungleSDK-iOS
 
 SPEC CHECKSUMS:
+  KDCalendar: a587bc486b992d82ef94bd04001fce9baf45e518
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
-  VungleSDK-iOS: 0405589c8626b2511dd57214a17e0d65e0d2f424
 
-PODFILE CHECKSUM: 5ba6beb8ef7317c03b426f180fecf9e13fbff62f
+PODFILE CHECKSUM: 3565e5b3f282d6690e10a6ad2cfe29515c051e18
 
 COCOAPODS: 1.10.0

@@ -12,4 +12,5 @@ enum Themes: Int, CaseIterable {
     case Theme1 
     case Theme2
     case Theme3
+    case Theme4
 }

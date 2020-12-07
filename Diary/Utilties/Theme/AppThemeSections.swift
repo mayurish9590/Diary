@@ -11,15 +11,17 @@ import SwiftUI
 
 extension Themes {
 
-    var background: UIImage {
+    var background: UIColor {
     switch self {
     case .Theme1:
-      return UIImage(named: "Basic")!
+      return UIColor(named: "theme1Background")!
     case .Theme2:
-      return  UIImage(named: "night")!
+      return  UIColor(named: "theme2Background")!
     case .Theme3:
-        return UIImage(named: "wooden")!
-    }
+        return UIColor(named: "theme3Background")!
+    case .Theme4:
+        return UIColor(named: "theme4Background")!
+        }
   }
     
     var foreground: UIColor {
@@ -30,7 +32,9 @@ extension Themes {
         return  UIColor(named: "theme2Foreground") ?? UIColor.blue
       case .Theme3:
         return UIColor(named: "theme3Foreground") ??  UIColor.white
-      }
+      case .Theme4:
+        return UIColor(named: "theme4Foreground") ??  UIColor.white
+        }
     }
     
     var navBar: UIColor {
@@ -40,8 +44,10 @@ extension Themes {
          case .Theme2:
            return   UIColor.black
          case .Theme3:
-            return  UIColor.brown
-         }
+            return  UIColor.systemBlue
+         case .Theme4:
+            return UIColor.systemPink
+        }
        }
     
     
@@ -55,7 +61,9 @@ extension Themes {
            return  UIColor(named: "theme2alert") ?? UIColor.blue
          case .Theme3:
            return UIColor(named: "theme3alert") ??  UIColor.white
-         }
+         case .Theme4:
+            return UIColor(named: "theme4alert")!
+        }
        }
     
     
@@ -72,7 +80,9 @@ extension Themes {
         return UIColor(named: "theme2Text") ?? UIColor.black
       case .Theme3:
         return UIColor(named: "theme3Text") ?? UIColor.black
-      }
+      case .Theme4:
+        return UIColor(named: "theme4Text") ?? UIColor.black
+        }
     }
     
     var isLocked: Bool {
@@ -82,7 +92,9 @@ extension Themes {
         case .Theme2:
         return false
         case .Theme3:
-        return true
+            return true
+        case .Theme4:
+            return false
         }
     }
     
@@ -94,6 +106,8 @@ extension Themes {
         return "Theme2"
         case .Theme3:
         return "Theme3"
+        case .Theme4:
+            return "Theme4"
         }
     }
     

@@ -26,12 +26,12 @@ class ThemeTableViewCell: UITableViewCell {
         self.viewContainer.layer.cornerRadius = 10
         self.viewContainer.layer.borderColor = theme.Text.cgColor
         self.viewContainer.layer.borderWidth = 2
-        self.backgroundImage.image = theme.background
+       
         self.foregroundColorView.layer.cornerRadius = 10
         self.foregroundColorView.layer.borderColor = theme.Text.cgColor
         self.foregroundColorView.layer.borderWidth = 2
         
-        self.viewContainer.backgroundColor = .blue
+        self.viewContainer.backgroundColor = theme.background
         self.foregroundColorView.backgroundColor = theme.foreground
         self.themeName.textColor = theme.Text
         self.themeName.text = theme.name

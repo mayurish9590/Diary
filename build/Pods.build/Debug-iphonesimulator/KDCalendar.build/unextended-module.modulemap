@@ -1,0 +1,10 @@
+framework module KDCalendar {
+  umbrella header "KDCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module KDCalendar.__Swift {
+    exclude header "KDCalendar-Swift.h"
+}

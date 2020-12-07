@@ -677,75 +677,6 @@ depends-member:
 - !private ["SH", "white"]
 - !private ["SH", "windows"]
 - !private ["10Foundation9IndexPathV", "row"]
-- !private ["8SideMenu18InitializableClassP", "Bundle"]
-- !private ["8SideMenu18InitializableClassP", "CGRect"]
-- ["8SideMenu18InitializableClassP", "EmojiPopup"]
-- !private ["8SideMenu18InitializableClassP", "Themes"]
-- !private ["8SideMenu18InitializableClassP", "UIApplication"]
-- !private ["8SideMenu18InitializableClassP", "UIColor"]
-- !private ["8SideMenu18InitializableClassP", "UIImage"]
-- !private ["8SideMenu18InitializableClassP", "UINib"]
-- !private ["8SideMenu18InitializableClassP", "UIScreen"]
-- !private ["8SideMenu18InitializableClassP", "UITapGestureRecognizer"]
-- ["8SideMenu18InitializableClassP", ""]
-- !private ["8SideMenu18InitializableClassP", "addGestureRecognizer"]
-- !private ["8SideMenu18InitializableClassP", "addSubview"]
-- !private ["8SideMenu18InitializableClassP", "autoresizingMask"]
-- !private ["8SideMenu18InitializableClassP", "backgroundColor"]
-- !private ["8SideMenu18InitializableClassP", "borderColor"]
-- !private ["8SideMenu18InitializableClassP", "borderWidth"]
-- !private ["8SideMenu18InitializableClassP", "bounds"]
-- !private ["8SideMenu18InitializableClassP", "cgColor"]
-- ["8SideMenu18InitializableClassP", "collectionView"]
-- ["8SideMenu18InitializableClassP", "collectionViewDidEndMultipleSelectionInteraction"]
-- !private ["8SideMenu18InitializableClassP", "commonInit"]
-- !private ["8SideMenu18InitializableClassP", "cornerRadius"]
-- !private ["8SideMenu18InitializableClassP", "dataSource"]
-- !private ["8SideMenu18InitializableClassP", "delegate"]
-- !private ["8SideMenu18InitializableClassP", "dequeueReusableCell"]
-- !private ["8SideMenu18InitializableClassP", "dismissPopoup"]
-- !private ["8SideMenu18InitializableClassP", "emoji"]
-- !private ["8SideMenu18InitializableClassP", "emojiCollectionCOntainer"]
-- !private ["8SideMenu18InitializableClassP", "emojiCollectionView"]
-- !private ["8SideMenu18InitializableClassP", "emojiImageView"]
-- !private ["8SideMenu18InitializableClassP", "endEditing"]
-- !private ["8SideMenu18InitializableClassP", "fatalError"]
-- !private ["8SideMenu18InitializableClassP", "frame"]
-- !private ["8SideMenu18InitializableClassP", "image"]
-- ["8SideMenu18InitializableClassP", "indexPathForPreferredFocusedView"]
-- ["8SideMenu18InitializableClassP", "indexPathForPreferredFocusedViewInCollectionView"]
-- ["8SideMenu18InitializableClassP", "indexTitles"]
-- ["8SideMenu18InitializableClassP", "indexTitlesForCollectionView"]
-- ["8SideMenu18InitializableClassP", "init"]
-- !private ["8SideMenu18InitializableClassP", "isKeyWindow"]
-- !private ["8SideMenu18InitializableClassP", "layer"]
-- !private ["8SideMenu18InitializableClassP", "loadNibNamed"]
-- !private ["8SideMenu18InitializableClassP", "main"]
-- ["8SideMenu18InitializableClassP", "numberOfSections"]
-- ["8SideMenu18InitializableClassP", "numberOfSectionsInCollectionView"]
-- !private ["8SideMenu18InitializableClassP", "parentView"]
-- !private ["8SideMenu18InitializableClassP", "register"]
-- !private ["8SideMenu18InitializableClassP", "removeFromSuperview"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidChangeAdjustedContentInset"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidEndDecelerating"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidEndDragging"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidEndScrollingAnimation"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidEndZooming"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidScroll"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidScrollToTop"]
-- ["8SideMenu18InitializableClassP", "scrollViewDidZoom"]
-- ["8SideMenu18InitializableClassP", "scrollViewShouldScrollToTop"]
-- ["8SideMenu18InitializableClassP", "scrollViewWillBeginDecelerating"]
-- ["8SideMenu18InitializableClassP", "scrollViewWillBeginDragging"]
-- ["8SideMenu18InitializableClassP", "scrollViewWillBeginZooming"]
-- ["8SideMenu18InitializableClassP", "scrollViewWillEndDragging"]
-- !private ["8SideMenu18InitializableClassP", "shadowView"]
-- !private ["8SideMenu18InitializableClassP", "shared"]
-- !private ["8SideMenu18InitializableClassP", "upadteTheme"]
-- ["8SideMenu18InitializableClassP", "viewForZooming"]
-- ["8SideMenu18InitializableClassP", "viewForZoomingInScrollView"]
-- !private ["8SideMenu18InitializableClassP", "white"]
-- !private ["8SideMenu18InitializableClassP", "windows"]
 - !private ["SM", "count"]
 - !private ["SM", "filter"]
 - !private ["SM", "first"]
@@ -2387,7 +2318,6 @@ depends-nominal:
 - !private "7SwiftUI7GestureP"
 - "SH"
 - !private "10Foundation9IndexPathV"
-- "8SideMenu18InitializableClassP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
@@ -2463,6 +2393,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
@@ -2472,12 +2403,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/Pods/VungleSDK.framework/Headers/VungleSDK.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
-- "/Users/mayurishekhar/Diary/Diary/Utilties/Dairy-Bridging-Header.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/KDCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-umbrella.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-Swift.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
@@ -2486,11 +2415,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b94a7c109cf079aaf6ab386bf4b5d259"
+interface-hash: "48409d6b5952cb7f0efc0fc5b5a251fd"

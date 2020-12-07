@@ -25,9 +25,9 @@ class NoteTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        self.containerView.backgroundColor = Themes.currentTheme().alert
             
-      //  self.contentView.backgroundColor = Themes.currentTheme().alert
+      self.contentView.backgroundColor = Themes.currentTheme().alert
         self.dateLabel.textColor = Themes.currentTheme().Text
          self.titleLabel.textColor = Themes.currentTheme().Text
          self.desciptionLabel.textColor = Themes.currentTheme().Text
@@ -44,7 +44,14 @@ class NoteTableViewCell: UITableViewCell {
         }
     
     func configureCell(note: NoteModel)  {
-        self.emojiImageView.image = UIImage(named: note.emoji)
+        
+        self.containerView.backgroundColor = Themes.currentTheme().alert
+                   
+             self.contentView.backgroundColor = Themes.currentTheme().alert
+               self.dateLabel.textColor = Themes.currentTheme().Text
+                self.titleLabel.textColor = Themes.currentTheme().Text
+                self.desciptionLabel.textColor = Themes.currentTheme().Text
+       self.emojiImageView.image = UIImage(named: note.emoji)
         self.titleLabel.text = note.title
         self.desciptionLabel.text = note.noteDescription
         let  formatter = DateFormatter()

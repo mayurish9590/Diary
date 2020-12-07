@@ -10,19 +10,15 @@ provides-dynamic-lookup:
 - "fetchAllNote"
 - "nsobjContext"
 - "saveToDB"
-- "sortByZtoA"
-- "sortbyAToZ"
 - "update"
 depends-top-level:
 - !private "!="
 - !private "AppDelegate"
 - "AssignmentPrecedence"
-- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "DB"
 - "DMBManger"
 - !private "FloatLiteralType"
-- !private "Int"
 - !private "IntegerLiteralType"
 - !private "NSEntityDescription"
 - !private "NSError"
@@ -30,14 +26,12 @@ depends-top-level:
 - !private "NSManagedObject"
 - "NSManagedObjectContext"
 - !private "NSPredicate"
-- !private "NSSortDescriptor"
-- "Note"
+- !private "Note"
 - "NoteModel"
 - !private "StringLiteralType"
 - !private "UIApplication"
 - !private "print"
 depends-member:
-- !private ["s18AdditiveArithmeticP", "init"]
 - !private ["5Dairy11AppDelegateC", "persistentContainer"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
@@ -45,7 +39,6 @@ depends-member:
 - !private ["SK", "append"]
 - !private ["SK", "count"]
 - !private ["SK", "first"]
-- !private ["Sz", "init"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "delegate"]
@@ -65,14 +58,12 @@ depends-member:
 - !private ["s7CVarArgP", "savingTime"]
 - !private ["s7CVarArgP", "setValue"]
 - !private ["s7CVarArgP", "shared"]
-- !private ["s7CVarArgP", "sortDescriptors"]
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "userInfo"]
 - !private ["s7CVarArgP", "viewContext"]
 - !private ["Sl", "append"]
 - !private ["Sl", "count"]
 - !private ["Sl", "first"]
-- !private ["SL", "init"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "first"]
@@ -95,14 +86,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "savingTime"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
-- !private ["s28CustomDebugStringConvertibleP", "sortDescriptors"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "userInfo"]
 - !private ["s28CustomDebugStringConvertibleP", "viewContext"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "first"]
-- !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
@@ -124,7 +113,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "savingTime"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "shared"]
-- !private ["s23CustomStringConvertibleP", "sortDescriptors"]
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "userInfo"]
 - !private ["s23CustomStringConvertibleP", "viewContext"]
@@ -137,15 +125,13 @@ depends-member:
 - !private ["5Dairy2DBV", "title"]
 - !private ["5Dairy9DMBMangerC", "AppDelegate"]
 - !private ["5Dairy9DMBMangerC", "DB"]
-- !private ["5Dairy9DMBMangerC", "Int"]
 - !private ["5Dairy9DMBMangerC", "NSEntityDescription"]
 - !private ["5Dairy9DMBMangerC", "NSError"]
 - !private ["5Dairy9DMBMangerC", "NSFetchRequest"]
 - !private ["5Dairy9DMBMangerC", "NSManagedObject"]
 - ["5Dairy9DMBMangerC", "NSManagedObjectContext"]
 - !private ["5Dairy9DMBMangerC", "NSPredicate"]
-- !private ["5Dairy9DMBMangerC", "NSSortDescriptor"]
-- ["5Dairy9DMBMangerC", "Note"]
+- !private ["5Dairy9DMBMangerC", "Note"]
 - ["5Dairy9DMBMangerC", "NoteModel"]
 - !private ["5Dairy9DMBMangerC", "UIApplication"]
 - ["5Dairy9DMBMangerC", "deinit"]
@@ -155,8 +141,6 @@ depends-member:
 - ["5Dairy9DMBMangerC", "nsobjContext"]
 - !private ["5Dairy9DMBMangerC", "print"]
 - ["5Dairy9DMBMangerC", "saveToDB"]
-- ["5Dairy9DMBMangerC", "sortByZtoA"]
-- ["5Dairy9DMBMangerC", "sortbyAToZ"]
 - ["5Dairy9DMBMangerC", "update"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
@@ -164,13 +148,11 @@ depends-member:
 - !private ["Se", "append"]
 - !private ["Se", "count"]
 - !private ["Se", "first"]
-- !private ["Se", "init"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "append"]
 - !private ["SE", "count"]
 - !private ["SE", "first"]
-- !private ["SE", "init"]
 - !private ["SQ", "append"]
 - !private ["SQ", "count"]
 - !private ["SQ", "delegate"]
@@ -190,7 +172,6 @@ depends-member:
 - !private ["SQ", "savingTime"]
 - !private ["SQ", "setValue"]
 - !private ["SQ", "shared"]
-- !private ["SQ", "sortDescriptors"]
 - !private ["SQ", "title"]
 - !private ["SQ", "userInfo"]
 - !private ["SQ", "viewContext"]
@@ -198,8 +179,6 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
-- !private ["s27ExpressibleByIntegerLiteralP", "init"]
-- !private ["s17FixedWidthIntegerP", "init"]
 - !private ["SH", "append"]
 - !private ["SH", "count"]
 - !private ["SH", "delegate"]
@@ -219,33 +198,9 @@ depends-member:
 - !private ["SH", "savingTime"]
 - !private ["SH", "setValue"]
 - !private ["SH", "shared"]
-- !private ["SH", "sortDescriptors"]
 - !private ["SH", "title"]
 - !private ["SH", "userInfo"]
 - !private ["SH", "viewContext"]
-- !private ["8SideMenu18InitializableClassP", "delegate"]
-- !private ["8SideMenu18InitializableClassP", "delete"]
-- !private ["8SideMenu18InitializableClassP", "emoji"]
-- !private ["8SideMenu18InitializableClassP", "entity"]
-- !private ["8SideMenu18InitializableClassP", "fetch"]
-- !private ["8SideMenu18InitializableClassP", "imageAttachment"]
-- !private ["8SideMenu18InitializableClassP", "init"]
-- !private ["8SideMenu18InitializableClassP", "noteDescription"]
-- !private ["8SideMenu18InitializableClassP", "noteID"]
-- !private ["8SideMenu18InitializableClassP", "persistentContainer"]
-- !private ["8SideMenu18InitializableClassP", "predicate"]
-- !private ["8SideMenu18InitializableClassP", "save"]
-- !private ["8SideMenu18InitializableClassP", "savingDate"]
-- !private ["8SideMenu18InitializableClassP", "savingTime"]
-- !private ["8SideMenu18InitializableClassP", "setValue"]
-- !private ["8SideMenu18InitializableClassP", "shared"]
-- !private ["8SideMenu18InitializableClassP", "sortDescriptors"]
-- !private ["8SideMenu18InitializableClassP", "title"]
-- !private ["8SideMenu18InitializableClassP", "userInfo"]
-- !private ["8SideMenu18InitializableClassP", "viewContext"]
-- !private ["Si", "init"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
 - !private ["SM", "count"]
 - !private ["SM", "first"]
@@ -258,19 +213,16 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "predicate"]
 - !private ["So8NSCodingP", "save"]
-- !private ["So8NSCodingP", "sortDescriptors"]
 - !private ["So8NSCodingP", "userInfo"]
 - !private ["So9NSCopyingP", "entity"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "predicate"]
-- !private ["So9NSCopyingP", "sortDescriptors"]
 - !private ["So9NSCopyingP", "userInfo"]
 - !private ["So19NSEntityDescriptionC", "entity"]
 - !private ["So7NSErrorC", "userInfo"]
 - !private ["So17NSFastEnumerationP", "entity"]
 - !private ["So14NSFetchRequestC", "init"]
 - !private ["So14NSFetchRequestC", "predicate"]
-- !private ["So14NSFetchRequestC", "sortDescriptors"]
 - !private ["So20NSFetchRequestResultP", "emoji"]
 - !private ["So20NSFetchRequestResultP", "imageAttachment"]
 - !private ["So20NSFetchRequestResultP", "init"]
@@ -311,7 +263,6 @@ depends-member:
 - !private ["So8NSObjectC", "savingTime"]
 - !private ["So8NSObjectC", "setValue"]
 - !private ["So8NSObjectC", "shared"]
-- !private ["So8NSObjectC", "sortDescriptors"]
 - !private ["So8NSObjectC", "title"]
 - !private ["So8NSObjectC", "userInfo"]
 - !private ["So8NSObjectC", "viewContext"]
@@ -331,18 +282,15 @@ depends-member:
 - !private ["So8NSObjectP", "savingTime"]
 - !private ["So8NSObjectP", "setValue"]
 - !private ["So8NSObjectP", "shared"]
-- !private ["So8NSObjectP", "sortDescriptors"]
 - !private ["So8NSObjectP", "title"]
 - !private ["So8NSObjectP", "userInfo"]
 - !private ["So8NSObjectP", "viewContext"]
 - !private ["So21NSPersistentContainerC", "viewContext"]
 - !private ["So24NSPersistentStoreRequestC", "init"]
 - !private ["So24NSPersistentStoreRequestC", "predicate"]
-- !private ["So24NSPersistentStoreRequestC", "sortDescriptors"]
 - !private ["So11NSPredicateC", "init"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "userInfo"]
-- !private ["So16NSSortDescriptorC", "init"]
 - ["5Dairy4NoteC", "deinit"]
 - !private ["5Dairy4NoteC", "emoji"]
 - !private ["5Dairy4NoteC", "imageAttachment"]
@@ -359,7 +307,6 @@ depends-member:
 - !private ["5Dairy9NoteModelV", "savingDate"]
 - !private ["5Dairy9NoteModelV", "savingTime"]
 - !private ["5Dairy9NoteModelV", "title"]
-- !private ["Sj", "init"]
 - !private ["7Combine16ObservableObjectP", "emoji"]
 - !private ["7Combine16ObservableObjectP", "imageAttachment"]
 - !private ["7Combine16ObservableObjectP", "init"]
@@ -375,13 +322,9 @@ depends-member:
 - !private ["Sm", "append"]
 - !private ["Sm", "count"]
 - !private ["Sm", "first"]
-- !private ["s10SIMDScalarP", "init"]
 - !private ["ST", "append"]
 - !private ["ST", "count"]
 - !private ["ST", "first"]
-- !private ["SZ", "init"]
-- !private ["s13SignedNumericP", "init"]
-- !private ["Sx", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
@@ -404,19 +347,15 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "first"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "first"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- !private ["7SwiftUI18_FormatSpecifiableP", "init"]
 - !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "count"]
 - !private ["s19_HasContiguousBytesP", "first"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delete"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "emoji"]
@@ -433,7 +372,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "savingTime"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "sortDescriptors"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewContext"]
@@ -453,23 +391,18 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "savingTime"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setValue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sortDescriptors"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "title"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "userInfo"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewContext"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
-- !private "s18AdditiveArithmeticP"
 - !private "5Dairy11AppDelegateC"
 - !private "Sa"
 - !private "SK"
-- !private "Sz"
 - !private "s7CVarArgP"
 - !private "Sl"
-- !private "SL"
 - !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -483,13 +416,7 @@ depends-nominal:
 - !private "SQ"
 - !private "s5ErrorP"
 - !private "s25ExpressibleByArrayLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
-- !private "s17FixedWidthIntegerP"
 - !private "SH"
-- !private "8SideMenu18InitializableClassP"
-- !private "Si"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
@@ -508,18 +435,12 @@ depends-nominal:
 - !private "So24NSPersistentStoreRequestC"
 - !private "So11NSPredicateC"
 - !private "So14NSSecureCodingP"
-- !private "So16NSSortDescriptorC"
 - "5Dairy4NoteC"
 - !private "5Dairy9NoteModelV"
-- !private "Sj"
 - !private "7Combine16ObservableObjectP"
 - !private "Sk"
 - !private "Sm"
-- !private "s10SIMDScalarP"
 - !private "ST"
-- !private "SZ"
-- !private "s13SignedNumericP"
-- !private "Sx"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "So13UIApplicationC"
@@ -529,10 +450,7 @@ depends-nominal:
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So23UIUserActivityRestoringP"
 - !private "s14_ArrayProtocolP"
-- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "7SwiftUI18_FormatSpecifiableP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
@@ -547,6 +465,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
@@ -556,12 +475,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/mayurishekhar/Diary/Pods/VungleSDK.framework/Headers/VungleSDK.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
-- "/Users/mayurishekhar/Diary/Diary/Utilties/Dairy-Bridging-Header.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
-- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/KDCalendar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-umbrella.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Headers/KDCalendar-Swift.h"
+- "/Users/mayurishekhar/Diary/build/Debug-iphonesimulator/KDCalendar/KDCalendar.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
@@ -570,11 +487,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4a3930d0cd33f0381e81e8a8d93c6ef0"
+interface-hash: "1b3457e407dc427b78dee8b886ed126c"
