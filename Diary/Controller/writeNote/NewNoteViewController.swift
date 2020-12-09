@@ -40,6 +40,9 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     private var currentTheme = Themes.currentTheme()
     @IBOutlet weak var heightConstraintOfNoteView: NSLayoutConstraint!
     
+    var previousRect = CGRect.zero
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         titleText.attributedPlaceholder =
@@ -48,24 +51,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
         updateTheme()
         floatingButton()
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateTheme), name: Notification.Name("Theme"), object: nil)
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
-    }
-    @objc func keyboardWillShow(notification: NSNotification) {
-        self.view.frame.origin.y -= 50
-    }
-
-    @objc func keyboardWillHide(notification: NSNotification) {
-            self.view.frame.origin.y = 88
+   
     }
     
     
@@ -372,4 +358,42 @@ extension NewNoteViewController: UITextViewDelegate {
             textView.textColor = UIColor.lightGray
         }
     }
+    func textViewDidChange(_ textView: UITextView) {
+        if (self.attachedImage.image != nil) {
+            let pos = textView.endOfDocument
+            let currentRect = textView.caretRect(for: pos)
+            self.previousRect = self.previousRect.origin.y == 0.0 ? currentRect : self.previousRect
+            if currentRect.origin.y > self.previousRect.origin.y {
+                //new line reached, write your code
+                print("Started New Line")
+                TextViewPoppup.instance.delegate = self
+                TextViewPoppup.instance.showAlert(text: self.descriptionTextView.text ?? "")
+            }
+            self.previousRect = currentRect
+        }
+            
+        }
+}
+
+
+extension UITextView{
+
+    func numberOfLines() -> Int{
+        if let fontUnwrapped = self.font{
+            return Int(self.contentSize.height / fontUnwrapped.lineHeight)
+        }
+        return 0
+    }
+
+}
+
+extension NewNoteViewController: TextViewProtocol {
+    func textViewPopupDismissed(text: String) {
+        self.descriptionTextView.text = text
+        self.descriptionTextView.selectedRange = NSMakeRange(self.descriptionTextView.text.count , 0);
+        self.descriptionTextView.becomeFirstResponder()
+
+    }
+    
+    
 }

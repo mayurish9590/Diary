@@ -55,7 +55,7 @@ class homeViewController: UIViewController {
         btn.setImage(UIImage.init(systemName: "square.and.pencil"), for: .normal)
         btn.setTitleColor(Themes.currentTheme().Text, for: .normal)
         btn.tintColor  = UIColor.white
-        btn.backgroundColor = Themes.currentTheme().alert
+        btn.backgroundColor = Themes.currentTheme().background
         btn.clipsToBounds = true
         btn.layer.cornerRadius = 30
         btn.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -105,9 +105,11 @@ class homeViewController: UIViewController {
     }
     
     @IBAction func onclickCalender(_ sender: Any) {
-     if let vc = self.storyboard?.instantiateViewController(identifier: "CalenderViewController") as? CalenderViewController {
+    
+        if let vc = self.storyboard?.instantiateViewController(identifier: "CalenderViewController") as? CalenderViewController {
                      self.navigationController?.pushViewController(vc, animated: true);
                  }
+ 
     }
     
     

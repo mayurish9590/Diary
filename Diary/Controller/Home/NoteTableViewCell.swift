@@ -27,7 +27,7 @@ class NoteTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.containerView.backgroundColor = Themes.currentTheme().alert
             
-      self.contentView.backgroundColor = Themes.currentTheme().alert
+     //   self.contentView.backgroundColor = Themes.currentTheme().alert
         self.dateLabel.textColor = Themes.currentTheme().Text
          self.titleLabel.textColor = Themes.currentTheme().Text
          self.desciptionLabel.textColor = Themes.currentTheme().Text
@@ -47,7 +47,7 @@ class NoteTableViewCell: UITableViewCell {
         
         self.containerView.backgroundColor = Themes.currentTheme().alert
                    
-             self.contentView.backgroundColor = Themes.currentTheme().alert
+            // self.contentView.backgroundColor = Themes.currentTheme().alert
                self.dateLabel.textColor = Themes.currentTheme().Text
                 self.titleLabel.textColor = Themes.currentTheme().Text
                 self.desciptionLabel.textColor = Themes.currentTheme().Text

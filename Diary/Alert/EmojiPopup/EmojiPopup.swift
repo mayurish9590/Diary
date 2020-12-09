@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class EmojiPopup: UIView{
+class EmojiPopup: UIView {
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var emojiCollectionCOntainer: UIView!

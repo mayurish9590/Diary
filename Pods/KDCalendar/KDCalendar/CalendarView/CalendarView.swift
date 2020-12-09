@@ -494,8 +494,15 @@ extension CalendarView {
     }
     
     @discardableResult public func addEvent(_ title: String, date startDate: Date, duration hours: NSInteger = 1) -> Bool {
-
-        let event = CalendarEvent(title: title, startDate: startDate, endDate: startDate)
+        
+        var components = DateComponents()
+        components.hour = hours
+        
+        guard let endDate = self.calendar.date(byAdding: components, to: startDate) else {
+            return false
+        }
+        
+        let event = CalendarEvent(title: title, startDate: startDate, endDate: endDate)
         
         guard EventsManager.add(event: event) else {
             return false

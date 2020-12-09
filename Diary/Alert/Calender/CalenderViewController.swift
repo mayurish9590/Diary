@@ -13,10 +13,8 @@ import Foundation
 
 
 class CalenderViewController: UIViewController {
-   let  formatter = DateFormatter()
+    let  formatter = DateFormatter()
     
-    @IBOutlet weak var nextMonthButton: UIButton!
-    @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var calenderView: CalendarView!
     var notesarraytableview :[NoteModel] =  []
     var notesArrayDB :[NoteModel] =  []
@@ -24,23 +22,28 @@ class CalenderViewController: UIViewController {
     @IBOutlet weak var notesTableView: UITableView!
     
     override func viewDidLoad() {
-        calenderView.delegate = self
-        calenderView.dataSource = self
+        navigationBarSetup()
+        self.notesArrayDB = DMBManger.fetchAllNote() ?? []
+        setUpCalendar()
+        self.notesTableView.register(UINib(nibName: NoteViewCell.nibName, bundle: nil), forCellReuseIdentifier: NoteViewCell.CellReuseIdentifier)
+     
+        let sortedNotes = self.notesArrayDB.filter { dates in
+            formatter.string(from: dates.savingDate) == formatter.string(from: self.calenderView.displayDate ?? Date())
+        }
+        self.notesarraytableview = sortedNotes
         notesTableView.delegate = self
         notesTableView.dataSource = self
-          self.notesArrayDB = DMBManger.fetchAllNote() ?? []
-        initSetup()
-        self.notesTableView.register(UINib(nibName: NoteViewCell.nibName, bundle: nil), forCellReuseIdentifier: NoteViewCell.CellReuseIdentifier)
-                   }
-    func initSetup()
+        self.notesTableView.reloadData()
+    }
+    
+    
+    func setUpCalendar()
     {
-         formatter.setLocalizedDateFormatFromTemplate("dd-MM-yyyy")
-        self.notesArrayDB = DMBManger.fetchAllNote() ?? []
+        calenderView.delegate = self
+        calenderView.dataSource = self
         
+        formatter.setLocalizedDateFormatFromTemplate("dd-MM-yyyy")
         
-        self.previousButton.setTitleColor(Themes.currentTheme().foreground, for: .normal)
-        
-        self.nextMonthButton.setTitleColor(Themes.currentTheme().foreground, for: .normal)
         let style = CalendarView.Style()
         self.view.backgroundColor = Themes.currentTheme().background
         self.navigationItem.backBarButtonItem?.title = "Back"
@@ -57,81 +60,76 @@ class CalenderViewController: UIViewController {
         style.weekdaysTextColor = Themes.currentTheme().Text
         style.headerBackgroundColor    = Themes.currentTheme().navBar
         style.weekdaysBackgroundColor  = Themes.currentTheme().alert
-               style.firstWeekday     = .sunday
-               
-               style.locale = Locale(identifier: "en_US")
-               
-               style.cellFont = UIFont(name: "Helvetica", size: 20.0) ?? UIFont.systemFont(ofSize: 20.0)
-               style.headerFont = UIFont(name: "Helvetica", size: 20.0) ?? UIFont.systemFont(ofSize: 20.0)
-               style.weekdaysFont = UIFont(name: "Helvetica", size: 14.0) ?? UIFont.systemFont(ofSize: 14.0)
+        style.firstWeekday     = .sunday
         
-               calenderView.style = style
-          calenderView.direction = .horizontal
-               calenderView.multipleSelectionEnable = false
-               calenderView.marksWeekends = true
-                
-               calenderView.backgroundColor = UIColor(red: 252/255, green: 252/255, blue: 252/255, alpha: 1.0)
+        style.locale = Locale(identifier: "en_US")
+        
+        style.cellFont = UIFont(name: "Helvetica", size: 20.0) ?? UIFont.systemFont(ofSize: 20.0)
+        style.headerFont = UIFont(name: "Helvetica", size: 20.0) ?? UIFont.systemFont(ofSize: 20.0)
+        style.weekdaysFont = UIFont(name: "Helvetica", size: 14.0) ?? UIFont.systemFont(ofSize: 14.0)
+        
+        calenderView.style = style
+        calenderView.direction = .horizontal
+        calenderView.multipleSelectionEnable = false
+        calenderView.marksWeekends = true
+        calenderView.selectDate(Date())
+        let today = Date()
+        
+        var tomorrowComponents = DateComponents()
+        tomorrowComponents.day = 1
+        
+        // self.calenderView.calendar.date(byAdding: tomorrowComponents, to: today)
+        self.calenderView.setDisplayDate(today)
+        calenderView.backgroundColor = UIColor(red: 252/255, green: 252/255, blue: 252/255, alpha: 1.0)
         for note in notesArrayDB {
-        self.calenderView.addEvent(String(note.noteID), date: note.savingDate)
-            
-             }
-   
-                
-        self.navigationItem.title = "Calender"
+            self.calenderView.addEvent(String(note.noteID), date: note.savingDate)
+        }
+    }
+    func navigationBarSetup() {
+        self.navigationItem.title = "Calendar"
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         
         let buttonback = UIBarButtonItem(image: UIImage(named: "left-arrow"), style: .plain, target: self, action:#selector(onClickBack))
         self.navigationItem.leftBarButtonItem  = buttonback
         self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
-        
     }
+    
+    
     
     @objc func onClickBack(){
         self.navigationController?.popViewController(animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-                 let today = Date()
-        
-        var tomorrowComponents = DateComponents()
-        tomorrowComponents.day = 1
         
         
-        let tomorrow = self.calenderView.calendar.date(byAdding: tomorrowComponents, to: today)!
-        //self.calenderView.selectDate(tomorrow)
-        self.calenderView.setDisplayDate(today)
-        
-        for note in notesArrayDB {
-            self.calenderView.selectDate(note.savingDate)
-            
-        }
     }
     
-    
-    @IBAction func onClickPrveousMonth(_ sender: Any) {
+    /*
+     @IBAction func onClickPrveousMonth(_ sender: Any) {
      self.calenderView.goToPreviousMonth()
-       
-        
-         for note in notesArrayDB {
-                   self.calenderView.selectDate(note.savingDate)
-                   
-               }
-        
-    }
-    
-    @IBAction func onClickNextMonth(_ sender: Any) {
-        self.calenderView.goToNextMonth()
-       
-        
-    }
-    
+     
+     
+     for note in notesArrayDB {
+     self.calenderView.selectDate(note.savingDate)
+     
+     }
+     
+     }
+     
+     @IBAction func onClickNextMonth(_ sender: Any) {
+     self.calenderView.goToNextMonth()
+     
+     
+     }
+     */
 }
 
 extension CalenderViewController: CalendarViewDataSource{
     func startDate() -> Date {
-         var dateComponents = DateComponents()
-                   dateComponents.month = -1
+        var dateComponents = DateComponents()
+        dateComponents.month = -1
         let today = Date()
         let threeMonthsAgo = self.calenderView.calendar.date(byAdding: dateComponents, to: today)!
         return threeMonthsAgo
@@ -139,18 +137,17 @@ extension CalenderViewController: CalendarViewDataSource{
     }
     
     func endDate() -> Date {
-          var dateComponents = DateComponents()
-            dateComponents.month = 12
-            let today = Date()
-            let twoYearsFromNow = self.calenderView.calendar.date(byAdding: dateComponents, to: today)!
-         return twoYearsFromNow
-        
+        var dateComponents = DateComponents()
+        dateComponents.month = 12
+        let today = Date()
+        let twoYearsFromNow = self.calenderView.calendar.date(byAdding: dateComponents, to: today)!
+        return twoYearsFromNow
     }
     
     func headerString(_ date: Date) -> String? {
         
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "LLLL"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "LLLL yyyy"
         let nameOfMonth = dateFormatter.string(from: date)
         return nameOfMonth
         
@@ -162,19 +159,19 @@ extension CalenderViewController: CalendarViewDataSource{
 
 extension CalenderViewController: CalendarViewDelegate{
     func calendar(_ calendar: CalendarView, didScrollToMonth date: Date) {
-    
+        
     }
     
     func calendar(_ calendar: CalendarView, didSelectDate date: Date, withEvents events: [CalendarEvent]) {
-          for event in events {
-                                 print("\t\"\(event.title)\" - Starting at:\(event.startDate)")
-                             }
-         let sortedNotes = self.notesArrayDB.filter { dates in
-                            formatter.string(from: dates.savingDate) == formatter.string(from: date)
-                        }
-     self.notesarraytableview = sortedNotes
-     self.notesTableView.reloadData()
-           
+        for event in events {
+            print("\t\"\(event.title)\" - Starting at:\(event.startDate)")
+        }
+        let sortedNotes = self.notesArrayDB.filter { dates in
+            formatter.string(from: dates.savingDate) == formatter.string(from: date)
+        }
+        self.notesarraytableview = sortedNotes
+        self.notesTableView.reloadData()
+        
     }
     
     func calendar(_ calendar: CalendarView, canSelectDate date: Date) -> Bool {
@@ -182,31 +179,23 @@ extension CalenderViewController: CalendarViewDelegate{
     }
     
     func calendar(_ calendar: CalendarView, didDeselectDate date: Date) {
-       
         self.notesarraytableview = []
-  
-        
     }
-        
-    
     
     func calendar(_ calendar: CalendarView, didLongPressDate date: Date, withEvents events: [CalendarEvent]?) {
         AddNote.instance.showAlert(self,date)
-        
     }
-    
-    
 }
 
 extension CalenderViewController: UITableViewDelegate{
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           if let newNoteVC = self.storyboard?.instantiateViewController(withIdentifier: VC.noteDetailVC) as? NewNoteViewController {
-               print(indexPath.section)
-               newNoteVC.noteobj = self.notesarraytableview[indexPath.row]
-               self.navigationController?.pushViewController(newNoteVC, animated: true)
-           }
-           
-       }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let newNoteVC = self.storyboard?.instantiateViewController(withIdentifier: VC.noteDetailVC) as? NewNoteViewController {
+            print(indexPath.section)
+            newNoteVC.noteobj = self.notesarraytableview[indexPath.row]
+            self.navigationController?.pushViewController(newNoteVC, animated: true)
+        }
+        
+    }
     
 }
 extension CalenderViewController:UITableViewDataSource{
@@ -242,7 +231,6 @@ extension CalenderViewController:UITableViewDataSource{
         } else {
             return 0
         }
-        
     }
 }
 
