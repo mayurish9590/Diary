@@ -69,7 +69,7 @@ struct Nib {
     static let moreMenuPopup = "MoreMenuPopup"
     static let sortPopup = "SortPopupView"
     static let textViewPopup = "TextViewContainer"
-   
+   static let imageViewPopup = "ImageViewContainer"
 }
 
 struct  KEYS {

@@ -24,6 +24,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="0.0"/>
                                         <gestureRecognizers/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyq-g9-XlM" userLabel="View ImageHeader">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ibZ-qD-IZZ"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rW1-8t-A6E" userLabel="ButtonExpandImage">
+                                        <rect key="frame" x="364" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="BjF-0d-KPJ"/>
+                                            <constraint firstAttribute="width" constant="30" id="FH3-nB-Xly"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="expand"/>
+                                        <connections>
+                                            <action selector="onClickExpandImage:" destination="SzZ-Ca-IFk" eventType="touchUpInside" id="3Ev-9f-QVo"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akL-5k-M8D">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,8 +50,8 @@
                                             <constraint firstAttribute="width" constant="30" id="7Uz-6H-rcy"/>
                                             <constraint firstAttribute="height" constant="30" id="VS3-86-ZqH"/>
                                         </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button" image="cancel">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="cancel">
                                             <color key="titleColor" red="0.1939795081" green="0.63707064189999996" blue="0.75888324870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -44,11 +63,16 @@
                                 <constraints>
                                     <constraint firstItem="ZKw-2u-RSe" firstAttribute="leading" secondItem="qzI-lT-fyt" secondAttribute="leading" id="0ph-gl-vgz"/>
                                     <constraint firstAttribute="height" id="Cq2-c2-6ua"/>
+                                    <constraint firstItem="wyq-g9-XlM" firstAttribute="leading" secondItem="qzI-lT-fyt" secondAttribute="leading" id="GKV-UD-1RI"/>
+                                    <constraint firstAttribute="trailing" secondItem="rW1-8t-A6E" secondAttribute="trailing" id="OCm-rt-Hkg"/>
+                                    <constraint firstItem="wyq-g9-XlM" firstAttribute="top" secondItem="qzI-lT-fyt" secondAttribute="top" id="Q8P-mm-a0d"/>
                                     <constraint firstItem="akL-5k-M8D" firstAttribute="leading" secondItem="qzI-lT-fyt" secondAttribute="leading" id="R4v-og-Eba"/>
                                     <constraint firstAttribute="bottom" secondItem="ZKw-2u-RSe" secondAttribute="bottom" id="S3S-gu-uqS"/>
                                     <constraint firstItem="ZKw-2u-RSe" firstAttribute="top" secondItem="qzI-lT-fyt" secondAttribute="top" id="UPs-vX-uJG"/>
                                     <constraint firstAttribute="trailing" secondItem="ZKw-2u-RSe" secondAttribute="trailing" id="hJ9-ro-vBm"/>
                                     <constraint firstItem="akL-5k-M8D" firstAttribute="top" secondItem="qzI-lT-fyt" secondAttribute="top" id="p86-4t-Kil"/>
+                                    <constraint firstItem="rW1-8t-A6E" firstAttribute="top" secondItem="qzI-lT-fyt" secondAttribute="top" id="q8k-rT-JiZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="wyq-g9-XlM" secondAttribute="trailing" id="vJD-YH-FEO"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fC6-Z9-yAA">
@@ -172,6 +196,7 @@
                         <outlet property="moreMenuButton" destination="6Kk-Hl-pcR" id="LMV-eP-yI4"/>
                         <outlet property="timeLabel" destination="k1U-jy-mjl" id="vy1-oQ-Gzb"/>
                         <outlet property="titleText" destination="uk2-QZ-uRR" id="Ugx-zj-SMD"/>
+                        <outlet property="viewImageHeader" destination="wyq-g9-XlM" id="0Od-dA-BIA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cbw-Fg-Q1k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -475,8 +500,9 @@
     <resources>
         <image name="arrow.up.arrow.down" catalog="system" width="128" height="98"/>
         <image name="calendar" width="20" height="20"/>
-        <image name="cancel" width="512" height="512"/>
+        <image name="cancel" width="20" height="20"/>
         <image name="dslr-camera" width="20" height="20"/>
+        <image name="expand" width="30" height="30"/>
         <image name="icon" width="96" height="92"/>
         <image name="left-arrow" width="20" height="20"/>
         <image name="lock" width="15" height="15"/>

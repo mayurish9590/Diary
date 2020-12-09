@@ -20,6 +20,7 @@ class CalenderViewController: UIViewController {
     var notesArrayDB :[NoteModel] =  []
     var startDay: Date!
     @IBOutlet weak var notesTableView: UITableView!
+    var delegate: DataRefresh?
     
     override func viewDidLoad() {
         navigationBarSetup()
@@ -35,7 +36,6 @@ class CalenderViewController: UIViewController {
         notesTableView.dataSource = self
         self.notesTableView.reloadData()
     }
-    
     
     func setUpCalendar()
     {
@@ -98,12 +98,15 @@ class CalenderViewController: UIViewController {
     
     
     @objc func onClickBack(){
+        if let del = self.delegate {
+            del.refreshData()
+        }
         self.navigationController?.popViewController(animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
-        
+        self.notesTableView.reloadData()
     }
     
     /*
@@ -183,7 +186,10 @@ extension CalenderViewController: CalendarViewDelegate{
     }
     
     func calendar(_ calendar: CalendarView, didLongPressDate date: Date, withEvents events: [CalendarEvent]?) {
-        AddNote.instance.showAlert(self,date)
+        calenderView.selectDate(date)
+        AddNote.instance.delegate = self
+        AddNote.instance.showAlert(calnderDt: date)
+        
     }
 }
 
@@ -192,9 +198,22 @@ extension CalenderViewController: UITableViewDelegate{
         if let newNoteVC = self.storyboard?.instantiateViewController(withIdentifier: VC.noteDetailVC) as? NewNoteViewController {
             print(indexPath.section)
             newNoteVC.noteobj = self.notesarraytableview[indexPath.row]
+            newNoteVC.delegate = self
             self.navigationController?.pushViewController(newNoteVC, animated: true)
         }
         
+    }
+    
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            DMBManger.delete(note: self.notesarraytableview[indexPath.row])
+            self.refreshData()
+        }
     }
     
 }
@@ -234,6 +253,26 @@ extension CalenderViewController:UITableViewDataSource{
     }
 }
 
+extension CalenderViewController : DataRefresh {
+    
+    func refreshData() {
+        self.notesArrayDB = DMBManger.fetchAllNote() ?? []
+        let sortedNotes = self.notesArrayDB.filter { dates in
+            formatter.string(from: dates.savingDate) == formatter.string(from: self.calenderView.selectedDates.first ?? Date())
+        }
+        self.notesarraytableview = sortedNotes
+        self.notesTableView.reloadData()
+    }
+}
 
 
-
+extension CalenderViewController: AddNoteProtocol {
+    
+    func add(date: Date) {
+        if let newNoteVC = self.storyboard?.instantiateViewController(withIdentifier: VC.noteDetailVC) as? NewNoteViewController {
+            newNoteVC.dateFromCalender = date
+            newNoteVC.delegate = self
+            self.navigationController?.pushViewController(newNoteVC, animated: true)
+        }
+    }
+}

@@ -12,9 +12,9 @@ class AddNote: UIView {
     @IBOutlet var parentView: AddNote!
     
     static var instance = AddNote()
-    static var vc: UIViewController!
-    static var calnderDate : Date!
+     var calnderDate : Date!
     @IBOutlet weak var containerView: UIView!
+    var delegate: AddNoteProtocol?
    override init(frame: CGRect) {
          super.init(frame: frame)
           Bundle.main.loadNibNamed("AddNote", owner: self, options: nil)
@@ -44,12 +44,11 @@ class AddNote: UIView {
                       containerView.backgroundColor = currenttheme.alert
       }
       
-    func showAlert( _ calenderVC : UIViewController, _ calnderDt : Date) {
+    func showAlert(calnderDt : Date) {
           if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first {
               window.addSubview(parentView)
               updateTheme()
-            AddNote.vc = calenderVC
-            AddNote.calnderDate = calnderDt
+            calnderDate = calnderDt
             
         }
       }
@@ -65,11 +64,11 @@ class AddNote: UIView {
     }
     
     @IBAction func onClickAdd(_ sender: Any) {
-        NewNoteViewController.dateFromCalender = AddNote.calnderDate
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let newNoteVC = storyboard.instantiateViewController(withIdentifier: VC.noteDetailVC) as? NewNoteViewController {
-            AddNote.vc.navigationController?.pushViewController(newNoteVC, animated: true)
-   }
+        
+        if let del = self.delegate {
+            del.add(date: self.calnderDate )
+        }
+
         dismissPopoup()
         //NewNoteViewController.dateFromCalender = nil
     }

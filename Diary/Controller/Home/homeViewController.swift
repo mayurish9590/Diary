@@ -32,6 +32,12 @@ class homeViewController: UIViewController {
     }
     
     func setupTableView()  {
+       fetchData()
+        DispatchQueue.main.async {
+            self.noteTableView.reloadData()
+        }
+    }
+    func fetchData(){
         self.notes = DMBManger.fetchAllNote() ?? []
         if let index = UserDefaults.standard.value(forKey: "sortselectionindex") as? Int {
             switch index {
@@ -50,9 +56,6 @@ class homeViewController: UIViewController {
         } else {
             self.notes = self.notes.sorted { $0.noteID > $1.noteID }// newer
         }
-        DispatchQueue.main.async {
-            self.noteTableView.reloadData()
-        }
     }
     
     
@@ -60,7 +63,12 @@ class homeViewController: UIViewController {
         let currentTheme = Themes.currentTheme()
         navigationController?.navigationBar.barTintColor = currentTheme.navBar
         if self.btn != nil{
-             btn.backgroundColor = Themes.currentTheme().background
+           if self.notes.count < 4{
+                btn.backgroundColor = Themes.currentTheme().alert
+
+            } else {
+                btn.backgroundColor = Themes.currentTheme().background
+            }
         }
         self.noteTableView.backgroundColor = .clear
         self.view.backgroundColor = currentTheme.background
@@ -78,7 +86,13 @@ class homeViewController: UIViewController {
         btn.setImage(UIImage.init(systemName: "square.and.pencil"), for: .normal)
         btn.setTitleColor(Themes.currentTheme().Text, for: .normal)
         btn.tintColor  = UIColor.white
-        btn.backgroundColor = Themes.currentTheme().background
+       if self.notes.count < 3 {
+            btn.backgroundColor = Themes.currentTheme().alert
+
+        } else {
+            btn.backgroundColor = Themes.currentTheme().background
+        }
+
         btn.clipsToBounds = true
         btn.layer.cornerRadius = 30
         btn.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -89,11 +103,20 @@ class homeViewController: UIViewController {
         self.view.bringSubviewToFront(btn)
     }
     override func viewWillAppear(_ animated: Bool) {
-               setupTableView()
+        if self.btn != nil{
+           if self.notes.count < 4{
+                btn.backgroundColor = Themes.currentTheme().alert
+
+            } else {
+                btn.backgroundColor = Themes.currentTheme().background
+            }
+        }
+        self.noteTableView.reloadData()
     }
     
     @objc func onclickNew()
     {  if let newNoteVC = self.storyboard?.instantiateViewController(withIdentifier: VC.noteDetailVC) as? NewNoteViewController {
+        newNoteVC.delegate = self
         self.navigationController?.pushViewController(newNoteVC, animated: true)
     }
     }
@@ -108,6 +131,7 @@ class homeViewController: UIViewController {
     @IBAction func onclickCalender(_ sender: Any) {
     
         if let vc = self.storyboard?.instantiateViewController(identifier: "CalenderViewController") as? CalenderViewController {
+            vc.delegate = self
                      self.navigationController?.pushViewController(vc, animated: true);
                  }
  
@@ -180,6 +204,25 @@ extension homeViewController : UITableViewDelegate
         }
         
     }
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            DMBManger.delete(note: self.notes[indexPath.row])
+            self.refreshData()
+            self.noteTableView.reloadData()
+            if self.btn != nil{
+               if self.notes.count < 4{
+                    btn.backgroundColor = Themes.currentTheme().alert
+
+                } else {
+                    btn.backgroundColor = Themes.currentTheme().background
+                }
+            }
+        }
+    }
     
 }
 
@@ -209,5 +252,12 @@ extension homeViewController: SortPopupView{
 extension Date {
     func currentTimeMillis() -> Int64 {
         return Int64(self.timeIntervalSince1970 * 1000)
+    }
+}
+
+extension homeViewController: DataRefresh {
+    func refreshData() {
+        fetchData()
+        
     }
 }

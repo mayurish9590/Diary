@@ -9,23 +9,22 @@
 import Foundation
 import UIKit
 
-class TextViewPoppup: UIView {
+class ImageViewPoppup: UIView {
     
-    
-    var delegate : TextViewProtocol!
-    static var instance = TextViewPoppup()
-   
     
     @IBOutlet weak var buttonDismiss: UIButton!
-    
+    static var instance = ImageViewPoppup()
     @IBOutlet weak var shadowView: UIView!
-    @IBOutlet weak var textView: UITextView!
+    
+    
     @IBOutlet var parentView: UIView!
+    @IBOutlet weak var imageView: UIImageView!
+    
     @IBOutlet weak var containerVIew: UIView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        Bundle.main.loadNibNamed(Nib.textViewPopup, owner: self, options: nil)
+        Bundle.main.loadNibNamed(Nib.imageViewPopup, owner: self, options: nil)
         commonInit()
     }
     required init?(coder: NSCoder) {
@@ -42,41 +41,31 @@ class TextViewPoppup: UIView {
         parentView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         parentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
-        self.textView.backgroundColor = Themes.currentTheme().navBar
+        self.imageView.backgroundColor = Themes.currentTheme().navBar
         self.containerVIew.backgroundColor = Themes.currentTheme().navBar
 
         let tapGesture = UITapGestureRecognizer(target: self,
                          action: #selector(dismissPopoup))
         shadowView.addGestureRecognizer(tapGesture)
-        self.textView.delegate = self
     }
     
-    func showAlert(text: String) {
+    func showAlert(image: UIImage) {
         if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first {
-            self.textView.text = text
+            self.imageView.image = image
             window.addSubview(parentView)
-            self.textView.selectedRange = NSMakeRange(self.textView.text.count , 0);
-            self.textView.becomeFirstResponder()
 
         }
     }
     
     @objc func dismissPopoup() {
         
-        if let delegate = self.delegate{
-            delegate.textViewPopupDismissed(text: self.textView.text)
-        }
-
         parentView.endEditing(true)
         parentView.removeFromSuperview()
     }
 
     
-    @IBAction func onClickDismiss(_ sender: Any) {
+    @IBAction func onClickDismissPopup(_ sender: Any) {
         self.dismissPopoup()
     }
 }
 
-extension TextViewPoppup: UITextViewDelegate {
-    
-}

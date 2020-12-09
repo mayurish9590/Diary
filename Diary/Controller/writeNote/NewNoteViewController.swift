@@ -11,6 +11,7 @@ import Foundation
 import CoreData
 
 class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
+    @IBOutlet weak var viewImageHeader: UIView!
     
     
     @IBOutlet weak var moreMenuButton: UIBarButtonItem!
@@ -25,7 +26,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var attachedImage: UIImageView!
     
     @IBOutlet weak var addImageButton: UIBarButtonItem!
-    static var dateFromCalender: Date!
+     var dateFromCalender: Date?
     private var noteId: Int64 = 0
     private var isNoteImageUpdated = false
     private let textViewPlaceholderText = "Dear Diary"
@@ -41,7 +42,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var heightConstraintOfNoteView: NSLayoutConstraint!
     var previousRect = CGRect.zero
     var noteViewHeightOriginal = 0
-    
+    var delegate: DataRefresh?
     override func viewDidLoad() {
         super.viewDidLoad()
         titleText.attributedPlaceholder =
@@ -58,6 +59,7 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
         currentTheme = Themes.currentTheme()
         self.descriptionView.backgroundColor = currentTheme.navBar
         self.view.backgroundColor = currentTheme.background
+        self.viewImageHeader.backgroundColor = currentTheme.alert
     }
     func initialSetup()
     {
@@ -90,9 +92,16 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
         }
         else
         {
-            self.noteId =  Date().currentTimeMillis() //self.generateRandomString()
-            dateLabel.text = formatter.string(from: getCurrentDate())
+            if let calenderDate =  self.dateFromCalender {
+                dateLabel.text = formatter.string(from:calenderDate)
+                self.noteId =  calenderDate.currentTimeMillis() //self.generateRandomString()
+
+            } else {
+                dateLabel.text = formatter.string(from: getCurrentDate())
+                self.noteId =  Date().currentTimeMillis() //self.generateRandomString()
+            }
             timeLabel.text = getCurrentTime()
+
         }
         
         if(attachedImage.image == nil)
@@ -131,7 +140,11 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
                 SaveNote.instance.showAlert()
                 
             } else {
+                if let del = self.delegate {
+                    del.refreshData()
+                }
                 self.navigationController?.popViewController(animated: true)
+                
             }
             
         } else {
@@ -141,7 +154,9 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
                 SaveNote.instance.showAlert()
             } else {
                 self.navigationController?.popViewController(animated: true)
-
+                if let del = self.delegate {
+                    del.refreshData()
+                }
             }
         }
         
@@ -162,6 +177,12 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     
+    @IBAction func onClickExpandImage(_ sender: Any) {
+        if let image = self.attachedImage.image {
+            ImageViewPoppup.instance.showAlert(image:image  )
+
+        }
+    }
     
     
     
@@ -189,7 +210,11 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
 }
 extension NewNoteViewController : SaveNotePopUp {
     func discardChange() {
+        if let del = self.delegate {
+            del.refreshData()
+        }
         self.navigationController?.popViewController(animated: true)
+        
     }
     
     @objc func save() {
@@ -213,6 +238,9 @@ extension NewNoteViewController : SaveNotePopUp {
                 noteobj?.emoji = self.emojiName
             }
             DMBManger.update(note: noteobj!)
+            if let del = self.delegate {
+                del.refreshData()
+            }
             self.navigationController?.popViewController(animated: true)
             
             
@@ -236,8 +264,8 @@ extension NewNoteViewController : SaveNotePopUp {
                     isImageAttached = ImageStorage.saveImage(imageName: "\(self.noteId)" , image: attachImage)
                 }
                 let currnetDate : Date!
-                 if  NewNoteViewController.dateFromCalender != nil{
-                    currnetDate = NewNoteViewController.dateFromCalender
+                 if let calDate = dateFromCalender {
+                    currnetDate = calDate
                     }else {
                                 currnetDate = getCurrentDate()  }
                
@@ -248,7 +276,11 @@ extension NewNoteViewController : SaveNotePopUp {
                 }
                 let currentNote = NoteModel(emoji: emojiName, imageAttachment: isImageAttached, noteDescription: _noteDescription, noteID:self.noteId, savingDate: currnetDate, savingTime: getCurrentTime(), title: _title)
                 DMBManger.saveToDB(note: currentNote)
+                if let del = self.delegate {
+                    del.refreshData()
+                }
                 self.navigationController?.popViewController(animated: true)
+                
             }
         }
     }
@@ -271,6 +303,7 @@ extension NewNoteViewController : ImageAttachemet , UIImagePickerControllerDeleg
         self.present(imagePicker, animated: true, completion: nil)
         
     }
+    
     func addFromCamera() {
         imagePicker.delegate = self
         self.present(imagePicker, animated: true, completion: nil)
@@ -294,7 +327,27 @@ extension NewNoteViewController : ImageAttachemet , UIImagePickerControllerDeleg
 
 extension NewNoteViewController : MoreMenu{
     func shareNote() {
-        let activityVC = UIActivityViewController(activityItems: [self.titleText.text ?? " ", self.descriptionTextView.text ?? " ", self.dateLabel.text ?? " "], applicationActivities: nil)
+        var activityItems: [Any] = [self.titleText.text ?? " ", self.descriptionTextView.text ?? " ", self.dateLabel.text ?? " "]
+        
+        if let image = self.attachedImage.image {
+            activityItems.append(image)
+        }
+        
+        if let date = self.titleText.text, !date.isEmpty {
+            activityItems.append("\n")
+            activityItems.append(date)
+        }
+        if let title = self.titleText.text, !title.isEmpty {
+            activityItems.append("\n")
+            activityItems.append(title)
+        }
+        if let description = self.descriptionTextView.text, !description.isEmpty {
+            activityItems.append("\n")
+            activityItems.append(description)
+        }
+        
+        
+        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
 //        self.isNoteEdited = true
         self.present(activityVC, animated: true, completion: nil)
         
@@ -303,6 +356,9 @@ extension NewNoteViewController : MoreMenu{
     func deleteNote() {
         if let note = self.noteobj {
             DMBManger.delete(note: note)
+        }
+        if let del = self.delegate {
+            del.refreshData()
         }
         self.navigationController?.popViewController(animated: true)
     }

@@ -10,6 +10,10 @@
 		1C62E99F2580AFD4007196FD /* TextViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C62E99E2580AFD4007196FD /* TextViewContainer.xib */; };
 		1C62E9A12580AFF0007196FD /* TextViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C62E9A02580AFF0007196FD /* TextViewContainer.swift */; };
 		1C62E9A32580B061007196FD /* TextViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C62E9A22580B061007196FD /* TextViewProtocol.swift */; };
+		1C62E9A72580E6BF007196FD /* DataRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C62E9A62580E6BF007196FD /* DataRefresh.swift */; };
+		1C62E9A92580ED9C007196FD /* AddNoteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C62E9A82580ED9C007196FD /* AddNoteProtocol.swift */; };
+		1C62E9AD2580FB22007196FD /* ImageViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C62E9AB2580FB22007196FD /* ImageViewContainer.xib */; };
+		1C62E9AE2580FB22007196FD /* ImageViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C62E9AC2580FB22007196FD /* ImageViewContainer.swift */; };
 		1C9FAD7C257F99D8009B5098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5173F251DBF9B009FE8C2 /* AppDelegate.swift */; };
 		1C9FAD7D257F99D8009B5098 /* ThemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C880A9725504FBA00E53B6F /* ThemeTableViewCell.swift */; };
 		1C9FAD7E257F99D8009B5098 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B7C332535671900ACC4A7 /* homeViewController.swift */; };
@@ -80,6 +84,10 @@
 		1C62E99E2580AFD4007196FD /* TextViewContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewContainer.xib; sourceTree = "<group>"; };
 		1C62E9A02580AFF0007196FD /* TextViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContainer.swift; sourceTree = "<group>"; };
 		1C62E9A22580B061007196FD /* TextViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewProtocol.swift; sourceTree = "<group>"; };
+		1C62E9A62580E6BF007196FD /* DataRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRefresh.swift; sourceTree = "<group>"; };
+		1C62E9A82580ED9C007196FD /* AddNoteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNoteProtocol.swift; path = AddNote/AddNoteProtocol.swift; sourceTree = "<group>"; };
+		1C62E9AB2580FB22007196FD /* ImageViewContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewContainer.xib; sourceTree = "<group>"; };
+		1C62E9AC2580FB22007196FD /* ImageViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewContainer.swift; sourceTree = "<group>"; };
 		1C67F60B254AFB6100069503 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1C67F60F254AFDB400069503 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		1C880A9725504FBA00E53B6F /* ThemeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTableViewCell.swift; sourceTree = "<group>"; };
@@ -162,6 +170,15 @@
 			path = TextView;
 			sourceTree = "<group>";
 		};
+		1C62E9AA2580FAAB007196FD /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				1C62E9AC2580FB22007196FD /* ImageViewContainer.swift */,
+				1C62E9AB2580FB22007196FD /* ImageViewContainer.xib */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
 		1C67F609254AFAFF00069503 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +213,7 @@
 				1CEF744F256B896000C6D2E3 /* CalenderViewController.swift */,
 				9363E621257E1C2100F02631 /* AddNote.swift */,
 				9363E623257E1C5200F02631 /* AddNote.xib */,
+				1C62E9A82580ED9C007196FD /* AddNoteProtocol.swift */,
 			);
 			path = Calender;
 			sourceTree = "<group>";
@@ -292,6 +310,7 @@
 		9390E3E72542F28600660C0E /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				1C62E9AA2580FAAB007196FD /* ImageView */,
 				1C62E99D2580AFB3007196FD /* TextView */,
 				1CEF744D256B893200C6D2E3 /* Calender */,
 				9358FA04254BE110008C430E /* DeleteImageAttachment */,
@@ -319,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				933B7C362535B92200ACC4A7 /* NewNoteViewController.swift */,
+				1C62E9A62580E6BF007196FD /* DataRefresh.swift */,
 			);
 			path = writeNote;
 			sourceTree = "<group>";
@@ -486,6 +506,7 @@
 				1C9FADAA257F99D8009B5098 /* SortPopupView.xib in Resources */,
 				1C9FADAB257F99D8009B5098 /* DeleteImage.xib in Resources */,
 				1C9FADAC257F99D8009B5098 /* MoreMenuPopup.xib in Resources */,
+				1C62E9AD2580FB22007196FD /* ImageViewContainer.xib in Resources */,
 				1C9FADAD257F99D8009B5098 /* ThemeTableViewCell.xib in Resources */,
 				1C9FADAE257F99D8009B5098 /* SaveNote.xib in Resources */,
 				1C9FADAF257F99D8009B5098 /* AddNote.xib in Resources */,
@@ -582,6 +603,7 @@
 				1C9FAD89257F99D8009B5098 /* DBManager.swift in Sources */,
 				1C9FAD8A257F99D8009B5098 /* MoreMenuPopupProtocol.swift in Sources */,
 				1C9FAD8B257F99D8009B5098 /* Note+CoreDataClass.swift in Sources */,
+				1C62E9A92580ED9C007196FD /* AddNoteProtocol.swift in Sources */,
 				1C9FAD8C257F99D8009B5098 /* ThemeSelctionpopup.swift in Sources */,
 				1C9FAD8D257F99D8009B5098 /* MoreMenuPopup.swift in Sources */,
 				1C9FAD8E257F99D8009B5098 /* AppThemeSections.swift in Sources */,
@@ -597,11 +619,13 @@
 				1C9FAD98257F99D8009B5098 /* MenuViewController.swift in Sources */,
 				1C9FAD99257F99D8009B5098 /* Constants.swift in Sources */,
 				1C9FAD9A257F99D8009B5098 /* NoteModel.xcdatamodeld in Sources */,
+				1C62E9A72580E6BF007196FD /* DataRefresh.swift in Sources */,
 				1C9FAD9B257F99D8009B5098 /* EmoiPopupPr.swift in Sources */,
 				1C9FAD9C257F99D8009B5098 /* NoteModel.swift in Sources */,
 				1C9FAD9D257F99D8009B5098 /* EmojiCollectionViewCell.swift in Sources */,
 				1C9FAD9E257F99D8009B5098 /* NoteTableViewCell.swift in Sources */,
 				1C9FAD9F257F99D8009B5098 /* Themes.swift in Sources */,
+				1C62E9AE2580FB22007196FD /* ImageViewContainer.swift in Sources */,
 				1C62E9A32580B061007196FD /* TextViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
