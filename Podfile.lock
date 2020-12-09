@@ -2,25 +2,17 @@ PODS:
   - KDCalendar (1.8.9):
     - KDCalendar/EventManager (= 1.8.9)
   - KDCalendar/EventManager (1.8.9)
-  - SideMenu (6.5.0)
-  - SwiftLint (0.41.0)
 
 DEPENDENCIES:
   - KDCalendar (~> 1.8.9)
-  - SideMenu
-  - SwiftLint
 
 SPEC REPOS:
   trunk:
     - KDCalendar
-    - SideMenu
-    - SwiftLint
 
 SPEC CHECKSUMS:
   KDCalendar: a587bc486b992d82ef94bd04001fce9baf45e518
-  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
-  SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
 
-PODFILE CHECKSUM: 3565e5b3f282d6690e10a6ad2cfe29515c051e18
+PODFILE CHECKSUM: 52e6d90e9976fc408dfdff48612b41acced22160
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.9.3

@@ -1,13 +1,10 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Dairy' do
+target 'Diary' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  #use_frameworks!
 
-  # Pods for Dairy
-
-pod 'SwiftLint'
-pod 'SideMenu'
+  # Pods for Diary
 pod 'KDCalendar', '~> 1.8.9'
 end
