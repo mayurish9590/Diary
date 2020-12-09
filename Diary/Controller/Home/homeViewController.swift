@@ -21,27 +21,49 @@ class homeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         noteTableView.register(UINib(nibName: NoteViewCell.nibName, bundle: nil), forCellReuseIdentifier: NoteViewCell.CellReuseIdentifier)
-        
         noteTableView.dataSource = self
         noteTableView.delegate = self
+        self.setupTableView()
+
         updateTheme()
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateTheme), name: Notification.Name("Theme"), object: nil)
         updateTheme()
         floatingButton()
     }
     
+    func setupTableView()  {
+        self.notes = DMBManger.fetchAllNote() ?? []
+        if let index = UserDefaults.standard.value(forKey: "sortselectionindex") as? Int {
+            switch index {
+            case 0:
+                self.notes = self.notes.sorted { $0.noteID > $1.noteID }// newer
+            case 1:
+                self.notes = self.notes.sorted { $0.noteID < $1.noteID } //older
+            case 2:
+                self.notes = self.notes.sorted { $0.title < $1.title } // a-z
+            case 3:
+                self.notes = self.notes.sorted { $0.title > $1.title }// z-a
+            default:
+                self.notes = self.notes.sorted { $0.noteID > $1.noteID }// newer
+                
+            }
+        } else {
+            self.notes = self.notes.sorted { $0.noteID > $1.noteID }// newer
+        }
+        DispatchQueue.main.async {
+            self.noteTableView.reloadData()
+        }
+    }
+    
     @objc func updateTheme() {
         let currentTheme = Themes.currentTheme()
         navigationController?.navigationBar.barTintColor = currentTheme.navBar
-  
-        
         if self.btn != nil{
-            
-             btn.backgroundColor = Themes.currentTheme().alert
-            
+             btn.backgroundColor = Themes.currentTheme().background
         }
         self.noteTableView.backgroundColor = .clear
         self.view.backgroundColor = currentTheme.background
+        self.noteTableView.reloadData()
     }
     
     func floatingButton(){
@@ -66,29 +88,7 @@ class homeViewController: UIViewController {
         self.view.bringSubviewToFront(btn)
     }
     override func viewWillAppear(_ animated: Bool) {
-        self.notes = DMBManger.fetchAllNote() ?? []
-        if let index = UserDefaults.standard.value(forKey: "sortselectionindex") as? Int {
-            switch index {
-            case 0:
-                self.notes = self.notes.sorted { $0.noteID > $1.noteID }// newer
-            case 1:
-                self.notes = self.notes.sorted { $0.noteID < $1.noteID } //older
-            case 2:
-                self.notes = self.notes.sorted { $0.title < $1.title } // a-z
-            case 3:
-                self.notes = self.notes.sorted { $0.title > $1.title }// z-a
-            default:
-                self.notes = self.notes.sorted { $0.noteID > $1.noteID }// newer
-                
-            }
-        } else {
-            self.notes = self.notes.sorted { $0.noteID > $1.noteID }// newer
-        }
-        DispatchQueue.main.async {
-            self.noteTableView.reloadData()
-        }
-        print(notes)
-        
+               
     }
     
     @objc func onclickNew()
