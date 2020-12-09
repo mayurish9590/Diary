@@ -55,6 +55,7 @@ class homeViewController: UIViewController {
         }
     }
     
+    
     @objc func updateTheme() {
         let currentTheme = Themes.currentTheme()
         navigationController?.navigationBar.barTintColor = currentTheme.navBar
@@ -88,7 +89,7 @@ class homeViewController: UIViewController {
         self.view.bringSubviewToFront(btn)
     }
     override func viewWillAppear(_ animated: Bool) {
-               
+               setupTableView()
     }
     
     @objc func onclickNew()

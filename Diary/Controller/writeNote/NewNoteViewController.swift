@@ -39,9 +39,8 @@ class NewNoteViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var deleteImageButton: UIButton!
     private var currentTheme = Themes.currentTheme()
     @IBOutlet weak var heightConstraintOfNoteView: NSLayoutConstraint!
-    
     var previousRect = CGRect.zero
-
+    var noteViewHeightOriginal = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -215,7 +214,7 @@ extension NewNoteViewController : SaveNotePopUp {
             }
             DMBManger.update(note: noteobj!)
             self.navigationController?.popViewController(animated: true)
-
+            
             
         } else{
             
@@ -326,6 +325,7 @@ extension NewNoteViewController : DeleteImagePopUp
     func deleteImage() {
         self.attachedImage.image = nil
         self.imageContainerHeight.constant = 0
+        self.heightConstraintOfNoteView.constant = (0.6 * UIScreen.main.bounds.height) - 100
         if let existingNote = noteobj{
             if existingNote.imageAttachment {
                 isExistingNoteImageChanged = true
