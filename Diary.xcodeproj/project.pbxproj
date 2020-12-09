@@ -179,6 +179,14 @@
 			path = ImageView;
 			sourceTree = "<group>";
 		};
+		1C62E9AF25811160007196FD /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				1CEF744F256B896000C6D2E3 /* CalenderViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		1C67F609254AFAFF00069503 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,7 +218,6 @@
 		1CEF744D256B893200C6D2E3 /* Calender */ = {
 			isa = PBXGroup;
 			children = (
-				1CEF744F256B896000C6D2E3 /* CalenderViewController.swift */,
 				9363E621257E1C2100F02631 /* AddNote.swift */,
 				9363E623257E1C5200F02631 /* AddNote.xib */,
 				1C62E9A82580ED9C007196FD /* AddNoteProtocol.swift */,
@@ -260,6 +267,7 @@
 		9329D91B251E01040004DB70 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1C62E9AF25811160007196FD /* Calendar */,
 				1C67F60E254AFD9E00069503 /* Theme */,
 				1C67F609254AFAFF00069503 /* Menu */,
 				9390E3E42542F1CA00660C0E /* Home */,
